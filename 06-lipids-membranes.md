@@ -40,6 +40,20 @@ Similar to carbohydrates, lipids serve a variety of roles in the cell. Famously 
 
 Fatty acid names follow a shorthand: chain length, colon, number of double bonds. **Palmitic acid** is 16:0 (16 carbons, 0 double bonds). **Stearic acid** is 18:0. **Oleic acid** is 18:1 (18 carbons, 1 double bond). Linoleic acid is 18:2. Arachidonic acid is 20:4.
 
+| Common Name | Shorthand | Systematic Name | $T_m$ (°C) |
+|---|---|---|---|
+| Lauric acid | 12:0 | Dodecanoic acid | 44 |
+| Myristic acid | 14:0 | Tetradecanoic acid | 54 |
+| Palmitic acid | 16:0 | Hexadecanoic acid | 63 |
+| Stearic acid | 18:0 | Octadecanoic acid | 70 |
+| Palmitoleic acid | 16:1($\Delta^9$) | cis-9-Hexadecenoic acid | 0 |
+| Oleic acid | 18:1($\Delta^9$) | cis-9-Octadecenoic acid | 13 |
+| Linoleic acid | 18:2($\Delta^{9,12}$) | cis-9,12-Octadecadienoic acid | −5 |
+| $\alpha$-Linolenic acid | 18:3($\Delta^{9,12,15}$) | cis-9,12,15-Octadecatrienoic acid | −11 |
+| Arachidonic acid | 20:4($\Delta^{5,8,11,14}$) | cis-5,8,11,14-Eicosatetraenoic acid | −49 |
+| EPA (eicosapentaenoic acid) | 20:5($\Delta^{5,8,11,14,17}$) | cis-5,8,11,14,17-Eicosapentaenoic acid | −54 |
+| DHA (docosahexaenoic acid) | 22:6($\Delta^{4,7,10,13,16,19}$) | cis-4,7,10,13,16,19-Docosahexaenoic acid | −44 |
+
 When double bonds are present, their position is specified by a delta ($\Delta$) notation: $\Delta^9$ means the double bond begins at carbon 9, counting from the carboxylate carbon (C1). Oleic acid is 18:1($\Delta^9$). An alternative notation counts from the methyl end of the chain (the $\omega$ or $n$ end): omega-3 and omega-6 fatty acids have their first double bond 3 or 6 carbons from the methyl end respectively. These are the "essential fatty acids" that humans cannot synthesize and must obtain from diet.
 
 ### Geometry of Double Bonds: Cis vs. Trans
@@ -48,11 +62,11 @@ Double bonds in biological fatty acids are almost always in the **cis** configur
 
 **Trans** double bonds (substituents on opposite sides) do not introduce a kink. The chain remains extended and linear, like a saturated chain. Trans fatty acids in food arise primarily from industrial partial hydrogenation of vegetable oils (used to make solid margarines and processed foods) and, to a lesser extent, from microbial biohydrogenation in ruminant animals. The linear geometry of trans chains allows them to pack tightly in membranes, behaving more like saturated fats than unsaturated ones. Epidemiological and mechanistic evidence links high dietary trans fat intake to cardiovascular disease, and most regulatory bodies now severely restrict or ban industrial trans fats in food.
 
-The physical consequence of cis vs. trans configuration is visible at room temperature. Saturated fats are solid at room temperature (lard, butter, coconut oil): their chains pack tightly and regular packing raises the melting temperature. Oils rich in cis-unsaturated fatty acids are liquid at room temperature (olive oil, vegetable oils): the kinks prevent close packing and lower the melting temperature. This directly predicts membrane behavior.
+The physical consequence of cis vs. trans configuration is visible at room temperature. For a lipid assembly, the **melting temperature** ($T_m$) is the temperature at which the membrane transitions from a **gel phase** (chains ordered, tightly packed, largely immobile) to a **liquid crystalline phase** (chains disordered, loosely packed, free to move laterally). Below $T_m$, the fat is a solid; above $T_m$, it is a liquid; AT $T_m$ the mixture will be exactly 50% gel/liquid. Saturated and trans fats are solid at room temperature (lard, butter, coconut oil): their linear chains pack tightly, maximize van der Waals contacts, and raise $T_m$ above ambient temperature. Oils rich in cis-unsaturated fatty acids are liquid at room temperature (olive oil, vegetable oils): the kinks reduce chain packing, reduce van der Waals contacts, and lower $T_m$ below ambient temperature. This directly predicts membrane behavior.
 
 ### Ionization State
 
-The carboxylate group of a fatty acid has a $pK_a$ around 4.5 to 5, meaning that at physiological pH (~7.4) essentially all fatty acids are fully ionized as carboxylates ($-COO^-$), not protonated carboxylic acids ($-COOH$). This distinction matters for their behavior in membranes and in metabolic intermediates. The anionic carboxylate is far more water-soluble than the protonated form, but the long hydrocarbon tail still makes free fatty acids poorly soluble in water and dependent on carrier proteins (albumin in the blood, fatty acid-binding proteins intracellularly) for transport.
+The carboxylate group of a fatty acid has a $pK_a$ around 4.5 to 5, meaning that at physiological pH (~7.4) essentially all fatty acids are fully ionized as carboxylates ($-COO^-$), not protonated carboxylic acids ($-COOH$). *For a refresher since it's been some time since chapter 1: try and calculate exactly the ratio of ionized to unionized fatty acid at pH 7.4*. This distinction matters for their behavior in membranes and in metabolic intermediates. The anionic carboxylate is far more water-soluble than the protonated form, but the long hydrocarbon tail still makes free fatty acids poorly soluble in water and dependent on carrier proteins (albumin in the blood, fatty acid-binding proteins intracellularly) for transport.
 
 ---
 
@@ -66,11 +80,11 @@ The ester bond is formed between the carboxylate of the fatty acid and the hydro
 
 ### Why Lipids Are Better Energy Storage Than Glycogen
 
-Triacylglycerols store considerably more energy per gram than carbohydrates. Oxidation of fatty acids yields approximately 9 kcal/g, while carbohydrates yield approximately 4 kcal/g. This difference has two sources.
+Triacylglycerols store considerably more energy per gram than carbohydrates. Oxidation of fatty acids yields approximately 38 kJ/g, while carbohydrates yield approximately 17 kJ/g. This difference has two sources.
 
-First, fatty acids are more reduced than carbohydrates. Recall that oxidation state measures the degree of reduction (or oxidation) of carbon. Carbohydrate carbons are partially oxidized already (each has an attached oxygen), while fatty acid carbons are almost fully reduced (mostly carbon-hydrogen bonds). More electrons per carbon means more energy released when those electrons are transferred to oxygen in the ETC.
+First, fatty acids are more reduced than carbohydrates. Recall that oxidation state measures the degree of reduction (or oxidation) of carbon. Carbohydrate carbons are partially oxidized already (each has an attached oxygen), while fatty acid carbons are almost fully reduced (mostly carbon-hydrogen bonds). More electrons per carbon means more energy released *per carbon* when those electrons are transferred to oxygen in the ETC.
 
-Second, triacylglycerols are stored anhydrously. Glycogen, as discussed in Chapter 5, is highly hydrophilic and retains substantial water: roughly 2 to 3 grams of water per gram of glycogen. This water adds mass without adding energy. Adipose tissue stores triacylglycerols in essentially anhydrous lipid droplets. A 70 kg person with 15% body fat carries roughly 10 kg of triacylglycerol storing about 90,000 kcal of energy. The same energy stored as hydrated glycogen would require roughly 60 kg of material. Evolution solved the mobile energy storage problem with lipids, not polysaccharides.
+Second, triacylglycerols are stored anhydrously. Glycogen, as discussed in Chapter 5, is highly hydrophilic and retains substantial water: roughly 2 to 3 grams of water per gram of glycogen. This water adds mass without adding energy. Adipose tissue stores triacylglycerols in essentially anhydrous lipid droplets. A 70 kg person with 15% body fat carries roughly 10 kg of triacylglycerol storing about 90,000 kcal of energy. At a basal metabolic rate of roughly 1,200 kcal/day, that is about 75 days of fuel. The same energy stored as hydrated glycogen would require roughly 60 kg of material. Evolution solved the mobile energy storage problem with lipids, not polysaccharides.
 
 ---
 
@@ -78,7 +92,7 @@ Second, triacylglycerols are stored anhydrously. Glycogen, as discussed in Chapt
 
 ### Glycerophospholipid Structure
 
-The membrane-forming lipids in most cells are **glycerophospholipids**. Like triacylglycerols, they have a glycerol backbone and two fatty acids at sn-1 and sn-2. The difference is at sn-3: instead of a third fatty acid, there is a phosphate group esterified to the glycerol. The phosphate is in turn esterified to a small **head group** molecule, which determines the specific phospholipid class.
+The membrane-forming lipids in most cells are **glycerophospholipids**. Like triacylglycerols, they have a glycerol backbone and two fatty acids at sn-1 and sn-2. The difference is at sn-3: instead of a third fatty acid, there is a phosphate group esterified to the glycerol. The phosphate is in turn esterified to a small **head group** molecule, an alcohol, which determines the specific phospholipid class.
 
 The general structure is:
 
@@ -92,11 +106,11 @@ The two fatty acid tails are the hydrophobic portion. The phosphate-head group i
 
 The four major head groups in mammalian membranes are choline, ethanolamine, serine, and inositol. The corresponding phospholipids are:
 
-**Phosphatidylcholine (PC)**, also called lecithin. Choline is a quaternary amine: $-O-CH_2-CH_2-N^+(CH_3)_3$. The nitrogen carries a permanent positive charge, and the phosphate is negatively charged, giving a zwitterionic (net neutral) head group. PC is the most abundant phospholipid in most mammalian membranes and is the predominant component of pulmonary surfactant.
+**Phosphatidylcholine (PC)**, also called lecithin. Choline is a quaternary amine: $-O-CH_2-CH_2-N^+(CH_3)_3$. The nitrogen carries a permanent positive charge, and the phosphate is negatively charged, giving a zwitterionic (net neutral) head group. PC is the most abundant phospholipid in most mammalian membranes and is the predominant component of pulmonary surfactant, the lipid-protein mixture secreted into the alveolar space by type II pneumocytes that reduces surface tension and prevents alveolar collapse during exhalation (covered in detail in the surfactant section below).
 
 **Phosphatidylethanolamine (PE)**. The head group is ethanolamine: $-O-CH_2-CH_2-NH_3^+$. The amine is a primary amine with a $pK_a$ near 9.5, so it is protonated and positively charged at physiological pH. PE head groups are smaller than PC head groups and pack more tightly. PE is concentrated in the inner (cytoplasmic) leaflet of the plasma membrane.
 
-**Phosphatidylserine (PS)**. The head group is the amino acid serine. At physiological pH, the phosphate is negatively charged and the serine amine is positively charged, giving a net negative charge overall. PS is normally found almost exclusively in the inner leaflet of the plasma membrane. Externalization of PS to the outer leaflet is a signal for apoptosis (programmed cell death): phagocytes have receptors that recognize PS on the outer leaflet and use it as an "eat me" signal to engulf dying cells. The enzyme **flippase** (an ATP-dependent enzyme) maintains PS asymmetry by actively translocating PS from the outer to the inner leaflet; its failure in apoptotic cells (through caspase inactivation) allows PS to appear on the outer surface.
+**Phosphatidylserine (PS)**. The head group is the amino acid serine. At physiological pH, the phosphate is negatively charged and the serine amine is positively charged, giving a net negative charge overall. PS is normally found almost exclusively in the inner leaflet of the plasma membrane. Externalization of PS to the outer leaflet is a signal for apoptosis (programmed cell death): phagocytes have receptors that recognize PS on the outer leaflet and use it as an "eat me" signal to engulf dying cells. The enzyme **flippase** (a hilariously named ATP-dependent enzyme) maintains PS asymmetry by actively translocating PS from the outer to the inner leaflet; its failure in apoptotic cells (through caspase inactivation) allows PS to appear on the outer surface.
 
 **Phosphatidylinositol (PI)**. Inositol is a six-carbon cyclitol with hydroxyl groups. The inositol head group can be phosphorylated at multiple positions by kinases, generating phosphatidylinositol bisphosphate ($PIP_2$) and related species that are critical second messengers in signal transduction. Phospholipase C cleaves $PIP_2$ to release inositol trisphosphate ($IP_3$, which opens calcium channels in the ER) and diacylglycerol (DAG, which activates protein kinase C). The lipid itself is the signaling precursor.
 
@@ -116,11 +130,11 @@ A single fatty acid is attached to the amino group of sphingosine via an amide b
 
 ### Cholesterol
 
-**Cholesterol** is structurally unrelated to glycerophospholipids and sphingolipids. It is a **sterol**: four fused hydrocarbon rings (three six-membered, one five-membered) with a short branched hydrocarbon tail and a single hydroxyl group at C3. The hydroxyl is the only hydrophilic part of the molecule; the fused ring system and tail are entirely hydrophobic.
+**Cholesterol** is structurally unrelated to glycerophospholipids and sphingolipids. It is a **sterol**: four fused hydrocarbon rings (three six-membered, one five-membered) with a short branched hydrocarbon tail and a single hydroxyl group at C3. The hydroxyl is the only hydrophilic part of the molecule; the fused ring system (based on the **steroid nucleus**) and tail are entirely hydrophobic.
 
 Cholesterol is found in animal cell membranes but not in plant cell membranes or bacterial membranes (plants and bacteria use other sterols or sterol-like molecules for related purposes). In mammalian cells, cholesterol constitutes up to 40% of the lipids in the plasma membrane by mole fraction. It inserts into the bilayer with its hydroxyl group near the hydrophilic headgroup region and its rigid ring system nestled between the fatty acid chains.
 
-Cholesterol is also the precursor for steroid hormones (cortisol, testosterone, estrogen, aldosterone), bile acids, and vitamin D. These downstream functions are covered in Chapter 14.
+Cholesterol is also the precursor for steroid hormones (cortisol, testosterone, estrogen, aldosterone), bile acids, and vitamin D. These downstream functions are covered in Chapter 14. The role of Cholesterol in the membrane will be examined shortly.
 
 ---
 
@@ -132,17 +146,9 @@ When amphipathic lipids are dispersed in water, they spontaneously self-assemble
 
 The driving force is the hydrophobic effect, discussed in Chapter 2 in the context of protein folding. Water molecules adjacent to hydrophobic surfaces must adopt constrained, ordered arrangements to maintain hydrogen bonding with each other: this imposes an entropic cost. Shielding hydrophobic tails from water inside the bilayer releases those water molecules into bulk solution, increasing entropy. The process is spontaneous. No enzyme is required. No template is required. The information for membrane assembly is encoded entirely in the shape and chemistry of the lipid molecule itself.
 
-This is a profound point for thinking about the origin of life. Lipid bilayers self-assemble from simple chemical principles. Fatty acids, which are simpler than phospholipids, also self-assemble into vesicles under certain conditions. The first protocell membranes may have required no biosynthesis at all, just the appropriate chemistry and a supply of amphipathic molecules.
+**Molecular geometry determines the structure that forms.** A free fatty acid has a single hydrocarbon tail and a small carboxylate head group: the molecule is cone-shaped, wider at the head than at the tail. When cone-shaped amphiphiles pack together, the wide ends face out and the narrow tails converge toward the center, naturally forming a **micelle**: a spherical structure with all tails buried inside and all head groups on the surface. Micelles are the structure detergents form, and why soap dissolves grease: the hydrophobic interior of the micelle solubilizes non-polar molecules. Phospholipids, by contrast, have two fatty acid tails: the combined cross-sectional area of the two tails roughly equals that of the head group, giving the molecule a cylindrical shape. Cylinders cannot curve as aggressively into a sphere without leaving gaps; they pack flat, side by side, forming a **bilayer**. Close the bilayer on itself by gently curving the sheet to connect the edges and eliminate the energetically unfavorable edge where tails are exposed to water, and you get a **vesicle**: a closed, spherical membrane compartment. The geometry of the molecule thus dictates the geometry of the assembly, without any instruction from proteins or nucleic acids.
 
-### The Fluid Mosaic Model
-
-The current model of membrane structure is the **fluid mosaic model**, proposed by Singer and Nicolson in 1972. The key features:
-
-1. The lipid bilayer is a two-dimensional fluid, not a solid. Lipid molecules can diffuse laterally within their leaflet rapidly (diffusion constants on the order of $10^{-8}$ cm$^2$/s). Flip-flop (movement between leaflets) is extremely slow in the absence of enzymes because the hydrophilic head group must pass through the hydrophobic core.
-
-2. Membrane proteins are embedded in this fluid lipid matrix. Some proteins span the entire bilayer (**transmembrane proteins**), some are anchored to one leaflet by a single hydrophobic helix or a lipid modification, and some are peripherally associated through electrostatic or other non-covalent interactions.
-
-3. The membrane is asymmetric. The outer and inner leaflets differ in lipid composition, and membrane proteins have defined orientations. This asymmetry is established during biosynthesis and maintained actively.
+This is a profound point for thinking about the origin of life. Lipid bilayers self-assemble from simple chemical principles. The first protocell membranes may have required no biosynthesis at all, just the appropriate chemistry and a supply of amphipathic molecules with the right geometry.
 
 ### Membrane Fluidity and Its Regulation
 
@@ -177,9 +183,63 @@ The exposure of PS on the outer leaflet during apoptosis is a well-characterized
 
 ---
 
+## Membrane Proteins
+
+A pure lipid bilayer is a barrier, nothing more. It keeps the inside in and the outside out, but it cannot do anything else: it cannot transport ions, sense signals, catalyze reactions, or identify the cell to the immune system. All of those functions require proteins. The lipid bilayer is the platform; membrane proteins are the machinery, they are what make a membrane *alive*.
+
+Membrane proteins account for roughly 25 to 30 percent of all protein-coding genes in most organisms. Understanding how they associate with the bilayer is essential for understanding every topic in the next two chapters.
+
+### Classes of Membrane Proteins
+
+Membrane proteins fall into three categories based on how they associate with the bilayer.
+
+**Integral membrane proteins** are embedded directly in the hydrophobic core of the bilayer and cannot be removed without disrupting the membrane itself (requiring detergents or organic solvents to remove them from the membrane). The subset that spans the entire bilayer from one face to the other are **transmembrane proteins**. These are the channels, transporters, receptors, and enzymes that perform most active membrane functions. Transmembrane proteins have defined orientations: one face is extracellular, the other is cytoplasmic, and this orientation is set irreversibly during insertion into the membrane in the ER and does not change afterward.
+
+**Lipid-anchored proteins** are not embedded in the hydrophobic core but are covalently attached to a lipid molecule that is. They sit on one face of the membrane, tethered by their lipid anchor. Two common types:
+
+- **GPI-anchored proteins** are attached to the outer leaflet via a glycophosphatidylinositol (GPI) lipid anchor: a phospholipid similar to phosphatidylinositol but whose head group is a short glycan chain linked to the C-terminus of the protein. Because the anchor is in the outer leaflet, all GPI-anchored proteins face extracellularly. They tend to concentrate in lipid rafts. Cleavage of the GPI anchor by phospholipase C releases the protein from the surface.
+
+- **Fatty-acylated and prenylated proteins** are anchored to the inner leaflet by covalent attachment of fatty acids (myristoylation, palmitoylation) or isoprenoid groups (farnesylation, geranylgeranylation) to cysteine or glycine residues. Many signaling proteins, including members of the Ras family of GTPases, are farnesylated and localized to the inner leaflet.
+
+**Peripheral membrane proteins** have no covalent attachment to the bilayer and no transmembrane segments. They associate with the membrane surface through electrostatic interactions with charged head groups, through binding to integral membrane proteins, or both. They can be released by changing ionic strength or pH without disrupting the bilayer. Many cytoskeletal proteins and signaling proteins that are recruited to the membrane transiently fall into this category.
+
+### Transmembrane Alpha-Helices
+
+The dominant structural motif for spanning the hydrophobic core of the bilayer is the **alpha-helix**. A single transmembrane helix consists of approximately 20 to 25 consecutive hydrophobic amino acid residues folded into an alpha-helix. The helix geometry places the amino acid side chains on the outside of the helix, while the backbone amide and carbonyl groups hydrogen-bond to each other internally as we saw in chapter 2. This is critical: the polar backbone is completely satisfied by internal hydrogen bonds and never needs to contact the hydrophobic lipid core. The side chains exposed to the lipid are hydrophobic (leucine, valine, isoleucine, phenylalanine, and alanine predominate), matching the chemical character of the fatty acid chains surrounding them.
+
+A single transmembrane helix of 20 residues spans approximately 30 Angstroms, matching the thickness of the hydrophobic core of a typical bilayer (also roughly 30 Angstroms). The presence and location of transmembrane helices can be predicted from sequence alone using a **hydropathy plot**. In a hydropathy plot, each amino acid in the sequence is assigned a hydrophobicity score (the Kyte-Doolittle scale is the most common: positive values are hydrophobic, negative values are hydrophilic), and a running average is calculated over a sliding window of typically 19 to 21 residues, matching the length of a transmembrane helix. The result is a plot of average hydrophobicity versus sequence position. Peaks that rise above a threshold (typically a Kyte-Doolittle score of ~1.6 over a 19-residue window) are predicted transmembrane segments. The number of peaks above threshold predicts the number of times the protein crosses the bilayer. For example, a protein with seven peaks is likely a seven-transmembrane GPCR; a protein with two peaks and a long hydrophilic loop between them may be a two-pass transmembrane protein. Hydropathy analysis was one of the first computational tools applied to protein sequences and remains a standard first step in characterizing any unknown membrane protein.
+
+Many transmembrane proteins contain multiple helices that cross the bilayer repeatedly. The number of transmembrane helices defines the protein's topology. G protein-coupled receptors (GPCRs), the largest family of cell-surface receptors in the human genome, are **seven-transmembrane (7TM)** proteins: seven helices arranged in a bundle that traverses the bilayer. Ion channels like the potassium channel are assembled from multiple subunits, each contributing two or more transmembrane helices, with the channel pore formed at the interface between subunits.
+
+### Beta-Barrel Proteins
+
+A second structural motif for membrane insertion is the **beta-barrel**: a closed cylinder formed by an antiparallel beta-sheet, with each strand connected to the next by a short loop. Recall that because consecutive residues in a $\beta$-strand alternate the orientation of their R groups each face of a $\beta$-sheet can have distinct properties. The outer face of the barrel is hydrophobic (contacting the lipid), while the interior of the barrel is hydrophilic and forms a pore through the membrane. Beta-barrels are found exclusively in the outer membranes of gram-negative bacteria, mitochondria, and chloroplasts, reflecting their evolutionary origin from endosymbiotic bacteria. **Porins** are the archetypal beta-barrel proteins: they form large, non-selective pores that allow small hydrophilic molecules to diffuse through the outer membrane of gram-negative bacteria. The inner membrane of bacteria and all membranes of eukaryotic cells use alpha-helical transmembrane proteins exclusively.
+
+### Topology and the Positive-Inside Rule
+
+Every transmembrane protein has a fixed orientation that is determined at the moment of insertion into the ER membrane and maintained permanently. The extracellular face of a plasma membrane protein corresponds to the luminal face of the ER: the two are topologically equivalent because membrane vesicles bud and fuse with defined orientation throughout the secretory pathway which we will examine more carefully in the protein synthesis chapter.
+
+The orientation of transmembrane helices is not random. A robust empirical observation, the **positive-inside rule**, states that positively charged residues (arginine, lysine) flanking transmembrane helices are preferentially found on the cytoplasmic side of the membrane. The cytoplasmic face has a net negative charge (from PS and PI in the inner leaflet), which electrostatically retains positively charged flanking residues. This rule predicts the orientation of transmembrane segments with high accuracy and is used computationally to assign the topology of membrane proteins from sequence alone.
+
+---
+
+### The Fluid Mosaic Model
+
+The current model of membrane structure is the **fluid mosaic model**, proposed by Singer and Nicolson in 1972. The key features:
+
+1. The lipid bilayer is a two-dimensional fluid, not a solid. Lipid molecules can diffuse laterally within their leaflet rapidly (diffusion constants on the order of $10^{-8}$ $\frac{\text{cm}^2}{\text{s}}$). Flip-flop (movement between leaflets) is extremely slow in the absence of enzymes because the hydrophilic head group must pass through the hydrophobic core.
+
+2. Membrane proteins are embedded in this fluid lipid matrix.
+
+3. The membrane is asymmetric. The outer and inner leaflets differ in lipid composition, and membrane proteins have defined orientations. This asymmetry is established during biosynthesis and maintained actively.
+
+
+
+---
+
 ## Pulmonary Surfactant: A Lipid at Work
 
-The alveolus faces a physical problem that lipids solve. The alveolus is a small, fluid-lined sphere approximately 200 to 300 micrometers in diameter. The air-liquid interface at the alveolar surface has a surface tension because water molecules at the surface experience unbalanced inward attractions and resist expansion of the surface area.
+The alveolus faces a physical problem that lipids solve. The alveolus is a small, fluid-lined sphere approximately 200 to 300 $\mu m$ in diameter. The air-liquid interface at the alveolar surface has a surface tension because water molecules at the surface experience unbalanced inward attractions and resist expansion of the surface area.
 
 The physical relationship between surface tension, pressure, and sphere radius is given by the **Law of Laplace** for a sphere:
 
@@ -189,7 +249,7 @@ where $\Delta P$ is the pressure difference across the wall, $\gamma$ is the sur
 
 **Pulmonary surfactant** solves this problem by drastically reducing surface tension at the alveolar air-liquid interface. Surfactant is a mixture secreted by **type II pneumocytes** (alveolar type II epithelial cells) into the alveolar space. Its major lipid component is **dipalmitoylphosphatidylcholine (DPPC)**: phosphatidylcholine with palmitoyl (16:0) chains at both sn-1 and sn-2. Both chains are fully saturated, making the molecule relatively rigid and allowing it to pack tightly at the air-liquid interface, forming a compressed monolayer that reduces surface tension from approximately 70 mN/m (pure water) to nearly 0 mN/m when the surfactant film is compressed during exhalation.
 
-Surfactant production begins at approximately 24 to 28 weeks of gestation and increases significantly through the third trimester. Premature birth before surfactant is adequate means the neonate must breathe with high surface tension in the alveoli. The result is progressive alveolar collapse with each exhalation: the alveoli cannot be re-inflated without very high distending pressure, leading to **respiratory distress syndrome (RDS)** of the newborn, formerly called hyaline membrane disease. The "ground glass" appearance on chest X-ray reflects diffuse microatelectasis.
+Surfactant production begins at approximately 24 to 28 weeks of gestation and increases significantly through the third trimester. Premature birth before surfactant is adequate means the neonate must breathe with high surface tension in the alveoli. The result is progressive alveolar collapse with each exhalation: the alveoli cannot be re-inflated without very high distending pressure, leading to **respiratory distress syndrome (RDS)** of the newborn, formerly called hyaline membrane disease. The "ground glass" appearance on chest X-ray reflects diffuse **microatelectasis**: the widespread collapse of individual alveoli or small groups of alveoli throughout the lung, too small to appear as discrete opacities but collectively producing a hazy, glass-like density across both lung fields.
 
 Treatment is intratracheal administration of exogenous surfactant (prepared from bovine or porcine lungs, or synthetic). Delivering DPPC and the associated surfactant proteins directly to the alveolar space immediately reduces surface tension, allowing the alveoli to stay open. The clinical response, as seen in the opener, can be dramatic and rapid because the problem is purely mechanical: the missing component is a lipid, and providing it restores normal alveolar physics.
 
@@ -229,13 +289,13 @@ The connection to lipid biology is direct: the cell's mechanism for regulating c
 
 When sphingomyelinase is absent or deficient, sphingomyelin accumulates in lysosomes throughout the body, particularly in cells of the reticuloendothelial system (macrophages, liver, spleen). The lysosomes enlarge and eventually disrupt cell function.
 
-Type A (severe infantile form) causes progressive neurodegeneration and death in early childhood. Type B (attenuated form) causes organomegaly and pulmonary disease but is compatible with survival into adulthood with variable neurological involvement. The mechanism is straightforward: sphingomyelin turnover is a normal part of membrane biology; when the lysosomal degradation step fails, the accumulated lipid cannot be recycled.
+Type A (severe infantile form) causes progressive neurodegeneration and death in early childhood. Type B (attenuated form) causes organomegaly (enlargement of the organs) and pulmonary disease but is compatible with survival into adulthood with variable neurological involvement. The mechanism is straightforward: sphingomyelin turnover is a normal part of membrane biology; when the lysosomal degradation step fails, the accumulated lipid cannot be recycled.
 
 A related condition, Niemann-Pick type C, involves a different defect: the NPC1/NPC2 proteins that transport cholesterol out of the lysosome. This is a separate disease from types A and B (different gene, different mechanism) but illustrates the same principle: the cell has intracellular machinery for processing membrane-derived lipids in the lysosome, and failure of any step in that machinery causes a lysosomal storage disorder.
 
 ### Trans Fats and Cardiovascular Disease
 
-Industrial trans fatty acids, produced by partial hydrogenation of vegetable oils, increase plasma LDL and decrease plasma HDL (high-density lipoprotein) simultaneously, a combination that is particularly atherogenic. The mechanism is not fully characterized but involves effects on cholesterol ester transfer protein and hepatic lipase. Because trans chains pack tightly in membranes (behaving like saturated fatty acids), they also alter membrane fluidity and may affect the function of membrane-embedded enzymes and receptors. The FDA effectively banned partially hydrogenated oils from the US food supply in 2018. The displacement of trans fats in processed foods is associated with measurable reductions in cardiovascular events in populations where the change was implemented.
+Industrial trans fatty acids, produced by partial hydrogenation of vegetable oils, increase plasma LDL and decrease plasma HDL (high-density lipoprotein) simultaneously, a combination that is particularly atherogenic. The mechanism is not fully characterized but involves effects on cholesterol ester transfer protein and hepatic lipase. Because trans chains pack tightly in membranes (behaving like saturated fatty acids), they also alter membrane fluidity and may affect the function of membrane-embedded enzymes and receptors. The FDA effectively banned partially hydrogenated oils from the US food supply in 2018 (though the discussion had been going on since the 1990's). The displacement of trans fats in processed foods is associated with measurable reductions in cardiovascular events in populations where the change was implemented, even if the food isn't as tasty.
 
 ---
 
