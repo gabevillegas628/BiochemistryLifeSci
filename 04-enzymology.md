@@ -162,16 +162,20 @@ We cannot measure free enzyme $[\text{E}]$ directly, but we know that total enzy
 $$[\text{E}]_T = [\text{E}] + [\text{ES}]$$
 
 Substituting $[\text{E}] = [\text{E}]_T - [\text{ES}]$:
+
 $$K_M = \frac{([\text{E}]_T - [\text{ES}])[\text{S}]}{[\text{ES}]}$$
 
 Expanding and collecting $[\text{ES}]$ terms:
+
 $$[\text{ES}](K_M + [\text{S}]) = [\text{E}_T][\text{S}]$$
 
 Solving for $[\text{ES}]$:
+
 $$[\text{ES}] = [\text{E}]_T\frac{[\text{S}]}{K_M + [\text{S}]}$$
 
 
 The observed velocity $V_0$ is the rate at which ES breaks down to produce P:
+
 $$V_0 = k_2[\text{ES}] = k_2[\text{E}]_T\frac{[\text{S}]}{K_m + [\text{S}]}$$
 
 Define $V_{max} = k_2[\text{E}]_T$ (the maximum velocity when all enzyme is in the ES complex):
@@ -180,7 +184,7 @@ $$\boxed{V_0 = V_{max}\frac{[\text{S}]}{K_m + [\text{S}]}}$$
 
 This is the **Michaelis-Menten equation**. It describes a rectangular hyperbola, and it should look familiar: it has exactly the same form as the binding equation $\theta = \frac{[\text{L}]}{K_d + [\text{L}]}$ from Chapter 3.
 
-Note that the units of $K_M$ must be Molar, which of course makes sense given that $K_M = \frac{[\text{E}][\text{S}]}{[\text{ES}]}$ as shown above. So what does this concentration value mean? By setting $[\text{S}]=K_M$ we see that $V_0=\frac{1}{2}V_max. In other words the Michaelis constant is the substrate concentration at which the enzyme operates at half its maximum velocity. This is the kinetic meaning of $K_M$.
+Note that the units of $K_M$ must be Molar, which of course makes sense given that $K_M = \frac{[\text{E}][\text{S}]}{[\text{ES}]}$ as shown above. So what does this concentration value mean? By setting $[\text{S}]=K_M$ we see that $V_0=\frac{1}{2}V_{max}$. In other words the Michaelis constant is the substrate concentration at which the enzyme operates at half its maximum velocity. This is the kinetic meaning of $K_M$.
 
 ### What $K_m$ Means and What It Is Not
 
