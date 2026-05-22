@@ -137,7 +137,7 @@ How can we explain the shape of this graph? Leonor Michaelis and Maud Menten for
 
 $$\text{E} + \text{S} \underset{k_{-1}}{\overset{k_1}{\rightleftharpoons}} \text{ES} \overset{k_2}{\longrightarrow} \text{E} + \text{P}$$
 
-The enzyme E binds substrate S to form an enzyme-substrate complex ES (with forward rate constant $k_1$ and reverse rate constant $k_{-1}$). The complex then undergoes catalysis to release product P and regenerate free enzyme (rate constant $k_2$, also called $k_{cat}$ for reasons we will return to shortly). Note that because we are examining only the initial rate, $[\text{P}]=0$ and so the reverse rate given by $V_R=k_R[\text{P}]=0$ so we can ignore the rate constant $k_{-2}$ entirely.
+The enzyme E binds substrate S to form an enzyme-substrate complex ES (with forward rate constant $k_1$ and reverse rate constant $k_{-1}$). The complex then undergoes catalysis to release product P and regenerate free enzyme (rate constant $k_2$, also called $k_{cat}$ for reasons we will return to shortly). Note that because we are examining only the initial rate, $[\text{P}]=0$ and so the reverse rate given by $V_R=k_{-2}[\text{E}][\text{P}]=0$ so we can ignore the rate constant $k_{-2}$ entirely.
 
 The **steady-state assumption**, introduced by Briggs and Haldane, is the key to deriving the rate equation. In a typical enzyme assay, the enzyme is far less concentrated than the substrate. After a brief transient, the ES complex reaches a steady state where its formation and breakdown are balanced, so $\frac{d[\text{ES}]}{dt} = 0$. This is not an equilibrium; it is a dynamic steady state where the rate of ES formation equals the rate of ES breakdown.
 
