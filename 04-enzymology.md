@@ -431,6 +431,61 @@ The full treatment picture for OP poisoning: atropine to block muscarinic effect
 
 ---
 
+## Worked Problems
+
+**Problem 1.** An enzyme has a $K_m$ of 2 mM and a $V_{max}$ of 120 nmol/min. You run the reaction at $[\text{S}] = 2$ mM. What is $V_0$? Then you add a competitive inhibitor such that $\alpha = 3$. What is the new apparent $K_m$, and what is $V_0$ under these conditions?
+
+*Part 1 — no inhibitor:*
+
+$$V_0 = \frac{V_{max}[\text{S}]}{K_m + [\text{S}]} = \frac{120 \times 2}{2 + 2} = \frac{240}{4} = 60 \text{ nmol/min}$$
+
+At $[\text{S}] = K_m$, the enzyme is always at half-maximal velocity, so $V_0 = 60$ nmol/min. This is a useful shortcut worth memorizing.
+
+*Part 2 — competitive inhibitor, $\alpha = 3$:*
+
+The apparent $K_m$ becomes $\alpha K_m = 3 \times 2 = 6$ mM. $V_{max}$ is unchanged at 120 nmol/min.
+
+$$V_0 = \frac{120 \times 2}{6 + 2} = \frac{240}{8} = 30 \text{ nmol/min}$$
+
+The same substrate concentration now yields half the velocity, because the inhibitor is competing successfully at these concentrations. To recover the original $V_0$ of 60 nmol/min, you would need to raise $[\text{S}]$ to 6 mM (the new $K_m$), which confirms the defining feature of competitive inhibition: it can be overcome with enough substrate.
+
+---
+
+**Problem 2.** You are characterizing a new drug candidate and run Michaelis-Menten experiments with and without the drug. You obtain the following Lineweaver-Burk data:
+
+| Condition | y-intercept ($1/V_{max}$) | x-intercept ($-1/K_m$) |
+|---|---|---|
+| No drug | 0.010 | $-0.50$ |
+| With drug | 0.020 | $-0.50$ |
+
+What type of inhibition does this drug produce? What are $K_m$ and $V_{max}$ in each condition?
+
+*Reading the intercepts:*
+
+No drug: $V_{max} = 1/0.010 = 100$ units; $K_m = 1/0.50 = 2$ mM.
+
+With drug: $V_{max} = 1/0.020 = 50$ units; $K_m = 1/0.50 = 2$ mM.
+
+The y-intercept doubled (so $V_{max}$ was halved) but the x-intercept is identical (so $K_m$ is unchanged). From the inhibition table: unchanged $K_m$, decreased $V_{max}$ — this is **noncompetitive inhibition**. The drug binds a site other than the active site, reducing the fraction of ES that can proceed to product, but does not interfere with substrate binding.
+
+*Clinical implication:* Because $K_m$ is unchanged, adding more substrate will not rescue enzyme activity. This drug's effect cannot be overcome by increased substrate concentration, which may be a pharmacological advantage if you want durable inhibition regardless of local substrate levels.
+
+---
+
+**Problem 3.** Soman is an organophosphate nerve agent with an aging half-life of approximately 2 minutes. A soldier is exposed and receives 2-PAM exactly 10 minutes after exposure. Assuming aging follows first-order kinetics, approximately what fraction of AChE is still reactivatable at the time 2-PAM is administered?
+
+For first-order decay, the fraction remaining in the pre-aged (reactivatable) form after time $t$ is:
+
+$$f = \left(\frac{1}{2}\right)^{\frac{t}{t_{1/2}}}$$
+
+With $t = 10$ min and $t_{1/2} = 2$ min:
+
+$$f = \left(\frac{1}{2}\right)^{10/2} = \left(\frac{1}{2}\right)^{5} = \frac{1}{32} \approx 3\%$$
+
+Only about 3% of the AChE-soman complex remains reactivatable. The 2-PAM will have essentially no clinical effect. This is why field treatment protocols for soman exposure call for antidote administration within the first minute of exposure, and why autoinjectors containing both atropine and 2-PAM are pre-loaded for immediate self-injection. Atropine should still be given aggressively since it acts at the receptor and is not affected by aging, but the window for enzymatic rescue with 2-PAM has already closed.
+
+---
+
 ## Summary
 
 Enzymes solve the kinetics problem that thermodynamics cannot: they accelerate reactions that are favorable but proceed too slowly without catalysis. They do this by binding and stabilizing the transition state, lowering the activation energy without changing the thermodynamics of the overall reaction.

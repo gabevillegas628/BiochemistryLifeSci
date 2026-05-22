@@ -34,6 +34,16 @@ Items to revisit. Add context so future-you remembers why it was deferred.
 
 ---
 
+## "The MCAT Angle" Section: Keep or Cut?
+
+**Affects:** All chapters (Ch. 1 through Ch. 5 drafted so far).
+
+**The tension:** The section exists because MCAT alignment is effectively the point of the course, but explicitly labeling it as "The MCAT Angle" feels like teaching to the test, which conflicts with the book's pedagogical philosophy. Renaming options ("How to Think About This", "Reasoning Through Novel Problems") either sound patronizing or still feel like test-prep rebranding.
+
+**Decision needed:** Either cut the section entirely and trust that the worked problems and clinical cases cover the reasoning patterns, or find a framing that is honest about the purpose without being reductive. Revisit all drafted chapters when a decision is made.
+
+---
+
 ## Phi/Psi Angles and Ramachandran Plot
 
 **Where it belongs:** Chapter 2, peptide bond section, immediately after the discussion of phi ($\phi$) and psi ($\psi$) angles and their role in restricting backbone geometry.
