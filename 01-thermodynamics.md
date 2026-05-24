@@ -138,12 +138,7 @@ $$ATP + H_2O \rightarrow ADP + P_i \qquad \Delta G^{\circ'} = -30.5 \text{ kJ/mo
 
 To find the net reaction, stack them and cancel species that appear on both sides:
 
-$$\begin{array}{rcll}
-\text{Glucose} + \cancel{P_i} & \rightarrow & \text{Glucose-6-phosphate} + \cancel{H_2O} & \Delta G^{\circ'} = +13.8 \text{ kJ/mol} \\\\
-ATP + \cancel{H_2O} & \rightarrow & ADP + \cancel{P_i} & \Delta G^{\circ'} = -30.5 \text{ kJ/mol} \\\\
-\hline
-\text{Glucose} + ATP & \rightarrow & \text{Glucose-6-phosphate} + ADP & \Delta G^{\circ'} = -16.7 \text{ kJ/mol}
-\end{array}$$
+$$\begin{array}{rcll} \text{Glucose} + \cancel{P_i} & \rightarrow & \text{Glucose-6-phosphate} + \cancel{H_2O} & \Delta G^{\circ'} = +13.8 \text{ kJ/mol} \\ ATP + \cancel{H_2O} & \rightarrow & ADP + \cancel{P_i} & \Delta G^{\circ'} = -30.5 \text{ kJ/mol} \\ \hline \text{Glucose} + ATP & \rightarrow & \text{Glucose-6-phosphate} + ADP & \Delta G^{\circ'} = -16.7 \text{ kJ/mol} \end{array}$$
 
 The net $\Delta G^{\circ'}$ is negative. The reaction proceeds. The favorable hydrolysis of ATP pulls the unfavorable phosphorylation of glucose along with it.
 
