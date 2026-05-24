@@ -70,7 +70,7 @@ $$V_{eq} = \frac{RT}{zF}\ln\frac{[ion]_{out}}{[ion]_{in}}$$
 
 In plain English: $V_{eq}$ is the membrane voltage at which an ion with a given concentration difference across the membrane would feel zero net force. If the actual membrane potential equals $V_{eq}$ for that ion, the electrical gradient exactly cancels the concentration gradient and there is no net ion flow even through an open channel. If the actual membrane potential differs from $V_{eq}$, the difference between the two is the net driving force on that ion.
 
-$V_{eq}$ is also written $E_{ion}$ in most texts; both refer to the equilibrium potential for a given ion. At $37^\circ C$, $\frac{RT}{F} \approx 26.7$ mV, and for a monovalent ion this simplifies to approximately:
+The equilibrium potential for an ion, $V_{eq}$, is also written $E_{ion}$ in most texts; both refer to the equilibrium potential for a given ion. At $37^\circ C$, $\frac{RT}{F} \approx 26.7$ mV, and for a monovalent ion this simplifies to approximately:
 
 $$E_{ion} \approx 61.5\;\text{mV} \times \log_{10}\frac{[ion]_{out}}{[ion]_{in}}$$
 
