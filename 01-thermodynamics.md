@@ -142,7 +142,8 @@ $$\begin{array}{rcll}
 \text{Glucose} + \cancel{P_i} & \rightarrow & \text{Glucose-6-phosphate} + \cancel{H_2O} & \Delta G^{\circ'} = +13.8 \text{ kJ/mol} \cr
 ATP + \cancel{H_2O} & \rightarrow & ADP + \cancel{P_i} & \Delta G^{\circ'} = -30.5 \text{ kJ/mol} \cr \hline
 \text{Glucose} + ATP & \rightarrow & \text{Glucose-6-phosphate} + ADP & \Delta G^{\circ'} = -16.7 \text{ kJ/mol}
-\end{array}$$
+\end{array}
+$$
 
 
 The net $\Delta G^{\circ'}$ is negative. The reaction proceeds. The favorable hydrolysis of ATP pulls the unfavorable phosphorylation of glucose along with it.
