@@ -18,9 +18,9 @@ A cell inside your body cannot see the outside world. It cannot directly sense t
 
 Signal transduction is the process by which a chemical signal on the outside of the membrane produces a specific biological response on the inside. The signal itself almost never crosses the membrane. A molecule of epinephrine does not enter the cell and find the enzyme it wants to activate. Instead, it binds a receptor on the outer face of the membrane, that receptor changes shape, and that shape change initiates a cascade of molecular events that amplifies and transmits the signal to its targets inside the cell. The signal is converted, or transduced, from one form to another.
 
-This chapter covers the two major signaling architectures that appear on every MCAT exam and underlie most of clinical pharmacology: **G protein-coupled receptors (GPCRs)**, which transduce signals through small diffusible messenger molecules, and **receptor tyrosine kinases (RTKs)**, which transduce signals through cascading phosphorylation events. Both systems share a common logic: a ligand binds outside, a conformational change propagates across the membrane, and a molecular switch inside the cell flips from off to on, triggering amplification of the original signal.
+This chapter covers the two major signaling architectures that underlie most of clinical pharmacology: **G protein-coupled receptors (GPCRs)**, which transduce signals through small diffusible messenger molecules, and **receptor tyrosine kinases (RTKs)**, which transduce signals through cascading phosphorylation events. Both systems share a common logic: a ligand binds outside, a conformational change propagates across the membrane, and a molecular switch inside the cell flips from off to on, triggering amplification of the original signal.
 
-The two clinical anchors for this chapter illustrate what happens when each system is stuck in the on position. Cholera toxin permanently activates the G protein that drives intestinal chloride secretion, flooding the gut with fluid the patient cannot absorb fast enough to survive. Oncogenic Ras mutations permanently activate the molecular switch downstream of growth factor receptors, driving uncontrolled cell division. In both cases, the pathology is not too much signal; it is a signal that cannot be turned off. That distinction matters mechanistically and clinically.
+The two clinical anchors for this chapter both illustrate the same underlying failure mode, but reach it by completely different routes. In one, a bacterial toxin produces a defect so precise that a single signaling protein in intestinal epithelial cells cannot stop doing its job, with consequences measured in liters of fluid loss per hour. In the other, a single amino acid substitution converts a GTPase that is supposed to shut itself off into one that cannot, and the result drives over 90% of pancreatic cancers and roughly 30% of all human malignancies. The pathology in both cases is not too much signal arriving from outside. It is a signal already inside the cell that has lost the ability to stop. That distinction is the point of this chapter.
 
 ---
 
@@ -28,7 +28,7 @@ The two clinical anchors for this chapter illustrate what happens when each syst
 
 Multicellular life requires coordination. A liver cell deciding whether to break down glycogen must know what blood glucose looks like right now, not what it looked like when the cell last divided. A T cell deciding whether to proliferate must know whether an antigen-presenting cell is signaling danger nearby. A cardiac myocyte must know when to contract and by how much.
 
-The signaling molecules themselves are diverse: proteins and peptides (insulin, glucagon, growth factors), amino acid derivatives (epinephrine, thyroid hormone), lipids (steroid hormones, prostaglandins), and gases (nitric oxide). What they have in common is that they carry information. Their concentration at any moment encodes a message about the state of the organism.
+The signaling molecules themselves are diverse: proteins and peptides (insulin, glucagon, growth factors), amino acid derivatives (epinephrine, thyroid hormone), lipids (steroid hormones, prostaglandins), and gases (nitric oxide). What they have in common is that they carry information. Their concentration at any moment encodes a message about the *state of the organism*.
 
 Cells interpret these messages through **receptors**: proteins that bind a specific signaling molecule with high affinity and low promiscuity, and convert that binding event into a change in cellular behavior. The receptor is both the antenna (it detects the signal) and the first transducer (it converts the signal into intracellular language).
 
@@ -36,9 +36,9 @@ The core challenge is physical. Most signaling molecules are polar or charged. T
 
 Three receptor architectures dominate this chapter:
 
-1. **G protein-coupled receptors:** Seven-transmembrane-helix receptors coupled to heterotrimeric G proteins inside the cell. The G protein is the switch; guanine nucleotides (GTP and GDP) control whether the switch is on or off.
+1. **G protein-coupled receptors (GPCRs):** Seven-transmembrane-helix (7TM) receptors coupled to heterotrimeric G proteins inside the cell. G proteins are named for the guanine nucleotides they bind: GTP switches them on, GDP switches them off. The receptor's job is to trigger that exchange; the G protein's job is to carry the signal forward until it hydrolyzes its own GTP and shuts itself down.
 
-2. **Receptor tyrosine kinases:** Single-pass transmembrane receptors with an extracellular ligand-binding domain and an intracellular kinase domain. Ligand binding triggers dimerization and cross-phosphorylation, creating docking sites for downstream signaling proteins.
+2. **Receptor tyrosine kinases (RTKs):** Single-pass transmembrane receptors with an extracellular ligand-binding domain and an intracellular kinase domain. Ligand binding activates the receptor dimer — either by inducing two monomers to come together or by reorienting a constitutive dimer — and the two kinase domains cross-phosphorylate each other, creating docking sites for downstream signaling proteins.
 
 3. **Nuclear receptors:** Intracellular receptors for lipid-soluble ligands (steroid hormones, thyroid hormone, retinoic acid) that act directly as transcription factors. Because their ligands can cross the membrane, the receptor does not need to be at the surface. Covered briefly at the end of this chapter.
 
@@ -56,25 +56,29 @@ When no ligand is bound, the receptor is in a low-activity conformation. The lig
 
 ### The G Protein: A Molecular Switch
 
-The **heterotrimeric G protein** is a three-subunit complex: $G_\alpha$, $G_\beta$, and $G_\gamma$. The $\beta$ and $\gamma$ subunits are tightly associated and function as a unit ($G_{\beta\gamma}$). The key player for the on/off switch is $G_\alpha$.
+The **heterotrimeric G protein** is a three-subunit complex: $\text{G}_\alpha$, $\text{G}_\beta$, and $\text{G}_\gamma$. The $\beta$ and $\gamma$ subunits are tightly associated and function as a unit ($\text{G}_{\beta\gamma}$). The key player for the on/off switch is $\text{G}_\alpha$, and the switch logic is simple: $\text{G}_\alpha$ bound to GDP is off; $\text{G}_\alpha$ bound to GTP is on.
 
-The switch logic is simple: $G_\alpha$ bound to GDP is off. $G_\alpha$ bound to GTP is on.
+In the resting state, $\text{G}_\alpha$-GDP is associated with $\text{G}_{\beta\gamma}$ and the whole complex sits at the inner face of the plasma membrane, loosely coupled to the receptor. The three subunits together keep each other inactive. When an agonist-bound receptor contacts $\text{G}_\alpha$, it acts as a **guanine nucleotide exchange factor (GEF)**: it catalyzes the release of GDP from $\text{G}_\alpha$. GTP binds in its place (GTP is abundant in the cytoplasm), and $\text{G}_\alpha$-GTP undergoes a conformational change that causes it to dissociate from both the receptor and $\text{G}_{\beta\gamma}$.
 
-In the resting state, $G_\alpha$-GDP is associated with $G_{\beta\gamma}$ and the complex sits at the membrane, loosely coupled to the receptor. The three subunits together keep each other inactive. When the agonist-bound receptor contacts the $G_\alpha$ subunit, it acts as a **guanine nucleotide exchange factor (GEF)**: it catalyzes the release of GDP from $G_\alpha$. GDP dissociates, GTP binds in its place (GTP is abundant in the cytoplasm), and $G_\alpha$-GTP undergoes a conformational change that causes it to dissociate from both the receptor and $G_{\beta\gamma}$.
+The $\text{G}_{\alpha\beta\gamma}$ complex is held at the membrane by covalent lipid modifications on $\text{G}_\alpha$ and $\text{G}_\gamma$ (see Chapter 6) — neither is a transmembrane protein, but both are tethered to the inner leaflet by lipid tails. So when $\text{G}_\alpha$-GTP dissociates from the receptor, it does not drift into the cytoplasm; it slides laterally along the inner leaflet until it finds its downstream target, called the **effector**. The freed $\text{G}_{\beta\gamma}$ dimer, also still membrane-associated, has effector targets of its own.
 
-Now the freed $G_\alpha$-GTP can diffuse laterally in the membrane and activate its downstream target, called the **effector**. The freed $G_{\beta\gamma}$ dimer also has effector targets.
+The signal terminates by an intrinsic mechanism built into $\text{G}_\alpha$ itself: it is a **GTPase**. $\text{G}_\alpha$-GTP slowly hydrolyzes its own bound GTP to GDP, producing $\text{G}_\alpha$-GDP. Once GDP replaces GTP, $\text{G}_\alpha$ returns to its off conformation, reassociates with $\text{G}_{\beta\gamma}$, and the complex docks back at the receptor, ready for the next round.
 
-The signal terminates by an intrinsic mechanism built into $G_\alpha$ itself: it is a **GTPase**. $G_\alpha$-GTP slowly hydrolyzes its own bound GTP to GDP, producing $G_\alpha$-GDP. Once GDP replaces GTP, $G_\alpha$ returns to its off conformation, reassociates with $G_{\beta\gamma}$, and the complex docks back at the receptor, ready for the next round.
+The GTPase activity of $\text{G}_\alpha$ is the built-in timer of this system. The duration of signaling is determined by how long GTP remains bound, which is determined by the hydrolysis rate. This is not a trivial design choice. A signal that cannot turn itself off is pathological. Cholera toxin, as we will see, exploits exactly this point.
 
-The GTPase activity of $G_\alpha$ is the built-in timer of this system. The duration of signaling is determined by how long GTP remains bound, which is determined by the hydrolysis rate. This is not a trivial design choice. A signal that cannot turn itself off is pathological. Cholera toxin, as we will see, exploits exactly this point.
+### The cAMP Pathway: $\text{G}_s$ and Adenylyl Cyclase
 
-### The cAMP Pathway: $G_s$ and Adenylyl Cyclase
+Different G protein subtypes couple to different effectors. The best-studied pathway uses $\text{G}_s$ (the "s" stands for stimulatory) and its effector, **adenylyl cyclase**.
 
-Different G protein subtypes couple to different effectors. The best-studied pathway uses $G_s$ (the "s" stands for stimulatory) and its effector, **adenylyl cyclase**.
-
-Adenylyl cyclase is an enzyme embedded in the plasma membrane. Its substrate is ATP. When activated by $G_{\alpha s}$-GTP, it converts ATP to **cyclic AMP (cAMP)** and pyrophosphate. Pyrophosphate is immediately hydrolyzed to two phosphates, making the reaction essentially irreversible.
+Adenylyl cyclase is an enzyme embedded in the plasma membrane. Its substrate is ATP. When activated by $\text{G}_{\alpha s}$-GTP, it converts ATP to **cyclic AMP (cAMP)** and inorganic pyrophosphate ($\text{PP}_i$):
 
 $$\text{ATP} \xrightarrow{\text{adenylyl cyclase}} \text{cAMP} + \text{PP}_i$$
+
+Pyrophosphate does not accumulate. It is immediately cleaved by **inorganic pyrophosphatase**, a ubiquitous enzyme, into two inorganic phosphates:
+
+$$\text{PP}_i \xrightarrow{\text{pyrophosphatase}} 2\,\text{P}_i$$
+
+This second reaction is highly favorable, and its coupling to the first is a recurring strategy in biochemistry. The adenylyl cyclase reaction on its own is only modestly favorable. But by immediately consuming its product ($\text{PP}_i$), the cell pulls the equilibrium far to the right — the cAMP synthesis reaction becomes effectively irreversible. You will see this pattern repeatedly in metabolism: whenever a biosynthetic reaction releases pyrophosphate, rapid hydrolysis of that pyrophosphate is what commits the reaction to completion. The cell is not just making cAMP; it is spending two phosphate bonds' worth of driving force to ensure that cAMP production cannot easily reverse.
 
 cAMP is a **second messenger**: a small, diffusible intracellular signal molecule generated in response to the extracellular first messenger (the hormone). The cell produces it rapidly in large quantities and degrades it rapidly (by **phosphodiesterase**, which hydrolyzes cAMP to 5'-AMP) when signaling needs to stop. The ratio of production to degradation sets the intracellular cAMP concentration at any moment.
 
@@ -84,22 +88,22 @@ This architecture produces signal amplification at multiple steps:
 
 - One hormone molecule activates one receptor.
 - One receptor, while occupied by hormone, activates many G protein molecules (the receptor is a catalyst for the GEF reaction; it can activate G proteins repeatedly as long as hormone is bound).
-- Each $G_{\alpha s}$-GTP activates one adenylyl cyclase molecule, but that enzyme rapidly synthesizes many cAMP molecules.
+- Each $\text{G}_{\alpha s}$-GTP activates one adenylyl cyclase molecule, but that enzyme rapidly synthesizes many cAMP molecules.
 - cAMP activates PKA, which phosphorylates many substrate molecules per second.
 
 A single epinephrine molecule binding a $\beta$-adrenergic receptor in a liver cell can ultimately activate millions of glycogen phosphorylase molecules within seconds. That is the power of a cascade.
 
-### The $G_i$ Pathway: Inhibitory Signaling
+### The $\text{G}_i$ Pathway: Inhibitory Signaling
 
-Not all GPCR signaling is stimulatory. $G_i$ (inhibitory) couples the receptor to adenylyl cyclase, but in the opposite direction: $G_{\alpha i}$-GTP inhibits adenylyl cyclase, reducing cAMP production.
+Not all GPCR signaling is stimulatory. $\text{G}_i$ (inhibitory) couples the receptor to adenylyl cyclase, but in the opposite direction: $\text{G}_{\alpha i}$-GTP inhibits adenylyl cyclase, reducing cAMP production.
 
-The physiological logic becomes clear in the heart. The $\beta$-adrenergic receptor (activated by epinephrine) uses $G_s$ to increase cAMP in cardiac myocytes, which increases heart rate and contractility. The muscarinic acetylcholine receptor (activated by the vagus nerve) uses $G_i$ to decrease cAMP in the same cells, slowing heart rate. Two inputs, opposing outputs, same second messenger. The cell integrates both signals by summing the rates of cAMP synthesis and degradation.
+The physiological logic becomes clear in the heart. The $\beta$-adrenergic receptor (activated by epinephrine) uses $\text{G}_s$ to increase cAMP in cardiac myocytes, which increases heart rate and contractility. The muscarinic acetylcholine receptor (activated by the vagus nerve) uses $\text{G}_i$ to decrease cAMP in the same cells, slowing heart rate. Two inputs, opposing outputs, same second messenger. The cell integrates both signals by summing the rates of cAMP synthesis and degradation.
 
-Pertussis toxin, from Bordetella pertussis (whooping cough), permanently activates $G_i$ by ADP-ribosylating the $G_{\alpha i}$ subunit in a way that prevents GDP release. With $G_i$ locked in its GDP-bound off state, the inhibitory brake on adenylyl cyclase is removed. In airway epithelial cells, this contributes to the excessive mucus secretion and impaired ciliary clearance characteristic of whooping cough.
+Pertussis toxin, from Bordetella pertussis (whooping cough), permanently activates $\text{G}_i$ by ADP-ribosylating the $\text{G}_{\alpha i}$ subunit in a way that prevents GDP release. With $\text{G}_i$ locked in its GDP-bound off state, the inhibitory brake on adenylyl cyclase is removed. In airway epithelial cells, this contributes to the excessive mucus secretion and impaired ciliary clearance characteristic of whooping cough.
 
-### The $G_q$ Pathway: Phospholipase C, IP3, and DAG
+### The $\text{G}_q$ Pathway: Phospholipase C, IP3, and DAG
 
-A third major arm uses $G_q$, which activates **phospholipase C (PLC)**, an enzyme that cleaves the membrane phospholipid phosphatidylinositol 4,5-bisphosphate ($\text{PIP}_2$) into two products:
+A third major arm uses $\text{G}_q$, which activates **phospholipase C (PLC)**, an enzyme that cleaves the membrane phospholipid phosphatidylinositol 4,5-bisphosphate ($\text{PIP}_2$) into two products:
 
 1. **Inositol trisphosphate ($\text{IP}_3$):** A soluble second messenger released into the cytoplasm. $\text{IP}_3$ diffuses to the endoplasmic reticulum, where it binds $\text{IP}_3$ receptors (ligand-gated calcium channels). These channels open, releasing $\text{Ca}^{2+}$ from the ER lumen into the cytoplasm. The rise in cytoplasmic $\text{Ca}^{2+}$ activates many downstream targets, including the $\text{Ca}^{2+}$-binding protein calmodulin, which in turn activates calmodulin-dependent kinases.
 
@@ -125,7 +129,7 @@ These phosphotyrosine residues serve as docking sites. Intracellular signaling p
 
 ### Ras: The GTPase Switch of RTK Signaling
 
-The most important immediate downstream target of many RTKs is **Ras**, a small GTPase that functions by the same switch logic as the $G_\alpha$ subunits described above: Ras-GDP is off, Ras-GTP is on.
+The most important immediate downstream target of many RTKs is **Ras**, a small GTPase that functions by the same switch logic as the $\text{G}_\alpha$ subunits described above: Ras-GDP is off, Ras-GTP is on.
 
 Ras is not a transmembrane protein. It is a small protein (21 kDa) anchored to the inner leaflet of the plasma membrane by a lipid modification. The connection between the RTK and Ras involves two adapter proteins:
 
@@ -135,7 +139,7 @@ Ras is not a transmembrane protein. It is a small protein (21 kDa) anchored to t
 
 The chain of events is: ligand binds RTK $\rightarrow$ receptor dimerizes and autophosphorylates $\rightarrow$ Grb2-Sos complex is recruited to the phosphorylated receptor $\rightarrow$ Sos activates Ras by catalyzing GDP-to-GTP exchange $\rightarrow$ Ras-GTP activates downstream kinase cascades.
 
-Ras terminates its own signal by hydrolyzing GTP to GDP, returning to the Ras-GDP off state. But unlike $G_\alpha$, Ras has very weak intrinsic GTPase activity. It requires a **GTPase-activating protein (GAP)** to accelerate hydrolysis to a physiologically useful rate. The GEF drives the on transition; the GAP drives the off transition.
+Ras terminates its own signal by hydrolyzing GTP to GDP, returning to the Ras-GDP off state. But unlike $\text{G}_\alpha$, Ras has very weak intrinsic GTPase activity. It requires a **GTPase-activating protein (GAP)** to accelerate hydrolysis to a physiologically useful rate. The GEF drives the on transition; the GAP drives the off transition.
 
 ### The MAPK Cascade
 
@@ -159,15 +163,15 @@ This is the pathway that drives cell proliferation in response to growth factors
 
 Intestinal epithelial cells normally control fluid secretion partly through the CFTR chloride channel (Chapter 7). One of the signals that drives CFTR opening is cAMP, which activates PKA, which phosphorylates CFTR and keeps it open. This pathway is normally regulated: when the signaling molecule (VIP, vasoactive intestinal peptide) is no longer present, the G protein turns off, adenylyl cyclase returns to basal activity, phosphodiesterase degrades cAMP, PKA is inactivated, and CFTR closes.
 
-Cholera toxin is an AB-type toxin. The B subunit (pentamer) binds GM1 gangliosides on the apical surface of intestinal epithelial cells, facilitating endocytosis. The A subunit is transported to the cytoplasm, where it is cleaved into an active fragment (A1) that has a single enzymatic activity: it catalyzes the **ADP-ribosylation** of $G_{\alpha s}$.
+Cholera toxin is an AB-type toxin. The B subunit (pentamer) binds GM1 gangliosides on the apical surface of intestinal epithelial cells, facilitating endocytosis. The A subunit is transported to the cytoplasm, where it is cleaved into an active fragment (A1) that has a single enzymatic activity: it catalyzes the **ADP-ribosylation** of $\text{G}_{\alpha s}$.
 
-ADP-ribosylation attaches an ADP-ribose moiety to a specific arginine residue in $G_{\alpha s}$. This modification does two things simultaneously: it stabilizes the GTP-bound conformation and dramatically impairs GTPase activity. The result is $G_{\alpha s}$ permanently bound to GTP, permanently activating adenylyl cyclase, permanently flooding the cell with cAMP.
+ADP-ribosylation attaches an ADP-ribose moiety to a specific arginine residue in $\text{G}_{\alpha s}$. This modification does two things simultaneously: it stabilizes the GTP-bound conformation and dramatically impairs GTPase activity. The result is $\text{G}_{\alpha s}$ permanently bound to GTP, permanently activating adenylyl cyclase, permanently flooding the cell with cAMP.
 
 With cAMP continuously elevated, PKA is permanently active. PKA phosphorylates CFTR, holding it open. CFTR pumps chloride continuously into the intestinal lumen. Sodium follows by paracellular routes (the tight junctions allow it). Water follows the osmotic gradient. The intestine cannot absorb fluid fast enough to keep pace with this chloride-driven secretion. The result is up to 20 liters per day of isotonic fluid loss, with the characteristic rice-water appearance (mucus and epithelial cells suspended in clear isotonic fluid, not blood, because the mucosa is not inflamed or invaded).
 
 Death from untreated cholera is death from dehydration and electrolyte imbalance, not from infection per se. Oral rehydration therapy works by exploiting a separate sodium-glucose cotransporter (SGLT1) that does not require cAMP signaling and remains functional. Glucose in the oral rehydration solution drives sodium absorption through SGLT1, and water follows. The cAMP machinery is still locked on, but a parallel pathway compensates.
 
-The toxin is also a teaching tool. Because cholera toxin specifically locks $G_{\alpha s}$-GTP in place, it is used in research to permanently activate cAMP signaling in cell culture systems. Pertussis toxin does the same to $G_{\alpha i}$, but from the other direction: it locks $G_{\alpha i}$ in the GDP-bound off state, preventing inhibitory signaling and effectively removing the brake on adenylyl cyclase.
+The toxin is also a teaching tool. Because cholera toxin specifically locks $\text{G}_{\alpha s}$-GTP in place, it is used in research to permanently activate cAMP signaling in cell culture systems. Pertussis toxin does the same to $\text{G}_{\alpha i}$, but from the other direction: it locks $\text{G}_{\alpha i}$ in the GDP-bound off state, preventing inhibitory signaling and effectively removing the brake on adenylyl cyclase.
 
 ### Oncogenic Ras: The GTPase Switch Stuck On
 
@@ -195,7 +199,7 @@ Glucocorticoids (cortisol and synthetic analogs like prednisone) act through glu
 
 ## Signal Integration and Termination
 
-A cell is not a machine that executes one signal at a time. At any moment, a cell is receiving dozens of different signals simultaneously. The signaling pathways described above do not operate in isolation: they crosstalk, converge, and inhibit each other. PKA phosphorylates substrates that affect RTK signaling. ERK phosphorylates and inhibits upstream components of its own pathway (negative feedback). $\text{Ca}^{2+}$ released by the $G_q$ pathway modulates ion channels that affect membrane potential, which in turn affects voltage-gated calcium channels.
+A cell is not a machine that executes one signal at a time. At any moment, a cell is receiving dozens of different signals simultaneously. The signaling pathways described above do not operate in isolation: they crosstalk, converge, and inhibit each other. PKA phosphorylates substrates that affect RTK signaling. ERK phosphorylates and inhibits upstream components of its own pathway (negative feedback). $\text{Ca}^{2+}$ released by the $\text{G}_q$ pathway modulates ion channels that affect membrane potential, which in turn affects voltage-gated calcium channels.
 
 The outcome is integration: the cell's behavioral response reflects the sum and product of all incoming signals, not just the loudest one.
 
@@ -203,7 +207,7 @@ Equally important is termination. Every step in every signaling pathway must be 
 
 - **Receptor inactivation:** Agonist-bound GPCRs are phosphorylated by G protein-coupled receptor kinases (GRKs) on their intracellular loops, reducing their ability to activate G proteins. Arrestin then binds the phosphorylated receptor, further blocking G protein coupling and targeting the receptor for endocytosis. This is the mechanism of **desensitization**: the cell becomes less responsive to prolonged stimulation.
 
-- **G protein self-termination:** $G_{\alpha}$-GTP hydrolyzes GTP to GDP, terminating its own activity. Regulators of G protein signaling (RGS proteins) accelerate this hydrolysis.
+- **G protein self-termination:** $\text{G}_{\alpha}$-GTP hydrolyzes GTP to GDP, terminating its own activity. Regulators of G protein signaling (RGS proteins) accelerate this hydrolysis.
 
 - **Second messenger degradation:** Phosphodiesterase hydrolyzes cAMP; IP3 is dephosphorylated by phosphatases; calcium is pumped back into the ER by SERCA pumps (Chapter 7) and out of the cell by plasma membrane calcium ATPases.
 
@@ -217,9 +221,9 @@ Loss of termination mechanisms is as pathogenic as constitutive activation. Muta
 
 Signal transduction appears on the MCAT primarily in two contexts: receptor pharmacology (agonists, antagonists, and what happens downstream) and cellular responses to hormones and growth factors. The reasoning pattern is always the same: identify the receptor type, trace the signal through the cascade, and predict what happens when you add, remove, or mutate a component.
 
-**GPCR pharmacology questions** typically present a drug or hormone and ask you to trace the downstream effect. Know which receptor subtypes ($G_s$, $G_i$, $G_q$) couple to which second messengers (cAMP up, cAMP down, IP3/DAG/Ca$^{2+}$) and which downstream kinase (PKA, PKC). Know that cAMP activates PKA, which phosphorylates its targets. Know that epinephrine on $\beta$-adrenergic receptors raises cAMP; epinephrine on $\alpha_2$-adrenergic receptors lowers cAMP (via $G_i$). Know that the heart speeds up with $\beta$-stimulation and slows down with muscarinic stimulation, and that both effects converge on cAMP in cardiac myocytes.
+**GPCR pharmacology questions** typically present a drug or hormone and ask you to trace the downstream effect. Know which receptor subtypes ($\text{G}_s$, $\text{G}_i$, $\text{G}_q$) couple to which second messengers (cAMP up, cAMP down, IP3/DAG/Ca$^{2+}$) and which downstream kinase (PKA, PKC). Know that cAMP activates PKA, which phosphorylates its targets. Know that epinephrine on $\beta$-adrenergic receptors raises cAMP; epinephrine on $\alpha_2$-adrenergic receptors lowers cAMP (via $\text{G}_i$). Know that the heart speeds up with $\beta$-stimulation and slows down with muscarinic stimulation, and that both effects converge on cAMP in cardiac myocytes.
 
-**The GTPase switch logic** is heavily tested. Both G proteins and Ras are GTP/GDP switches. Both are activated by GEFs (which promote GTP loading) and inactivated by GAPs (which promote GTP hydrolysis). Cholera toxin locks $G_{\alpha s}$ on by blocking GTPase activity. Oncogenic Ras mutations lock Ras on by the same mechanism. A constitutively active mutation is one that stays GTP-bound. A loss-of-function mutation in a GAP has the same effect as a constitutively active mutation in the GTPase itself, because the brake is gone.
+**The GTPase switch logic** is heavily tested. Both G proteins and Ras are GTP/GDP switches. Both are activated by GEFs (which promote GTP loading) and inactivated by GAPs (which promote GTP hydrolysis). Cholera toxin locks $\text{G}_{\alpha s}$ on by blocking GTPase activity. Oncogenic Ras mutations lock Ras on by the same mechanism. A constitutively active mutation is one that stays GTP-bound. A loss-of-function mutation in a GAP has the same effect as a constitutively active mutation in the GTPase itself, because the brake is gone.
 
 **Feedback and cross-talk questions** ask about what happens downstream when you perturb one component. If you add a phosphodiesterase inhibitor (like caffeine or theophylline), cAMP rises because degradation is blocked even if synthesis is unchanged. If you add a constitutively active adenylyl cyclase, cAMP rises even without receptor activation. If you knock out a phosphatase, signaling is prolonged. Always trace the logic from perturbation to downstream consequence.
 
@@ -243,7 +247,7 @@ Caffeine inhibits phosphodiesterase. A patient with asthma is treated with theop
 
 *Working through it:*
 
-Epinephrine mechanism: epinephrine binds the $\beta_2$-adrenergic receptor (GPCR, $G_s$-coupled) $\rightarrow$ $G_{\alpha s}$ activates adenylyl cyclase $\rightarrow$ cAMP rises $\rightarrow$ PKA is activated $\rightarrow$ PKA phosphorylates myosin light-chain kinase (inactivating it) and other targets, reducing smooth muscle contractility $\rightarrow$ bronchodilation.
+Epinephrine mechanism: epinephrine binds the $\beta_2$-adrenergic receptor (GPCR, $\text{G}_s$-coupled) $\rightarrow$ $\text{G}_{\alpha s}$ activates adenylyl cyclase $\rightarrow$ cAMP rises $\rightarrow$ PKA is activated $\rightarrow$ PKA phosphorylates myosin light-chain kinase (inactivating it) and other targets, reducing smooth muscle contractility $\rightarrow$ bronchodilation.
 
 Theophylline mechanism: inhibits phosphodiesterase, which is the enzyme that degrades cAMP to 5'-AMP. Blocking degradation raises cAMP independently of whether synthesis is increased. The downstream effect (PKA activation, smooth muscle relaxation) is the same.
 
@@ -251,11 +255,11 @@ Both drugs raise cAMP, but by different mechanisms: one increases production, th
 
 **Problem 3**
 
-A loss-of-function mutation in the RGS12 gene (RGS proteins are GAPs for $G_\alpha$ subunits) is found in a subset of patients with a particular disease characterized by chronic overactivation of pain signaling pathways that use $G_q$-coupled receptors in dorsal root ganglion neurons. Explain the molecular mechanism connecting RGS12 loss-of-function to chronic pain, tracing the pathway from receptor to cellular output.
+A loss-of-function mutation in the RGS12 gene (RGS proteins are GAPs for $\text{G}_\alpha$ subunits) is found in a subset of patients with a particular disease characterized by chronic overactivation of pain signaling pathways that use $\text{G}_q$-coupled receptors in dorsal root ganglion neurons. Explain the molecular mechanism connecting RGS12 loss-of-function to chronic pain, tracing the pathway from receptor to cellular output.
 
 *Working through it:*
 
-RGS12 accelerates GTP hydrolysis by $G_{\alpha q}$. Without RGS12, $G_{\alpha q}$-GTP accumulates because it cannot hydrolyze GTP fast enough to terminate signaling on its own. $G_{\alpha q}$-GTP activates phospholipase C, which cleaves $\text{PIP}_2$ to IP3 and DAG. IP3 binds ER receptors and releases $\text{Ca}^{2+}$ into the cytoplasm. Elevated intracellular $\text{Ca}^{2+}$ activates calmodulin-dependent kinases and PKC (activated by DAG plus $\text{Ca}^{2+}$). In dorsal root ganglion neurons, sustained $\text{Ca}^{2+}$ elevation and kinase activity lower the threshold for action potential firing, sensitize TRPV1 and other nociceptive channels, and increase the release of pro-pain neurotransmitters (substance P, glutamate). The net result is a lower pain threshold and enhanced transmission of pain signals, a state called central and peripheral sensitization. The same molecular mechanism underlies why phospholipase C inhibitors have been explored as analgesics: by damping the $G_q$ pathway output, they could restore normal pain thresholds in sensitized neurons.
+RGS12 accelerates GTP hydrolysis by $\text{G}_{\alpha q}$. Without RGS12, $\text{G}_{\alpha q}$-GTP accumulates because it cannot hydrolyze GTP fast enough to terminate signaling on its own. $\text{G}_{\alpha q}$-GTP activates phospholipase C, which cleaves $\text{PIP}_2$ to IP3 and DAG. IP3 binds ER receptors and releases $\text{Ca}^{2+}$ into the cytoplasm. Elevated intracellular $\text{Ca}^{2+}$ activates calmodulin-dependent kinases and PKC (activated by DAG plus $\text{Ca}^{2+}$). In dorsal root ganglion neurons, sustained $\text{Ca}^{2+}$ elevation and kinase activity lower the threshold for action potential firing, sensitize TRPV1 and other nociceptive channels, and increase the release of pro-pain neurotransmitters (substance P, glutamate). The net result is a lower pain threshold and enhanced transmission of pain signals, a state called central and peripheral sensitization. The same molecular mechanism underlies why phospholipase C inhibitors have been explored as analgesics: by damping the $\text{G}_q$ pathway output, they could restore normal pain thresholds in sensitized neurons.
 
 ---
 
@@ -263,7 +267,7 @@ RGS12 accelerates GTP hydrolysis by $G_{\alpha q}$. Without RGS12, $G_{\alpha q}
 
 Signal transduction converts extracellular chemical information into intracellular behavioral changes without letting the signal itself cross the membrane. The two major architectures are GPCRs, which use heterotrimeric G proteins and second messengers (cAMP, IP3/DAG/Ca$^{2+}$) to transduce signals, and RTKs, which use receptor dimerization, autophosphorylation, and kinase cascades (Ras $\rightarrow$ Raf $\rightarrow$ MEK $\rightarrow$ ERK) to do the same.
 
-Both systems use GTPase switches: $G_\alpha$ in the GPCR system, Ras in the RTK system. Both switches are activated by GEFs and inactivated by GAPs. Cholera toxin locks $G_{\alpha s}$ on by ADP-ribosylating and impairing its GTPase activity, producing constitutive cAMP signaling and massive intestinal fluid secretion. Oncogenic Ras mutations impair GAP-assisted GTP hydrolysis, locking Ras on and driving constitutive proliferative signaling in cancer.
+Both systems use GTPase switches: $\text{G}_\alpha$ in the GPCR system, Ras in the RTK system. Both switches are activated by GEFs and inactivated by GAPs. Cholera toxin locks $\text{G}_{\alpha s}$ on by ADP-ribosylating and impairing its GTPase activity, producing constitutive cAMP signaling and massive intestinal fluid secretion. Oncogenic Ras mutations impair GAP-assisted GTP hydrolysis, locking Ras on and driving constitutive proliferative signaling in cancer.
 
 Signal termination is as important as initiation. Phosphodiesterases, phosphatases, GRKs, arrestins, RGS proteins, and GAPs all contribute to turning the signal off. Loss of any termination mechanism can be as oncogenic as constitutive activation of a positive effector.
 

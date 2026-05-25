@@ -144,13 +144,13 @@ The **steady-state assumption**, introduced by Briggs and Haldane, is the key to
 Formation of ES:
 $$\text{rate of formation} = k_1[\text{E}][\text{S}]$$
 
-Breakdown of ES (by either reverse binding or catalysis and product release):
-$$\text{rate of breakdown} = k_{-1}[\text{ES}] + k_2[\text{ES}]$$
+Breakdown of ES (by either reverse binding or catalysis and product release): rate of breakdown = k_{-1}[\text{ES}] + k_2[\text{ES}]$$
 
 Setting formation equal to breakdown:
 $$k_1[\text{E}][\text{S}] = (k_{-1} + k_2)[\text{ES}]$$
 
 Grouping together the rate constants and concentrations:
+
 $$\frac{k_{-1} + k_2}{k_1} = \frac{[\text{E}][\text{S}]}{[\text{ES}]}$$
 
 To make our lives easier let's also define that mess of rate constants to be one variable, the **Michaelis constant** $K_M$.
