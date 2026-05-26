@@ -82,16 +82,16 @@ This second reaction is highly favorable, and its coupling to the first is a rec
 
 cAMP is a **second messenger**: a small, diffusible intracellular signal molecule generated in response to the extracellular first messenger (the hormone). The cell produces it rapidly in large quantities and degrades it rapidly (by **phosphodiesterase**, which hydrolyzes cAMP to 5'-AMP) when signaling needs to stop. The ratio of production to degradation sets the intracellular cAMP concentration at any moment.
 
-cAMP's primary target in most cells is **protein kinase A (PKA)**, also called cAMP-dependent protein kinase. In the absence of cAMP, PKA is a tetramer: two regulatory (R) subunits and two catalytic (C) subunits. The R subunits block the active sites of the C subunits. When cAMP concentrations rise, two cAMP molecules bind each R subunit, causing the R subunits to release the C subunits. The free catalytic subunits are now active: they phosphorylate serine and threonine residues on downstream target proteins, altering their activity.
+cAMP's primary target in most cells is **protein kinase A (PKA)**, also called cAMP-dependent protein kinase. In the absence of cAMP, PKA is a heterotetramer: two regulatory (R) subunits and two catalytic (C) subunits. The R subunits block the active sites of the C subunits. When cAMP concentrations rise, two cAMP molecules bind each R subunit, causing the R subunits to release the C subunits. The free catalytic subunits are now active: they phosphorylate serine and threonine residues on downstream target proteins (of which there are dozens), altering their activity.
 
-This architecture produces signal amplification at multiple steps:
+This architecture produces **signal amplification** at multiple steps:
 
 - One hormone molecule activates one receptor.
 - One receptor, while occupied by hormone, activates many G protein molecules (the receptor is a catalyst for the GEF reaction; it can activate G proteins repeatedly as long as hormone is bound).
 - Each $\text{G}_{\alpha s}$-GTP activates one adenylyl cyclase molecule, but that enzyme rapidly synthesizes many cAMP molecules.
 - cAMP activates PKA, which phosphorylates many substrate molecules per second.
 
-A single epinephrine molecule binding a $\beta$-adrenergic receptor in a liver cell can ultimately activate millions of glycogen phosphorylase molecules within seconds. That is the power of a cascade.
+A single epinephrine molecule binding a $\beta$-adrenergic receptor in a liver cell can ultimately activate millions of glycogen phosphorylase molecules within seconds. That is the power of a cascade, its amplification effect.
 
 ### The $\text{G}_i$ Pathway: Inhibitory Signaling
 
@@ -111,6 +111,20 @@ A third major arm uses $\text{G}_q$, which activates **phospholipase C (PLC)**, 
 
 This pathway is used by vasopressin (to drive water reabsorption in the kidney), thrombin (to trigger platelet aggregation), and many neurotransmitters. The simultaneous release of two second messengers from one PLC cleavage event is an elegant design: $\text{IP}_3$ mobilizes calcium from a stored pool without waiting for extracellular calcium to enter, and DAG stays membrane-associated to recruit and activate PKC there.
 
+### Terminating the GPCR Signal
+
+Activating a receptor is only half the problem. A signal that cannot be turned off is as dangerous as no signal at all. The cholera case makes that point forcefully. Termination of GPCR signaling happens at every level of the cascade, and the mechanisms are worth knowing because they are the targets of a large fraction of clinical pharmacology.
+
+**At the ligand level:** The simplest shutoff is hormone dissociation. When epinephrine leaves the $\beta$-adrenergic receptor, the receptor returns to its inactive conformation and stops activating $\text{G}_s$. No hormone, no signal. How long the hormone stays bound is determined by the receptor's affinity for it: the $K_d$ from Chapter 3, which reflects the ratio of the off-rate to the on-rate. A receptor with a low $K_d$ holds its ligand tightly and signals for longer; a receptor with a high $K_d$ releases its ligand quickly and signals briefly. This is why the duration of a hormonal response partly reflects how long the hormone persists in circulation, and why adrenaline responses are short-lived while steroid hormone effects last hours.
+
+**At the receptor level:** Prolonged or repeated stimulation triggers **desensitization**, a process that reduces the receptor's ability to signal even while hormone is still present. The key players are **G protein-coupled receptor kinases (GRKs)**, which phosphorylate serine and threonine residues on the intracellular loops and C-terminus of the activated receptor. This phosphorylation does two things. It directly reduces the receptor's affinity for $\text{G}_\alpha$. More importantly, it creates docking sites for **$\beta$-arrestin**.
+
+$\beta$-arrestin binding physically occludes the $\text{G}_\alpha$ docking surface and prevents any further G protein activation; this is the primary desensitization mechanism. But $\beta$-arrestin does more than just block. It also acts as a scaffold that recruits clathrin and adaptor proteins to the receptor, targeting it for endocytosis and pulling it off the membrane entirely. The receptor is internalized in a clathrin-coated vesicle and either recycled back to the surface (resensitization) or degraded (downregulation). Long-term exposure to a drug or hormone can deplete the surface receptor pool entirely, which is one molecular basis for drug tolerance.
+
+**At the second messenger level:** Once $\text{G}_\alpha$ has dissociated from the receptor, its intrinsic GTPase activity terminates its own signal as described above. But the second messengers it generated must also be cleared. cAMP is hydrolyzed to inactive 5'-AMP by **phosphodiesterase (PDE)**, the enzyme that caffeine and theophylline inhibit, which is why those compounds amplify and prolong cAMP-dependent signaling. $\text{IP}_3$ is rapidly dephosphorylated by specific phosphatases. Cytoplasmic $\text{Ca}^{2+}$ is pumped back into the ER by SERCA pumps (Chapter 7) and extruded from the cell by plasma membrane calcium ATPases. These degradation and clearance steps are not passive decay; they are active processes that set the duration of the downstream signal.
+
+Termination is layered: ligand, receptor, G protein, and second messenger are all cleared independently, giving the cell multiple brakes operating in parallel. Losing any one of them individually tends to prolong rather than abolish signaling, which is why loss-of-termination mutations are generally gain-of-function phenotypes, and why so many disease states involve failure of one of these checkpoints rather than failure of the signal itself.
+
 ---
 
 ## Receptor Tyrosine Kinases
@@ -119,11 +133,15 @@ This pathway is used by vasopressin (to drive water reabsorption in the kidney),
 
 The second major signaling architecture uses a completely different mechanism. **Receptor tyrosine kinases (RTKs)** are single-pass transmembrane proteins with three domains: an extracellular ligand-binding domain, a single transmembrane helix, and an intracellular kinase domain.
 
-The kinase domain is the active component. It catalyzes the transfer of the terminal phosphate of ATP to the hydroxyl group of tyrosine residues on substrate proteins. In the resting state, the receptor is monomeric and the kinase domain is inactive.
+The kinase domain is the active component. It catalyzes the transfer of the terminal phosphate of ATP to the hydroxyl group of tyrosine residues on substrate proteins. In the resting state, the kinase domain is inactive.
 
-Activation requires **dimerization**. When the extracellular ligand (typically a growth factor or cytokine) binds, it bridges two receptor monomers, forcing them together into a dimer. Some ligands are themselves dimers and bring two receptor monomers together directly; others bind one receptor and induce a conformational change that exposes a dimerization interface.
+Activation requires the two kinase domains to be brought into the correct proximity and orientation, which is achieved through **dimerization**. For receptors that exist as monomers at rest, the ligand drives this directly: it bridges two monomers, forcing them together. Some ligands are themselves dimers and bring two receptor monomers together directly; others bind one receptor and induce a conformational change that exposes a dimerization interface. For receptors that are constitutive dimers (the insulin receptor being the key example), the two subunits are already joined by disulfide bonds and ligand binding instead reorients the dimer into an active configuration. In both cases the result is the same: two kinase domains held in proximity, poised to activate each other.
 
-Once two kinase domains are held in proximity, they phosphorylate each other on specific tyrosine residues in the activation loop of the kinase domain. This **trans-autophosphorylation** is a critical event: phosphorylation of the activation loop residues causes the kinase domain to adopt a fully open, active conformation. The activated kinase then phosphorylates additional tyrosine residues in the intracellular tail of the receptor.
+Once two kinase domains are held in proximity, each one phosphorylates its partner. The key target is a tyrosine residue within a stretch of the kinase domain called the **activation loop**. In the unphosphorylated, resting state, this loop folds directly into the active site cleft and physically blocks it, preventing substrate proteins from entering. The kinase is inactive not because it lacks catalytic machinery, but because its own activation loop is sitting in the way.
+
+When dimerization brings two kinase domains face to face, each kinase can reach the activation loop of its partner. That activation loop tyrosine is the one target accessible even in the inactive conformation, because it is already positioned near the catalytic residues rather than having to compete for entry into a blocked active site. Each kinase phosphorylates the other's activation loop tyrosine in what is called **trans-autophosphorylation**: trans because it is across (kinase A phosphorylates kinase B, not itself), auto because it is the same type of protein phosphorylating itself as a class.
+
+Once the activation loop tyrosine is phosphorylated, the negatively charged phosphate group destabilizes the loop's position in the active site and it swings out, opening the catalytic cleft to external substrates. The activated kinase then phosphorylates additional tyrosine residues in the intracellular tail of the receptor, creating the docking sites that recruit downstream signaling proteins.
 
 These phosphotyrosine residues serve as docking sites. Intracellular signaling proteins that contain **SH2 domains** (Src Homology 2 domains) or PTB domains recognize and bind specific phosphotyrosine-containing sequences. Different phosphorylation sites recruit different downstream proteins, which is how one RTK can simultaneously activate multiple parallel signaling pathways.
 
@@ -139,7 +157,7 @@ Ras is not a transmembrane protein. It is a small protein (21 kDa) anchored to t
 
 The chain of events is: ligand binds RTK $\rightarrow$ receptor dimerizes and autophosphorylates $\rightarrow$ Grb2-Sos complex is recruited to the phosphorylated receptor $\rightarrow$ Sos activates Ras by catalyzing GDP-to-GTP exchange $\rightarrow$ Ras-GTP activates downstream kinase cascades.
 
-Ras terminates its own signal by hydrolyzing GTP to GDP, returning to the Ras-GDP off state. But unlike $\text{G}_\alpha$, Ras has very weak intrinsic GTPase activity. It requires a **GTPase-activating protein (GAP)** to accelerate hydrolysis to a physiologically useful rate. The GEF drives the on transition; the GAP drives the off transition.
+Ras terminates its own signal by hydrolyzing GTP to GDP, returning to the Ras-GDP off state. But unlike $\text{G}_\alpha$, Ras has very weak intrinsic GTPase activity. It requires a **GTPase-activating protein (GAP)** to accelerate hydrolysis to a physiologically useful rate. The GEF activity of SOS drives the on transition; the GAP drives the off transition.
 
 ### The MAPK Cascade
 
@@ -151,7 +169,32 @@ Ras-GTP recruits and activates **Raf** (a serine/threonine kinase) at the membra
 
 The cascade structure produces massive amplification. One activated Ras molecule can activate multiple Raf molecules; each Raf molecule activates multiple MEK molecules; each MEK molecule activates multiple ERK molecules. A single growth factor molecule binding at the surface can produce a flood of activated ERK inside the cell within minutes.
 
-This is the pathway that drives cell proliferation in response to growth factors. It is also the pathway that is hijacked in approximately 30% of all human cancers, overwhelmingly through mutations in Ras.
+This is the pathway that drives cell proliferation in response to growth factors and is the primary downstream arm of EGFR-family receptors. It is also the pathway hijacked in approximately 30% of all human cancers, overwhelmingly through mutations in Ras. But Ras/MAPK is not the only output RTKs produce. A second major downstream arm, used by a different receptor in response to a different metabolic question, reaches completely different targets.
+
+### The Insulin Receptor and the PI3K/Akt Pathway
+
+The insulin receptor is the RTK the body uses to answer the question: is there fuel available right now? When blood glucose rises after a meal, the pancreas releases insulin. Insulin binds the receptor's extracellular subunits, triggers the conformational change and trans-autophosphorylation described above, and the activated kinase domains phosphorylate a set of intracellular docking proteins called **insulin receptor substrates (IRS proteins)**, primarily IRS-1.
+
+IRS-1 is not a kinase and it is not Grb2. It is a large scaffolding protein with no intrinsic enzymatic activity. Its job is to collect the phosphorylation signal from the receptor and relay it to a specific effector: **phosphoinositide 3-kinase (PI3K)**. PI3K has an SH2 domain that binds the phosphotyrosine residues on IRS-1, bringing it to the membrane. Once there, PI3K phosphorylates the membrane lipid phosphatidylinositol 4,5-bisphosphate ($\text{PIP}_2$) at the 3-position of the inositol ring, producing phosphatidylinositol 3,4,5-trisphosphate ($\text{PIP}_3$):
+
+$$\text{PIP}_2 \xrightarrow{\text{PI3K}} \text{PIP}_3$$
+
+$\text{PIP}_3$ is a lipid second messenger that stays embedded in the inner leaflet of the membrane. It serves as a landing platform. Two kinases that carry a **pleckstrin homology (PH) domain** recognize $\text{PIP}_3$ and are recruited to the membrane together: **Akt** (also called PKB, protein kinase B) and $\text{PIP}_3$ dependent kinase **PDK1**. PDK1 phosphorylates and activates Akt. Active Akt then phosphorylates a wide range of targets that collectively shift cellular metabolism toward fuel storage and growth:
+
+- **GLUT4 translocation:** Akt phosphorylates a GTPase-activating protein called AS160, which normally holds GLUT4 vesicles tethered in the cytoplasm by keeping the Rab GTPases that control vesicle docking in their inactive GDP-bound state. Phosphorylation of AS160 releases the tether, and GLUT4 vesicles fuse with the plasma membrane, dramatically increasing glucose uptake into muscle and fat cells. This is the primary mechanism by which insulin lowers blood glucose, and failure of this step is the central functional defect producing hyperglycemia in type 2 diabetes (see below).
+- **Glycogen synthesis:** Akt phosphorylates and inactivates glycogen synthase kinase-3 (GSK-3), which normally phosphorylates and inhibits glycogen synthase. By shutting off the inhibitor's inhibitor, Akt promotes glycogen synthesis.
+- **mTOR activation:** Akt activates the mTOR complex, a master regulator of protein synthesis and cell growth. This connects nutrient availability to anabolic signaling.
+- **Gluconeogenesis suppression:** Akt phosphorylates FOXO transcription factors, excluding them from the nucleus and suppressing expression of gluconeogenic enzymes in the liver.
+
+Termination of PI3K/Akt signaling depends critically on the lipid phosphatase **PTEN**, which removes the 3-phosphate from $\text{PIP}_3$, converting it back to $\text{PIP}_2$ and depleting the membrane landing platform for Akt. PTEN is one of the most commonly mutated tumor suppressor genes in human cancer: loss of PTEN means $\text{PIP}_3$ accumulates constitutively, Akt is permanently active, and cells grow without the normal metabolic controls. The parallel to oncogenic Ras mutation is exact: one pathway produces constitutive proliferative signaling by locking a GTPase on; the other does it by removing the phosphatase that clears the lipid second messenger.
+
+**When the insulin receptor pathway fails: type 2 diabetes and insulin resistance**
+
+In type 2 diabetes, the insulin receptor itself is usually intact and insulin is present, often in excess. The failure is downstream, at IRS-1. In the setting of chronic overnutrition and obesity, adipose tissue and the liver release elevated levels of free fatty acids and inflammatory cytokines such as TNF-$\alpha$ and IL-6. These signals activate inflammatory kinases inside insulin-target cells, particularly JNK and IKK. These kinases phosphorylate IRS-1 on serine residues.
+
+This matters because the insulin receptor communicates with IRS-1 through tyrosine phosphorylation. Serine phosphorylation of IRS-1 by the inflammatory kinases physically interferes with the receptor's ability to phosphorylate IRS-1 on tyrosine. The result is that insulin binds the receptor, the receptor activates, the kinase domains are active and ready to signal, but IRS-1 cannot receive the signal. PI3K is never recruited. $\text{PIP}_3$ does not accumulate. Akt does not translocate. GLUT4 stays tethered in the cytoplasm. Blood glucose does not fall despite rising insulin levels. The cell is not incapable of responding to insulin in principle; it has been specifically disconnected from the signal at one molecular node.
+
+This reframes type 2 diabetes as a signaling disease rather than simply a metabolic one. The treatment logic follows directly: if the problem is inflammatory kinase activity blocking IRS-1, then reducing the inflammatory stimulus (weight loss, exercise) or enhancing downstream Akt activity by other means (metformin activates AMPK, which has converging effects on glucose metabolism) can partially restore the signal without fixing the receptor itself.
 
 ---
 
@@ -163,13 +206,11 @@ This is the pathway that drives cell proliferation in response to growth factors
 
 Intestinal epithelial cells normally control fluid secretion partly through the CFTR chloride channel (Chapter 7). One of the signals that drives CFTR opening is cAMP, which activates PKA, which phosphorylates CFTR and keeps it open. This pathway is normally regulated: when the signaling molecule (VIP, vasoactive intestinal peptide) is no longer present, the G protein turns off, adenylyl cyclase returns to basal activity, phosphodiesterase degrades cAMP, PKA is inactivated, and CFTR closes.
 
-Cholera toxin is an AB-type toxin. The B subunit (pentamer) binds GM1 gangliosides on the apical surface of intestinal epithelial cells, facilitating endocytosis. The A subunit is transported to the cytoplasm, where it is cleaved into an active fragment (A1) that has a single enzymatic activity: it catalyzes the **ADP-ribosylation** of $\text{G}_{\alpha s}$.
+Cholera toxin is taken up by intestinal epithelial cells and delivers an enzymatic subunit into the cytoplasm. That subunit has one job: it catalyzes the **ADP-ribosylation** of $\text{G}_{\alpha s}$. ADP-ribosylation is the covalent attachment of an ADP-ribose group, cleaved from $\text{NAD}^+$, onto a residue of the target protein. The modification adds a bulky, negatively charged group that physically blocks the GTPase active site, preventing GTP hydrolysis. With GTP hydrolysis blocked, $\text{G}_{\alpha s}$ cannot return to the GDP-bound off state. It remains permanently active, permanently driving adenylyl cyclase, permanently flooding the cell with cAMP.
 
-ADP-ribosylation attaches an ADP-ribose moiety to a specific arginine residue in $\text{G}_{\alpha s}$. This modification does two things simultaneously: it stabilizes the GTP-bound conformation and dramatically impairs GTPase activity. The result is $\text{G}_{\alpha s}$ permanently bound to GTP, permanently activating adenylyl cyclase, permanently flooding the cell with cAMP.
+With cAMP continuously elevated, PKA is permanently active. PKA phosphorylates CFTR, holding it open. CFTR pumps chloride continuously into the intestinal lumen. Sodium follows chloride into the lumen, drawn by the charge imbalance. Water follows them both, drawn by the resulting osmotic gradient. The intestine cannot absorb fluid fast enough to keep pace with this chloride-driven secretion. The result is up to 20 liters per day of isotonic fluid loss, with the characteristic rice-water appearance (mucus and epithelial cells suspended in clear isotonic fluid, not blood, because the mucosa is not inflamed or invaded).
 
-With cAMP continuously elevated, PKA is permanently active. PKA phosphorylates CFTR, holding it open. CFTR pumps chloride continuously into the intestinal lumen. Sodium follows by paracellular routes (the tight junctions allow it). Water follows the osmotic gradient. The intestine cannot absorb fluid fast enough to keep pace with this chloride-driven secretion. The result is up to 20 liters per day of isotonic fluid loss, with the characteristic rice-water appearance (mucus and epithelial cells suspended in clear isotonic fluid, not blood, because the mucosa is not inflamed or invaded).
-
-Death from untreated cholera is death from dehydration and electrolyte imbalance, not from infection per se. Oral rehydration therapy works by exploiting a separate sodium-glucose cotransporter (SGLT1) that does not require cAMP signaling and remains functional. Glucose in the oral rehydration solution drives sodium absorption through SGLT1, and water follows. The cAMP machinery is still locked on, but a parallel pathway compensates.
+Death from untreated cholera is death from dehydration and electrolyte imbalance, not from infection per se. Oral rehydration therapy works by exploiting a separate sodium-glucose cotransporter (SGLT1) that does not require cAMP signaling and remains functional. Glucose in the oral rehydration solution drives sodium absorption through SGLT1, and water follows. The cAMP machinery is still locked on, but this parallel pathway compensates.
 
 The toxin is also a teaching tool. Because cholera toxin specifically locks $\text{G}_{\alpha s}$-GTP in place, it is used in research to permanently activate cAMP signaling in cell culture systems. Pertussis toxin does the same to $\text{G}_{\alpha i}$, but from the other direction: it locks $\text{G}_{\alpha i}$ in the GDP-bound off state, preventing inhibitory signaling and effectively removing the brake on adenylyl cyclase.
 
@@ -181,7 +222,7 @@ The most common Ras mutations in cancer are point mutations at codon 12 (glycine
 
 A cell expressing oncogenic Ras-G12V behaves as though growth factor receptors are permanently activated. Raf is constitutively active. MEK is constitutively active. ERK is constitutively active. The transcription factors driving cell division are always on. The cell proliferates without needing growth factor signals.
 
-KRAS mutations (a specific Ras isoform encoded by the KRAS gene) are found in over 90% of pancreatic adenocarcinomas, approximately 45% of colorectal cancers, and roughly 30% of lung adenocarcinomas. KRAS-G12D (glycine to aspartate) is the single most common driver mutation in human cancer. For decades, oncogenic Ras was considered "undruggable" because the protein has no obvious pocket for a small molecule to bind. Recent work has found inhibitors that specifically target the KRAS-G12C variant (cysteine, in lung cancer) by covalently occupying a pocket near switch II that only exists in the GDP-bound conformation, trapping Ras in the off state. This represents one of the most significant advances in targeted oncology in years.
+KRAS mutations (a specific Ras isoform encoded by the KRAS gene) are found in over 90% of pancreatic adenocarcinomas, approximately 45% of colorectal cancers, and roughly 30% of lung adenocarcinomas. KRAS-G12D (glycine to aspartate) is the single most common driver mutation in human cancer. For decades, oncogenic Ras was considered "undruggable" because the protein has no obvious pocket for a small molecule to bind. Recent work has found inhibitors that specifically target the KRAS-G12C variant (cysteine, in lung cancer) by covalently occupying a pocket that only exists when Ras is in the GDP-bound off state, trapping it there. This represents one of the most significant advances in targeted oncology in years.
 
 ---
 

@@ -55,3 +55,13 @@ Items to revisit. Add context so future-you remembers why it was deferred.
 **Why it matters:** The Ramachandran plot is the single best visual proof that secondary structures are not arbitrary. Students who see it understand immediately why only a few backbone geometries exist in real proteins. Hard to convey in prose alone.
 
 **Challenge:** Both require real figures. MathJax cannot approximate a 2D scatter/contour plot. This is a strong candidate for the figures directory once one is established.
+
+---
+
+## Ch. 7: CFTR as a Worked Example of a Regulated Ion Channel
+
+**Where it belongs:** Chapter 7, after the section on ligand-gated ion channels or as part of the pump/channel clinical examples.
+
+**What's needed:** A brief treatment of CFTR (cystic fibrosis transmembrane conductance regulator) as a chloride channel whose opening is regulated by cAMP/PKA-mediated phosphorylation. Key points: CFTR is a chloride channel, not a pump; it opens when PKA phosphorylates its regulatory domain; this is the normal intestinal secretion mechanism; loss-of-function mutations cause cystic fibrosis; gain-of-function (via cholera toxin locking the upstream G protein on) causes the secretory diarrhea of cholera.
+
+**Why it belongs here:** Chapter 8 (Signal Transduction) references CFTR and Chapter 7 in the cholera case, but CFTR is never actually introduced in Chapter 7. The reference is currently a forward promise with no anchor. Adding CFTR to Chapter 7 would let Chapter 8 use it as established context and also gives Chapter 7 a natural clinical hook connecting ion channels to both cystic fibrosis and infectious disease.
