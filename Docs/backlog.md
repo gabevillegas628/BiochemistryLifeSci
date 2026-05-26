@@ -6,9 +6,7 @@ Items to revisit. Add context so future-you remembers why it was deferred.
 
 ## Oxidation and Reduction
 
-**Where it belongs:** Unclear. A brief definitional section (loss/gain of electrons, OIL RIG, one biological example like NAD+/NADH) could go in Chapter 1 alongside acid-base chemistry as part of the chemical toolkit. Disulfide bond context in Chapter 2 needs at minimum a one-line definition. Full quantitative treatment (reduction potentials, ΔG of electron transfer) belongs with metabolism, before the ETC chapter.
-
-**Decision needed:** Add a short redox section to Chapter 1, or handle it inline in Chapter 2 with a forward reference to metabolism?
+**RESOLVED (Chapter 9, 2026-05-26):** Full quantitative treatment (reduction potentials, ΔG = −nFΔE°', NADH/FADH₂/NADPH as carriers) placed in Chapter 9 (Thermodynamic Principles II). Chapter 2 still has only a one-line inline definition of redox for disulfide bonds; that is intentional. Forward references in earlier chapters point to Chapter 9.
 
 ---
 
@@ -55,6 +53,26 @@ Items to revisit. Add context so future-you remembers why it was deferred.
 **Why it matters:** The Ramachandran plot is the single best visual proof that secondary structures are not arbitrary. Students who see it understand immediately why only a few backbone geometries exist in real proteins. Hard to convey in prose alone.
 
 **Challenge:** Both require real figures. MathJax cannot approximate a 2D scatter/contour plot. This is a strong candidate for the figures directory once one is established.
+
+---
+
+## G6PD Deficiency as the Clinical Anchor for NADPH
+
+**Where it belongs:** The pentose phosphate pathway chapter (chapter number TBD), in or immediately after the section explaining what NADPH is used for.
+
+**Why it's great:** G6PD deficiency is the most common human enzyme defect (~400 million people affected), is heavily MCAT-tested, and the mechanism is a perfect illustration of the NADPH story. Without G6PD, the pentose phosphate pathway can't run, NADPH can't be generated, reduced glutathione can't be regenerated, red blood cells can't neutralize oxidative stress, and they lyse. Clinically this presents as hemolytic anemia triggered by oxidative stressors: fava beans, primaquine, dapsone, certain infections. The connection from "NADPH manages oxidative stress" (introduced in Ch. 9) to "here's what happens when that system fails" is exactly the kind of payoff that makes the earlier mechanistic groundwork feel worthwhile.
+
+**Note:** Ch. 9 already introduces NADPH and mentions glutathione reductase as an NADPH-dependent enzyme. G6PD deficiency should be the clinical anchor that cashes that forward reference in.
+
+---
+
+## Alcohol Metabolism, NADH Accumulation, and the NAD+/NADH Ratio
+
+**Where it belongs:** The glycolysis/gluconeogenesis chapter (Chapter 10), in the section on gluconeogenesis or the regulation of glycolysis.
+
+**Why it's great:** Alcohol is oxidized to acetaldehyde by alcohol dehydrogenase and then to acetate by aldehyde dehydrogenase — both reactions reduce NAD+ to NADH. Heavy alcohol consumption floods the liver with NADH, driving the NAD+/NADH ratio way down. The consequences are a direct illustration of the pathway thermodynamics in Ch. 9: low NAD+ stalls gluconeogenesis (which needs NAD+ at the glyceraldehyde-3-phosphate dehydrogenase step), causing hypoglycemia; excess NADH pushes pyruvate toward lactate rather than gluconeogenesis, causing lactic acidosis; and the same NADH shift pushes oxaloacetate toward malate, starving the TCA cycle of its entry substrate. Fasting hypoglycemia in a binge drinker is essentially a real-world demonstration of what happens when you collapse the NAD+/NADH ratio.
+
+**Note:** Ch. 9 already makes the point that NAD+/NADH ratio governs pathway flux. This case study is the payoff for that concept, and should live in whichever chapter covers gluconeogenesis regulation.
 
 ---
 
