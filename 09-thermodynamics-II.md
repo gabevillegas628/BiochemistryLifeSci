@@ -1,4 +1,4 @@
-# Chapter 9: Thermodynamic Principles II — The Cell's Energy Currency
+# Chapter 9: Thermodynamic Principles II: The Cell's Energy Currency
 
 ---
 
@@ -6,7 +6,7 @@
 
 Think about these before you read. Come back at the end and see if your answer changed.
 
-1. NAD+ gains electrons during glycolysis to become NADH. Why does that matter? Where do those electrons go eventually, and what does the cell get out of it?
+1. $\text{NAD}^+$ gains electrons during glycolysis to become NADH. Why does that matter? Where do those electrons go eventually, and what does the cell get out of it?
 
 2. ATP sits in the middle of the cell's phosphate energy hierarchy, not at the top. Why is it the universal currency if there are more energetically favorable compounds available?
 
@@ -18,15 +18,15 @@ Chapter 1 gave you the thermodynamic framework. You know that cells run on free 
 
 Now we need to get more specific, because "the cell uses free energy" is about as useful as "the economy runs on money." True, but not actionable. 
 
-What we're building in this chapter is a working picture of *how* the cell actually handles energy at the molecular level: which molecules carry it, how it gets transferred, and what kinds of reactions move it around. Once you have this toolkit, metabolic pathways stop looking like lists of reactions to memorize and start looking like what they actually are: carefully engineered sequences of energy transfers with a clear thermodynamic logic.
+What we're building in this chapter is a working picture of *how* the cell actually handles energy at the molecular level: which molecules carry it, how it gets transferred, and what kinds of reactions move it around. Once you have this toolkit, metabolic pathways stop looking like lists of reactions to memorize and start looking like what they actually are: sequences of energy transfers with a clear thermodynamic logic.
 
 Three things to walk away with:
 
-1. Electron transfer is another form of energy transfer, and the cell exploits it constantly.
+1. Electron transfer ***is*** energy transfer. The cell moves energy by moving electrons, and it does it constantly.
 2. A small set of carrier molecules handles almost all energy transactions in the cell.
 3. Every reaction in a metabolic pathway fits into one of a handful of types, and once you recognize the type, you can reason about the energetics.
 
-> **Clinical preview:** Metformin, the most commonly prescribed drug for type 2 diabetes, works at least partly by interfering with Complex I of the mitochondrial electron transport chain. That changes the cell's NADH/NAD+ ratio, which ripples through glucose metabolism and ultimately lowers blood glucose. We'll come back to this mechanism once you know what NADH actually does and why its ratio to NAD+ matters.
+> **Clinical preview:** Metformin, the most commonly prescribed drug for type 2 diabetes, works at least partly by interfering with Complex I of the mitochondrial electron transport chain. That changes the cell's NADH/$\text{NAD}^+$ ratio, which ripples through glucose metabolism and ultimately lowers blood glucose. We'll come back to this mechanism once you know what NADH actually does and why its ratio to $\text{NAD}^+$ matters.
 
 ---
 
@@ -34,36 +34,40 @@ Three things to walk away with:
 
 ### What Oxidation and Reduction Actually Mean
 
-You've probably heard "OIL RIG" — oxidation is loss, reduction is gain (of electrons). That's correct as far as it goes, but it's worth slowing down and understanding why electron transfer matters in a biological context, because it's not immediately obvious why moving electrons around should release useful energy.
+You've probably heard "OIL RIG": oxidation is loss, reduction is gain (of electrons). That's correct as far as it goes, but it's worth slowing down and understanding why electron transfer matters in a biological context, because it's not immediately obvious why moving electrons around should release useful energy.
 
-Here's the key insight: electrons don't all have the same energy. An electron sitting on a carbon atom in glucose has more potential energy than an electron sitting on an oxygen atom in water. This isn't arbitrary; it reflects how strongly different atoms hold onto electrons. Oxygen is extremely electronegative, meaning it attracts electrons strongly. Carbon is much less so. When you oxidize glucose completely to CO₂ and H₂O, you're essentially moving electrons from a low-affinity environment (carbon) to a high-affinity environment (oxygen). Electrons move to where they're held more tightly, and the energy difference is released.
+Here's the key insight: electrons don't all have the same energy. An electron sitting on a carbon atom in glucose has more potential energy than an electron sitting on an oxygen atom in water. This isn't arbitrary; it reflects how strongly different atoms hold onto electrons. Oxygen is extremely electronegative, meaning it attracts electrons strongly. Carbon is much less so. When you oxidize glucose completely to $\text{CO}_2$ and $\text{H}_2\text{O}$, you're essentially moving electrons from a low-affinity environment (carbon) to a high-affinity environment (oxygen). Electrons move to where they're held more tightly, and the energy *difference* is released.
 
-This is exactly analogous to gravitational potential energy. A ball at the top of a hill has more potential energy than at the bottom; it rolls downhill and releases energy. Electrons "roll" from atoms that hold them loosely to atoms that hold them tightly, and the energy difference is what the cell captures.
+This is exactly analogous to gravitational potential energy. A ball at the top of a hill has more potential energy than at the bottom; it rolls downhill and releases energy. Electrons "roll" from atoms that hold them loosely to atoms that hold them tightly, and the energy difference is released. Whether the cell captures that energy or loses it as heat depends on the machinery in between.
 
-In biological systems, oxidation and reduction almost always involve the transfer of both electrons and protons together, because carbon-hydrogen bonds are what actually get broken. When you oxidize a carbon compound, you remove H atoms from it. Each H atom is one proton and one electron. The carrier molecules that accept them — primarily NAD+ and FAD — receive both. So in practice you'll see reactions written as:
+In biological systems, oxidation and reduction almost always involve the transfer of both electrons and protons together, because carbon-hydrogen bonds are what actually get broken. When you oxidize a carbon compound, you remove H atoms from it. Each H atom is one proton and one electron. The carrier molecules that accept them, primarily $\text{NAD}^+$ and FAD, receive both. So in practice you'll see reactions written as:
 
-$$\text{substrate} + \text{NAD}^+ \rightarrow \text{oxidized substrate} + \text{NADH} + \text{H}^+$$
+$$\text{substrateH}_2 + \text{NAD}^+ \rightarrow \text{oxidized substrate} + \text{NADH} + \text{H}^+$$
 
-The NADH picks up a hydride ion (H⁻, one proton plus two electrons), and a proton is released to solution. This is a reduction of NAD+. The substrate loses the equivalent and is oxidized. Two sides of the same transaction.
+$$\text{substrateH}_2 + \text{FAD} \rightarrow \text{oxidized substrate} + \text{FADH}_2$$
+
+The difference in how the protons are handled is worth noticing. $\text{NAD}^+$ accepts a hydride ion (H⁻: one proton plus two electrons) from the substrate and releases the second proton to solution, hence the free H⁺ on the right. FAD accepts both protons and both electrons directly, so both end up on the carrier and nothing is released. Same two electrons transferred, different proton accounting.
 
 ### Reduction Potentials
 
 How do we quantify how much an atom or molecule "wants" electrons? Through the **standard reduction potential**, written $E^{\circ'}$ (in volts), measured at biochemical standard conditions (pH 7, 25°C, 1 M concentrations).
 
-The convention: a high (more positive) $E^{\circ'}$ means a molecule has a strong tendency to *accept* electrons, to be reduced. A low (more negative) $E^{\circ'}$ means a molecule tends to *donate* electrons, to be oxidized.
+These aren't theoretical values; they're measured. The basic setup is to take your half-reaction and run it in competition against a universal reference: the **standard hydrogen electrode** (SHE), which is defined as 0 V by convention. You let electrons flow between the two half-reactions and measure the voltage. If your molecule pulls electrons away from the SHE, the voltage is positive; if the SHE pulls electrons away from your molecule, the voltage is negative. Do this for every half-reaction of interest, and you end up with a table of values that are all on the same scale, all comparable to each other, because they were all measured against the same reference point.
 
-Electrons flow spontaneously from low $E^{\circ'}$ to high $E^{\circ'}$, for the same reason water flows downhill. Here are some biologically important values:
+Why volts? Because a volt measures electrical potential difference, which is energy per unit charge (joules per coulomb, J/C). Think of it like a battery: a 9V battery "pushes" electrons harder than a 1.5V battery, and that higher voltage means more energy is released per electron moved. Reduction potential works the same way: a higher $E^{\circ'}$ means a stronger *pull* on electrons and more energy released when they flow. This is also exactly why $\Delta G^{\circ'} = -nF\Delta E^{\circ'}$ works out so cleanly: $n$ is moles of electrons, $F$ converts that to coulombs ($96,485 \frac{\text{C}}{\text{mol}}$ or $96.5 \frac{\text{kJ}}{\text{mol}\cdot\text{V}}$), and $\Delta E^{\circ'}$ is the voltage. Multiply charge by voltage and you get joules per mole. The equation isn't a biochemistry invention; it's just unit analysis on the definition of a volt.
 
-| Half-reaction | $E^{\circ'}$ (V) |
-|---|---|
-| $\frac{1}{2}O_2 + 2H^+ + 2e^- \rightarrow H_2O$ | +0.82 |
-| Fumarate + 2H⁺ + 2e⁻ → Succinate | +0.03 |
-| $\text{NAD}^+ + \text{H}^+ + 2e^- \rightarrow \text{NADH}$ | −0.32 |
-| $\text{NADP}^+ + \text{H}^+ + 2e^- \rightarrow \text{NADPH}$ | −0.32 |
+The convention: a high (more positive) $E^{\circ'}$ means a molecule has a strong tendency to *grab* electrons, to be reduced. A low (more negative) $E^{\circ'}$ means a molecule tends to *donate* electrons, to be oxidized.
 
-Oxygen has the highest reduction potential in this list — it strongly wants electrons. NADH has a low (negative) reduction potential — it's a good electron donor. So when NADH eventually passes its electrons to oxygen via the electron transport chain, those electrons fall from −0.32 V all the way to +0.82 V. That's a big drop, and the energy released is substantial.
+Electrons flow spontaneously from lower $E^{\circ'}$ to higher $E^{\circ'}$, for the same reason water flows downhill. Here are some biologically important values:
 
-We can calculate exactly how substantial using the relationship between reduction potential and free energy:
+| Half-reaction | $n$ | $E^{\circ'}$ (V) |
+|---|---|---|
+| $\frac{1}{2}O_2 + 2H^+ + 2e^- \rightarrow H_2O$ | 2 | +0.82 |
+| Fumarate + 2H⁺ + 2e⁻ → Succinate | 2 | +0.03 |
+| $\text{NAD}^+ + \text{H}^+ + 2e^- \rightarrow \text{NADH}$ | 2 | −0.32 |
+| $\text{NADP}^+ + \text{H}^+ + 2e^- \rightarrow \text{NADPH}$ | 2 | −0.32 |
+
+But let's not just assert that electrons flow from low to high $E^{\circ'}$, let's prove it thermodynamically using the equation connecting reduction potential to free energy:
 
 $$\Delta G^{\circ'} = -nF\Delta E^{\circ'}$$
 
@@ -72,73 +76,114 @@ where:
 - $F$ = Faraday's constant = 96.5 kJ/V·mol (sometimes written 96,485 J/V·mol)
 - $\Delta E^{\circ'} = E^{\circ'}_{\text{acceptor}} - E^{\circ'}_{\text{donor}}$
 
-For NADH passing two electrons to oxygen:
+Take the reaction that will matter most in the coming chapters: NADH passing its electrons to oxygen.
+
+$$\text{NADH} + \frac{1}{2}\text{O}_2 + \text{H}^+ \rightarrow \text{NAD}^+ + \text{H}_2\text{O}$$
+
+NADH is the donor ($E^{\circ'} = -0.32$ V), oxygen is the acceptor ($E^{\circ'} = +0.82$ V):
 
 $$\Delta E^{\circ'} = +0.82 - (-0.32) = +1.14 \text{ V}$$
 
 $$\Delta G^{\circ'} = -(2)(96.5)(1.14) = -220 \text{ kJ/mol}$$
 
-That's a lot of free energy released per NADH oxidized — about seven times the free energy of ATP hydrolysis. The electron transport chain captures a fraction of this energy to synthesize ATP. The rest is released as heat, which is part of how you maintain body temperature.
-
-The sign of $\Delta G^{\circ'}$ follows directly from the sign of $\Delta E^{\circ'}$: if $\Delta E^{\circ'}$ is positive (electrons flow from lower to higher reduction potential), $\Delta G^{\circ'}$ is negative and the reaction is spontaneous. If $\Delta E^{\circ'}$ is negative (electrons would have to flow "uphill"), $\Delta G^{\circ'}$ is positive and you'd need to drive the reaction with an input of energy. Just like with any other coupled reaction.
+That's enormously negative, roughly seven times the $\Delta G^{\circ '}$ of ATP hydrolysis. And this is where the direction rule comes from: $\Delta E^{\circ'}$ is positive because the acceptor has a higher reduction potential than the donor, which makes $\Delta G^{\circ'}$ negative, which means the reaction is spontaneous. Run it the other way (oxygen donating to NADH), and $\Delta E^{\circ'}$ flips negative, $\Delta G^{\circ'}$ goes positive, and the reaction doesn't go. Electrons flow from low to high $E^{\circ'}$ for exactly the same reason any reaction runs in the direction of negative $\Delta G$: thermodynamics ***requires*** it to do so.
 
 ### Where Redox Fits in Metabolism
 
-Nearly every catabolic pathway involves oxidation of carbon compounds, and the electrons from that oxidation have to go somewhere. In aerobic metabolism, they ultimately go to oxygen. But cells don't transfer electrons directly from glucose to oxygen in one step; that would release all the energy as heat at once, uncontrollable and uncapturable. Instead, the electrons are picked up by carrier molecules (NADH, FADH₂) and delivered to the electron transport chain in a controlled sequence that allows the energy to be captured incrementally as ATP.
+So the oxidation of NADH by oxygen releases −220 kJ/mol and is thermodynamically mandatory. The problem is that you can't actually use that energy if it's released all at once. A single uncontrolled transfer of electrons from NADH directly to oxygen would just generate heat. You can't build ATP from an explosion.
 
-So when you see a step in glycolysis or the TCA cycle labeled "oxidation," what's actually happening is: a carbon compound loses electrons and protons to NAD+ or FAD, converting them to NADH or FADH₂. Those carriers then carry the electrons to the inner mitochondrial membrane, where the electron transport chain passes them through a series of protein complexes and ultimately to oxygen. The free energy released along the way drives the synthesis of ATP.
+This is the whole point of what is called the **electron transport chain (ETC)**: it's the cell's way of doing this in a controlled, stepwise fashion. Instead of one enormous drop, the electrons pass through a series of protein complexes in the inner mitochondrial membrane, each with a slightly higher reduction potential than the last, releasing free energy incrementally at each step. That energy release is *captured* and used to pump protons across the membrane, building a proton gradient (a very specific electrochemical gradient with its own name: called $\Delta \text{p}$). The gradient then drives ATP synthesis through a molecular turbine called ATP synthase. It's a Rube Goldberg machine of spectacular elegance: electrons fall down an electrochemical staircase, the energy released is used to pump protons uphill, and the protons flowing back downhill spin a rotor that makes ATP.
+
+So when you see a step in glycolysis or the TCA cycle labeled "oxidation," here's what's actually happening: a carbon compound loses electrons and protons to $\text{NAD}^+$ or FAD, converting them to NADH or FADH₂. The carbon compound is done; it moves on to the next reaction. But the electrons aren't done. They ride NADH or FADH₂ to the inner mitochondrial membrane, enter the electron transport chain, and begin their stepwise descent toward oxygen. The free energy released along the way becomes the proton gradient that makes most of the cell's ATP.
 
 The pathway is essentially a wire connecting fuel molecules to oxygen, with the cell tapping the energy at controlled points along the wire.
+
+It's worth pausing on how physical this is. ATP synthase is a literal rotary motor, a protein that spins. The proton gradient drives rotation of this rotor at around 130 revolutions per ***second***, and each full turn synthesizes 3 ATP molecules. This is happening right now, thousands of times simultaneously in every mitochondria, in every one of your trillions of cells, continuously, every second of your life. A resting adult produces roughly their own body weight in ATP every day, virtually all of it from ATP synthase. The reason that number is even achievable is the controlled stepwise architecture of the ETC: by breaking the −220 kJ/mol drop into smaller increments and coupling each increment to proton pumping, the cell can run ATP synthase fast enough to keep up with demand. A single uncontrolled drop from NADH to oxygen couldn't do that, only a controlled thermodynamic balancing act could accomplish this reliably for decades (or longer if you're a lobster).
 
 ---
 
 ## Part II: The Activated Carrier Toolkit
 
-The cell handles energy in the form of specific molecular carriers. There are only a handful of them, but they carry almost all of the cell's energy transactions. Think of them as denominations of cellular currency, each useful for different kinds of purchases.
+Before diving in, it's worth defining two terms that will organize everything from here on out. **Catabolism** is the set of pathways that break molecules down, releasing free energy in the process (glycolysis, the TCA cycle, fatty acid oxidation). **Anabolism** is the set of pathways that build molecules up, consuming free energy to do so (fatty acid synthesis, gluconeogenesis, protein synthesis). Metabolism is the sum of both. The reason the distinction matters here is that the cell uses different carrier molecules for the two directions: catabolic pathways generate energy-carrying molecules, anabolic pathways spend them. Keeping those pools separate is how the cell avoids short-circuiting itself.
+
+The cell handles energy in the form of specific molecular carriers. There are only a handful of them, but they carry almost all of the cell's energy transactions. Think of them as denominations of cellular currency, each useful for different kinds of transactions.
 
 ### ATP: The Universal Phosphoryl Donor
 
-You already know ATP from Chapter 1. The quick recap for this context: ATP hydrolysis to ADP + Pᵢ releases about −30.5 kJ/mol under standard conditions and about −50 to −60 kJ/mol under cellular conditions. This free energy is used to drive reactions that wouldn't otherwise go.
+You already know ATP from Chapter 1. The quick recap for this context: $\text{ATP}$ hydrolysis to $\text{ADP} + \text{P}_i$ releases about −30.5 kJ/mol under standard conditions ($\Delta G^{\circ '}$) and about −50 to −60 kJ/mol under cellular conditions ($\Delta G$). This free energy is used to drive reactions that wouldn't otherwise go.
 
 The mechanism is almost always direct phosphoryl transfer: the enzyme moves the phosphate group from ATP to the substrate rather than hydrolyzing ATP in solution first and hoping the energy somehow carries over. Chapter 1 covered why the shared intermediate (the phosphorylated substrate) is what makes the coupling thermodynamically legitimate.
 
-One thing to add here: there are two kinds of ATP hydrolysis worth distinguishing. Sometimes ATP loses just the terminal phosphate (producing ADP + Pᵢ). Other times ATP loses a pyrophosphate group — the two terminal phosphates together — producing AMP + PPᵢ. The pyrophosphate (PPᵢ) is then rapidly hydrolyzed by pyrophosphatase to 2 Pᵢ. Because pyrophosphatase essentially makes the PPᵢ hydrolysis irreversible, this gives an even larger thermodynamic driving force than the ADP pathway. Fatty acid activation (attaching a fatty acid to CoA before oxidation) uses this trick.
+One thing to add here: there are two kinds of ATP hydrolysis worth distinguishing. Sometimes ATP loses just the terminal phosphate (producing ADP + Pᵢ). Other times ATP loses a pyrophosphate group (the two terminal phosphates together), producing AMP + PPᵢ. The pyrophosphate (PPᵢ) is then rapidly hydrolyzed by pyrophosphatase to 2 Pᵢ. Because pyrophosphatase essentially makes the PPᵢ hydrolysis irreversible, this gives an even larger thermodynamic driving force than the ADP pathway. Fatty acid activation (attaching a fatty acid to CoA before oxidation) uses this trick.
 
-### NAD+/NADH: The Catabolic Electron Carrier
+### $\text{NAD}^+$/NADH: The Catabolic Electron Carrier
 
-NAD+ (nicotinamide adenine dinucleotide) is the primary electron carrier in catabolic (energy-releasing) reactions. When a substrate is oxidized, NAD+ accepts a hydride ion (H⁻) from the substrate and becomes NADH. The reaction is reversible, and that reversibility is the whole point: NAD+ can pick up electrons in the cytoplasm or mitochondria and deliver them to the electron transport chain, where the electrons are offloaded to oxygen, releasing energy and regenerating NAD+.
+$\text{NAD}^+$ (nicotinamide adenine dinucleotide) is the primary electron carrier in catabolic (energy-releasing) reactions. When a substrate is oxidized, $\text{NAD}^+$ accepts a hydride ion (H⁻) from the substrate and becomes $\text{NADH}$. A hydride contains 2 electrons, effectively $\text{NADH}$ is a carrier of electron *pairs*. The reaction is reversible, and that reversibility is the whole point: $\text{NAD}^+$ can pick up electrons in the cytoplasm or mitochondria and deliver them to the electron transport chain, where the electrons are offloaded to oxygen, releasing energy and regenerating $\text{NAD}^+$.
 
-The key ratio to care about is NAD+/NADH. Catabolic pathways need NAD+ as an electron acceptor. If the cell runs out of NAD+ (if NADH accumulates faster than it's reoxidized), those pathways stall. This is why oxygen deprivation is so immediately devastating to aerobic metabolism: without oxygen to accept electrons at the end of the transport chain, NADH can't be reoxidized to NAD+, NAD+ runs out, and glycolysis (which requires NAD+) grinds to a halt. The cell's short-term solution under anaerobic conditions is to dump electrons onto pyruvate to make lactate, which regenerates NAD+ and keeps glycolysis running — that's lactic acid fermentation, and we'll cover it fully in the glycolysis chapter.
+The key ratio to care about is $\text{NAD}^+/\text{NADH}$. Catabolic pathways need $\text{NAD}^+$ as an electron acceptor. If the cell runs out of $\text{NAD}^+$ (if NADH accumulates faster than it's oxidized), those pathways stall. This is why oxygen deprivation is so immediately devastating to aerobic metabolism: without oxygen to accept electrons at the end of the transport chain, NADH can't be reoxidized to $\text{NAD}^+$, $\text{NAD}^+$ runs out, and glycolysis, the Krebs cycle, fatty-acid oxidation, protein catabolism (all of which require $\text{NAD}^+$) grind to a halt. The cell's short-term solution under anaerobic conditions is to dump electrons onto pyruvate to make lactate, which regenerates $\text{NAD}^+$ and keeps glycolysis running. That's lactic acid fermentation, and we'll cover it fully in the glycolysis chapter.
+
+### FAD/FADH₂: The Other Electron Carrier
+
+FAD (flavin adenine dinucleotide) is another electron carrier; it gets reduced to FADH₂ during oxidation reactions. Unlike $\text{NAD}^+$, which accepts a hydride ion, FAD accepts two hydrogen atoms directly, one from each carbon being oxidized; it picks up two protons and two electrons in the process, so still an electron *pair* carrier. It is regenerated at the electron transport chain.
+
+Why does the cell use FAD at all when it already has $\text{NAD}^+$? Because they have different reduction potentials, and that difference determines which substrates each can oxidize. $\text{NAD}^+/\text{NADH}$ has an $E^{\circ'}$ of −0.32 V. $\text{FAD}/\text{FADH}_2$ varies by enzyme context, but in succinate dehydrogenase it's approximately 0 V.
+
+The succinate-to-fumarate oxidation is the clearest example. Fumarate/succinate is already in the table above: $E^{\circ'} = +0.03$ V. In this reaction, succinate is the electron donor. Let's try both carriers:
+
+**With $\text{NAD}^+$ as acceptor** ($E^{\circ'} = -0.32$ V):
+
+$$\Delta E^{\circ'} = -0.32 - (+0.03) = -0.35 \text{ V}$$
+
+$$\Delta G^{\circ'} = -(2)(96.5)(-0.35) = +67.6 \text{ kJ/mol}$$
+
+Strongly unfavorable. $\text{NAD}^+$ cannot oxidize succinate; the electrons would have to flow uphill by 0.35 V. No cellular concentration adjustment is large enough to overcome a +67.6 kJ/mol penalty.
+
+**With FAD as acceptor** ($E^{\circ'} \approx 0$ V in this enzyme):
+
+$$\Delta E^{\circ'} = 0 - (+0.03) = -0.03 \text{ V}$$
+
+$$\Delta G^{\circ'} = -(2)(96.5)(-0.03) = +5.8 \text{ kJ/mol}$$
+
+Slightly unfavorable under standard conditions, but only barely. Under cellular conditions, fumarate is immediately consumed by the next enzyme in the TCA cycle and FADH₂ is rapidly reoxidized by the electron transport chain, keeping both product concentrations low and pulling the reaction forward. A +5.8 kJ/mol standard penalty is easily overcome by concentration effects; a +67.6 kJ/mol penalty is not. This is why the cell uses $\text{FAD}$ here and not $\text{NAD}^+$: it's the only carrier with a reduction potential close enough to succinate's to make the reaction thermodynamically workable.
+
+The trade-off is that FADH₂ delivers electrons to the transport chain at a lower energy point than NADH, and we can show exactly why with the same calculation we've been doing. Both carriers ultimately pass their electrons to oxygen; the question is how much free energy is released when they do.
+
+**NADH oxidation by $\text{O}_2$** (donor $E^{\circ'} = -0.32$ V, acceptor $E^{\circ'} = +0.82$ V):
+
+$$\Delta E^{\circ'} = +0.82 - (-0.32) = +1.14 \text{ V}$$
+
+$$\Delta G^{\circ'} = -(2)(96.5)(1.14) = -220 \text{ kJ/mol}$$
+
+**FADH₂ oxidation by $\text{O}_2$** (donor $E^{\circ'} \approx 0$ V, acceptor $E^{\circ'} = +0.82$ V):
+
+$$\Delta E^{\circ'} = +0.82 - 0 = +0.82 \text{ V}$$
+
+$$\Delta G^{\circ'} = -(2)(96.5)(0.82) = -158 \text{ kJ/mol}$$
+
+FADH₂ releases about 62 kJ/mol less than NADH when oxidized by oxygen. That's roughly 28% less free energy available to pump protons and drive ATP synthesis, which is exactly why the ATP yields differ: each NADH drives synthesis of about 2.5 ATP, each FADH₂ about 1.5 ATP. The numbers come directly from the reduction potentials, not from a table someone memorized.
+
+FAD is unique in another way: it's always covalently or tightly non-covalently bound to its enzyme (it's a *prosthetic group*, like the heme in Hemoglobin). It doesn't float free the way $\text{NAD}^+$ does. This means FAD is functionally part of the enzyme and is recycled right there at the enzyme's active site by the electron transport chain (we'll see how exactly when we examine the ETC more carefully). 
 
 ### NADPH: The Anabolic Electron Carrier
 
 NADPH (nicotinamide adenine dinucleotide phosphate) looks almost identical to NADH; the only structural difference is a phosphate group on the adenosine ribose. But that one phosphate makes it recognizable to completely different enzymes, and it serves a completely different function: NADPH is the electron donor for biosynthetic reactions.
 
-Whenever the cell builds something — fatty acids, cholesterol, amino acids, nucleotides — it needs reducing power, meaning electrons to reduce oxidized carbon precursors into reduced carbon products. NADPH provides those electrons. The cell keeps its NADPH pool separate from its NADH pool precisely because anabolic and catabolic demands have to be managed independently.
+When we break down fuels, much like a car engine, that fuel is being *oxidized*, the oxidizers are $\text{NAD}^+$ or $\text{FAD}$. Conversely, whenever the cell *builds* something (fatty acids, cholesterol, amino acids, nucleotides), it needs reducing power, meaning electrons to reduce oxidized carbon precursors into reduced carbon products. $\text{NADPH}$ provides those electrons. The cell keeps its $\text{NADPH}$ pool separate from its $\text{NADH}$ pool precisely because anabolic and catabolic demands have to be managed independently.
 
 The primary source of NADPH is the pentose phosphate pathway, which runs alongside glycolysis and is essentially a glucose-oxidizing machine dedicated to generating NADPH rather than ATP.
 
 **The short rule:** NADH is for catabolism and energy generation. NADPH is for biosynthesis and managing oxidative stress (glutathione reductase, for example, uses NADPH). Same chemistry, completely different cellular role.
 
-### FAD/FADH₂: The Other Electron Carrier
-
-FAD (flavin adenine dinucleotide) is another electron carrier that gets reduced to FADH₂ during oxidation reactions. Like NAD+, it accepts a hydride and is regenerated at the electron transport chain.
-
-Why does the cell use FAD at all when it already has NAD+? Because they have different reduction potentials. NAD+/NADH has a $E^{\circ'}$ of −0.32 V. FAD/FADH₂ has an $E^{\circ'}$ around 0 V (it varies by enzyme context). This means FAD can accept electrons from substrates that NAD+ cannot — specifically substrates that aren't quite oxidized enough to donate electrons to NAD+. The succinate-to-fumarate step in the TCA cycle uses FAD rather than NAD+ for exactly this reason: the $\Delta G^{\circ'}$ for NAD+-linked oxidation of succinate would be slightly positive, but FAD-linked oxidation is favorable.
-
-The trade-off is that FADH₂ delivers electrons to the transport chain at a lower energy point than NADH, so it generates less ATP per molecule. Each NADH ultimately drives the synthesis of about 2.5 ATP; each FADH₂ drives about 1.5 ATP. This difference matters when you're accounting for the total ATP yield of glucose oxidation.
-
-FAD is unique in another way: it's always covalently or tightly non-covalently bound to its enzyme (it's a *prosthetic group*). It doesn't float free the way NAD+ does. This means FAD is functionally part of the enzyme and is recycled right there at the enzyme's active site by the electron transport chain. 
 
 ### Coenzyme A: The Acyl Carrier
 
 Coenzyme A (CoA) is the cell's acyl group carrier. The business end of CoA is a thiol group (–SH), and it forms a **thioester bond** with acyl groups (carbon chains with a carbonyl at the end):
 
-$$\text{CoA-SH} + \text{R-COOH} \rightarrow \text{R-CO-S-CoA} + \text{H}_2\text{O}$$
+$$\text{CoA-SH} + \text{RCOO}^- + \text{H}^+ \rightarrow \text{R}{-}\overset{\overset{\displaystyle\mathrm{O}}{\|}}{\text{C}}{-}\text{S-CoA} + \text{H}_2\text{O}$$
 
 The most important example is acetyl-CoA, where the acyl group is a two-carbon acetyl unit (CH₃CO–). Acetyl-CoA is the central junction of carbon metabolism: it's the form in which the cell packages the carbon from glucose (via pyruvate), from fatty acids (via beta-oxidation), and from certain amino acids, before feeding them into the TCA cycle.
 
-Why does thioester formation matter? Thioester bonds are thermodynamically similar to phosphoanhydride bonds in ATP — they're high-energy in the same sense that ATP is: not because the bond itself is energetic, but because the thioester is in a more reactive, less stable configuration than its hydrolysis products. Hydrolysis of a thioester releases about −31 kJ/mol, right in the range of ATP hydrolysis. This means CoA esters can drive reactions in the same way ATP phosphoryl transfer can, and the two systems are interchangeable in some reactions. The first step of the TCA cycle — citrate synthase — works by exploiting the reactivity of the acetyl-CoA thioester to drive condensation with oxaloacetate.
+Why does thioester formation matter? Thioester bonds are thermodynamically similar to phosphoanhydride bonds in ATP. They're high-energy in the same sense that ATP is: not because the bond itself is energetic, but because the thioester is in a more reactive, less stable configuration than its hydrolysis products. Hydrolysis of a thioester releases about −31 kJ/mol, right in the range of ATP hydrolysis. This means CoA thioesters can drive reactions in the same way ATP phosphoryl transfer can, and the two systems are interchangeable in some reactions. The first step of the TCA cycle, citrate synthase, works by exploiting the reactivity of the acetyl-CoA thioester to drive condensation with oxaloacetate.
 
 ### A Few Others Worth Knowing
 
@@ -148,13 +193,15 @@ These come up in later chapters, so a heads-up now saves confusion later:
 
 **UDPG (UDP-glucose)** is how the cell activates glucose for glycogen synthesis and other glycosylation reactions. Direct glucosyl transfer from glucose itself isn't favorable enough; attaching glucose to UDP (via the high-energy UDP-glucose bond) makes the transfer thermodynamically driven.
 
-**Biotin** carries CO₂ groups. Carboxylation reactions — adding CO₂ to a carbon chain — are used in both fatty acid synthesis and gluconeogenesis, and biotin is the prosthetic group that carries the CO₂ from ATP-driven carboxylation to the acceptor molecule.
+**Biotin** carries CO₂ groups. Carboxylation reactions (adding CO₂ to a carbon chain) are used in both fatty acid synthesis and gluconeogenesis, and biotin is the prosthetic group that carries the CO₂ from ATP-driven carboxylation to the acceptor molecule.
+
+**THF (tetrahydrofolate)** carries one-carbon units at various oxidation states (from methyl all the way up to formyl) and is essential for synthesizing purines, thymidine, and several amino acids. Unlike SAM, which donates only methyl groups, THF handles the full range of one-carbon chemistry. It's also the target of some of the most widely used drugs in medicine: methotrexate (used in cancer and rheumatoid arthritis) and trimethoprim (a common antibiotic) both work by blocking THF synthesis or recycling, starving rapidly dividing cells of the one-carbon units they need to make DNA.
 
 ---
 
 ## Part III: The Phosphate Compound Energy Hierarchy
 
-ATP has a standard free energy of hydrolysis of −30.5 kJ/mol. That's not the highest in the cell — there are phosphorylated compounds with more negative values, and there are compounds with less negative values. This hierarchy matters because it determines which direction phosphoryl groups spontaneously transfer.
+ATP has a standard free energy of hydrolysis of −30.5 kJ/mol. That's not the highest in the cell; there are phosphorylated compounds with more negative values, and there are compounds with less negative values. This hierarchy matters because it determines which direction phosphoryl groups spontaneously transfer.
 
 Here are representative values:
 
@@ -176,6 +223,32 @@ Compounds below ATP in the hierarchy (glucose-6-phosphate, glycerol-3-phosphate)
 
 The position of ATP in the middle of the hierarchy is what makes it work as a universal currency. It can accept phosphate from high-energy donors (capturing energy from catabolism) and donate phosphate to low-energy acceptors (spending that energy on cellular work). If ATP sat at the top, it couldn't be recharged from catabolism. If it sat at the bottom, it couldn't drive anything. The middle position is the whole point.
 
+A concrete example makes this click. PEP (phosphoenolpyruvate) sits well above ATP in the hierarchy. So PEP can phosphorylate ADP. That's the pyruvate kinase reaction, the last step of glycolysis. Stack PEP hydrolysis against the reverse of ATP hydrolysis (i.e., ADP phosphorylation) and sum:
+
+$$
+\begin{array}{rcll}
+\text{PEP} + \cancel{H_2O} & \rightarrow & \text{Pyruvate} + \cancel{P_i} & \Delta G^{\circ'} = -61.9 \text{ kJ/mol} \\
+ADP + \cancel{P_i} & \rightarrow & ATP + \cancel{H_2O} & \Delta G^{\circ'} = +30.5 \text{ kJ/mol} \\
+\hline
+\text{PEP} + ADP & \rightarrow & \text{Pyruvate} + ATP & \Delta G^{\circ'} = -31.4 \text{ kJ/mol}
+\end{array}
+$$
+
+Favorable. Phosphate flows downhill from PEP to ADP, and ATP is synthesized.
+
+Now try the reverse: can ATP phosphorylate pyruvate back to PEP? Stack ATP hydrolysis against the reverse of PEP hydrolysis:
+
+$$
+\begin{array}{rcll}
+ATP + \cancel{H_2O} & \rightarrow & ADP + \cancel{P_i} & \Delta G^{\circ'} = -30.5 \text{ kJ/mol} \\
+\text{Pyruvate} + \cancel{P_i} & \rightarrow & \text{PEP} + \cancel{H_2O} & \Delta G^{\circ'} = +61.9 \text{ kJ/mol} \\
+\hline
+ATP + \text{Pyruvate} & \rightarrow & ADP + \text{PEP} & \Delta G^{\circ'} = +31.4 \text{ kJ/mol}
+\end{array}
+$$
+
+Not favorable. The math simply doesn't work in this direction. This is why pyruvate kinase is irreversible under cellular conditions, and why gluconeogenesis (which needs to go from pyruvate back toward PEP) can't just run pyruvate kinase in reverse as we'll see in the glycolysis chapter. It has to use a completely different two-enzyme workaround that costs two ATP equivalents to get the job done. The hierarchy forces that detour.
+
 ---
 
 ## Part IV: Types of Metabolic Reactions
@@ -186,9 +259,9 @@ Here are the six types you'll encounter repeatedly:
 
 ### 1. Oxidation-Reduction
 
-Already covered above. One molecule loses electrons (and usually protons), another gains them. NAD+, FAD, and NADP+ are the electron acceptors in catabolic oxidations; NADPH is the electron donor in biosynthetic reductions. The $\Delta G$ is determined by the difference in reduction potentials.
+Already covered above. One molecule loses electrons (and usually protons), another gains them. $\text{NAD}^+$, FAD, and $\text{NADP}^+$ are the electron acceptors in catabolic oxidations; NADPH is the electron donor in biosynthetic reductions. The $\Delta G$ is determined by the difference in reduction potentials.
 
-*Example:* Isocitrate + NAD+ → α-ketoglutarate + NADH + CO₂ (TCA cycle, isocitrate dehydrogenase step)
+*Example:* Isocitrate + $\text{NAD}^+$ → α-ketoglutarate + NADH + CO₂ (TCA cycle, isocitrate dehydrogenase step)
 
 ### 2. Group Transfer
 
@@ -234,11 +307,11 @@ ATP-driven formation of a covalent bond, often a carbon-carbon bond. This is how
 
 ### Near-Equilibrium vs. Irreversible Steps
 
-Not all steps in a pathway are created equal. Some have $\Delta G^{\circ'}$ values close to zero and operate near equilibrium under cellular conditions — the reaction runs easily in both directions, and the actual direction depends on which side the concentrations are pushing. Other steps have large negative $\Delta G$ values under cellular conditions and are essentially irreversible.
+Not all steps in a pathway are created equal. Some have $\Delta G^{\circ'}$ values close to zero and operate near equilibrium under cellular conditions, meaning the reaction runs easily in both directions, and the actual direction depends on which side the concentrations are pushing. Other steps have large negative $\Delta G$ values under cellular conditions and are essentially irreversible.
 
 These irreversible steps are the important ones. They're the **committed steps** of a pathway: once you've gone through them, you're committed to that branch of metabolism. They're also the steps where cells place their regulatory machinery, because it makes much more sense to put a throttle at a point of no return than somewhere reversible.
 
-In glycolysis, three reactions are irreversible: the hexokinase step (glucose → glucose-6-phosphate), the phosphofructokinase step (fructose-6-phosphate → fructose-1,6-bisphosphate), and the pyruvate kinase step (PEP → pyruvate). The middle one, phosphofructokinase, is the primary regulated step. When the cell has plenty of ATP, phosphofructokinase is inhibited, and glycolysis slows. When AMP accumulates (signaling energy deprivation), it's activated, and glycolysis speeds up. The allosteric regulation of this single irreversible enzyme controls the flux through the entire pathway.
+In glycolysis, three reactions are irreversible: the hexokinase step (glucose → glucose-6-phosphate), the phosphofructokinase step (fructose-6-phosphate → fructose-1,6-bisphosphate), and the pyruvate kinase step (PEP → pyruvate). The middle one, phosphofructokinase, is the primary regulatory step. When the cell has plenty of ATP, phosphofructokinase is inhibited, and glycolysis slows. When AMP accumulates (signaling energy deprivation), it's activated, and glycolysis speeds up. The allosteric regulation of this single irreversible enzyme controls the flux through the entire pathway.
 
 ### Product Removal Keeps Pathways Running
 
@@ -246,7 +319,7 @@ Here's a point that connects back to Chapter 1: the actual $\Delta G$ of any ste
 
 $$\Delta G = \Delta G^{\circ'} + RT\ln\frac{[\text{products}]}{[\text{reactants}]}$$
 
-If product concentrations are kept low, the concentration term is negative, which makes the actual $\Delta G$ more negative than $\Delta G^{\circ'}$ alone. This is how cells keep near-equilibrium steps running in the forward direction even when $\Delta G^{\circ'}$ is slightly positive: if the product is immediately consumed by the next enzyme in the pathway, it never accumulates, the concentration ratio stays small, and the actual $\Delta G$ stays negative.
+If product concentrations are kept low, $\frac{\text{products}}{\text{reactants}}<1$ its logarithm is negative, and $\Delta G$ is pulled below $\Delta G^{\circ'}$. This is how cells keep near-equilibrium steps running in the forward direction even when $\Delta G^{\circ'}$ is slightly positive: if the product is immediately consumed by the next enzyme in the pathway, it never accumulates, the concentration ratio stays small, and the actual $\Delta G$ stays negative.
 
 This is also why metabolic pathways run as coordinated sequences rather than isolated reactions. The product of each step is the substrate for the next. Each enzyme in the chain is, in a sense, pulling on the one before it. Disrupt any step and you get product accumulation upstream and substrate starvation downstream, both of which shift $\Delta G$ values in ways that can stall the whole pathway.
 
@@ -264,21 +337,21 @@ This is worth sitting with for a moment, because it changes how you think about 
 
 Metformin is the first-line drug for type 2 diabetes, taken by hundreds of millions of people. Its mechanism is still not completely understood, but a major component involves inhibiting Complex I of the mitochondrial electron transport chain.
 
-Complex I is where NADH enters the electron transport chain; it accepts electrons from NADH and passes them down the chain toward oxygen. When metformin partially inhibits Complex I, NADH can't be reoxidized as efficiently. NADH accumulates, and the NADH/NAD+ ratio rises.
+Complex I is where NADH enters the electron transport chain; it accepts electrons from NADH and passes them down the chain toward oxygen. When metformin partially inhibits Complex I, NADH can't be reoxidized as efficiently. NADH accumulates, and the NADH/$\text{NAD}^+$ ratio rises.
 
-Here's why that matters: glycolysis, pyruvate dehydrogenase, and the TCA cycle all require NAD+ as an electron acceptor. When NAD+ becomes scarce, these pathways slow down. Glucose is metabolized less efficiently, which reduces the ATP/AMP ratio. Low ATP/AMP activates AMPK (AMP-activated protein kinase), a master metabolic sensor that, among many other effects, suppresses hepatic gluconeogenesis (glucose synthesis in the liver). Less glucose output from the liver means lower blood glucose.
+Here's why that matters: glycolysis, pyruvate dehydrogenase, and the TCA cycle all require $\text{NAD}^+$ as an electron acceptor. When $\text{NAD}^+$ becomes scarce, these pathways slow down. Glucose is metabolized less efficiently, which reduces the ATP/AMP ratio. Low ATP/AMP activates AMPK (AMP-activated protein kinase), a master metabolic sensor that, among many other effects, suppresses hepatic gluconeogenesis (glucose synthesis in the liver). Less glucose output from the liver means lower blood glucose.
 
-The downstream effects of partially tweaking a single electron transport complex ripple through NADH/NAD+ balance, glycolysis, gluconeogenesis, and whole-body glucose homeostasis. You couldn't follow this chain of events without understanding what NAD+ does, why its ratio to NADH matters, and how the thermodynamics of electron transfer connect to pathway flux. This is the chapter that makes that story readable.
+The downstream effects of partially tweaking a single electron transport complex ripple through NADH/$\text{NAD}^+$ balance, glycolysis, gluconeogenesis, and whole-body glucose homeostasis. You couldn't follow this chain of events without understanding what $\text{NAD}^+$ does, why its ratio to NADH matters, and how the thermodynamics of electron transfer connect to pathway flux. This is the chapter that makes that story readable.
 
 ### Thiamine Deficiency and the TCA Cycle
 
-Thiamine (vitamin B₁) is a cofactor for three critical enzymes in oxidative metabolism: pyruvate dehydrogenase (which converts pyruvate to acetyl-CoA), alpha-ketoglutarate dehydrogenase (a TCA cycle enzyme), and transketolase (pentose phosphate pathway). All three are oxidative decarboxylation steps — they oxidize a substrate, release CO₂, and transfer electrons to NAD+.
+Thiamine (vitamin B₁) is a cofactor for three critical enzymes in oxidative metabolism: pyruvate dehydrogenase (which converts pyruvate to acetyl-CoA), alpha-ketoglutarate dehydrogenase (a TCA cycle enzyme), and transketolase (pentose phosphate pathway). All three are oxidative decarboxylation steps: they oxidize a substrate, release CO₂, and transfer electrons to $\text{NAD}^+$.
 
 Thiamine deficiency shuts down all three. The result is a bottleneck at pyruvate: glucose can still be converted to pyruvate by glycolysis, but pyruvate can't be converted to acetyl-CoA and enter the TCA cycle. Pyruvate accumulates and is converted to lactate, producing lactic acidosis.
 
-The neurological consequences — Wernicke encephalopathy, which causes confusion, eye movement abnormalities, and ataxia — reflect the fact that neurons are particularly dependent on aerobic glucose metabolism and have essentially no other fuel option. Thiamine deficiency is classic in chronic alcoholism and severe malnutrition. Treatment with IV thiamine can be dramatically effective if given early.
+The neurological consequences, including Wernicke encephalopathy (confusion, eye movement abnormalities, and ataxia), reflect the fact that neurons are particularly dependent on aerobic glucose metabolism and have essentially no other fuel option. Thiamine deficiency is classic in chronic alcoholism and severe malnutrition. Treatment with IV thiamine can be dramatically effective if given early.
 
-The mechanism is an NAD+-dependent oxidation step that gets knocked out by losing a cofactor. Without it, the electrons that should move from pyruvate through NADH to the electron transport chain have nowhere to go, the redox cycle stalls, and the cell's aerobic energy metabolism collapses at the entry point to the TCA cycle.
+The mechanism is an $\text{NAD}^+$-dependent oxidation step that gets knocked out by losing a cofactor. Without it, the electrons that should move from pyruvate through NADH to the electron transport chain have nowhere to go, the redox cycle stalls, and the cell's aerobic energy metabolism collapses at the entry point to the TCA cycle.
 
 ---
 
@@ -286,7 +359,7 @@ The mechanism is an NAD+-dependent oxidation step that gets knocked out by losin
 
 **Reduction potential and spontaneity:** If $\Delta E^{\circ'}$ is positive (acceptor has higher $E^{\circ'}$ than donor), the reaction is spontaneous and $\Delta G^{\circ'}$ is negative. Electrons flow from low to high reduction potential. The equation $\Delta G^{\circ'} = -nF\Delta E^{\circ'}$ ties this directly to free energy.
 
-**NAD+ vs. NADPH:** They look similar but serve opposite metabolic roles. NADH carries electrons from catabolism to the electron transport chain. NADPH donates electrons for biosynthesis. Questions that confuse the two are common — always ask whether the context is breaking things down (catabolism, NADH) or building things up (anabolism, NADPH).
+**$\text{NAD}^+$ vs. NADPH:** They look similar but serve opposite metabolic roles. NADH carries electrons from catabolism to the electron transport chain. NADPH donates electrons for biosynthesis. Questions that confuse the two are common; always ask whether the context is breaking things down (catabolism, NADH) or building things up (anabolism, NADPH).
 
 **The phosphate hierarchy:** Compounds above ATP in the hydrolysis hierarchy can phosphorylate ADP. Compounds below ATP get phosphorylated by ATP. PEP and 1,3-BPG are both above ATP, which is why they can drive substrate-level phosphorylation. Glucose-6-phosphate is below ATP, which is why hexokinase runs in the direction ATP → glucose-6-phosphate, not the other way.
 
@@ -349,7 +422,7 @@ $\Delta G^{\circ'}$ for ATP hydrolysis = −30.5 kJ/mol
 
 (b) Explain this using the phosphate energy hierarchy.
 
-(c) The reverse reaction — hexokinase phosphorylating glucose using ATP — is spontaneous. What is its $\Delta G^{\circ'}$?
+(c) The reverse reaction (hexokinase phosphorylating glucose using ATP) is spontaneous. What is its $\Delta G^{\circ'}$?
 
 **Solution:**
 
@@ -363,9 +436,9 @@ $$\Delta G^{\circ'} = -13.8 + 30.5 = +16.7 \text{ kJ/mol}$$
 
 Not favorable. This reaction doesn't go in the direction written.
 
-(b) Glucose-6-phosphate sits below ATP in the phosphate energy hierarchy ($\Delta G^{\circ'}$ of hydrolysis −13.8 vs. −30.5 kJ/mol). Phosphate spontaneously transfers from higher-energy to lower-energy compounds, meaning from ATP down to glucose — not the other way. You can't use glucose-6-phosphate to make ATP because that would be moving phosphate uphill thermodynamically.
+(b) Glucose-6-phosphate sits below ATP in the phosphate energy hierarchy ($\Delta G^{\circ'}$ of hydrolysis −13.8 vs. −30.5 kJ/mol). Phosphate spontaneously transfers from higher-energy to lower-energy compounds, meaning from ATP down to glucose, not the other way. You can't use glucose-6-phosphate to make ATP because that would be moving phosphate uphill thermodynamically.
 
-(c) The reverse reaction — ATP phosphorylating glucose to glucose-6-phosphate — simply has the opposite sign:
+(c) The reverse reaction, ATP phosphorylating glucose to glucose-6-phosphate, simply has the opposite sign:
 
 $$\text{Glucose} + \text{ATP} \rightarrow \text{Glucose-6-phosphate} + \text{ADP} \qquad \Delta G^{\circ'} = -16.7 \text{ kJ/mol}$$
 
@@ -409,9 +482,9 @@ $$= +4200 - 9510 = -5310 \text{ J/mol} = -5.3 \text{ kJ/mol}$$
 
 ## Opener Questions Revisited
 
-**1. NAD+ gains electrons during glycolysis to become NADH. Why does that matter?**
+**1. $\text{NAD}^+$ gains electrons during glycolysis to become NADH. Why does that matter?**
 
-Those electrons represent free energy that the cell hasn't captured yet. NADH carries them from the cytoplasm to the inner mitochondrial membrane, where the electron transport chain accepts them and passes them through a series of carriers of increasing reduction potential, ultimately to oxygen. The free energy released as electrons fall down this electrochemical gradient is used to pump protons across the inner membrane, creating a proton gradient. That gradient drives ATP synthase. The electrons that NAD+ picks up from glycolysis are ultimately responsible for most of the ATP the cell makes from glucose oxidation. Without NAD+, those electrons would have nowhere to go, glycolysis would stall, and the cell would be limited to the two net ATPs from substrate-level phosphorylation.
+Those electrons represent free energy that the cell hasn't captured yet. NADH carries them from the cytoplasm to the inner mitochondrial membrane, where the electron transport chain accepts them and passes them through a series of carriers of increasing reduction potential, ultimately to oxygen. The free energy released as electrons fall down this electrochemical gradient is used to pump protons across the inner membrane, creating a proton gradient. That gradient drives ATP synthase. The electrons that $\text{NAD}^+$ picks up from glycolysis are ultimately responsible for most of the ATP the cell makes from glucose oxidation. Without $\text{NAD}^+$, those electrons would have nowhere to go, glycolysis would stall, and the cell would be limited to the two net ATPs from substrate-level phosphorylation.
 
 **2. If there are higher-energy phosphate compounds than ATP, why is ATP the universal currency?**
 
