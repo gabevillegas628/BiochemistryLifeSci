@@ -18,7 +18,7 @@ Chapter 10 ended with pyruvate. Glycolysis split glucose in half, extracted 2 AT
 
 Here is the framing that makes the TCA cycle make sense:
 
-The TCA cycle is primarily an **electron extraction operation**. The carbons in acetyl-CoA still hold a lot of electrons in their carbon-hydrogen bonds, and those electrons represent stored chemical potential energy. The cycle's job is to strip those electrons off, load them onto NAD⁺ and FAD, and hand the carriers off to the electron transport chain. The TCA cycle generates very little ATP directly: one GTP per turn via substrate-level phosphorylation. The real yield is 3 NADH and 1 FADH₂ per turn, which the electron transport chain converts to roughly 7.5 ATP equivalents. The cycle is the electron factory; the ETC (Chapter 12) is the ATP factory that runs on what the TCA cycle produces.
+The TCA cycle is primarily an **electron extraction operation**. The carbons in acetyl-CoA still hold a lot of electrons in their carbon-hydrogen bonds, and those electrons represent stored chemical potential energy. The cycle's job is to strip those electrons off, load them onto NAD⁺ and FAD, and hand the carriers off to the electron transport chain. The TCA cycle generates very little ATP directly: one GTP (or ATP) per turn via substrate-level phosphorylation. The real yield is 3 NADH and 1 FADH₂ per turn, which the electron transport chain converts to roughly 9 ATP equivalents; 3x2.5ATP + 1x1.5ATP from the NADH and FADH₂ respectively. The cycle is the electron factory; the ETC (Chapter 12) is the ATP factory that runs on what the TCA cycle produces.
 
 The TCA cycle is also a **biosynthetic hub**. Its intermediates are the precursors for amino acid synthesis, heme, nucleotides, and fatty acids. This creates a fundamental tension that runs through regulation: the same cycle that feeds the ETC also feeds the biosynthetic machinery, and the cell must balance extraction versus anabolism depending on what it needs at any given moment.
 
@@ -44,13 +44,13 @@ Once in the matrix, pyruvate meets the pyruvate dehydrogenase complex.
 
 ### Structure and Cofactors
 
-The pyruvate dehydrogenase complex (PDH complex, or PDC) is one of the largest enzyme complexes known, with a molecular mass of several million daltons. It is not a single enzyme but an organized assembly of three distinct enzymes:
+The **pyruvate dehydrogenase complex (PDH complex, or PDC)** is one of the largest enzyme complexes known, with a molecular mass of several million daltons. It is not a single enzyme but an organized assembly of three distinct enzymes:
 
 - **E1: Pyruvate decarboxylase** (pyruvate dehydrogenase in some nomenclatures)
 - **E2: Dihydrolipoamide acetyltransferase**
 - **E3: Dihydrolipoamide dehydrogenase**
 
-The structural core is a scaffold of E2 subunits, with E1 and E3 clustered around the outside. This architecture is not decorative: the long, flexible lipoate arm covalently attached to E2 can swing between the active sites of E1 and E3, passing reaction intermediates without releasing them into solution. The whole complex functions as a single integrated machine.
+The structure of PDC is roughly spherical with a scaffold of E2 subunits at its core, with E1 and E3 clustered around it. This architecture is not decorative: the long, flexible lipoate arm covalently attached to E2 can swing between the active sites of E1 and E3, passing reaction intermediates without releasing them into solution. The whole complex functions as a single integrated machine.
 
 The complex requires five cofactors, one from each of the B vitamins listed below:
 
@@ -80,11 +80,11 @@ E1 uses TPP as its cofactor. The thiazolium ring of TPP contains a carbon atom w
 
 **Phase 2: Oxidation and transfer (E2 + lipoate + CoA)**
 
-E2's lipoate arm swings over to E1 and picks up the 2-carbon fragment. As the fragment transfers, it is oxidized from the alcohol level to the thioester level: the hydroxyethyl group becomes an acetyl group, and lipoate's disulfide is reduced to a dithiol. Coenzyme A then attacks the acetyl-thioester bond, pulling the acetyl group off lipoate and forming **acetyl-CoA**. This is the product the TCA cycle needs. Lipoate is left in its reduced (dithiol) form.
+E2's lipoate arm swings over to E1 and picks up the 2-carbon fragment. As the fragment transfers, it is oxidized from the alcohol level to the thioester level: the hydroxyethyl group becomes an acetyl group, and lipoate's disulfide is reduced to a dithiol (dihydrolipoic acid is now holding the electrons from this redox reaction). In the active site of E2, Coenzyme A then attacks the acetyl-thioester bond, pulling the acetyl group off lipoate and forming **acetyl-CoA**. This is the product the TCA cycle needs. Lipoate is left in its reduced (dithiol) form.
 
 **Phase 3: Electron handoff (E3 + FAD + NAD⁺)**
 
-Reduced lipoate cannot do another round until it is reoxidized. E3 reoxidizes lipoate using FAD, forming FADH₂. E3 then transfers the electrons from FADH₂ to NAD⁺, forming **NADH** and regenerating FAD. This is the same logic as GAPDH in glycolysis: the enzyme uses a tightly bound electron carrier (FAD) as an internal relay, then dumps the electrons onto NAD⁺ for export. Lipoate is now back in its oxidized (disulfide) form, ready for the next pyruvate.
+Reduced lipoate cannot do another round until it is reoxidized. E3 reoxidizes lipoate using FAD, forming FADH₂ and restoring lipoate. E3 then transfers the electrons from FADH₂ to NAD⁺, forming **NADH** and regenerating FAD. This is the same logic as GAPDH in glycolysis: the enzyme uses a tightly bound electron carrier (FAD) as an internal relay, then dumps the electrons onto NAD⁺ for export. Lipoate is now back in its oxidized (disulfide) form, ready for the next pyruvate. Note that the reduction of NAD⁺ by FADH₂ appears strange: return to Chapter 9 and recall that $E^{\circ'}_{\text{NAD}^+/\text{NADH}} = -0.32$ V. The FAD in E3 is tightly protein-bound, which shifts its $E^{\circ'}$ to approximately $-0.29$ V (distinct from the succinate dehydrogenase context of $\approx 0$ V noted in Chapter 9). Using these two values, calculate $\Delta G^{\circ'}$ for the electron transfer from FADH₂ to NAD⁺. Is it favorable? Why can the reaction proceed anyway?
 
 Per pyruvate: one CO₂ is released, one acetyl-CoA is produced, and one NADH is made. Per glucose (two pyruvates): 2 CO₂, 2 acetyl-CoA, 2 NADH.
 
@@ -108,6 +108,8 @@ One more point worth holding: the $\alpha$-ketoglutarate ($\alpha$-KG) dehydroge
 
 ## The TCA Cycle: Overview
 
+Before walking through the eight steps, it is worth zooming out on acetyl-CoA itself. We arrived here from glucose: glycolysis → pyruvate → PDH → acetyl-CoA. That path gets the introductory attention because glucose is where we started, but acetyl-CoA is where multiple fuel streams converge, and the TCA cycle is indifferent to where the acetyl group came from. Fatty acid β-oxidation produces acetyl-CoA directly, two carbons at a time, which is why fat is a richer fuel per gram than glucose. Ketogenic amino acids (leucine, lysine, and several others partially) are degraded to acetyl-CoA or acetoacetyl-CoA. Ethanol is oxidized to acetate and then activated to acetyl-CoA by acetyl-CoA synthetase in the liver, which is why alcohol has real caloric value. All of these enter the TCA cycle at this same point. When you encounter later that resting muscle runs primarily on fat, or that certain amino acids are "ketogenic," the biochemical translation is: their carbon ends up here, as acetyl-CoA, condensing with OAA.
+
 Acetyl-CoA enters the cycle by condensing with **oxaloacetate (OAA)**, a 4-carbon compound. The 2-carbon acetyl group and the 4-carbon OAA combine to form **citrate**, a 6-carbon tricarboxylic acid. (The cycle's alternate names, "citric acid cycle" and "Krebs cycle," reflect this: citrate is the first product, and Hans Krebs elucidated the cycle in 1937, earning the Nobel Prize in 1953.) The 6-carbon citrate is then progressively oxidized over eight steps, releasing two carbons as CO₂ and regenerating OAA at the end. OAA is not consumed in a net sense: it is a catalyst, cycling through the same positions turn after turn.
 
 **What goes in per turn:** 1 acetyl-CoA (2C), 3 NAD⁺, 1 FAD, 1 GDP, 1 Pᵢ, 2 H₂O
@@ -116,7 +118,7 @@ Acetyl-CoA enters the cycle by condensing with **oxaloacetate (OAA)**, a 4-carbo
 
 A critical clarification about those two CO₂: they do not come from the acetyl carbons that entered in the same turn. The carbons released as CO₂ in steps 3 and 4 originate from OAA. The two acetyl-CoA carbons are incorporated into OAA by the end of the first turn and are released as CO₂ only in subsequent turns. If you label the carbonyl carbon of acetyl-CoA with ¹⁴C, it appears in OAA at the end of turn 1 and is released as ¹⁴CO₂ during turn 2. Complete combustion of the original acetyl carbons requires multiple turns.
 
-All eight reactions occur in the **mitochondrial matrix**, with one important exception: step 6 (succinate dehydrogenase) is embedded in the inner mitochondrial membrane. This is not incidental: succinate dehydrogenase is also Complex II of the electron transport chain, making it a shared component of both pathways. The FADH₂ it generates is directly attached to the protein and feeds electrons into the ETC without ever being a free cofactor.
+All eight reactions occur in the **mitochondrial matrix**, with one important exception: step 6 (succinate dehydrogenase) is embedded in the inner mitochondrial membrane. This is not incidental: succinate dehydrogenase is also Complex II of the electron transport chain as we'll see, making it a shared component of both pathways. The FADH₂ it generates is directly attached to the protein and feeds electrons into the ETC without ever being a free cofactor.
 
 ---
 
@@ -200,7 +202,7 @@ $$\text{Succinyl-CoA} + \text{GDP} + \text{P}_i \rightarrow \text{Succinate} + \
 
 The high-energy thioester bond of succinyl-CoA is cleaved, and the energy is used to phosphorylate GDP to GTP rather than being released as heat. This is substrate-level phosphorylation, the same mechanism as steps 7 and 10 of glycolysis, but using GTP here rather than ATP. GTP is thermodynamically equivalent to ATP; the cell interconverts them freely via nucleoside diphosphate kinase (GTP + ADP ⇌ GDP + ATP), so one GTP per turn is one ATP equivalent per turn.
 
-This is the only step of the TCA cycle that generates a nucleotide triphosphate directly. CoA is released and recycled for use again.
+This is the only step of the TCA cycle that generates a nucleotide triphosphate directly. CoA is released and recycled for use again. The enzyme exists in two tissue-specific isoforms that differ in their β-subunit: the isoform predominating in heart and skeletal muscle produces ATP directly, while the isoform predominating in liver and kidney produces GTP. Since GTP and ATP are freely interconverted by nucleoside diphosphate kinase, the energetic yield is identical; the physiological reason for the difference is not fully settled, but it may relate to the different roles GTP plays in hepatic gluconeogenesis (PEPCK uses GTP) versus the more straightforward ATP demands of contracting muscle.
 
 ### Step 6: Succinate Dehydrogenase
 
@@ -216,11 +218,11 @@ Succinate is oxidized to fumarate by removal of two hydrogens (one from each of 
 
 Why FAD rather than NAD⁺? The oxidation of succinate to fumarate is not thermodynamically favorable enough to reduce NAD⁺ (which has a relatively negative reduction potential of $-0.32$ V). FAD, tightly bound to the enzyme, has a reduction potential of approximately $+0.03$ V, which is high enough to accept electrons from succinate. Using FAD is not a quirk: it is the only thermodynamically viable option for this particular oxidation. As noted in Chapter 9, when you see FAD as the electron acceptor, the substrate is typically a compound where NAD⁺-linked oxidation would be endergonic.
 
-Succinate dehydrogenase is physically embedded in the inner mitochondrial membrane and is simultaneously **Complex II of the electron transport chain**. The FADH₂ it produces transfers its electrons directly into the ubiquinone pool of the ETC, bypassing Complex I. This is why FADH₂ from the TCA cycle yields fewer ATP than NADH: its electrons enter the chain downstream of one proton-pumping complex.
+Succinate dehydrogenase is physically embedded in the inner mitochondrial membrane and is simultaneously **Complex II of the electron transport chain**. The FADH₂ it produces transfers its electrons directly into the ubiquinone pool of the ETC, bypassing Complex I. This is why FADH₂ from the TCA cycle yields fewer ATP than NADH: its electrons enter the chain downstream of one proton-pumping complex. We will see the mechanistic implications of this in the next chapter.
 
 Succinate dehydrogenase is inhibited by malonate, a structural analog of succinate that binds the active site competitively without being oxidized. Malonate inhibition of SDH was one of the key experiments that established the cyclic nature of the pathway: adding malonate to respiring cells caused succinate to accumulate, demonstrating that succinate was being consumed by the next step.
 
-SDH subunits (SDHA, SDHB, SDHC, SDHD) are tumor suppressors. Loss-of-function mutations cause succinate to accumulate. Excess succinate inhibits prolyl hydroxylases, enzymes that normally mark HIF-1$\alpha$ (hypoxia-inducible factor) for degradation. HIF-1$\alpha$ accumulates even in normoxia, activating the cellular hypoxia response including angiogenesis and glycolytic gene expression. Germline SDH mutations predispose to paragangliomas and pheochromocytomas, tumors that are caught at unusual ages and distributions specifically because of this pseudohypoxic signaling.
+Certain SDH subunits act as tumor suppressors. When they are lost, succinate accumulates in the cell. Excess succinate inhibits the enzymes that normally target $\text{HIF-1}\alpha$ (hypoxia-inducible factor) for degradation, so $\text{HIF-1}\alpha$ builds up even when oxygen is plentiful. The cell responds as if it were starved of oxygen: it promotes new blood vessel growth and shifts toward glycolytic gene expression, creating conditions that favor tumor expansion. Germline SDH mutations predispose to paragangliomas and pheochromocytomas, tumors of the adrenal gland and surrounding neural tissue, which appear at younger ages and in unusual locations because of this misfired hypoxia response.
 
 ### Step 7: Fumarase
 
@@ -304,6 +306,12 @@ For the complete oxidation of one pyruvate (PDH + one turn):
 
 $$\text{Pyruvate} + 4\text{NAD}^+ + \text{FAD} + \text{GDP} + \text{P}_i + 2\text{H}_2\text{O} \rightarrow 3\text{CO}_2 + 4\text{NADH} + \text{FADH}_2 + \text{GTP} + \text{CoA} + 4\text{H}^+$$
 
+For complete oxidation of one glucose (glycolysis + 2×PDH + 2×TCA turns), cancelling all shared intermediates (pyruvate, acetyl-CoA, CoA, and water):
+
+$$\text{Glucose} + 10\text{NAD}^+ + 2\text{FAD} + 2\text{ADP} + 2\text{GDP} + 4\text{P}_i + 2\text{H}_2\text{O} \rightarrow 6\text{CO}_2 + 10\text{NADH} + 2\text{FADH}_2 + 2\text{ATP} + 2\text{GTP} + 10\text{H}^+$$
+
+The 6 CO₂ account for all six carbons of glucose: none appear until PDH and the TCA cycle. The 10 NADH and 2 FADH₂ are what the electron transport chain will use to generate the remaining ~28 ATP.
+
 ---
 
 ## Anaplerosis: Feeding and Drawing from the Cycle
@@ -358,37 +366,39 @@ The consequence is a double block: pyruvate cannot be converted to acetyl-CoA (P
 
 Most cells can cope, at least partially, with this switch to glycolytic metabolism. Neurons cannot. Neurons have extremely high energy demands relative to their mass, essentially no glycogen stores, limited capacity to use fatty acids (the blood-brain barrier is restrictive for long-chain fatty acids), and nearly complete dependence on glucose oxidation. In thiamine deficiency, they are the first to fail.
 
-The clinical syndrome is **Wernicke's encephalopathy**: the triad of confusion, ophthalmoplegia (eye movement abnormalities), and ataxia. The periventricular gray matter, mammillary bodies, and periaqueductal regions of the brainstem are selectively vulnerable, likely because they have unusually high metabolic rates. The condition can progress to **Korsakoff syndrome**, a state of severe anterograde amnesia with confabulation, when the mammillary bodies and thalamus are damaged permanently.
+The clinical syndrome is **Wernicke's encephalopathy**: a triad of confusion, ophthalmoplegia (weakness or paralysis of eye movements), and ataxia (loss of coordination, often presenting as an unsteady gait). Certain deep brain regions, particularly the mammillary bodies and areas of the brainstem, are selectively vulnerable because of their unusually high metabolic rates. Without treatment, the condition can progress to **Korsakoff syndrome**: permanent damage to these regions leaves patients unable to form new memories, and they often fill in the gaps with invented stories without realizing they are doing so, a phenomenon called confabulation.
 
 At-risk populations: chronic heavy alcohol users (alcohol impairs both thiamine absorption and hepatic thiamine storage), patients with prolonged vomiting or inadequate IV nutrition, and anyone receiving glucose infusions while thiamine-depleted.
 
-The clinical trap is giving glucose to a thiamine-deficient patient before giving thiamine. Glycolysis converts that glucose to pyruvate rapidly. Without PDH, pyruvate cannot proceed. It backs up, shifts to lactate (worsening metabolic acidosis), and the demand for the remaining scant TPP rises. Any residual PDH activity is overwhelmed. Symptoms acutely worsen. The rule: in any patient with suspected thiamine deficiency, give thiamine before or simultaneously with glucose. The risk of thiamine administration is essentially zero; the risk of precipitating acute Wernicke's with glucose is real.
+The clinical trap is giving glucose to a thiamine-deficient patient before giving thiamine. Glycolysis converts that glucose to pyruvate rapidly. Without PDH, pyruvate cannot proceed. It backs up, shifts to lactate (worsening metabolic acidosis), and the demand for the remaining scant TPP rises. Any residual PDH activity is overwhelmed. Symptoms acutely worsen. This is why clinicians treating suspected thiamine deficiency give thiamine before or alongside glucose rather than after.
 
 Treatment is intravenous or intramuscular thiamine. Recovery of the eye movement abnormalities and the confusional state can be dramatic within hours; the memory deficit of Korsakoff syndrome is less reliably reversible.
 
-**Wet beriberi** is thiamine deficiency presenting as high-output cardiac failure and peripheral edema. The heart, like the brain, is highly oxidative. Cardiomyocytes failing under thiamine deficiency produce a dilated, high-output failure pattern because peripheral vasodilation (from lactic acidosis) increases cardiac output at the same time that cardiac contractility is impaired.
+**Wet beriberi** is the cardiac form. Heart muscle is as oxidatively dependent as neurons, and thiamine deficiency impairs its energy supply in the same way. The heart weakens, fluid accumulates in the tissues and limbs (the edema is what makes it "wet"), and lactic acidosis from impaired oxidative metabolism causes blood vessels to dilate, forcing the already-struggling heart to pump even harder against a larger vascular bed.
 
-**Dry beriberi** is peripheral neuropathy: length-dependent axonal degeneration affecting distal sensory and motor nerves, presenting as numbness, weakness, and eventual motor loss in the feet before the hands.
+**Dry beriberi** is the neurological form, without fluid accumulation (hence "dry"). It presents as numbness, weakness, and eventually motor loss starting in the feet and legs before the hands and arms. The longest nerve fibers in the body fail first because their tips are the farthest from the cell body that sustains them, and when energy metabolism is compromised, the most distal parts of those axons are the first to lose support.
+
+> *The name "beriberi" comes from Sinhalese, a language of Sri Lanka, where "beri" means weakness. The reduplication, saying it twice, is an intensifier: roughly "extreme weakness" or "I cannot, I cannot." The disease was historically epidemic in populations subsisting on polished white rice, because the milling process that makes rice white strips away the thiamine-rich bran. The observation that chickens fed polished rice developed a beriberi-like illness while those fed whole grain rice did not, made by Dutch physician Christiaan Eijkman in the 1890s, was one of the first clues that disease could result from the absence of something essential rather than from an infection. It helped establish the concept of vitamins entirely.*
 
 ### Arsenic Poisoning
 
-Arsenite (As³⁺, the reduced and more toxic form) has a high affinity for vicinal dithiols: pairs of sulfhydryl groups close together in space. Lipoate, in its reduced (dithiol) form during the reaction cycle, is exactly such a pair.
+Arsenite (As³⁺, the reduced and more toxic form of arsenic) has a high affinity for vicinal dithiols: pairs of sulfhydryl groups close together in space. Lipoate, in its reduced (dithiol) form during the reaction cycle, is exactly such a pair.
 
 Arsenite forms a stable cyclic complex with reduced lipoate, trapping it in the dithiol form and preventing E3 from reoxidizing it. With lipoate stuck, E2 cannot accept new 2-carbon fragments from E1, E1 cannot continue decarboxylation, and the entire complex stalls.
 
-This traps both the PDH complex and the $\alpha$-KG dehydrogenase complex simultaneously, for the same reason as thiamine deficiency: both use lipoate. The resulting clinical picture overlaps with thiamine deficiency: peripheral neuropathy, cardiovascular dysfunction, encephalopathy. The diagnostic distinction often requires measurement of arsenic levels (urine, hair, or nails, which accumulate arsenic over time), though clinically the two can be difficult to separate.
+This traps both the PDH complex and the $\alpha$-KG dehydrogenase complex simultaneously, for the same reason as thiamine deficiency: both use lipoate. The resulting clinical picture overlaps with thiamine deficiency: peripheral neuropathy, cardiovascular dysfunction, encephalopathy. The diagnostic distinction often requires measurement of arsenic levels (urine, hair, or nails, which accumulate arsenic over time), though clinically the two can be difficult to separate for obvious reasons.
 
 Treatment includes chelation with BAL (British Anti-Lewisite, dimercaprol), which itself contains two thiols that compete with lipoate for arsenic and drag it into excretion. The development of BAL was specifically motivated by understanding that arsenical war gases (Lewisite) worked by attacking lipoate.
 
 ### Fluoroacetate and Lethal Synthesis
 
-Sodium fluoroacetate (compound 1080) is used as a rodenticide and has occasionally caused human poisonings. The mechanism is an example of **lethal synthesis**: the cell makes the actual toxic compound from a relatively innocuous precursor.
+Sodium fluoroacetate is used as a rodenticide and has occasionally caused human poisonings. The mechanism is an example of **lethal synthesis**: the cell makes the actual toxic compound from a relatively innocuous precursor.
 
-**Step 1:** Fluoroacetate (2C) is activated by acetyl-CoA synthetase in the cytoplasm, forming **fluoroacetyl-CoA**. The enzyme treats it as a substrate because fluoroacetate is structurally identical to acetate except for the fluorine substitution at C2.
+**Step 1:** Fluoroacetate (2C) is activated by **acetyl-CoA synthetase** in the cytoplasm, forming **fluoroacetyl-CoA**. Acetyl-CoA synthetase is the enzyme that normally activates acetate (a 2-carbon product of various metabolic reactions, including alcohol metabolism) by attaching it to CoA, producing acetyl-CoA: acetate + CoA + ATP → acetyl-CoA + AMP + PPᵢ. It treats fluoroacetate as a substrate because fluoroacetate is structurally identical to acetate except for the fluorine substitution at C2.
 
 **Step 2:** Fluoroacetyl-CoA condenses with OAA via citrate synthase, forming **fluorocitrate**. Citrate synthase also cannot distinguish fluoroacetyl-CoA from normal acetyl-CoA.
 
-**Step 3:** Fluorocitrate is a structural analog of citrate and binds aconitase (step 2 of the TCA cycle) with high affinity. It acts as a competitive inhibitor and also covalently modifies a key residue, effectively irreversibly inactivating aconitase.
+**Step 3:** Fluorocitrate is a structural analog of citrate and binds aconitase (step 2 of the TCA cycle) at its active site. It is a **mechanism-based inhibitor** (suicide inhibitor): aconitase begins to process it as if it were a normal substrate, but the reaction generates a species that irreversibly blocks the enzyme. Aconitase is inactivated, not just outcompeted.
 
 **Step 4:** With aconitase blocked, the TCA cycle cannot proceed past citrate. Citrate accumulates massively. No further NADH or FADH₂ is generated from the TCA cycle. The ETC slows. Oxidative phosphorylation collapses.
 
