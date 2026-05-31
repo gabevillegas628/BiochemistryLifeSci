@@ -4,6 +4,26 @@ Items to revisit. Add context so future-you remembers why it was deferred.
 
 ---
 
+## PFK-1 Allosteric Site Structural Details
+
+**Where it belongs:** Chapter 10, Step 3 regulatory bullet points.
+
+**What needs verification:** (1) Does citrate bind its own allosteric site or does it work through/near the AMP/ATP regulatory site? (2) Does F-2,6-BP bind a site distinct from both the substrate (F-6-P) site and the AMP/ATP regulatory site? Current text says each effector acts through allosteric sites without specifying overlap — confirm against a structural reference (e.g., Schirmer & Evans 1990 or a mammalian PFK-1 crystal structure paper) before publication.
+
+**Why deferred:** Structural details complex and species-dependent; beyond pre-med survey scope but should be accurate.
+
+---
+
+## Glucose Origin and Entry into the Cell
+
+**Where it belongs:** Chapter 10 (Glycolysis), likely at the start of Part I or as a short section before the investment phase begins. Could alternatively go in Chapter 5 (Carbohydrates) if that chapter covers digestion.
+
+**What's needed:** The chapter currently opens with glucose already present in the cell, with no account of how it got there. Students will reasonably ask. At minimum, cover: dietary carbohydrates are digested to monosaccharides in the gut; glucose is absorbed in the small intestine and enters the portal circulation; cells take up glucose via facilitated diffusion through **GLUT transporters** (not active transport in most tissues); different tissues express different GLUT isoforms with different $K_m$ values and regulatory properties (GLUT1 ubiquitous/low $K_m$; GLUT2 liver and β cells/high $K_m$, matches glucokinase; GLUT4 muscle and adipose/insulin-regulated). The GLUT4 story connects directly to insulin signaling from Chapter 8 and is heavily MCAT-tested.
+
+**Why it was deferred:** Chapter 10 was written to focus on the pathway itself; the entry logistics were recognized after the fact as a gap.
+
+---
+
 ## Oxidation and Reduction
 
 **RESOLVED (Chapter 9, 2026-05-26):** Full quantitative treatment (reduction potentials, ΔG = −nFΔE°', NADH/FADH₂/NADPH as carriers) placed in Chapter 9 (Thermodynamic Principles II). Chapter 2 still has only a one-line inline definition of redox for disulfide bonds; that is intentional. Forward references in earlier chapters point to Chapter 9.
