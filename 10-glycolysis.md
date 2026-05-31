@@ -28,6 +28,51 @@ Gluconeogenesis is glycolysis run mostly in reverse. Not entirely: three steps o
 
 ---
 
+## From Fork to Cell: Getting Glucose In
+
+Glycolysis starts with glucose already inside a cell, but that raises an obvious question: how did it get there? The answer involves digestion, intestinal absorption, and membrane transport, a chain of events that begins at your last meal and ends with a monosaccharide in the cytoplasm.
+
+### Digestion: Breaking Polymers Down
+
+Most dietary carbohydrate arrives as polymers or disaccharides, none of which can be absorbed directly.
+
+**Starch** (the main dietary carbohydrate in grains, legumes, and root vegetables) is a polymer of glucose linked by $\alpha$-1,4 glycosidic bonds with $\alpha$-1,6 branch points. Salivary and pancreatic **amylases** cleave the $\alpha$-1,4 bonds randomly, producing a mixture of maltose, maltotriose, and short branched oligosaccharides called $\alpha$-limit dextrins. Brush-border enzymes on the surface of intestinal epithelial cells finish the job: **maltase** cleaves maltose to glucose, and **$\alpha$-dextrinase** (isomaltase) cleaves the branch-point bonds to release the remaining glucose units.
+
+**Sucrose** (table sugar) is glucose-fructose linked by an $\alpha$-1,2 bond. Brush-border **sucrase** cleaves it to free glucose and fructose.
+
+**Lactose** (milk sugar) is glucose-galactose linked by a $\beta$-1,4 bond. Brush-border **lactase** cleaves it to free glucose and galactose. Lactase expression declines after weaning in most of the world's adult population; retained lactase expression in adults is a relatively recent evolutionary adaptation in populations with a long history of dairy herding. When lactase is absent or reduced, undigested lactose passes to the colon, where bacteria ferment it, producing gas, osmotic diarrhea, and the symptoms of lactose intolerance (which is technically the *wildtype* condition in a sense, lactose tolerance is the more recent adaptation).
+
+**Glycogen** from meat is digested similarly to starch, by amylases and debranching enzymes, yielding free glucose.
+
+The end products of carbohydrate digestion are monosaccharides: primarily glucose, with fructose and galactose as significant secondary contributors. Only monosaccharides are absorbed.
+
+### Intestinal Absorption
+
+Glucose and galactose are absorbed by intestinal epithelial cells via **SGLT1** (sodium-glucose linked transporter 1), a secondary active transporter on the apical (lumen-facing) membrane. SGLT1 cotransports sodium and glucose in a 2:1 ratio, using the sodium gradient (maintained by the Na⁺/K⁺-ATPase on the basolateral membrane) to drive glucose uptake against its concentration gradient. This is secondary active transport: the energy comes indirectly from ATP used to power the pump, not from ATP hydrolysis at the transporter itself.
+
+Fructose is absorbed by a separate transporter, **GLUT5**, by facilitated diffusion — no sodium coupling, no energy input beyond the concentration gradient.
+
+All three monosaccharides exit the epithelial cell on the basolateral side via **GLUT2** and enter the portal circulation, which carries them directly to the liver before they reach systemic blood.
+
+### GLUT Transporters: Getting Glucose into Cells
+
+Once glucose is in the bloodstream, individual cells take it up by **facilitated diffusion** through **GLUT transporters** (glucose transporter family, SLC2A gene family). These are passive transporters: they move glucose down its concentration gradient, require no ATP, and cannot move glucose against a gradient. Different tissues express different GLUT **isoforms** (distinct protein variants encoded by different genes but sharing the same basic structure and function) with different properties, and the differences are not arbitrary.
+
+| Transporter | Primary location | $K_m$ for glucose | Key feature |
+|---|---|---|---|
+| GLUT1 | Ubiquitous (RBCs, brain endothelium, most cells) | ~1 mM | Always on; ensures basal glucose uptake at all times |
+| GLUT2 | Liver, pancreatic $\beta$ cells, small intestine (basolateral) | ~15–20 mM | High $K_m$ means uptake scales linearly with blood glucose; acts as a glucose sensor |
+| GLUT3 | Neurons | ~1 mM | Very high affinity; ensures neurons get glucose even when blood glucose is low |
+| GLUT4 | Skeletal muscle, cardiac muscle, adipose | ~5 mM | Insulin-regulated; stored in intracellular vesicles, translocated to membrane by insulin signaling |
+
+**GLUT1** is the housekeeping transporter. Its $K_m$ is well below normal fasting blood glucose (~5 mM), so it is nearly saturated at all times. Most cells express it to guarantee baseline glucose access regardless of metabolic state.
+
+**GLUT2** has a high $K_m$, meaning its transport rate is proportional to blood glucose concentration over the physiological range. In the liver, this is the match for glucokinase (also high $K_m$): both are unsaturated at normal glucose concentrations and ramp up together when glucose is high, letting the liver absorb and process glucose in proportion to how much arrived from the gut. In pancreatic $\beta$ cells, GLUT2 serves as part of the glucose-sensing mechanism: glucose uptake increases in proportion to blood glucose, driving more glycolysis and ATP production, which closes K⁺ channels, depolarizes the cell, and triggers insulin secretion.
+
+**GLUT4** is the most clinically important isoform. Under basal conditions, most GLUT4 is sequestered in intracellular vesicles and is not at the plasma membrane. Insulin signaling (Chapter 8: insulin → insulin receptor → IRS-1 → PI3K → Akt) triggers vesicle fusion with the plasma membrane, dramatically increasing the number of GLUT4 transporters on the cell surface and thus the rate of glucose uptake in muscle and adipose tissue. This is the primary mechanism by which insulin lowers blood glucose after a meal. In type 2 diabetes, downstream insulin signaling is impaired (insulin resistance), GLUT4 fails to translocate, and glucose uptake by muscle is blunted even when blood glucose and insulin are both high.
+
+---
+
 ## The Logic of Glycolysis
 
 ### Why Ten Steps?
@@ -293,6 +338,37 @@ Glycolysis's real value is speed and independence. It runs in the cytoplasm with
 
 ---
 
+## Other Sugars Enter Glycolysis at Different Points
+
+Glycolysis is written around glucose, but the diet delivers other sugars too. Sucrose (table sugar) is half glucose and half fructose. Lactose (dairy) is glucose plus galactose. High-fructose corn syrup is a mixture of free glucose and fructose. All of these need to feed into the same ten-step pathway, and they do, they just enter at different points after being converted to a glycolytic intermediate.
+
+### Fructose
+
+Fructose metabolism differs by tissue, and the difference matters clinically.
+
+In **most tissues** (muscle, adipose), hexokinase handles fructose the same way it handles glucose: it phosphorylates it at C6, producing fructose-6-phosphate, which enters glycolysis at step 2. Hexokinase has low affinity for fructose compared to glucose, so this route is quantitatively minor when glucose is available.
+
+In the **liver**, a dedicated enzyme takes over. **Fructokinase** phosphorylates fructose at C1 to produce fructose-1-phosphate. Then **aldolase B** cleaves fructose-1-phosphate into dihydroxyacetone phosphate (DHAP) and glyceraldehyde. DHAP enters glycolysis directly at step 5. Glyceraldehyde is phosphorylated to glyceraldehyde-3-phosphate (G3P) by triokinase and enters at step 6.
+
+The critical feature of the liver route is that it **bypasses PFK-1 entirely**. Fructose enters below the main regulatory checkpoint. This means the liver cannot modulate fructose entry the way it modulates glucose entry; a fructose load goes straight into the lower half of glycolysis regardless of the cell's energy status. At high flux, the excess acetyl-CoA and glycerol-3-phosphate get channeled into fatty acid synthesis and triglyceride assembly. This is the biochemical basis of the connection between high dietary fructose, hepatic fat accumulation, and metabolic syndrome.
+
+**Classic hereditary fructose intolerance** is a deficiency of aldolase B. Fructose-1-phosphate accumulates in the liver, sequestering inorganic phosphate and depleting ATP (phosphate is needed to regenerate ATP from ADP). The result is nausea, hypoglycemia, and liver damage after fructose ingestion. Treatment is strict dietary avoidance of fructose and sucrose.
+
+### Galactose
+
+Galactose enters glycolysis via the **Leloir pathway**, a four-step conversion that produces glucose-6-phosphate:
+
+1. **Galactokinase** phosphorylates galactose to galactose-1-phosphate (consuming 1 ATP).
+2. **Galactose-1-phosphate uridylyltransferase (GALT)** exchanges galactose-1-phosphate with the glucose on UDP-glucose, yielding glucose-1-phosphate and UDP-galactose. The phosphate stays on the sugar throughout; what is being swapped is the sugar attached to the UDP carrier.
+3. **UDP-galactose 4-epimerase** converts UDP-galactose back to UDP-glucose, regenerating the carrier for the next cycle. (Recall glucose and galactose are C4 epimers; the epimerase simply inverts the C4 hydroxyl.)
+4. **Phosphoglucomutase** converts glucose-1-phosphate to glucose-6-phosphate, which enters glycolysis at step 2. This enzyme is worth keeping in mind: it runs in both directions, making G1P and G6P interconvertible. It will reappear in glycogen metabolism for exactly that reason.
+
+The net result is that galactose is converted to glucose-6-phosphate at a cost of 1 ATP, then joins glycolysis on equal footing with glucose.
+
+**Classic galactosemia** is a deficiency of GALT (the transferase, step 2). Galactose-1-phosphate accumulates and is toxic to the liver, brain, and kidneys. Newborns present with jaundice, liver failure, cataracts, and intellectual disability after milk feeding begins; galactose-1-phosphate accumulates in the lens of the eye and is reduced to galactitol, which causes the cataracts. Treatment is immediate removal of all galactose and lactose from the diet. It is part of the newborn metabolic screening panel in most countries.
+
+---
+
 ## Part IV: What Happens to Pyruvate
 
 Pyruvate sits at a metabolic fork. The cell can go one of two directions depending on oxygen availability and the rate of downstream oxidation.
@@ -497,7 +573,7 @@ Heavy alcohol consumption floods the liver with NADH, collapsing the NAD⁺/NADH
 
 **Pyruvate is diverted to lactate.** Excess NADH pushes the lactate dehydrogenase equilibrium toward lactate: NADH + pyruvate → NAD⁺ + lactate. Pyruvate is consumed as a hydrogen sink, removing the primary gluconeogenic substrate.
 
-**Oxaloacetate is diverted to malate.** Excess NADH drives malate dehydrogenase in reverse, converting OAA to malate. OAA is a gluconeogenic precursor; its diversion to malate starves gluconeogenesis of its TCA-cycle-derived substrate.
+**Oxaloacetate is diverted to malate.** Excess NADH drives malate dehydrogenase in reverse, converting OAA to malate. OAA is a gluconeogenic precursor; its diversion to malate starves gluconeogenesis of its TCA-cycle-derived substrate (more on this in the next chapter).
 
 **The TCA cycle slows.** High NADH product-inhibits multiple TCA cycle dehydrogenases, reducing aerobic ATP production in the liver.
 

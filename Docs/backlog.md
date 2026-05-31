@@ -16,11 +16,7 @@ Items to revisit. Add context so future-you remembers why it was deferred.
 
 ## Glucose Origin and Entry into the Cell
 
-**Where it belongs:** Chapter 10 (Glycolysis), likely at the start of Part I or as a short section before the investment phase begins. Could alternatively go in Chapter 5 (Carbohydrates) if that chapter covers digestion.
-
-**What's needed:** The chapter currently opens with glucose already present in the cell, with no account of how it got there. Students will reasonably ask. At minimum, cover: dietary carbohydrates are digested to monosaccharides in the gut; glucose is absorbed in the small intestine and enters the portal circulation; cells take up glucose via facilitated diffusion through **GLUT transporters** (not active transport in most tissues); different tissues express different GLUT isoforms with different $K_m$ values and regulatory properties (GLUT1 ubiquitous/low $K_m$; GLUT2 liver and β cells/high $K_m$, matches glucokinase; GLUT4 muscle and adipose/insulin-regulated). The GLUT4 story connects directly to insulin signaling from Chapter 8 and is heavily MCAT-tested.
-
-**Why it was deferred:** Chapter 10 was written to focus on the pathway itself; the entry logistics were recognized after the fact as a gap.
+**RESOLVED (Chapter 10, 2026-05-31):** Full treatment added as "From Fork to Cell: Getting Glucose In" between The Big Picture and The Logic of Glycolysis sections. Covers starch/sucrose/lactose/glycogen digestion, SGLT1/GLUT5 intestinal absorption, portal circulation, and GLUT1/2/3/4 isoform properties including GLUT4 insulin-regulated translocation and type 2 diabetes connection.
 
 ---
 
