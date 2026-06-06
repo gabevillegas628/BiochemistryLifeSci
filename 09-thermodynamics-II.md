@@ -26,7 +26,7 @@ Three things to walk away with:
 2. A small set of carrier molecules handles almost all energy transactions in the cell.
 3. Every reaction in a metabolic pathway fits into one of a handful of types, and once you recognize the type, you can reason about the energetics.
 
-> **Clinical preview:** Metformin, the most commonly prescribed drug for type 2 diabetes, works at least partly by interfering with Complex I of the mitochondrial electron transport chain. That changes the cell's NADH/$\text{NAD}^+$ ratio, which ripples through glucose metabolism and ultimately lowers blood glucose. We'll come back to this mechanism once you know what NADH actually does and why its ratio to $\text{NAD}^+$ matters.
+> **Clinical preview:** Metformin, the most commonly prescribed drug for type 2 diabetes, works at least partly by interfering with Complex I (the first of four protein complexes that form the mitochondrial electron transport chain, and the entry point for electrons from NADH) of the electron transport chain. That changes the cell's NADH/$\text{NAD}^+$ ratio, which ripples through glucose metabolism and ultimately lowers blood glucose. We'll come back to this mechanism once you know what NADH actually does and why its ratio to $\text{NAD}^+$ matters.
 
 ---
 
@@ -46,7 +46,7 @@ $$\text{substrateH}_2 + \text{NAD}^+ \rightarrow \text{oxidized substrate} + \te
 
 $$\text{substrateH}_2 + \text{FAD} \rightarrow \text{oxidized substrate} + \text{FADH}_2$$
 
-The difference in how the protons are handled is worth noticing. $\text{NAD}^+$ accepts a hydride ion (H⁻: one proton plus two electrons) from the substrate and releases the second proton to solution, hence the free H⁺ on the right. FAD accepts both protons and both electrons directly, so both end up on the carrier and nothing is released. Same two electrons transferred, different proton accounting.
+The difference in how the protons are handled is worth noticing. $\text{NAD}^+$ accepts a hydride ion ($\text{H}^-$: one proton plus two electrons) from the substrate and releases the second proton to solution, hence the free $\text{H}^+$ on the right. FAD accepts both protons and both electrons directly, so both end up on the carrier and nothing is released. Same two electrons transferred, different proton accounting.
 
 ### Reduction Potentials
 
@@ -63,7 +63,7 @@ Electrons flow spontaneously from lower $E^{\circ'}$ to higher $E^{\circ'}$, for
 | Half-reaction | $n$ | $E^{\circ'}$ (V) |
 |---|---|---|
 | $\frac{1}{2}O_2 + 2H^+ + 2e^- \rightarrow H_2O$ | 2 | +0.82 |
-| Fumarate + 2H⁺ + 2e⁻ → Succinate | 2 | +0.03 |
+| $\text{Fumarate} + 2\text{H}^+ + 2e^- \rightarrow \text{Succinate}$ | 2 | +0.03 |
 | $\text{NAD}^+ + \text{H}^+ + 2e^- \rightarrow \text{NADH}$ | 2 | −0.32 |
 | $\text{NADP}^+ + \text{H}^+ + 2e^- \rightarrow \text{NADPH}$ | 2 | −0.32 |
 
@@ -94,7 +94,7 @@ So the oxidation of NADH by oxygen releases −220 kJ/mol and is thermodynamical
 
 This is the whole point of what is called the **electron transport chain (ETC)**: it's the cell's way of doing this in a controlled, stepwise fashion. Instead of one enormous drop, the electrons pass through a series of protein complexes in the inner mitochondrial membrane, each with a slightly higher reduction potential than the last, releasing free energy incrementally at each step. That energy release is *captured* and used to pump protons across the membrane, building a proton gradient (a very specific electrochemical gradient with its own name: called $\Delta \text{p}$). The gradient then drives ATP synthesis through a molecular turbine called ATP synthase. It's a Rube Goldberg machine of spectacular elegance: electrons fall down an electrochemical staircase, the energy released is used to pump protons uphill, and the protons flowing back downhill spin a rotor that makes ATP.
 
-So when you see a step in glycolysis or the TCA cycle labeled "oxidation," here's what's actually happening: a carbon compound loses electrons and protons to $\text{NAD}^+$ or FAD, converting them to NADH or FADH₂. The carbon compound is done; it moves on to the next reaction. But the electrons aren't done. They ride NADH or FADH₂ to the inner mitochondrial membrane, enter the electron transport chain, and begin their stepwise descent toward oxygen. The free energy released along the way becomes the proton gradient that makes most of the cell's ATP.
+So when you see a step in glycolysis or the TCA cycle labeled "oxidation," here's what's actually happening: a carbon compound loses electrons and protons to $\text{NAD}^+$ or FAD, converting them to NADH or $\text{FADH}_2$. The carbon compound is done; it moves on to the next reaction. But the electrons aren't done. They ride NADH or $\text{FADH}_2$ to the inner mitochondrial membrane, enter the electron transport chain, and begin their stepwise descent toward oxygen. The free energy released along the way becomes the proton gradient that makes most of the cell's ATP.
 
 The pathway is essentially a wire connecting fuel molecules to oxygen, with the cell tapping the energy at controlled points along the wire.
 
@@ -114,17 +114,17 @@ You already know ATP from Chapter 1. The quick recap for this context: $\text{AT
 
 The mechanism is almost always direct phosphoryl transfer: the enzyme moves the phosphate group from ATP to the substrate rather than hydrolyzing ATP in solution first and hoping the energy somehow carries over. Chapter 1 covered why the shared intermediate (the phosphorylated substrate) is what makes the coupling thermodynamically legitimate.
 
-One thing to add here: there are two kinds of ATP hydrolysis worth distinguishing. Sometimes ATP loses just the terminal phosphate (producing ADP + Pᵢ). Other times ATP loses a pyrophosphate group (the two terminal phosphates together), producing AMP + PPᵢ. The pyrophosphate (PPᵢ) is then rapidly hydrolyzed by pyrophosphatase to 2 Pᵢ. Because pyrophosphatase essentially makes the PPᵢ hydrolysis irreversible, this gives an even larger thermodynamic driving force than the ADP pathway. Fatty acid activation (attaching a fatty acid to CoA before oxidation) uses this trick.
+One thing to add here: there are two kinds of ATP hydrolysis worth distinguishing. Sometimes ATP loses just the terminal phosphate (producing ADP + $\text{P}_\text{i}$). Other times ATP loses a pyrophosphate group (the two terminal phosphates together), producing AMP + $\text{PP}_\text{i}$. The pyrophosphate ($\text{PP}_\text{i}$) is then rapidly hydrolyzed by pyrophosphatase to 2 $\text{P}_\text{i}$. Because pyrophosphatase essentially makes the $\text{PP}_\text{i}$ hydrolysis irreversible, this gives an even larger thermodynamic driving force than the ADP pathway. Fatty acid activation (attaching a fatty acid to CoA before oxidation) uses this trick.
 
 ### $\text{NAD}^+$/NADH: The Catabolic Electron Carrier
 
-$\text{NAD}^+$ (nicotinamide adenine dinucleotide) is the primary electron carrier in catabolic (energy-releasing) reactions. When a substrate is oxidized, $\text{NAD}^+$ accepts a hydride ion (H⁻) from the substrate and becomes $\text{NADH}$. A hydride contains 2 electrons, effectively $\text{NADH}$ is a carrier of electron *pairs*. The reaction is reversible, and that reversibility is the whole point: $\text{NAD}^+$ can pick up electrons in the cytoplasm or mitochondria and deliver them to the electron transport chain, where the electrons are offloaded to oxygen, releasing energy and regenerating $\text{NAD}^+$.
+$\text{NAD}^+$ (nicotinamide adenine dinucleotide) is the primary electron carrier in catabolic (energy-releasing) reactions. When a substrate is oxidized, $\text{NAD}^+$ accepts a hydride ion ($\text{H}^-$) from the substrate and becomes $\text{NADH}$. A hydride contains 2 electrons, effectively $\text{NADH}$ is a carrier of electron *pairs*. The reaction is reversible, and that reversibility is the whole point: $\text{NAD}^+$ can pick up electrons in the cytoplasm or mitochondria and deliver them to the electron transport chain, where the electrons are offloaded to oxygen, releasing energy and regenerating $\text{NAD}^+$.
 
 The key ratio to care about is $\text{NAD}^+/\text{NADH}$. Catabolic pathways need $\text{NAD}^+$ as an electron acceptor. If the cell runs out of $\text{NAD}^+$ (if NADH accumulates faster than it's oxidized), those pathways stall. This is why oxygen deprivation is so immediately devastating to aerobic metabolism: without oxygen to accept electrons at the end of the transport chain, NADH can't be reoxidized to $\text{NAD}^+$, $\text{NAD}^+$ runs out, and glycolysis, the Krebs cycle, fatty-acid oxidation, protein catabolism (all of which require $\text{NAD}^+$) grind to a halt. The cell's short-term solution under anaerobic conditions is to dump electrons onto pyruvate to make lactate, which regenerates $\text{NAD}^+$ and keeps glycolysis running. That's lactic acid fermentation, and we'll cover it fully in the glycolysis chapter.
 
-### FAD/FADH₂: The Other Electron Carrier
+### FAD/$\text{FADH}_2$: The Other Electron Carrier
 
-FAD (flavin adenine dinucleotide) is another electron carrier; it gets reduced to FADH₂ during oxidation reactions. Unlike $\text{NAD}^+$, which accepts a hydride ion, FAD accepts two hydrogen atoms directly, one from each carbon being oxidized; it picks up two protons and two electrons in the process, so still an electron *pair* carrier. It is regenerated at the electron transport chain.
+FAD (flavin adenine dinucleotide) is another electron carrier; it gets reduced to $\text{FADH}_2$ during oxidation reactions. Unlike $\text{NAD}^+$, which accepts a hydride ion, FAD accepts two hydrogen atoms directly, one from each carbon being oxidized; it picks up two protons and two electrons in the process, so still an electron *pair* carrier. It is regenerated at the electron transport chain.
 
 Why does the cell use FAD at all when it already has $\text{NAD}^+$? Because they have different reduction potentials, and that difference determines which substrates each can oxidize. $\text{NAD}^+/\text{NADH}$ has an $E^{\circ'}$ of −0.32 V. $\text{FAD}/\text{FADH}_2$ varies by enzyme context, but in succinate dehydrogenase it's approximately 0 V.
 
@@ -144,9 +144,9 @@ $$\Delta E^{\circ'} = 0 - (+0.03) = -0.03 \text{ V}$$
 
 $$\Delta G^{\circ'} = -(2)(96.5)(-0.03) = +5.8 \text{ kJ/mol}$$
 
-Slightly unfavorable under standard conditions, but only barely. Under cellular conditions, fumarate is immediately consumed by the next enzyme in the TCA cycle and FADH₂ is rapidly reoxidized by the electron transport chain, keeping both product concentrations low and pulling the reaction forward. A +5.8 kJ/mol standard penalty is easily overcome by concentration effects; a +67.6 kJ/mol penalty is not. This is why the cell uses $\text{FAD}$ here and not $\text{NAD}^+$: it's the only carrier with a reduction potential close enough to succinate's to make the reaction thermodynamically workable.
+Slightly unfavorable under standard conditions, but only barely. Under cellular conditions, fumarate is immediately consumed by the next enzyme in the TCA cycle and $\text{FADH}_2$ is rapidly reoxidized by the electron transport chain, keeping both product concentrations low and pulling the reaction forward. A +5.8 kJ/mol standard penalty is easily overcome by concentration effects; a +67.6 kJ/mol penalty is not. This is why the cell uses $\text{FAD}$ here and not $\text{NAD}^+$: it's the only carrier with a reduction potential close enough to succinate's to make the reaction thermodynamically workable.
 
-The trade-off is that FADH₂ delivers electrons to the transport chain at a lower energy point than NADH, and we can show exactly why with the same calculation we've been doing. Both carriers ultimately pass their electrons to oxygen; the question is how much free energy is released when they do.
+The trade-off is that $\text{FADH}_2$ delivers electrons to the transport chain at a lower energy point than NADH, and we can show exactly why with the same calculation we've been doing. Both carriers ultimately pass their electrons to oxygen; the question is how much free energy is released when they do.
 
 **NADH oxidation by $\text{O}_2$** (donor $E^{\circ'} = -0.32$ V, acceptor $E^{\circ'} = +0.82$ V):
 
@@ -154,15 +154,15 @@ $$\Delta E^{\circ'} = +0.82 - (-0.32) = +1.14 \text{ V}$$
 
 $$\Delta G^{\circ'} = -(2)(96.5)(1.14) = -220 \text{ kJ/mol}$$
 
-**FADH₂ oxidation by $\text{O}_2$** (donor $E^{\circ'} \approx 0$ V, acceptor $E^{\circ'} = +0.82$ V):
+**$\text{FADH}_2$ oxidation by $\text{O}_2$** (donor $E^{\circ'} \approx 0$ V, acceptor $E^{\circ'} = +0.82$ V):
 
 $$\Delta E^{\circ'} = +0.82 - 0 = +0.82 \text{ V}$$
 
 $$\Delta G^{\circ'} = -(2)(96.5)(0.82) = -158 \text{ kJ/mol}$$
 
-FADH₂ releases about 62 kJ/mol less than NADH when oxidized by oxygen. That's roughly 28% less free energy available to pump protons and drive ATP synthesis, which is exactly why the ATP yields differ: each NADH drives synthesis of about 2.5 ATP, each FADH₂ about 1.5 ATP. The numbers come directly from the reduction potentials, not from a table someone memorized.
+$\text{FADH}_2$ releases about 62 kJ/mol less than NADH when oxidized by oxygen. That's roughly 28% less free energy available to pump protons and drive ATP synthesis, which is exactly why the ATP yields differ: each NADH drives synthesis of about 2.5 ATP, each $\text{FADH}_2$ about 1.5 ATP. The numbers come directly from the reduction potentials, not from a table someone memorized.
 
-FAD is unique in another way: it's always covalently or tightly non-covalently bound to its enzyme (it's a *prosthetic group*, like the heme in Hemoglobin). It doesn't float free the way $\text{NAD}^+$ does. This means FAD is functionally part of the enzyme and is recycled right there at the enzyme's active site by the electron transport chain (we'll see how exactly when we examine the ETC more carefully). 
+FAD is unique in another way: it's always covalently or tightly non-covalently bound to its enzyme (it's a *prosthetic group* (a non-amino-acid cofactor permanently bound to its enzyme), like the heme in hemoglobin). It doesn't float free the way $\text{NAD}^+$ does. This means FAD is functionally part of the enzyme and is recycled right there at the enzyme's active site by the electron transport chain (we'll see how exactly when we examine the ETC more carefully). 
 
 ### NADPH: The Anabolic Electron Carrier
 
@@ -170,7 +170,7 @@ NADPH (nicotinamide adenine dinucleotide phosphate) looks almost identical to NA
 
 When we break down fuels, much like a car engine, that fuel is being *oxidized*, the oxidizers are $\text{NAD}^+$ or $\text{FAD}$. Conversely, whenever the cell *builds* something (fatty acids, cholesterol, amino acids, nucleotides), it needs reducing power, meaning electrons to reduce oxidized carbon precursors into reduced carbon products. $\text{NADPH}$ provides those electrons. The cell keeps its $\text{NADPH}$ pool separate from its $\text{NADH}$ pool precisely because anabolic and catabolic demands have to be managed independently.
 
-The primary source of NADPH is the pentose phosphate pathway, which runs alongside glycolysis and is essentially a glucose-oxidizing machine dedicated to generating NADPH rather than ATP.
+The primary source of NADPH is the pentose phosphate pathway, which runs alongside glycolysis. It oxidizes glucose-6-phosphate to generate NADPH and ribose-5-phosphate (the sugar backbone of nucleotides); the full pathway is covered in a later chapter.
 
 **The short rule:** NADH is for catabolism and energy generation. NADPH is for biosynthesis and managing oxidative stress (glutathione reductase, for example, uses NADPH). Same chemistry, completely different cellular role.
 
@@ -181,9 +181,9 @@ Coenzyme A (CoA) is the cell's acyl group carrier. The business end of CoA is a 
 
 $$\text{CoA-SH} + \text{RCOO}^- + \text{H}^+ \rightarrow \text{R}{-}\overset{\overset{\displaystyle\mathrm{O}}{\|}}{\text{C}}{-}\text{S-CoA} + \text{H}_2\text{O}$$
 
-The most important example is acetyl-CoA, where the acyl group is a two-carbon acetyl unit (CH₃CO–). Acetyl-CoA is the central junction of carbon metabolism: it's the form in which the cell packages the carbon from glucose (via pyruvate), from fatty acids (via beta-oxidation), and from certain amino acids, before feeding them into the TCA cycle.
+The most important example is acetyl-CoA, where the acyl group is a two-carbon acetyl unit ($\text{CH}_3\text{CO}$–). Acetyl-CoA is the central junction of carbon metabolism: it's the form in which the cell packages the carbon from glucose (via pyruvate), from fatty acids (via beta-oxidation, the stepwise two-carbon cleavage of fatty acyl chains, covered in a later chapter), and from certain amino acids, before feeding them into the TCA cycle.
 
-Why does thioester formation matter? Thioester bonds are thermodynamically similar to phosphoanhydride bonds in ATP. They're high-energy in the same sense that ATP is: not because the bond itself is energetic, but because the thioester is in a more reactive, less stable configuration than its hydrolysis products. Hydrolysis of a thioester releases about −31 kJ/mol, right in the range of ATP hydrolysis. This means CoA thioesters can drive reactions in the same way ATP phosphoryl transfer can, and the two systems are interchangeable in some reactions. The first step of the TCA cycle, citrate synthase, works by exploiting the reactivity of the acetyl-CoA thioester to drive condensation with oxaloacetate.
+Why does thioester formation matter? Thioester bonds are thermodynamically similar to phosphoanhydride bonds in ATP. They're high-energy in the same sense that ATP is: not because the bond itself is energetic, but because the thioester is in a more reactive, less stable configuration than its hydrolysis products. Hydrolysis of a thioester releases about −31 kJ/mol, right in the range of ATP hydrolysis. This means CoA thioesters can drive reactions in the same way ATP phosphoryl transfer can, and the two systems are interchangeable in some reactions. The first step of the TCA cycle, citrate synthase, works by exploiting the reactivity of the acetyl-CoA thioester to drive condensation with oxaloacetate (a 4-carbon TCA cycle intermediate, introduced in Ch11).
 
 ### A Few Others Worth Knowing
 
@@ -193,7 +193,7 @@ These come up in later chapters, so a heads-up now saves confusion later:
 
 **UDPG (UDP-glucose)** is how the cell activates glucose for glycogen synthesis and other glycosylation reactions. Direct glucosyl transfer from glucose itself isn't favorable enough; attaching glucose to UDP (via the high-energy UDP-glucose bond) makes the transfer thermodynamically driven.
 
-**Biotin** carries CO₂ groups. Carboxylation reactions (adding CO₂ to a carbon chain) are used in both fatty acid synthesis and gluconeogenesis, and biotin is the prosthetic group that carries the CO₂ from ATP-driven carboxylation to the acceptor molecule.
+**Biotin** carries $\text{CO}_2$ groups. Carboxylation reactions (adding $\text{CO}_2$ to a carbon chain) are used in both fatty acid synthesis and gluconeogenesis (the synthesis of glucose from non-sugar precursors, covered fully in Ch10), and biotin is the prosthetic group that carries the $\text{CO}_2$ from ATP-driven carboxylation to the acceptor molecule.
 
 **THF (tetrahydrofolate)** carries one-carbon units at various oxidation states (from methyl all the way up to formyl) and is essential for synthesizing purines, thymidine, and several amino acids. Unlike SAM, which donates only methyl groups, THF handles the full range of one-carbon chemistry. It's also the target of some of the most widely used drugs in medicine: methotrexate (used in cancer and rheumatoid arthritis) and trimethoprim (a common antibiotic) both work by blocking THF synthesis or recycling, starving rapidly dividing cells of the one-carbon units they need to make DNA.
 
@@ -261,7 +261,7 @@ Here are the six types you'll encounter repeatedly:
 
 Already covered above. One molecule loses electrons (and usually protons), another gains them. $\text{NAD}^+$, FAD, and $\text{NADP}^+$ are the electron acceptors in catabolic oxidations; NADPH is the electron donor in biosynthetic reductions. The $\Delta G$ is determined by the difference in reduction potentials.
 
-*Example:* Isocitrate + $\text{NAD}^+$ → α-ketoglutarate + NADH + CO₂ (TCA cycle, isocitrate dehydrogenase step)
+*Example:* Isocitrate + $\text{NAD}^+$ → α-ketoglutarate + $\text{NADH}$ + $\text{CO}_2$ (TCA cycle step 3, introduced in Ch11; isocitrate and α-ketoglutarate are TCA cycle intermediates you will meet there)
 
 ### 2. Group Transfer
 
@@ -273,7 +273,7 @@ One molecule donates a chemical group to another. The group can be a phosphoryl 
 
 A bond is cleaved by the addition of water. Hydrolysis reactions are thermodynamically favorable for high-energy bonds (phosphoanhydride bonds, thioester bonds) and are often used to drive reactions to completion or to break down macromolecules.
 
-*Example:* ATP + H₂O → ADP + Pᵢ (used to drive endergonic reactions by coupling)
+*Example:* ATP + $\text{H}_2\text{O}$ → ADP + $\text{P}_\text{i}$ (used to drive endergonic reactions by coupling)
 
 *Example:* Proteins hydrolyzed to amino acids during digestion
 
@@ -281,9 +281,9 @@ A bond is cleaved by the addition of water. Hydrolysis reactions are thermodynam
 
 A group is added to a double bond (addition), or a double bond is formed by removing a group (elimination). These reactions often involve water being added across a C=C double bond (hydration) or being removed (dehydration).
 
-*Example:* Fumarate + H₂O → Malate (hydration; fumarase in TCA cycle)
+*Example:* Fumarate + $\text{H}_2\text{O}$ → Malate (hydration; fumarase, step 7 of the TCA cycle, Ch11)
 
-*Example:* Malate → Fumarate + H₂O (dehydration, in the reverse direction; used in fatty acid synthesis)
+*Example:* Malate → Fumarate + $\text{H}_2\text{O}$ (dehydration, in the reverse direction; used in fatty acid synthesis)
 
 ### 5. Isomerization
 
@@ -291,15 +291,15 @@ The molecule's formula doesn't change, just its structure. A functional group mo
 
 *Example:* Glucose-6-phosphate → Fructose-6-phosphate (phosphoglucose isomerase, step 2 of glycolysis; moves the carbonyl from C1 to C2)
 
-*Example:* Citrate → Isocitrate (aconitase in TCA cycle; repositions the hydroxyl group for subsequent oxidation)
+*Example:* Citrate → Isocitrate (aconitase, step 2 of the TCA cycle, Ch11; repositions the hydroxyl group for subsequent oxidation)
 
 ### 6. Ligation (Carbon-Carbon Bond Formation)
 
 ATP-driven formation of a covalent bond, often a carbon-carbon bond. This is how the cell builds carbon skeletons. Ligases use ATP (or sometimes GTP) hydrolysis to drive bond formation that would otherwise be thermodynamically unfavorable.
 
-*Example:* Pyruvate + CO₂ + ATP → Oxaloacetate + ADP + Pᵢ (pyruvate carboxylase; used in gluconeogenesis)
+*Example:* Pyruvate + $\text{CO}_2$ + ATP → Oxaloacetate + ADP + $\text{P}_\text{i}$ (pyruvate carboxylase; used in gluconeogenesis, introduced in Ch10)
 
-*Example:* The first step of fatty acid synthesis: acetyl-CoA + CO₂ + ATP → malonyl-CoA + ADP + Pᵢ (acetyl-CoA carboxylase)
+*Example:* The first step of fatty acid synthesis: acetyl-CoA + $\text{CO}_2$ + ATP → malonyl-CoA (a 3-carbon acyl-CoA used as the building block in fatty acid synthesis) + ADP + $\text{P}_\text{i}$ (acetyl-CoA carboxylase)
 
 ---
 
@@ -339,13 +339,13 @@ Metformin is the first-line drug for type 2 diabetes, taken by hundreds of milli
 
 Complex I is where NADH enters the electron transport chain; it accepts electrons from NADH and passes them down the chain toward oxygen. When metformin partially inhibits Complex I, NADH can't be reoxidized as efficiently. NADH accumulates, and the NADH/$\text{NAD}^+$ ratio rises.
 
-Here's why that matters: glycolysis, pyruvate dehydrogenase, and the TCA cycle all require $\text{NAD}^+$ as an electron acceptor. When $\text{NAD}^+$ becomes scarce, these pathways slow down. Glucose is metabolized less efficiently, which reduces the ATP/AMP ratio. Low ATP/AMP activates AMPK (AMP-activated protein kinase), a master metabolic sensor that, among many other effects, suppresses hepatic gluconeogenesis (glucose synthesis in the liver). Less glucose output from the liver means lower blood glucose.
+Here's why that matters: glycolysis, pyruvate dehydrogenase, and the TCA cycle all require $\text{NAD}^+$ as an electron acceptor. When $\text{NAD}^+$ becomes scarce, these pathways slow down. Glucose is metabolized less efficiently, which reduces the ATP/AMP ratio. Low ATP/AMP activates AMPK (AMP-activated protein kinase), a master metabolic sensor that, among many other effects, suppresses hepatic gluconeogenesis (glucose synthesis in the liver); AMPK's full regulatory role is covered in Ch10. Less glucose output from the liver means lower blood glucose.
 
 The downstream effects of partially tweaking a single electron transport complex ripple through NADH/$\text{NAD}^+$ balance, glycolysis, gluconeogenesis, and whole-body glucose homeostasis. You couldn't follow this chain of events without understanding what $\text{NAD}^+$ does, why its ratio to NADH matters, and how the thermodynamics of electron transfer connect to pathway flux. This is the chapter that makes that story readable.
 
 ### Thiamine Deficiency and the TCA Cycle
 
-Thiamine (vitamin B₁) is a cofactor for three critical enzymes in oxidative metabolism: pyruvate dehydrogenase (which converts pyruvate to acetyl-CoA), alpha-ketoglutarate dehydrogenase (a TCA cycle enzyme), and transketolase (pentose phosphate pathway). All three are oxidative decarboxylation steps: they oxidize a substrate, release CO₂, and transfer electrons to $\text{NAD}^+$.
+Thiamine (vitamin B₁) is a cofactor for three critical enzymes in oxidative metabolism: pyruvate dehydrogenase (which converts pyruvate to acetyl-CoA), alpha-ketoglutarate dehydrogenase (a TCA cycle enzyme), and transketolase (pentose phosphate pathway). All three are oxidative decarboxylation steps: they oxidize a substrate, release $\text{CO}_2$, and transfer electrons to $\text{NAD}^+$.
 
 Thiamine deficiency shuts down all three. The result is a bottleneck at pyruvate: glucose can still be converted to pyruvate by glycolysis, but pyruvate can't be converted to acetyl-CoA and enter the TCA cycle. Pyruvate accumulates and is converted to lactate, producing lactic acidosis.
 
@@ -379,33 +379,33 @@ The succinate dehydrogenase reaction in the TCA cycle oxidizes succinate to fuma
 
 $$\text{Succinate} + \text{FAD} \rightarrow \text{Fumarate} + \text{FADH}_2$$
 
-The $E^{\circ'}$ for the fumarate/succinate half-reaction is +0.03 V. The $E^{\circ'}$ for FAD/FADH₂ is 0 V (approximately, in this enzyme context).
+The $E^{\circ'}$ for the fumarate/succinate half-reaction is +0.03 V. The $E^{\circ'}$ for FAD/$\text{FADH}_2$ is 0 V (approximately, in this enzyme context).
 
 (a) Which molecule is oxidized and which is reduced?
 
 (b) Calculate $\Delta G^{\circ'}$ for the reaction (n = 2).
 
-(c) In the electron transport chain, FADH₂ passes electrons to ubiquinone (coenzyme Q), which has an $E^{\circ'}$ of +0.045 V. Is this step thermodynamically favorable? Calculate $\Delta G^{\circ'}$.
+(c) In the electron transport chain, $\text{FADH}_2$ passes electrons to ubiquinone (coenzyme Q, a lipid-soluble electron carrier embedded in the inner mitochondrial membrane), which has an $E^{\circ'}$ of +0.045 V. Is this step thermodynamically favorable? Calculate $\Delta G^{\circ'}$.
 
 **Solution:**
 
-(a) Succinate loses electrons (gets oxidized to fumarate). FAD gains electrons (gets reduced to FADH₂). Fumarate is the oxidized form; succinate is the reduced form.
+(a) Succinate loses electrons (gets oxidized to fumarate). FAD gains electrons (gets reduced to $\text{FADH}_2$). Fumarate is the oxidized form; succinate is the reduced form.
 
-(b) The electron donor is succinate/fumarate ($E^{\circ'} = +0.03$ V). The acceptor is FAD/FADH₂ ($E^{\circ'} = 0$ V). Wait: we need to be careful about the direction. In the reaction as written, FAD is being reduced and succinate is being oxidized. So:
+(b) The electron donor is succinate/fumarate ($E^{\circ'} = +0.03$ V). The acceptor is FAD/$\text{FADH}_2$ ($E^{\circ'} = 0$ V). Wait: we need to be careful about the direction. In the reaction as written, FAD is being reduced and succinate is being oxidized. So:
 
 $$\Delta E^{\circ'} = E^{\circ'}_{\text{acceptor}} - E^{\circ'}_{\text{donor}} = 0 - (+0.03) = -0.03 \text{ V}$$
 
 $$\Delta G^{\circ'} = -nF\Delta E^{\circ'} = -(2)(96.5)(-0.03) = +5.8 \text{ kJ/mol}$$
 
-This is slightly endergonic under standard conditions. In the intact enzyme and under cellular conditions, the reaction is pulled forward by the subsequent reoxidation of FADH₂ at the electron transport chain.
+This is slightly endergonic under standard conditions. In the intact enzyme and under cellular conditions, the reaction is pulled forward by the subsequent reoxidation of $\text{FADH}_2$ at the electron transport chain.
 
-(c) FADH₂ donates to ubiquinone (Q):
+(c) $\text{FADH}_2$ donates to ubiquinone (Q):
 
 $$\Delta E^{\circ'} = E^{\circ'}_{Q} - E^{\circ'}_{\text{FADH}_2} = +0.045 - 0 = +0.045 \text{ V}$$
 
 $$\Delta G^{\circ'} = -(2)(96.5)(+0.045) = -8.7 \text{ kJ/mol}$$
 
-Negative: favorable. FADH₂ spontaneously reduces ubiquinone. This step releases free energy and contributes (modestly) to the proton gradient that drives ATP synthesis.
+Negative: favorable. $\text{FADH}_2$ spontaneously reduces ubiquinone. This step releases free energy and contributes (modestly) to the proton gradient that drives ATP synthesis.
 
 ---
 
@@ -497,3 +497,113 @@ Because ATP sits in the middle of the phosphate energy hierarchy. High-energy ph
 ---
 
 *This chapter is part of a free, openly licensed course companion for Biochemistry for Life Sciences (694:395) at Rutgers University. Licensed under CC BY-NC-SA 4.0.*
+
+---
+
+## Problem Set
+
+**Problem 1.**
+The following half-reactions are relevant to a hypothetical metabolic pathway:
+
+| Half-reaction | $E^{\circ'}$ (V) |
+|---|---|
+| Compound A (oxidized) + $2\text{H}^+$ + $2e^-$ → Compound A (reduced) | −0.19 |
+| Compound B (oxidized) + $2\text{H}^+$ + $2e^-$ → Compound B (reduced) | +0.12 |
+
+(a) In the spontaneous direction, which compound is oxidized and which is reduced?
+
+(b) Calculate $\Delta G^{\circ'}$ for the reaction (n = 2). Use $F = 96.5$ kJ/V·mol.
+
+(c) If compound B (reduced) passes its electrons directly to oxygen ($E^{\circ'} = +0.82$ V), calculate $\Delta G^{\circ'}$ for that transfer. Compare the magnitude to the NADH-to-oxygen transfer calculated in the chapter, and explain why the values differ.
+
+---
+
+**Problem 2.**
+$\text{NAD}^+$ and FAD both accept electrons from carbon substrates, but they are not interchangeable. For each scenario below, identify which carrier is used and explain why the other would not work. Use reduction potentials ($E^{\circ'}_{\text{NAD}^+/\text{NADH}} = -0.32$ V; $E^{\circ'}_{\text{FAD/FADH}_2} \approx 0$ V for the enzyme-bound form) to support your reasoning.
+
+(a) Oxidation of a substrate whose half-reaction has $E^{\circ'} = -0.18$ V.
+
+(b) Oxidation of a substrate whose half-reaction has $E^{\circ'} = +0.05$ V.
+
+---
+
+**Problem 3.** *(Synthesis)*
+A newly characterized enzyme catalyzes the following reaction:
+
+$$\text{Glucose-1-phosphate} + \text{ADP} \rightarrow \text{Glucose} + \text{ATP}$$
+
+$\Delta G^{\circ'}$ for glucose-1-phosphate hydrolysis = −20.9 kJ/mol; $\Delta G^{\circ'}$ for ATP hydrolysis = −30.5 kJ/mol.
+
+(a) Calculate $\Delta G^{\circ'}$ for this reaction as written. Is it spontaneous in the direction written?
+
+(b) Now consider the reverse reaction: glucose + ATP → glucose-1-phosphate + ADP. Calculate $\Delta G^{\circ'}$. Is this spontaneous?
+
+(c) The textbook's phosphate hierarchy lists PEP at −61.9 kJ/mol, ATP at −30.5 kJ/mol, and glucose-6-phosphate at −13.8 kJ/mol. Based only on hierarchy logic, predict whether each of the following transfers is spontaneous without calculation: (i) PEP → ADP, (ii) ATP → glycerol-3-phosphate, (iii) glucose-6-phosphate → ADP.
+
+---
+
+**Problem 4.** *(Synthesis)*
+An enzyme in an obscure bacterium oxidizes succinate ($E^{\circ'} = +0.03$ V) using $\text{NAD}^+$ as the electron acceptor instead of FAD.
+
+(a) Calculate $\Delta G^{\circ'}$ for this reaction.
+
+(b) Explain why mammalian cells use FAD rather than $\text{NAD}^+$ for this oxidation, and what constraint on the reduction potential this imposes.
+
+(c) Even granting that the bacterial enzyme actually does catalyze this reaction, what would be the energetic consequence at the level of ATP production if the $\text{FADH}_2$ that would normally be produced were replaced by NADH? Is this a benefit or a cost, and why?
+
+---
+
+**Problem 5.**
+For each of the six metabolic reaction types listed in the chapter, identify one example from outside glycolysis or the TCA cycle (draw from the broader context of cell biology, digestion, nucleotide metabolism, or biosynthesis that is mentioned anywhere in the textbook). State which type it represents and explain in one sentence what the reaction accomplishes.
+
+---
+
+**Problem 6.** *(Synthesis)*
+An enzyme catalyzes the reaction $X \rightarrow Y$ with $\Delta G^{\circ'} = +8.1$ kJ/mol. Under cellular conditions, [X] = 0.4 mM and [Y] = 0.01 mM. Temperature is 37°C (310 K, $R = 8.314$ J/mol·K).
+
+(a) Calculate the actual $\Delta G$ under these cellular conditions.
+
+(b) Is the reaction spontaneous? Justify your answer.
+
+(c) A student argues: "Since $\Delta G^{\circ'}$ is positive, this reaction cannot be coupled to anything useful — you'd just be wasting energy trying to run it." Explain the flaw in this reasoning, using the relationship between $\Delta G^{\circ'}$ and actual $\Delta G$.
+
+(d) A downstream enzyme in the same pathway is inhibited by a drug, causing [Y] to rise to 2.0 mM while [X] stays at 0.4 mM. Recalculate $\Delta G$ and describe what happens to flux through the $X \rightarrow Y$ step.
+
+---
+
+**Problem 7.**
+Coenzyme A forms a thioester bond with acyl groups. The $\Delta G^{\circ'}$ for thioester hydrolysis is approximately −31 kJ/mol.
+
+(a) How does thioester hydrolysis compare energetically to ATP hydrolysis? What does this mean for the types of reactions thioesters can drive?
+
+(b) Acetyl-CoA is the substrate for the first step of the TCA cycle (citrate synthase). The reaction releases CoA. Using the concept of "high-energy bonds," explain why citrate synthase does not require ATP as an additional energy input.
+
+(c) Fatty acid activation before beta-oxidation uses the reaction: fatty acid + CoA + ATP → fatty acyl-CoA + AMP + $\text{PP}_\text{i}$. The pyrophosphate ($\text{PP}_\text{i}$) is immediately hydrolyzed by pyrophosphatase. How many ATP equivalents are consumed in total, and why does this route provide a greater thermodynamic driving force than a reaction that would produce ADP + $\text{P}_\text{i}$?
+
+---
+
+**Problem 8.** *(Synthesis)*
+Metformin partially inhibits Complex I of the electron transport chain, which accepts electrons from NADH and passes them down the chain.
+
+(a) When Complex I is partially inhibited, what happens to the $\text{NADH}$/$\text{NAD}^+$ ratio?
+
+(b) The chapter describes three metabolic pathways that require $\text{NAD}^+$ as an electron acceptor. Name them and explain how each is affected when $\text{NAD}^+$ becomes scarce.
+
+(c) A patient takes a standard dose of metformin. A different patient takes an overdose. The first patient has controlled blood glucose; the second develops lactic acidosis. Using the reaction types and carrier functions from this chapter, trace the mechanism by which an extreme rise in $\text{NADH}$/$\text{NAD}^+$ leads to lactate accumulation.
+
+---
+
+## References
+
+1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.
+2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
+3. Hinkle PC. P/O ratios of mitochondrial oxidative phosphorylation. *Biochim Biophys Acta*. 2005;1706(1-2):1-11. doi:10.1016/j.bbabio.2004.09.004
+4. Owen MR, Doran E, Halestrap AP. Evidence that metformin exerts its anti-diabetic effects through inhibition of complex 1 of the mitochondrial respiratory chain. *Biochem J*. 2000;348(Pt 3):607-614. doi:10.1042/0264-6021:3480607
+5. Zhou G, Myers R, Li Y, et al. Role of AMP-activated protein kinase in mechanism of metformin action. *J Clin Invest*. 2001;108(8):1167-1174. doi:10.1172/JCI13505
+6. Rui L. Energy metabolism in the liver. *Compr Physiol*. 2014;4(1):177-197. doi:10.1002/cphy.c130024
+7. Liesa M, Palacín M, Zorzano A. Mitochondrial dynamics in mammalian health and disease. *Physiol Rev*. 2009;89(3):799-845. doi:10.1152/physrev.00030.2008
+8. Knowles JR, Albery WJ. Perfection in enzyme catalysis: the energetics of triosephosphate isomerase. *Acc Chem Res*. 1977;10(4):105-111. doi:10.1021/ar50112a001
+9. Jitrapakdee S, Wallace JC. Structure, function and regulation of pyruvate carboxylase. *Biochem J*. 1999;340(Pt 1):1-16. doi:10.1042/bj3400001
+10. Victor M, Adams RD, Collins GH. The Wernicke-Korsakoff Syndrome and Related Neurologic Disorders Due to Alcoholism and Malnutrition, 2nd ed. F.A. Davis; 1989.
+11. Fattal-Valevski A. Thiamine (vitamin B1). *J Evid Based Complementary Altern Med*. 2011;16(1):12-20. doi:10.1177/1533210110392941
+12. Kraut JA, Madias NE. Metabolic acidosis: pathophysiology, diagnosis and management. *Nat Rev Nephrol*. 2010;6(5):274-285. doi:10.1038/nrneph.2010.33

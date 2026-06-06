@@ -34,7 +34,7 @@ A **fatty acid** is a long hydrocarbon chain with a carboxylate group ($-COO^-$)
 
 The hydrocarbon chain is typically 14 to 24 carbons long, with 16-carbon and 18-carbon chains predominating in mammalian biology. The chain may be fully saturated (all single bonds between carbons, maximum hydrogen content) or it may contain one or more double bonds. Fatty acids with no double bonds are **saturated fatty acids**; those with one double bond are **monounsaturated**; those with two or more double bonds are **polyunsaturated**.
 
-Similar to carbohydrates, lipids serve a variety of roles in the cell. Famously they serve a structural role, providing the foundational layer of the plasma membrane and organelle membranes. However lipids can also serve as fuels, again similar to carbohydrates. Importantly, not only can they serve as fuel but fatty acids are the **main storage form** of energy in the body. Lastly, lipid derivatives act as components of cell signaling pathways, often acting as what are known as **second messengers**, as we will see in the cell signaling chapter.
+Similar to carbohydrates, lipids serve a variety of roles in the cell. Famously they serve a structural role, providing the foundational layer of the plasma membrane and organelle membranes. However lipids can also serve as fuels, again similar to carbohydrates. Importantly, not only can they serve as fuel but fatty acids are the **main storage form** of energy in the body. Lastly, lipid derivatives act as components of cell signaling pathways, often acting as what are known as **second messengers** (small intracellular signaling molecules generated in response to an extracellular signal that trigger a cascade of intracellular responses), as we will see in the cell signaling chapter.
 
 ### Naming Conventions
 
@@ -47,7 +47,7 @@ Fatty acid names follow a shorthand: chain length, colon, number of double bonds
 | Palmitic acid | 16:0 | Hexadecanoic acid | 63 |
 | Stearic acid | 18:0 | Octadecanoic acid | 70 |
 | Palmitoleic acid | 16:1($\Delta^9$) | cis-9-Hexadecenoic acid | 0 |
-| Oleic acid | 18:1($\Delta^9$) | cis-9-Octadecenoic acid | 13 |
+| Oleic acid | 18:1($\Delta^9$) | cis-9-Octadecenoic acid | 16 |
 | Linoleic acid | 18:2($\Delta^{9,12}$) | cis-9,12-Octadecadienoic acid | −5 |
 | $\alpha$-Linolenic acid | 18:3($\Delta^{9,12,15}$) | cis-9,12,15-Octadecatrienoic acid | −11 |
 | Arachidonic acid | 20:4($\Delta^{5,8,11,14}$) | cis-5,8,11,14-Eicosatetraenoic acid | −49 |
@@ -58,7 +58,7 @@ When double bonds are present, their position is specified by a delta ($\Delta$)
 
 ### Geometry of Double Bonds: Cis vs. Trans
 
-Double bonds in biological fatty acids are almost always in the **cis** configuration: both hydrocarbon substituents on the same side of the double bond. Cis double bonds introduce a rigid kink of approximately 30 degrees in the otherwise linear chain. This kink prevents the chain from packing closely with neighboring chains.
+Double bonds in biological fatty acids are almost always in the **cis** configuration: both hydrocarbon substituents on the same side of the double bond. Cis double bonds introduce a pronounced kink in the acyl chain, deflecting it approximately 30° from the extended chain axis. This kink prevents the chain from packing closely with neighboring chains.
 
 **Trans** double bonds (substituents on opposite sides) do not introduce a kink. The chain remains extended and linear, like a saturated chain. Trans fatty acids in food arise primarily from industrial partial hydrogenation of vegetable oils (used to make solid margarines and processed foods) and, to a lesser extent, from microbial biohydrogenation in ruminant animals. The linear geometry of trans chains allows them to pack tightly in membranes, behaving more like saturated fats than unsaturated ones. Epidemiological and mechanistic evidence links high dietary trans fat intake to cardiovascular disease, and most regulatory bodies now severely restrict or ban industrial trans fats in food.
 
@@ -82,7 +82,7 @@ The ester bond is formed between the carboxylate of the fatty acid and the hydro
 
 Triacylglycerols store considerably more energy per gram than carbohydrates. Oxidation of fatty acids yields approximately 38 kJ/g, while carbohydrates yield approximately 17 kJ/g. This difference has two sources.
 
-First, fatty acids are more reduced than carbohydrates. Recall that oxidation state measures the degree of reduction (or oxidation) of carbon. Carbohydrate carbons are partially oxidized already (each has an attached oxygen), while fatty acid carbons are almost fully reduced (mostly carbon-hydrogen bonds). More electrons per carbon means more energy released *per carbon* when those electrons are transferred to oxygen in the ETC.
+First, fatty acids are more reduced than carbohydrates. Recall that **oxidation state** measures the degree of reduction (or oxidation) of carbon: more bonds to electronegative atoms like oxygen means more oxidized, which means less chemical energy remaining in that carbon. Carbohydrate carbons are partially oxidized already (each has an attached oxygen), while fatty acid carbons are almost fully reduced (mostly carbon-hydrogen bonds). More electrons per carbon means more energy released *per carbon* when those electrons are transferred to oxygen in the **ETC** (electron transport chain, the mitochondrial machinery that transfers electrons from fuel molecules to oxygen, covered in detail in Chapter 9).
 
 Second, triacylglycerols are stored anhydrously. Glycogen, as discussed in Chapter 5, is highly hydrophilic and retains substantial water: roughly 2 to 3 grams of water per gram of glycogen. This water adds mass without adding energy. Adipose tissue stores triacylglycerols in essentially anhydrous lipid droplets. A 70 kg person with 15% body fat carries roughly 10 kg of triacylglycerol storing about 90,000 kcal of energy. At a basal metabolic rate of roughly 1,200 kcal/day, that is about 75 days of fuel. The same energy stored as hydrated glycogen would require roughly 60 kg of material. Evolution solved the mobile energy storage problem with lipids, not polysaccharides.
 
@@ -110,9 +110,9 @@ The four major head groups in mammalian membranes are choline, ethanolamine, ser
 
 **Phosphatidylethanolamine (PE)**. The head group is ethanolamine: $-O-CH_2-CH_2-NH_3^+$. The amine is a primary amine with a $pK_a$ near 9.5, so it is protonated and positively charged at physiological pH. PE head groups are smaller than PC head groups and pack more tightly. PE is concentrated in the inner (cytoplasmic) leaflet of the plasma membrane.
 
-**Phosphatidylserine (PS)**. The head group is the amino acid serine. At physiological pH, the phosphate is negatively charged and the serine amine is positively charged, giving a net negative charge overall. PS is normally found almost exclusively in the inner leaflet of the plasma membrane. Externalization of PS to the outer leaflet is a signal for apoptosis (programmed cell death): phagocytes have receptors that recognize PS on the outer leaflet and use it as an "eat me" signal to engulf dying cells. The enzyme **flippase** (a hilariously named ATP-dependent enzyme) maintains PS asymmetry by actively translocating PS from the outer to the inner leaflet; its failure in apoptotic cells (through caspase inactivation) allows PS to appear on the outer surface.
+**Phosphatidylserine (PS)**. The head group is the amino acid serine. At physiological pH, the phosphate is negatively charged and the serine amine is positively charged, giving a net negative charge overall. PS is normally found almost exclusively in the inner leaflet of the plasma membrane. Externalization of PS to the outer leaflet is a signal for apoptosis (programmed cell death): phagocytes have receptors that recognize PS on the outer leaflet and use it as an "eat me" signal to engulf dying cells. The enzyme **flippase** (a hilariously named ATP-dependent enzyme) maintains PS asymmetry by actively translocating PS from the outer to the inner leaflet; its failure in apoptotic cells (through inactivation by **caspases**, the proteases that execute the apoptotic program) allows PS to appear on the outer surface.
 
-**Phosphatidylinositol (PI)**. Inositol is a six-carbon cyclitol with hydroxyl groups. The inositol head group can be phosphorylated at multiple positions by kinases, generating phosphatidylinositol bisphosphate ($PIP_2$) and related species that are critical second messengers in signal transduction. Phospholipase C cleaves $PIP_2$ to release inositol trisphosphate ($IP_3$, which opens calcium channels in the ER) and diacylglycerol (DAG, which activates protein kinase C). The lipid itself is the signaling precursor.
+**Phosphatidylinositol (PI)**. Inositol is a six-carbon cyclitol with hydroxyl groups. The inositol head group can be phosphorylated at multiple positions by kinases, generating phosphatidylinositol bisphosphate ($\text{PIP}_2$) and related species that are critical second messengers in signal transduction. Phospholipase C cleaves $\text{PIP}_2$ to release inositol trisphosphate ($\text{IP}_3$, which opens calcium channels in the ER (endoplasmic reticulum, an intracellular calcium store whose lumenal $\text{Ca}^{2+}$ concentration greatly exceeds resting cytoplasmic $\text{Ca}^{2+}$, creating a large gradient that $\text{IP}_3$-gated channels rapidly discharge)) and diacylglycerol (DAG, which activates protein kinase C). The lipid itself is the signaling precursor.
 
 ### Sphingolipids
 
@@ -122,11 +122,11 @@ $$HO-CH=CH-(CH_2)_{12}-CH_3 \text{ with a } -NH_2 \text{ group}$$
 
 A single fatty acid is attached to the amino group of sphingosine via an amide bond, producing a **ceramide** as the common backbone of all sphingolipids. The distinction between sphingolipid classes comes from what is attached to the 1-hydroxyl of sphingosine:
 
-**Sphingomyelin**: phosphocholine is attached to the 1-hydroxyl. Sphingomyelin is thus the sphingolipid analog of phosphatidylcholine: same head group, different backbone. It is abundant in the myelin sheath of nerve cells and in the outer leaflet of the plasma membrane. The enzyme **sphingomyelinase** degrades sphingomyelin in lysosomes; its deficiency causes Niemann-Pick disease, discussed in "When It Breaks."
+**Sphingomyelin**: phosphocholine is attached to the 1-hydroxyl. Sphingomyelin is thus the sphingolipid analog of phosphatidylcholine: same head group, different backbone. It is abundant in the myelin sheath of nerve cells (the lipid-rich insulating wrapping around axons, discussed in detail in Chapter 7) and in the outer leaflet of the plasma membrane. The enzyme **sphingomyelinase** degrades sphingomyelin in lysosomes; its deficiency causes Niemann-Pick disease, discussed in "When It Breaks."
 
 **Cerebrosides**: a single sugar (usually glucose or galactose) is attached to the 1-hydroxyl. Cerebrosides are the simplest glycolipids and are abundant in neural tissue.
 
-**Gangliosides**: a complex oligosaccharide containing one or more sialic acid residues is attached to the 1-hydroxyl. Gangliosides carry a net negative charge from the sialic acid. They are abundant in the outer leaflet of neuronal plasma membranes and participate in cell recognition. Ganglioside $GM_2$ is the substrate of hexosaminidase A; deficiency of this enzyme causes Tay-Sachs disease (discussed in the context of lysosomal storage diseases in other chapters).
+**Gangliosides**: a complex oligosaccharide containing one or more sialic acid residues is attached to the 1-hydroxyl. Gangliosides carry a net negative charge from the sialic acid. They are abundant in the outer leaflet of neuronal plasma membranes and participate in cell recognition. Ganglioside $\text{GM}_2$ is the substrate of hexosaminidase A; deficiency of this enzyme causes Tay-Sachs disease (discussed in the context of lysosomal storage diseases in other chapters).
 
 ### Cholesterol
 
@@ -172,7 +172,7 @@ The two leaflets of the plasma membrane have distinct lipid compositions, and th
 
 **Outer (extracellular) leaflet**: enriched in phosphatidylcholine, sphingomyelin, and glycolipids. All glycolipids face outward, contributing to the glycocalyx.
 
-**Inner (cytoplasmic) leaflet**: enriched in phosphatidylethanolamine and phosphatidylserine. PI and $PIP_2$ are also concentrated in the inner leaflet, accessible to cytoplasmic kinases, phospholipases, and signaling proteins.
+**Inner (cytoplasmic) leaflet**: enriched in phosphatidylethanolamine and phosphatidylserine. PI and $\text{PIP}_2$ are also concentrated in the inner leaflet, accessible to cytoplasmic kinases, phospholipases, and signaling proteins.
 
 This asymmetry is established in the ER during membrane biosynthesis and maintained by:
 - **Flippases**: ATP-dependent enzymes that specifically translocate PS and PE from outer to inner leaflet.
@@ -263,16 +263,16 @@ Described in detail in the surfactant section above. RDS is the direct consequen
 
 ### Familial Hypercholesterolemia
 
-**Familial hypercholesterolemia (FH)** is an autosomal dominant disorder caused by loss-of-function mutations in the **LDL receptor** gene. It is one of the most common serious Mendelian disorders, affecting approximately 1 in 250 people in its heterozygous form. Homozygous FH, affecting approximately 1 in 1,000,000, causes severe disease in childhood.
+**Familial hypercholesterolemia (FH)** is an autosomal dominant disorder caused by loss-of-function mutations in the **LDL receptor** gene. It is one of the most common serious Mendelian disorders, affecting approximately 1 in 250 people in its heterozygous form. Homozygous FH, affecting approximately 1 in 1,000,000 (more recent estimates range from 1/160,000 to 1/300,000), causes severe disease in childhood.
 
 To understand FH, you need to know how cholesterol is transported in the blood and how cells regulate their cholesterol uptake.
 
 Cholesterol is hydrophobic and insoluble in plasma. It is transported in lipoproteins: complexes of lipid and protein where the protein components (apolipoproteins) are amphipathic and coat the hydrophobic lipid core. Low-density lipoprotein (LDL) is the primary carrier of cholesterol from the liver to peripheral tissues. LDL is a spherical particle containing approximately 1,500 molecules of cholesterol esters in its core, surrounded by a phospholipid monolayer and a single molecule of apolipoprotein B-100 (apoB).
 
-Cells take up LDL by **receptor-mediated endocytosis**: the LDL receptor on the cell surface binds apoB on LDL, the receptor-LDL complex is internalized in a clathrin-coated vesicle, the vesicle fuses with a lysosome, and lysosomal acid lipase hydrolyzes the cholesterol esters to release free cholesterol. This cholesterol then:
+Cells take up LDL by **receptor-mediated endocytosis**: the LDL receptor on the cell surface binds apoB on LDL, the receptor-LDL complex is internalized by **receptor-mediated endocytosis**: the complex clusters in membrane pits coated on the cytoplasmic face by the protein clathrin, which drives membrane invagination and pinches off an endocytic vesicle into the cell interior. This vesicle fuses with a lysosome, and lysosomal acid lipase hydrolyzes the cholesterol esters to release free cholesterol. This cholesterol then:
 
 - Suppresses cholesterol synthesis by inhibiting HMG-CoA reductase (the rate-limiting enzyme in the cholesterol biosynthesis pathway).
-- Suppresses LDL receptor synthesis by reducing transcription through the SREBP pathway.
+- Suppresses LDL receptor synthesis by reducing transcription through the **SREBP** (sterol regulatory element-binding protein) pathway, a transcription factor activated when intracellular cholesterol falls and driving expression of the LDL receptor gene and cholesterol biosynthetic genes.
 - Is esterified and stored in lipid droplets if excess.
 
 This is a feedback loop: when intracellular cholesterol rises, cells stop making more and stop taking in more from LDL. When intracellular cholesterol falls, cells make more LDL receptors and take up more.
@@ -392,3 +392,96 @@ Glycerophospholipids and sphingolipids are the major bilayer-forming lipids. The
 Cholesterol is the key modulator of membrane fluidity in animal cells. Its rigid ring system interacts with fatty acid chains to buffer against extremes of fluidity: stiffening the membrane at high temperature and preventing crystallization at low temperature. Beyond its membrane role, cholesterol is the biosynthetic precursor for steroid hormones, bile acids, and vitamin D, and its plasma levels are regulated by a feedback loop centered on the LDL receptor and the SREBP transcription factor.
 
 The two clinical anchors of this chapter illustrate different modes of lipid dysfunction. Surfactant deficiency in premature infants is a direct consequence of the absence of a specific lipid (DPPC) that reduces alveolar surface tension; providing that lipid exogenously restores normal lung mechanics. Familial hypercholesterolemia is a failure of the cellular machinery for regulating cholesterol uptake; without functional LDL receptors, the feedback loop that controls plasma cholesterol is broken and atherosclerosis begins in childhood. In both cases, the clinical outcome follows directly from the biochemical mechanism, which is the point of studying lipid biochemistry in a clinical setting.
+
+---
+
+## Problem Set
+
+**Problem 1.**
+Compare the energy stored per gram in triacylglycerol versus glycogen. The difference arises from two independent factors. Identify both factors and explain the molecular basis for each. (Do not simply state the numbers; explain why the chemistry leads to the difference.)
+
+---
+
+**Problem 2.**
+A phospholipid is described as amphipathic. A triacylglycerol is not.
+
+(a) Identify the structural feature present in a glycerophospholipid that is absent in a triacylglycerol and that accounts for the amphipathic character.
+(b) When phospholipids are dispersed in water they form bilayers, not micelles. When free fatty acids are dispersed in water they form micelles, not bilayers. Explain this difference in terms of molecular geometry.
+(c) A researcher prepares an aqueous dispersion of lysophosphatidylcholine (a glycerophospholipid from which one fatty acid has been hydrolytically removed, leaving a single acyl chain). Would you predict this molecule to form a bilayer or a micelle, and why?
+
+---
+
+**Problem 3.** *(Synthesis)*
+Two membrane preparations are made from the same cell type. Preparation A is taken from cells grown at 37°C. Preparation B is taken from the same cell line that has been slowly adapted to grow at 20°C over many generations.
+
+(a) Predict at least two differences in lipid composition you would expect between preparations A and B, and explain the mechanistic rationale for each prediction.
+(b) Preparation B membranes have a higher proportion of unsaturated fatty acids. Would adding cholesterol to preparation B shift the membrane toward higher or lower fluidity at 20°C? Explain.
+(c) A small, lipid-soluble drug diffuses passively across membranes. Through which preparation would it diffuse faster, and why?
+
+---
+
+**Problem 4.**
+Phosphatidylserine (PS) is normally concentrated in the inner (cytoplasmic) leaflet of the plasma membrane. Three membrane proteins — flippase, floppase, and scramblase — regulate lipid asymmetry.
+
+(a) What is the function of flippase with respect to PS, and does it require energy?
+(b) During apoptosis, scramblase is activated and PS appears on the outer leaflet. What is the physiological consequence of PS externalization, and why does it matter for tissue homeostasis?
+(c) In activated platelets, PS externalization on the outer leaflet is required for the assembly of the prothrombinase complex. Why would a patient whose platelets lack scramblase activity have a bleeding disorder, even though their platelet count is normal?
+
+---
+
+**Problem 5.** *(Synthesis)*
+A 6-year-old girl presents with progressive motor clumsiness, cherry-red spot on fundoscopic exam, and foamy histiocytes on bone marrow biopsy. Enzyme assay of white blood cells shows deficient acid sphingomyelinase activity. Her parents are phenotypically normal but both have enzyme activities at 50% of normal.
+
+(a) What is the inheritance pattern of this disorder, and why are both parents carriers?
+(b) Acid sphingomyelinase normally degrades sphingomyelin to ceramide and phosphocholine in lysosomes. Draw out (or describe) the structure of sphingomyelin well enough to identify the bond that the enzyme cleaves.
+(c) Why does sphingomyelin accumulate specifically in lysosomes rather than elsewhere in the cell?
+(d) Sphingomyelin is particularly abundant in neuronal membranes and in myelin. Propose a structural reason why this lipid, rather than a glycerophospholipid, might be preferentially enriched in these locations.
+
+---
+
+**Problem 6.** *(Synthesis)*
+A researcher studying membrane protein topology wants to determine which segments of a newly identified membrane protein are on the extracellular versus intracellular face. She has two tools: (1) a hydropathy plot showing three peaks above the transmembrane threshold, and (2) an antibody against the N-terminus of the protein.
+
+(a) Based on the hydropathy plot alone, how many times does the protein cross the bilayer, and how many distinct intracellular and extracellular segments (loops and termini) does it have?
+(b) The antibody against the N-terminus only stains intact, non-permeabilized cells. What does this tell you about the orientation of the N-terminus?
+(c) The loop between transmembrane segments 1 and 2 is flanked by three consecutive arginine residues. Using the positive-inside rule, predict whether this loop faces the cytoplasm or the extracellular space, and explain the reasoning.
+(d) The protein is expressed in the ER and traffics to the plasma membrane via the secretory pathway. A loop that faces the ER lumen will ultimately face which side of the plasma membrane?
+
+---
+
+**Problem 7.**
+The Law of Laplace for a sphere states $\Delta P = 2\gamma/r$. Apply this to lung physiology.
+
+(a) Two alveoli are connected to the same airway. Alveolus X has radius 100 µm and alveolus Y has radius 50 µm. If both have the same surface tension $\gamma$, which has a higher internal pressure? What would happen to alveolus Y over time?
+(b) Pulmonary surfactant reduces surface tension and does so more effectively when compressed (i.e., when the alveolus is smaller, such as during exhalation). How does this property specifically prevent the collapse described in part (a)?
+(c) In respiratory distress syndrome of the newborn, DPPC is insufficient. Why is DPPC — with its two saturated palmitoyl chains — particularly suited to the surfactant function, compared to a phosphatidylcholine with two unsaturated chains?
+
+---
+
+**Problem 8.** *(Synthesis)*
+Familial hypercholesterolemia (FH) heterozygotes have one functional and one nonfunctional LDL receptor allele. They respond moderately well to statins. FH homozygotes have no functional LDL receptors and respond poorly to statins.
+
+A new drug class, PCSK9 inhibitors, work by blocking PCSK9, a protein that promotes the lysosomal degradation of LDL receptors after endocytosis. PCSK9 inhibitors lower LDL dramatically in most patients.
+
+(a) Explain the cellular mechanism by which statins lower LDL in FH heterozygotes, tracing the pathway from HMG-CoA reductase inhibition to reduced plasma LDL.
+(b) Explain why the same statin regimen is largely ineffective in FH homozygotes.
+(c) Would PCSK9 inhibitors be effective in FH homozygotes? What about FH heterozygotes? Explain your reasoning for each.
+(d) A patient is identified with a gain-of-function mutation in PCSK9 (PCSK9 is overactive). Predict this patient's plasma LDL level and the mechanism by which this mutation causes it.
+
+---
+
+## References
+
+1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.
+2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
+3. Singer SJ, Nicolson GL. The fluid mosaic model of the structure of cell membranes. *Science*. 1972;175(4023):720–731. doi:10.1126/science.175.4023.720
+4. Goldstein JL, Brown MS. The LDL receptor. *Arterioscler Thromb Vasc Biol*. 2009;29(4):431–438. doi:10.1161/ATVBAHA.108.179564
+5. Brown MS, Goldstein JL. A receptor-mediated pathway for cholesterol homeostasis. *Science*. 1986;232(4746):34–47. doi:10.1126/science.3513311
+6. McGoldrick E, Stewart F, Parker R, Dalziel SR. Antenatal corticosteroids for accelerating fetal lung maturation for women at risk of preterm birth. *Cochrane Database Syst Rev*. 2020;12:CD004454. doi:10.1002/14651858.CD004454.pub4
+7. Whitsett JA, Wert SE, Weaver TE. Alveolar surfactant homeostasis and the pathogenesis of pulmonary disease. *Annu Rev Med*. 2010;61:105–119. doi:10.1146/annurev.med.60.041807.123500
+8. Mozaffarian D, Katan MB, Ascherio A, Stampfer MJ, Willett WC. Trans fatty acids and cardiovascular disease. *N Engl J Med*. 2006;354(15):1601–1613. doi:10.1056/NEJMra054035
+9. Nicolson GL. The fluid-mosaic model of membrane structure: still relevant to understanding the structure, function and dynamics of biological membranes after more than 40 years. *Biochim Biophys Acta*. 2014;1838(6):1451–1466. doi:10.1016/j.bbamem.2013.10.019
+10. Suzuki J, Umeda M, Sims PJ, Nagata S. Calcium-dependent phospholipid scramblase activity of TMEM16F. *Science*. 2013;341(6150):1047–1051. doi:10.1126/science.1240527
+11. Rader DJ, Hobbs HH. Disorders of lipoprotein metabolism. In: Kasper DL, et al., eds. *Harrison's Principles of Internal Medicine*, 20th ed. McGraw-Hill; 2018.
+12. Bhatt DL. Familial hypercholesterolaemia and atherosclerotic cardiovascular disease: a clinical update. *Eur Heart J*. 2022;43(39):3940–3942. doi:10.1093/eurheartj/ehac436 <!-- VERIFY: PubMed check needed -->
+13. Patterson MC, Vanier MT, Suzuki K, et al. Niemann-Pick disease type C: a lipid trafficking disorder. In: Scriver CR, et al., eds. *The Metabolic and Molecular Bases of Inherited Disease*, 8th ed. McGraw-Hill; 2001.

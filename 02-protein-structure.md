@@ -16,7 +16,7 @@ Think about these before you read. Come back to them at the end and see if your 
 
 There is one principle that organizes all of protein biochemistry: **structure determines function**. It sounds obvious until you take it seriously. A protein's amino acid sequence determines its three-dimensional shape, and its three-dimensional shape determines what it can do. Change the shape and you change the function. Change it enough and you destroy the function entirely. Change one amino acid in the wrong place, you die.
 
-Sickle cell disease will be the through-line for this chapter. It is caused by a single NUCLEOTIDE mutation in the gene encoding hemoglobin's beta chain, which changes ONE amino acid out of 147, which changes the surface chemistry of the protein in a small but specific region, which causes hemoglobin molecules to polymerize under low-oxygen conditions, which distorts red blood cells into rigid crescents that clog small vessels and rupture prematurely. One letter in three billion. One amino acid. A cascade of molecular consequences that ends in a painful, life-shortening disease.
+Sickle cell disease will be the through-line for this chapter. It is caused by a single NUCLEOTIDE (the individual building block of DNA and RNA) mutation in the gene encoding hemoglobin's beta chain, which changes ONE amino acid out of 147, which changes the surface chemistry of the protein in a small but specific region, which causes hemoglobin molecules to polymerize under low-oxygen conditions, which distorts red blood cells into rigid crescents that clog small vessels and rupture prematurely. One letter in three billion. One amino acid. A cascade of molecular consequences that ends in a painful, life-shortening disease.
 
 By the end of this chapter you will be able to explain, at the molecular level, exactly how that happens. To get there, you need to understand what proteins are made of, what forces hold them together, how they fold, and what happens when folding goes wrong.
 
@@ -89,7 +89,7 @@ No single force explains protein structure. The covalent backbone defines the se
 
 ### General Structure
 
-Every amino acid shares the same core: a central **alpha-carbon** bonded to four groups at pH 7: an amino group ($-NH_{3}^{+}$), a carboxyl group ($-COO^{-}$), a hydrogen atom, and a variable **side chain** (also called the R group). The side chain is what makes each amino acid chemically distinct. In the twenty standard amino acids found in proteins, the R group ranges from a single hydrogen atom (glycine) to a large aromatic ring system (tryptophan).
+Every amino acid shares the same core: a central **alpha-carbon** bonded to four groups at pH 7: an amino group ($-\text{NH}_{3}^{+}$), a carboxyl group ($-\text{COO}^{-}$), a hydrogen atom, and a variable **side chain** (also called the R group). The side chain is what makes each amino acid chemically distinct. In the twenty standard amino acids found in proteins, the R group ranges from a single hydrogen atom (glycine) to a large aromatic ring system (tryptophan).
 
 At physiological pH, the free amino group is protonated as shown above and the carboxyl group is deprotonated (also as shown above). The amino acid exists as a **zwitterion**: it carries both a positive and a negative charge simultaneously but is electrically neutral overall. This is a direct application of Henderson-Hasselbalch from Chapter 1: the alpha-amino group has a pKa around 9 to 10 (so it is protonated at pH 7.4), and the alpha-carboxyl group has a pKa around 2 (so it is deprotonated at pH 7.4).
 
@@ -137,13 +137,13 @@ Rather than listing all twenty alphabetically, which is how every student memori
 
 **Serine (Ser, S) and Threonine (Thr, T):** Both carry a hydroxyl group: the side chain is a small alcohol. Both can hydrogen bond, and both are common sites of **phosphorylation** by protein kinases (covered in a later chapter on signal transduction). Because their hydroxyl groups are good nucleophiles at physiological pH, serine and threonine frequently appear in enzyme active sites.
 
-**Cysteine (Cys, C):** The sulfhydryl group (-SH) makes cysteine chemically unusual. In reducing environments (the cytoplasm), cysteine exists as the free thiol. In oxidizing environments (the endoplasmic reticulum, extracellular space), two cysteine residues can be oxidized to form a disulfide bond (-S-S-). Disulfide bonds dramatically stabilize proteins that are secreted from cells and must function in environments less controlled than the cytoplasm. Cysteine is also a nucleophile and metal-binding ligand in many enzyme active sites.
+**Cysteine (Cys, C):** The sulfhydryl group (-SH) makes cysteine chemically unusual. In reducing environments (the cytoplasm), cysteine exists as the free thiol. In oxidizing environments (the endoplasmic reticulum, an organelle where secreted proteins are processed and folded, and the extracellular space), two cysteine residues can be oxidized to form a disulfide bond (-S-S-). Disulfide bonds dramatically stabilize proteins that are secreted from cells and must function in environments less controlled than the cytoplasm. Cysteine is also a nucleophile and metal-binding ligand in many enzyme active sites.
 
 **Asparagine (Asn, N) and Glutamine (Gln, Q):** Both carry amide groups, which can donate and accept hydrogen bonds but do not ionize at any physiological pH. Asparagine and glutamine are common sites of **glycosylation** (attachment of carbohydrate chains), particularly on extracellular proteins. They can be thought of as the non-ionizing versions of aspartate and glutamate.
 
 #### Positively Charged (Basic)
 
-**Lysine (Lys, K):** The epsilon-amino group on a long, flexible four-carbon chain has a pKa of about 10.5. At physiological pH 7.4, it is fully protonated and carries a positive charge. Lysine is strongly hydrophilic and almost always on the protein surface. Its positive charge makes it an ideal binding partner for negatively charged molecules: DNA phosphate groups, acidic lipids, phosphorylated substrates. Lysine is also a common site of ubiquitination, acetylation, and other post-translational modifications.
+**Lysine (Lys, K):** The epsilon-amino group on a long, flexible four-carbon chain has a pKa of about 10.5. At physiological pH 7.4, it is fully protonated and carries a positive charge. Lysine is strongly hydrophilic and almost always on the protein surface. Its positive charge makes it an ideal binding partner for negatively charged molecules: DNA phosphate groups, acidic lipids, phosphorylated substrates. Lysine is also a common site of post-translational modifications: chemical changes made to the protein after it is synthesized, including ubiquitination (tagging the protein for destruction by the proteasome, a large cellular complex that breaks down tagged proteins) and acetylation (neutralizing the positive charge, often regulating gene expression).
 
 **Arginine (Arg, R):** The guanidinium group has a pKa above 12. Arginine is essentially always positively charged at any biological pH. The guanidinium group is planar and can form multiple hydrogen bonds simultaneously, making arginine an especially effective binder of phosphate groups and carboxylate groups. Where lysine is a single positive charge on a flexible tether, arginine is a flat, multi-dentate positive group. Many enzyme active sites use arginine specifically to grip phosphate-containing substrates.
 
@@ -198,10 +198,12 @@ The three-dimensional organization of a protein is described at four levels, eac
 
 ### Primary Structure
 
-The **primary structure** of a protein is its amino acid sequence, written from the N-terminus to the C-terminus. It is the only level of structure *directly* specified in the genetic code: each codon maps to one amino acid, and the ribosome strings them together in order. But "directly" is doing a lot of work in that sentence. As Anfinsen demonstrated, the primary sequence is sufficient to determine how a protein folds, which means all higher-order structure is ultimately encoded in DNA too, just indirectly, through the rules of chemistry and thermodynamics. AlphaFold made the same argument computationally: given only a sequence, it predicts structure with near-experimental accuracy. The gene encodes more than a string of amino acids; it encodes a shape. We just could not read it that way until recently.
+A brief note on where protein sequences come from, because this chapter uses genetic vocabulary throughout. Each protein's amino acid sequence is determined by the gene that encodes it. The flow of information goes: DNA (the stored sequence in the nucleus) is copied into messenger RNA (mRNA), which is then read by the **ribosome**, a large molecular machine that synthesizes the protein. The ribosome reads the mRNA three nucleotides at a time; each three-nucleotide unit is a **codon**, and each codon specifies one amino acid. A mutation in the DNA changes a codon, which changes an amino acid in the protein. This course covers metabolism and protein biochemistry rather than molecular genetics in depth, but the connection is central to understanding how a single DNA change produces a disease like sickle cell anemia.
+
+The **primary structure** of a protein is its amino acid sequence, written from the N-terminus to the C-terminus. It is the only level of structure *directly* specified in the genetic code: each codon maps to one amino acid, and the ribosome strings them together in order. But "directly" is doing a lot of work in that sentence. As Anfinsen demonstrated, the primary sequence is sufficient to determine how a protein folds, which means all higher-order structure is ultimately encoded in DNA too, just indirectly, through the rules of chemistry and thermodynamics. AlphaFold (an AI system developed by DeepMind that predicts protein structure from sequence alone) made the same argument computationally: given only a sequence, it predicts structure with near-experimental accuracy. The gene encodes more than a string of amino acids; it encodes a shape. We just could not read it that way until recently.
 
 $$
-\underbrace{H_{3}N^{+}}_{\text{N-terminus}}-\overset{\substack{R_1 \\ |}}{C_\alpha} - CO - NH - \overset{\substack{R_2 \\ |}}{C_\alpha} - CO - NH - \cdots - NH - \overset{\substack{R_n \\ |}}{C_\alpha} - \underbrace{COO^{-}}_{\text{C-terminus}}
+\underbrace{\text{H}_3\text{N}^{+}}_{\text{N-terminus}}-\overset{\substack{R_1 \\ |}}{C_\alpha} - CO - NH - \overset{\substack{R_2 \\ |}}{C_\alpha} - CO - NH - \cdots - NH - \overset{\substack{R_n \\ |}}{C_\alpha} - \underbrace{\text{COO}^{-}}_{\text{C-terminus}}
 $$
 
 Primary structure is where the sickle cell mutation lives. In normal hemoglobin (HbA), position 6 of the beta chain reads: Val-His-Leu-Thr-Pro-**Glu**-Glu. In sickle hemoglobin (HbS), it reads: Val-His-Leu-Thr-Pro-**Val**-Glu. One substitution, position 6, glutamate to valine. Everything that follows from it, the polymerization, the sickling, the disease, is a consequence of that single change in primary structure.
@@ -302,7 +304,7 @@ The complete molecular account of sickle cell disease is now within reach.
 
 Normal adult hemoglobin (HbA) is an $\alpha_2\beta_2$ tetramer. The beta chain carries glutamate at position 6 (Glu6): negatively charged, hydrophilic, at home on the protein surface in contact with water. The surface of HbA at this position is electrically normal; there is no unusual hydrophobic patch.
 
-In sickle hemoglobin (HbS), the codon for Glu6 (GAG) is mutated to a codon for Val (GTG). Valine is nonpolar and hydrophobic. On the surface of the protein, exposed to aqueous solvent, valine is thermodynamically out of place. It creates a small hydrophobic sticky patch at position 6 of each beta chain.
+In sickle hemoglobin (HbS), the mRNA codon for Glu6 (GAG) is mutated to GUG (coding for Val). Valine is nonpolar and hydrophobic. On the surface of the protein, exposed to aqueous solvent, valine is thermodynamically out of place. It creates a small hydrophobic sticky patch at position 6 of each beta chain.
 
 Complementary to this patch is a hydrophobic pocket on the surface of another hemoglobin subunit. In oxygenated HbS, that pocket is occupied by a side chain from within the same molecule; the patch and the pocket cannot interact. In deoxygenated HbS, a conformational change (the T-state transition that normally accompanies oxygen release) exposes the hydrophobic pocket.
 
@@ -320,9 +322,9 @@ The Anfinsen experiment shows that the native state is the thermodynamic minimum
 
 The diseases caused by prion propagation include Creutzfeldt-Jakob disease in humans, scrapie in sheep, and bovine spongiform encephalopathy (BSE, "mad cow disease") in cattle. All are fatal and characterized by progressive neurodegeneration. From the energy funnel perspective, $PrP^{Sc}$ represents a deep local minimum that is thermodynamically stable but biologically catastrophic. Once a protein enters this well, it does not spontaneously escape, and it drags neighboring molecules in after it.
 
-**Alzheimer's disease** involves a different misfolding problem with a similar structural logic. The amyloid-beta peptide, derived by proteolytic cleavage from a normal membrane protein (APP), is normally soluble. Under pathological conditions (which are not yet completely understood), amyloid-beta misfolds into a structure rich in cross-beta sheet, in which the beta strands from multiple peptide molecules run perpendicular to the long axis of growing fibril. These amyloid fibrils are thermodynamically stable and aggregate into the senile plaques found in Alzheimer's brain tissue. A similar cross-beta architecture characterizes tau protein aggregates, which form the neurofibrillary tangles characteristic of Alzheimer's and other tauopathies. Both represent proteins that have found a thermodynamically stable but biologically useless (and toxic) alternative conformation.
+**Alzheimer's disease** involves a different misfolding problem with a similar structural logic. The amyloid-beta peptide, derived by proteolytic cleavage from a normal membrane protein called amyloid precursor protein (APP), whose normal function remains only partially understood, is normally soluble. Under pathological conditions (which are not yet completely understood), amyloid-beta misfolds into a structure rich in cross-beta sheet, in which the beta strands from multiple peptide molecules run perpendicular to the long axis of growing fibril. These amyloid fibrils are thermodynamically stable and aggregate into the senile plaques found in Alzheimer's brain tissue. A similar cross-beta architecture characterizes tau protein aggregates, which form the neurofibrillary tangles characteristic of Alzheimer's and other tauopathies. Both represent proteins that have found a thermodynamically stable but biologically useless (and toxic) alternative conformation.
 
-**Cystic fibrosis** presents a different failure mode. The most common cystic fibrosis mutation (${\Delta}F508$), a deletion of phenylalanine at position 508) causes the CFTR chloride channel to misfold. The misfolded CFTR is not aggregated or toxic; it is simply recognized by the cellular quality-control machinery (primarily chaperones of the Hsp70 and Hsp90 families) as having an abnormal conformation, and it is routed to proteasomal degradation before it can reach the plasma membrane.
+**Cystic fibrosis** presents a different failure mode. The most common cystic fibrosis mutation (${\Delta}F508$), a deletion of phenylalanine at position 508) causes the CFTR chloride channel to misfold. The misfolded CFTR is not aggregated or toxic; it is simply recognized by the cellular quality-control machinery (primarily chaperones of the Hsp70 and Hsp90 families) as having an abnormal conformation, and it is routed to proteasomal degradation (destruction by the proteasome, a large cellular protein complex that breaks down tagged proteins) before it can reach the plasma membrane.
 
 The cruelty of this mechanism is that deltaF508 CFTR retains partial function: if it could reach the cell surface, it would transport chloride at reduced but potentially meaningful rates. The protein is not broken beyond all utility; it is being destroyed before it gets a chance. This is the rationale for the CFTR modulator drugs (correctors that help the misfolded protein escape quality control, potentiators that improve its function at the membrane) that have transformed CF treatment in recent years. The therapy is thermodynamic and kinetic: shift the folding equilibrium toward a conformation that passes quality control, then improve the function of whatever reaches the surface.
 
@@ -362,7 +364,7 @@ A protein has a region of its sequence that reads: Lys-Phe-His-Asp-Ile-Arg-Leu. 
 
 (b) Phe, Ala, Ile, and Leu are nonpolar and hydrophobic. They are likely in the hydrophobic core of the protein, away from water. Lys, Asp, and Arg are charged at pH 7.4 and strongly hydrophilic. They are almost certainly on the surface of the protein in contact with solvent.
 
-(c) We have 3 residues which contain ionizable functional groups in this peptide K, D and H with $Pk_{a}^{R}$ values of 10.5, 3.9 and 6.0 respectively. (Recall the $\alpha$ amino and carboxyl groups are no longer ionizable when they form a peptide bond). Changing the pH from 7.4 to 5.0 will not affect the K or D residues since K will still be at a pH below its $pK_a$ remaining protonated and D will still be above it's $pK_a$ remaining deprotonated. However, the H residue was above its $pK_a$ value of 6.0 at pH 7.4 and so was mostly deprotonated (+1) while at pH 5.0 (now below the pKa value of 6.0) it loses its ionizable proton adopting the neutral structure.
+(c) We have 3 residues which contain ionizable functional groups in this peptide K, D and H with $Pk_{a}^{R}$ values of 10.5, 3.9 and 6.0 respectively. (Recall the $\alpha$ amino and carboxyl groups are no longer ionizable when they form a peptide bond). Changing the pH from 7.4 to 5.0 will not affect the K or D residues since K will still be at a pH below its $pK_a$ remaining protonated and D will still be above it's $pK_a$ remaining deprotonated. However, the H residue was above its $pK_a$ value of 6.0 at pH 7.4 and so was mostly deprotonated (neutral side chain), while at pH 5.0 (now below the pKa value of 6.0) it gains a proton, adopting the positively charged (+1) imidazolium form. The segment therefore gains a positive charge as pH drops from 7.4 to 5.0.
 
 ### Problem 2: Mutation Analysis
 
@@ -390,7 +392,7 @@ A newly discovered enzyme has three disulfide bonds and 200 amino acids. It is d
 
 **Solution:**
 
-(a) The recovery of secondary structure (alpha helices, beta sheets, as measured by the characteristic circular dichroism signal) tells you that the polypeptide backbone can adopt its correct local geometry. The primary structure contains the information for secondary structure formation, and removing the denaturants allows the backbone to return to its thermodynamically preferred phi/psi angles. This part of the Anfinsen result holds.
+(a) The recovery of secondary structure (alpha helices, beta sheets, as measured by circular dichroism (CD) spectroscopy, a technique that detects how chiral structures absorb polarized light, with alpha helices and beta sheets each giving characteristic signals) tells you that the polypeptide backbone can adopt its correct local geometry. The primary structure contains the information for secondary structure formation, and removing the denaturants allows the backbone to return to its thermodynamically preferred phi/psi angles. This part of the Anfinsen result holds.
 
 (b) The failure to recover enzymatic activity, despite correct secondary structure, tells you that the protein is not in its correct tertiary conformation, and the most likely reason is incorrect disulfide bond pairing. With three disulfide bonds and six cysteines, there are 15 possible pairings. If the protein refolds backbone-first and then traps disulfide bonds in the first oxidized configuration it encounters (rather than the thermodynamically correct one), most molecules will have scrambled disulfide bonds. Incorrect disulfide bonds can hold the protein in a non-native tertiary structure, preventing correct active site assembly. Only the 3% that happened to form the correct disulfide bonds by chance regain activity.
 
@@ -413,5 +415,103 @@ Glutamate is negatively charged and hydrophilic at pH 7.4. Valine is nonpolar an
 The key reasoning step is: a hydrophobic residue on the protein surface is out of its preferred thermodynamic environment, and the way the protein can relieve that thermodynamic frustration is by burying the hydrophobic patch in contact with a complementary surface on another molecule. What looks like a molecular interaction problem is, at its core, a thermodynamics problem: the system is seeking a lower-energy state.
 
 ---
+
+---
+
+## Problem Set
+
+**Problem 1.**
+Consider the following short peptide segment at pH 7.4: Asp–Trp–Lys–Pro–Glu–His
+
+(a) Assign the net charge on each ionizable side chain at pH 7.4. What is the overall net charge of this segment (side chains only; assume the segment is in the interior of a larger polypeptide so the backbone termini are peptide bonds)?
+
+(b) Which residue in this segment would you expect to find in the hydrophobic core of the folded protein? Which residues would be expected on the protein surface? Justify your placements.
+
+(c) This segment is part of a longer alpha helix. Predict how inserting a proline into the middle of this segment would affect the helix. Explain the structural reason.
+
+---
+
+**Problem 2.** *(Synthesis)*
+A researcher performs the following experiment. She takes a small, single-domain protein with two cysteine residues that form one disulfide bond. She denatures the protein completely using urea alone (no reducing agent) and then removes the urea by dialysis.
+
+(a) Predict whether the protein will regain enzymatic activity after dialysis. Explain your reasoning using the Anfinsen framework.
+
+(b) She repeats the experiment but this time denatures the protein with urea plus beta-mercaptoethanol, then removes both by dialysis under oxidizing conditions. The protein regains full activity. What does this result confirm, and what does it rule out?
+
+(c) Now she takes a different protein that has four disulfide bonds. After complete denaturation with urea plus beta-mercaptoethanol and subsequent dialysis under oxidizing conditions, only 5% of enzymatic activity is recovered, even though circular dichroism shows that secondary structure has fully recovered. Propose a specific molecular explanation for the discrepancy between secondary structure recovery and activity recovery.
+
+---
+
+**Problem 3.**
+Protein folding is commonly described as being "driven by the hydrophobic effect."
+
+(a) Explain why the hydrophobic effect is fundamentally an entropic phenomenon. In your answer, describe what happens to water molecules when a nonpolar solute is dissolved in water, and what happens to those same water molecules when two nonpolar groups come together.
+
+(b) Given that the hydrophobic effect is entropy-driven, explain why the term $T\Delta S$ in the Gibbs equation connects the magnitude of the hydrophobic driving force to temperature. What does this predict about protein stability at elevated (but sub-denaturing) temperatures?
+
+(c) Hydrogen bonds between backbone groups are abundant in folded proteins and contribute to stability. Yet a student argues: "Hydrogen bonds can't be the main driving force for folding because an unfolded protein also makes hydrogen bonds, just with water." Evaluate this argument.
+
+---
+
+**Problem 4.** *(Synthesis)*
+Sickle cell disease is caused by a single Glu→Val substitution at position 6 of the hemoglobin beta chain.
+
+(a) Glutamate has a pKa of approximately 4.1. At pH 7.4, what is the charge on glutamate's side chain? At pH 7.4, what is the charge on valine's side chain? Explain.
+
+(b) Glutamate at position 6 sits on the surface of the HbA subunit. Using thermodynamic reasoning about where different amino acid types prefer to reside, explain why valine at this position is thermodynamically "frustrated."
+
+(c) Sickle cell crises are triggered by conditions that lower blood oxygen tension, including high altitude, pulmonary infection, and strenuous exercise. Using what you know about protein structure and surface chemistry, explain at the molecular level why deoxygenation is the specific trigger for polymerization rather than some other perturbation.
+
+---
+
+**Problem 5.**
+An enzyme's active site contains a histidine residue whose function depends on its ability to act as a proton donor at physiological pH. In free solution, histidine's side chain pKa is approximately 6.0.
+
+(a) At pH 7.4, what fraction of free histidine residues are protonated? Use the Henderson-Hasselbalch equation to calculate the ratio $[His^+H]/[His]$.
+
+(b) Inside the active site, a nearby lysine residue (pKa ~10.5, always positively charged at pH 7.4) is held in close proximity to the histidine. Predict whether this neighboring positive charge will raise or lower the apparent pKa of the histidine. Explain the electrostatic reasoning.
+
+(c) As a result of this shift, the active-site histidine ends up with an apparent pKa of approximately 7.4. What fraction of these histidines are now protonated at physiological pH? Why is this shift functionally important for the enzyme?
+
+---
+
+**Problem 6.** *(Synthesis)*
+The most common mutation in cystic fibrosis ($\Delta$F508) deletes phenylalanine at position 508 of the CFTR protein. The resulting protein is misfolded, recognized by chaperones, and routed to proteasomal degradation before it reaches the plasma membrane. A newer class of drugs called "correctors" helps the $\Delta$F508 protein escape quality control by stabilizing a near-native conformation.
+
+(a) Phenylalanine is a large, nonpolar aromatic residue. Position 508 is in the interior of a structural domain. Using your knowledge of protein folding forces, explain why deleting phenylalanine at this position would disrupt the protein's tertiary structure.
+
+(b) The chaperone Hsp70 binds to exposed hydrophobic patches on partially folded proteins. Why does a misfolded CFTR present a substrate for Hsp70? What does Hsp70 binding prevent, and how does it achieve this?
+
+(c) A corrector drug stabilizes the near-native conformation by binding to the partially folded intermediate and shifting the folding equilibrium toward a conformation that passes quality control. This is a thermodynamic intervention, not a covalent repair. Explain this distinction: what exactly is the drug changing, and what is it not changing?
+
+---
+
+**Problem 7.**
+You are given two peptides of identical length and amino acid composition, but with scrambled sequences. Peptide A folds into a compact, stable globular structure. Peptide B remains largely unfolded in aqueous solution.
+
+(a) What does the difference in folding behavior tell you about the relationship between amino acid sequence and protein structure?
+
+(b) You treat Peptide A with 8 M urea. Circular dichroism shows complete loss of secondary structure. You then remove the urea by dialysis. Peptide A regains its original structure and function. What does this result tell you about where the folding information is stored? What does it rule out?
+
+(c) You perform the same urea denaturation experiment on Peptide A, but this time you also add beta-mercaptoethanol before dialysis. After removing both agents under non-oxidizing conditions, the protein does not refold correctly. However, if you add a small amount of reducing agent to the refolded, inactive protein (allowing disulfide bond shuffling) and incubate, activity returns to 90% over 24 hours. Interpret these results in terms of the Anfinsen framework.
+
+---
+
+## References
+
+1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.
+2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
+3. Anfinsen CB. Principles that govern the folding of protein chains. *Science*. 1973;181(4096):223–230. doi:10.1126/science.181.4096.223
+4. Pauling L, Corey RB, Branson HR. The structure of proteins: two hydrogen-bonded helical configurations of the polypeptide chain. *Proc Natl Acad Sci USA*. 1951;37(4):205–211. doi:10.1073/pnas.37.4.205
+5. Pauling L, Itano HA, Singer SJ, Wells IC. Sickle cell anemia, a molecular disease. *Science*. 1949;110(2865):543–548. doi:10.1126/science.110.2865.543
+6. Ingram VM. Gene mutations in human haemoglobin: the chemical difference between normal and sickle cell haemoglobin. *Nature*. 1957;180(4581):326–328. doi:10.1038/180326a0
+7. Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure prediction with AlphaFold. *Nature*. 2021;596(7873):583–589. doi:10.1038/s41586-021-03819-2
+8. Hartl FU, Bracher A, Hayer-Hartl M. Molecular chaperones in protein folding and proteostasis. *Nature*. 2011;475(7356):324–332. doi:10.1038/nature10317
+9. Hayer-Hartl M, Bracher A, Hartl FU. The GroEL–GroES chaperonin machine: a nano-cage for protein folding. *Trends Biochem Sci*. 2016;41(1):62–76. doi:10.1016/j.tibs.2015.07.009
+10. Levinthal C. How to fold graciously. In: DeBrunner JTP, Münck E, eds. *Mössbauer Spectroscopy in Biological Systems: Proceedings of a Meeting held at Allerton House, Monticello, Illinois*. University of Illinois Press; 1969:22–24.
+11. Dobson CM. Protein folding and misfolding. *Nature*. 2003;426(6968):884–890. doi:10.1038/nature02261
+12. Prusiner SB. Novel proteinaceous infectious particles cause scrapie. *Science*. 1982;216(4542):136–144. doi:10.1126/science.6801762
+13. Riordan JR, Rommens JM, Kerem B, et al. Identification of the cystic fibrosis gene: cloning and characterization of complementary DNA. *Science*. 1989;245(4922):1066–1073. doi:10.1126/science.2475911
+14. Pace CN, Shirley BA, McNutt M, Gajiwala K. Forces contributing to the conformational stability of proteins. *FASEB J*. 1996;10(1):75–83. doi:10.1096/fasebj.10.1.8566551
 
 *Chapter 3: Molecular Binding & Hemoglobin*

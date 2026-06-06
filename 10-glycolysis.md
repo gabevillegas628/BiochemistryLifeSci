@@ -48,9 +48,9 @@ The end products of carbohydrate digestion are monosaccharides: primarily glucos
 
 ### Intestinal Absorption
 
-Glucose and galactose are absorbed by intestinal epithelial cells via **SGLT1** (sodium-glucose linked transporter 1), a secondary active transporter on the apical (lumen-facing) membrane. SGLT1 cotransports sodium and glucose in a 2:1 ratio, using the sodium gradient (maintained by the Na⁺/K⁺-ATPase on the basolateral membrane) to drive glucose uptake against its concentration gradient. This is secondary active transport: the energy comes indirectly from ATP used to power the pump, not from ATP hydrolysis at the transporter itself.
+Glucose and galactose are absorbed by intestinal epithelial cells via **SGLT1** (sodium-glucose linked transporter 1), a secondary active transporter on the apical (lumen-facing) membrane. SGLT1 cotransports sodium and glucose in a 2:1 ratio, using the sodium gradient (maintained by the $\text{Na}^+$/$\text{K}^+$-ATPase on the basolateral membrane) to drive glucose uptake against its concentration gradient. This is secondary active transport: the energy comes indirectly from ATP used to power the pump, not from ATP hydrolysis at the transporter itself.
 
-Fructose is absorbed by a separate transporter, **GLUT5**, by facilitated diffusion — no sodium coupling, no energy input beyond the concentration gradient.
+Fructose is absorbed by a separate transporter, **GLUT5** (a member of the facilitative glucose transporter family described in the next section), by facilitated diffusion — no sodium coupling, no energy input beyond the concentration gradient.
 
 All three monosaccharides exit the epithelial cell on the basolateral side via **GLUT2** and enter the portal circulation, which carries them directly to the liver before they reach systemic blood.
 
@@ -62,12 +62,12 @@ Once glucose is in the bloodstream, individual cells take it up by **facilitated
 |---|---|---|---|
 | GLUT1 | Ubiquitous (RBCs, brain endothelium, most cells) | ~1 mM | Always on; ensures basal glucose uptake at all times |
 | GLUT2 | Liver, pancreatic $\beta$ cells, small intestine (basolateral) | ~15–20 mM | High $K_m$ means uptake scales linearly with blood glucose; acts as a glucose sensor |
-| GLUT3 | Neurons | ~1 mM | Very high affinity; ensures neurons get glucose even when blood glucose is low |
+| GLUT3 | Neurons | ~1.5 mM | Very high affinity; ensures neurons get glucose even when blood glucose is low |
 | GLUT4 | Skeletal muscle, cardiac muscle, adipose | ~5 mM | Insulin-regulated; stored in intracellular vesicles, translocated to membrane by insulin signaling |
 
 **GLUT1** is the housekeeping transporter. Its $K_m$ is well below normal fasting blood glucose (~5 mM), so it is nearly saturated at all times. Most cells express it to guarantee baseline glucose access regardless of metabolic state.
 
-**GLUT2** has a high $K_m$, meaning its transport rate is proportional to blood glucose concentration over the physiological range. In the liver, this is the match for glucokinase (also high $K_m$): both are unsaturated at normal glucose concentrations and ramp up together when glucose is high, letting the liver absorb and process glucose in proportion to how much arrived from the gut. In pancreatic $\beta$ cells, GLUT2 serves as part of the glucose-sensing mechanism: glucose uptake increases in proportion to blood glucose, driving more glycolysis and ATP production, which closes K⁺ channels, depolarizes the cell, and triggers insulin secretion.
+**GLUT2** has a high $K_m$, meaning its transport rate is proportional to blood glucose concentration over the physiological range. In the liver, this is the match for glucokinase (also high $S_{0.5}$): both are unsaturated at normal glucose concentrations and ramp up together when glucose is high, letting the liver absorb and process glucose in proportion to how much arrived from the gut. In pancreatic $\beta$ cells, GLUT2 serves as part of the glucose-sensing mechanism: glucose uptake increases in proportion to blood glucose, driving more glycolysis and ATP production, which closes $\text{K}^+$ channels, depolarizes the cell, and triggers insulin secretion.
 
 **GLUT4** is the most clinically important isoform. Under basal conditions, most GLUT4 is sequestered in intracellular vesicles and is not at the plasma membrane. Insulin signaling (Chapter 8: insulin → insulin receptor → IRS-1 → PI3K → Akt) triggers vesicle fusion with the plasma membrane, dramatically increasing the number of GLUT4 transporters on the cell surface and thus the rate of glucose uptake in muscle and adipose tissue. This is the primary mechanism by which insulin lowers blood glucose after a meal. In type 2 diabetes, downstream insulin signaling is impaired (insulin resistance), GLUT4 fails to translocate, and glucose uptake by muscle is blunted even when blood glucose and insulin are both high.
 
@@ -79,7 +79,7 @@ Once glucose is in the bloodstream, individual cells take it up by **facilitated
 
 A student seeing glycolysis for the first time often asks: why does it take ten reactions to break glucose in half? Couldn't you do it in one?
 
-Chemically, yes. Burning glucose in a flame converts it to CO₂ and H₂O in a single step. But the cell cannot do what a flame does. A flame releases all the free energy as heat all at once; cells need to capture that energy *and store it* as chemical potential energy in the form of ATP or NADH. To do that, the process must be broken into small, controlled steps, each releasing a manageable amount of energy, each coupled to a useful output. Ten steps is the price of control.
+Chemically, yes. Burning glucose in a flame converts it to $\text{CO}_2$ and $\text{H}_2\text{O}$ in a single step. But the cell cannot do what a flame does. A flame releases all the free energy as heat all at once; cells need to capture that energy *and store it* as chemical potential energy in the form of ATP or NADH. To do that, the process must be broken into small, controlled steps, each releasing a manageable amount of energy, each coupled to a useful output. Ten steps is the price of control.
 
 The other reason for the apparent complexity is that glycolysis does two things simultaneously: it breaks glucose down, and it generates intermediates for biosynthesis. Glucose-6-phosphate feeds the pentose phosphate pathway. Dihydroxyacetone phosphate feeds glycerol-3-phosphate synthesis for lipids. 3-Phosphoglycerate is a precursor for amino acids. The steps that look like overhead are often there to produce these branch points.
 
@@ -95,7 +95,7 @@ The ten reactions split cleanly into two phases.
 
 **Net per glucose: 2 ATP spent, 4 ATP produced = net 2 ATP. Plus 2 NADH.**
 
-That number looks small, especially compared to the roughly 30-32 ATP that complete glucose oxidation eventually yields. But the bulk of those 30-32 ATP come from NADH and FADH₂ generated later by the TCA cycle and the electron transport chain. Glycolysis is the entry point, not the main event.
+That number looks small, especially compared to the roughly 30-32 ATP that complete glucose oxidation eventually yields. But the bulk of those 30-32 ATP come from NADH and $\text{FADH}_2$ generated later by the TCA cycle and the electron transport chain. Glycolysis is the entry point, not the main event.
 
 ### A Note on Directionality
 
@@ -109,7 +109,7 @@ All ten reactions of glycolysis run in the direction glucose → pyruvate under 
 
 $$\text{Glucose} + \text{ATP} \rightarrow \text{Glucose-6-phosphate} + \text{ADP}$$
 
-**Enzyme:** Hexokinase (most tissues) or Glucokinase (liver and pancreatic β cells)
+**Enzyme:** Hexokinase (most tissues); see also glucokinase (liver and pancreatic β cells), described below
 
 **Reaction type:** Group transfer (phosphoryl transfer)
 
@@ -119,7 +119,7 @@ This is the trapping step. Adding a charged phosphate group to glucose does two 
 
 The enzyme matters as much as the reaction. **Hexokinase**, used in most tissues, has a low $K_m$ for glucose (around 0.1 mM), meaning it is nearly saturated at normal blood glucose concentrations of about 5 mM (normal fasting ~90mg/dL). It is also allosterically inhibited by its product, glucose-6-phosphate: G6P binds a regulatory site distinct from the active site and reduces hexokinase activity. This is not a Le Chatelier effect. The reaction is irreversible ($\Delta G^{\circ'} = -16.7$ kJ/mol), so product accumulation cannot push it backward thermodynamically; the braking is a dedicated conformational mechanism. When downstream glycolysis stalls and G6P accumulates, hexokinase is switched off, preventing glucose from being trapped when there is nowhere for it to go.
 
-**Glucokinase**, expressed in the liver and pancreatic β cells, behaves differently. It has a high $K_m$ (around 10 mM or 180mg/dL) and exhibits sigmoidal kinetics with a hill coefficient of ~1.7, and it is not product-inhibited. This means glucokinase activity rises steeply as blood glucose rises above the normal fasting level. The liver uses this as a glucose sensor: at normal blood glucose, glucokinase runs well below its maximal rate; after a meal, when glucose rises, glucokinase revs up and the liver aggressively phosphorylates it to G6P, but mainly for storage, diverting only a small percentage towards glycolysis. In pancreatic β cells, glucokinase activity is the sensor that tells the cell blood glucose has risen, triggering insulin secretion. Mutations in glucokinase cause a form of maturity-onset diabetes (MODY type 2), which is essentially a miscalibrated glucose sensor in the β cell.
+**Glucokinase**, expressed in the liver and pancreatic β cells, behaves differently. It has a high $S_{0.5}$ (around 8 mM or ~144 mg/dL) and exhibits sigmoidal kinetics with a hill coefficient of ~1.7, and it is not product-inhibited. This means glucokinase activity rises steeply as blood glucose rises above the normal fasting level. The liver uses this as a glucose sensor: at normal blood glucose, glucokinase runs well below its maximal rate; after a meal, when glucose rises, glucokinase revs up and the liver aggressively phosphorylates it to G6P, but mainly for storage, diverting only a small percentage towards glycolysis. In pancreatic β cells, glucokinase activity is the sensor that tells the cell blood glucose has risen, triggering insulin secretion. Mutations in glucokinase cause MODY type 2 (maturity-onset diabetes of the young, a heritable, monogenic form of diabetes distinct from type 1 or type 2), which is essentially a miscalibrated glucose sensor in the β cell.
 
 ### Step 2: Isomerization
 
@@ -153,7 +153,7 @@ PFK-1 is a homotetramer, each subunit contains an active site which binds F6P an
 - **AMP** stabilizes the R-state by competing with ATP for the same allosteric site, preventing ATP from locking the enzyme into the T-state. AMP has no independent stimulatory effect; the net result looks like activation but the mechanism is de-inhibition. AMP accumulates when ATP is rapidly depleted (via the adenylate kinase reaction: 2 ADP → ATP + AMP), so a rising AMP/ATP ratio is a sensitive signal of energy emergency.
 - **Fructose-2,6-bisphosphate (F-2,6-BP)** is the most potent R-state stabilizer and therefore the most potent activator of PFK-1. It is a separate regulatory molecule, not a glycolytic intermediate, synthesized in response to insulin and glucagon. We will return to it in the regulation section.
 - **Citrate** stabilizes the T-state, inhibiting PFK-1. Citrate is a TCA cycle intermediate that is exported from the mitochondria via a dedicated inner membrane transporter when the cycle is running faster than needed. High citrate signals that the cell is already well-supplied with fuel and glycolysis should slow.
-- **H⁺** inhibits PFK-1 by stabilizing the T-state, which increases sensitivity to ATP inhibition at the allosteric site. Physiologically this serves as a brake: when lactic acidosis begins to develop, falling pH shifts PFK-1 toward the T-state, slowing the enzyme responsible for producing more lactate and providing a degree of self-limitation.
+- **$\text{H}^+$** inhibits PFK-1 by stabilizing the T-state, which increases sensitivity to ATP inhibition at the allosteric site. Physiologically this serves as a brake: when lactic acidosis begins to develop, falling pH shifts PFK-1 toward the T-state, slowing the enzyme responsible for producing more lactate and providing a degree of self-limitation.
 
 ### Step 4: The Split
 
@@ -202,12 +202,12 @@ $$\text{G3P} + \text{NAD}^+ + \text{P}_i \rightarrow \text{1,3-Bisphosphoglycera
 **$\Delta G^{\circ'}$:** −6.3 kJ/mol
 
 This step does two things simultaneously:
-1. it oxidizes G3P (NAD⁺ accepts a hydride, producing NADH), and it conserves the energy of that oxidation by forming a thioester intermediate via a conserved cysteine residue in the active site.
-2. Inorganic phosphate then attacks the thioester directly in a phosphorolysis reaction, displacing the cysteine and transferring the acyl group to Pᵢ. The energy of oxidation is carried through the thioester and deposited into the acyl-phosphate product; nothing is released as heat.
+1. it oxidizes G3P ($\text{NAD}^+$ accepts a hydride, producing NADH), and it conserves the energy of that oxidation by forming a thioester intermediate via a conserved cysteine residue in the active site.
+2. Inorganic phosphate then attacks the thioester directly in a phosphorolysis reaction, displacing the cysteine and transferring the acyl group to $\text{P}_\text{i}$. The energy of oxidation is carried through the thioester and deposited into the acyl-phosphate product; nothing is released as heat.
 
 The result is 1,3-BPG, with a high-energy acyl-phosphate bond at C1. The product, 1,3-bisphosphoglycerate (1,3-BPG), sits well above ATP in the phosphate energy hierarchy (recall from Chapter 9: $\Delta G^{\circ'}$ of hydrolysis = −49.4 kJ/mol, versus −30.5 kJ/mol for ATP). The energy of carbon oxidation has been temporarily stored as a reactive acyl-phosphate, waiting to be cashed in at the next step.
 
-GAPDH requires NAD⁺. This is a critical constraint: if the cell runs out of NAD⁺ because NADH cannot be reoxidized (as in oxygen deprivation), this step stalls and the entire payoff phase stops. The regeneration of NAD⁺ is not a minor housekeeping detail; it is what keeps glycolysis running at all and the cell has mechanisms in place to replenish it even in the absence of Oxygen.
+GAPDH requires $\text{NAD}^+$. This is a critical constraint: if the cell runs out of $\text{NAD}^+$ because NADH cannot be reoxidized (as in oxygen deprivation), this step stalls and the entire payoff phase stops. The regeneration of $\text{NAD}^+$ is not a minor housekeeping detail; it is what keeps glycolysis running at all and the cell has mechanisms in place to replenish it even in the absence of Oxygen.
 
 ### Step 7: First Substrate-Level Phosphorylation
 
@@ -266,7 +266,7 @@ Where does the extra reactivity come from? Track the carbon oxidation states acr
 | C2 | 0 | +1 | oxidized |
 | C3 | −1 | −2 | reduced |
 
-The dehydration is simultaneously an intramolecular redox reaction: C2 is oxidized and C3 is reduced as the double bond forms between them. Electron density shifts from C2 toward C3, and the phosphate at C2 is left on a carbon that has lost electron density, making it far more electrophilic and reactive. This is not a separate electron carrier being reduced, no NAD⁺ or FAD is involved. The electrons simply move within the same molecule, and the result is a phosphate group under much greater chemical tension than before.
+The dehydration is simultaneously an intramolecular redox reaction: C2 is oxidized and C3 is reduced as the double bond forms between them. Electron density shifts from C2 toward C3, and the phosphate at C2 is left on a carbon that has lost electron density, making it far more electrophilic and reactive. This is not a separate electron carrier being reduced, no $\text{NAD}^+$ or FAD is involved. The electrons simply move within the same molecule, and the result is a phosphate group under much greater chemical tension than before.
 
 As explained in Chapter 9, the full story of PEP's reactivity also involves what happens downstream: once PEP loses its phosphate, the enol spontaneously tautomerizes to the more stable keto form of pyruvate, releasing additional free energy. The −61.9 kJ/mol comes from both the intramolecular electron redistribution that strains the phosphate group and the thermodynamic pull of the enol→keto collapse that follows.
 
@@ -312,10 +312,10 @@ The table below shows each reaction, its standard free energy change, and the es
 | 3 | PFK-1 | F6P + ATP → F1,6BP + ADP | −14.2 | −22.2 |
 | 4 | Aldolase | F1,6BP → DHAP + G3P | +23.8 | −1.3 |
 | 5 | Triose phosphate isomerase | DHAP → G3P | +7.5 | +2.5 |
-| 6 | GAPDH | G3P + NAD⁺ + Pᵢ → 1,3-BPG + NADH + H⁺ | −6.3 | −1.1 |
+| 6 | GAPDH | G3P + $\text{NAD}^+$ + $\text{P}_\text{i}$ → 1,3-BPG + NADH + $\text{H}^+$ | −6.3 | −1.1 |
 | 7 | Phosphoglycerate kinase | 1,3-BPG + ADP → 3-PG + ATP | −18.9 | +0.1 |
 | 8 | Phosphoglycerate mutase | 3-PG → 2-PG | +0.8 | +0.8 |
-| 9 | Enolase | 2-PG → PEP + H₂O | +1.7 | −3.3 |
+| 9 | Enolase | 2-PG → PEP + $\text{H}_2\text{O}$ | +1.7 | −3.3 |
 | 10 | Pyruvate kinase | PEP + ADP → Pyruvate + ATP | −31.4 | −16.7 |
 
 *Cellular $\Delta G$ values are estimates under typical erythrocyte/hepatocyte conditions and vary with metabolic state. Steps 1, 3, and 10 are irreversible under all physiological conditions.*
@@ -375,11 +375,11 @@ Pyruvate sits at a metabolic fork. The cell can go one of two directions dependi
 
 ### Aerobic Conditions: Toward the TCA Cycle
 
-Under aerobic conditions (when oxygen is available and abundant), pyruvate enters the mitochondria and is converted to acetyl-CoA by **pyruvate dehydrogenase (PDH)**. PDH is the bridge between glycolysis and the TCA cycle, and it deserves more than a sentence, so we will cover it at the start of Chapter 11. The short version: PDH removes CO₂ from pyruvate, oxidizes the remaining 2-carbon fragment, and attaches it to Coenzyme A, generating acetyl-CoA + NADH + CO₂. Acetyl-CoA then enters the TCA cycle.
+Under aerobic conditions (when oxygen is available and abundant), pyruvate enters the mitochondria and is converted to acetyl-CoA by **pyruvate dehydrogenase (PDH)**. PDH is the bridge between glycolysis and the TCA cycle, and it deserves more than a sentence, so we will cover it at the start of Chapter 11. The short version: PDH removes $\text{CO}_2$ from pyruvate, oxidizes the remaining 2-carbon fragment, and attaches it to Coenzyme A, generating acetyl-CoA + NADH + $\text{CO}_2$. Acetyl-CoA then enters the TCA cycle.
 
 ### Anaerobic Conditions: Lactate Fermentation
 
-When oxygen is unavailable, or when glycolysis is running faster than the electron transport chain can handle (as in maximally contracting muscle), the cell faces a specific crisis: step 6 of glycolysis requires NAD⁺. If NADH is not being reoxidized by the ETC, NAD⁺ runs out and glycolysis stops (since NAD⁺ is a substrate of GAPDH).
+When oxygen is unavailable, or when glycolysis is running faster than the electron transport chain can handle (as in maximally contracting muscle), the cell faces a specific crisis: step 6 of glycolysis requires $\text{NAD}^+$. If NADH is not being reoxidized by the ETC, $\text{NAD}^+$ runs out and glycolysis stops (since $\text{NAD}^+$ is a substrate of GAPDH).
 
 The solution is to dump the electrons from NADH back onto pyruvate just to keep going:
 
@@ -387,7 +387,7 @@ $$\text{Pyruvate} + \text{NADH} + \text{H}^+ \rightarrow \text{Lactate} + \text{
 
 **Enzyme:** Lactate dehydrogenase (LDH)
 
-This regenerates NAD⁺, allowing GAPDH to keep running and glycolysis to continue producing ATP. Stack glycolysis and the two LDH reactions together and the intermediates cancel:
+This regenerates $\text{NAD}^+$, allowing GAPDH to keep running and glycolysis to continue producing ATP. Stack glycolysis and the two LDH reactions together and the intermediates cancel:
 
 $$
 \begin{array}{rcll}
@@ -398,7 +398,7 @@ $$
 \end{array}
 $$
 
-Pyruvate, NADH, H⁺, and NAD⁺ all cancel. NADH/NAD⁺ become **catalytic**: they cycle between the two pathways without any net change. In effect as long as we have *any* NADH/NAD⁺ we can ignore them completely. The net reaction is proton-neutral, a point we will return to in the lactic acidosis section: lactate production itself generates no H⁺. The cell sacrifices pyruvate as a TCA cycle fuel but keeps the 2 ATP per glucose from substrate-level phosphorylation.
+Pyruvate, NADH, $\text{H}^+$, and $\text{NAD}^+$ all cancel. NADH/$\text{NAD}^+$ become **catalytic**: they cycle between the two pathways without any net change. In effect as long as we have *any* NADH/$\text{NAD}^+$ we can ignore them completely. The net reaction is proton-neutral, a point we will return to in the lactic acidosis section: lactate production itself generates no $\text{H}^+$. The cell sacrifices pyruvate as a TCA cycle fuel but keeps the 2 ATP per glucose from substrate-level phosphorylation.
 
 Lactate is not a waste product. The liver can take it up and convert it back to glucose, a recycling circuit called the **Cori cycle** that we will return to once gluconeogenesis is on the table.
 
@@ -414,21 +414,21 @@ Seven of the ten glycolytic reactions are near-equilibrium and will run in rever
 
 **Bypass 1: Pyruvate → PEP (bypasses pyruvate kinase)**
 
-Getting from pyruvate back to PEP requires two sequential reactions that together cost 2 **ATP equivalents**. ATP equivalent is the standard way to count energy expenditure when different high-energy nucleoside triphosphates are involved: GTP, CTP, and UTP are all interconvertible with ATP via nucleoside diphosphate kinase (GDP + ATP ⇌ GTP + ADP), so they carry the same free energy per phosphate bond and can be counted on the same scale. One ATP equivalent = one high-energy phosphate bond hydrolyzed, regardless of which nucleotide carries it.
+Getting from pyruvate back to PEP requires two sequential reactions that together cost 2 **ATP equivalents**. ATP equivalent is the standard way to count energy expenditure when different high-energy nucleoside triphosphates are involved: GTP, CTP, and UTP are all interconvertible with ATP via nucleoside diphosphate kinase (NDPK), an abundant, essentially unregulated enzyme that equilibrates all nucleoside triphosphates in the cell (GDP + ATP ⇌ GTP + ADP), so they carry the same free energy per phosphate bond and can be counted on the same scale. One ATP equivalent = one high-energy phosphate bond hydrolyzed, regardless of which nucleotide carries it.
 
 **Reaction A:**
 
-$$\text{Pyruvate} + \text{CO}_2 + \text{ATP} \rightarrow \text{Oxaloacetate} + \text{ADP} + \text{P}_i \quad \Delta G^{\circ'}\approx −9.0 kJ/mol$$
+$$\text{Pyruvate} + \text{CO}_2 + \text{ATP} \rightarrow \text{Oxaloacetate} + \text{ADP} + \text{P}_i \quad \Delta G^{\circ'}\approx -24.7 \text{ kJ/mol}$$
 
-*Enzyme:* Pyruvate carboxylase. A ligation reaction (Chapter 9 reaction type 6) that uses ATP and biotin (recall: biotin carries CO₂) to carboxylate pyruvate, generating oxaloacetate (OAA). This runs in the mitochondria.
+*Enzyme:* Pyruvate carboxylase. A ligation reaction (Chapter 9 reaction type 6) that uses ATP and biotin (recall: biotin carries $\text{CO}_2$) to carboxylate pyruvate, generating oxaloacetate (OAA). This runs in the mitochondria.
 
 Pyruvate carboxylase is allosterically activated by acetyl-CoA. When acetyl-CoA accumulates, signaling that the cell has more carbon fuel arriving than it currently needs to burn, the liver is cued to make glucose rather than oxidize more carbon. This is a sensible logic: excess fuel should be stored as glucose, not wasted.
 
 **Reaction B:**
 
-$$\text{Oxaloacetate} + \text{GTP} \rightarrow \text{PEP} + \text{CO}_2 + \text{GDP} \quad \Delta G^{\circ'}\approx +3.0 kJ/mol$$
+$$\text{Oxaloacetate} + \text{GTP} \rightarrow \text{PEP} + \text{CO}_2 + \text{GDP} \quad \Delta G^{\circ'}\approx +0.8 \text{ kJ/mol}$$
 
-*Enzyme:* Phosphoenolpyruvate carboxykinase (PEPCK). A group transfer reaction. This reaction uses GTP (thermodynamically equivalent to ATP as noted above) to decarboxylate and phosphorylate OAA, regenerating the 3-carbon PEP. The same CO₂ that was added by pyruvate carboxylase is removed here; the net result is conversion of pyruvate to PEP using 1 ATP + 1 GTP. Two high-energy bonds are spent to climb over the barrier of the −31.4 kJ/mol pyruvate kinase step.
+*Enzyme:* Phosphoenolpyruvate carboxykinase (PEPCK). A group transfer reaction. This reaction uses GTP (thermodynamically equivalent to ATP as noted above) to decarboxylate and phosphorylate OAA, regenerating the 3-carbon PEP. The same $\text{CO}_2$ that was added by pyruvate carboxylase is removed here; the net result is conversion of pyruvate to PEP using 1 ATP + 1 GTP. Two high-energy bonds are spent to climb over the barrier of the −31.4 kJ/mol pyruvate kinase step.
 
 **Bypass 2: Fructose-1,6-bisphosphate → Fructose-6-phosphate (bypasses PFK-1)**
 
@@ -438,7 +438,7 @@ $$\text{Fructose-1,6-bisphosphate} + \text{H}_2\text{O} \rightarrow \text{Fructo
 
 A hydrolysis reaction: the phosphate at C1 is removed as free phosphate rather than transferred to ADP. This sidesteps the thermodynamic problem of running PFK-1 in reverse; the energy is lost as heat rather than captured, which is the point. FBPase-1 is not trying to make ATP; it is trying to get the phosphate off without consuming ATP.
 
-FBPase-1 and PFK-1 are reciprocally regulated. AMP activates PFK-1 and inhibits FBPase-1. ATP and citrate inhibit PFK-1 but activate FBPase-1. F-2,6-BP activates PFK-1 and inhibits FBPase-1. You cannot run both enzymes at full speed simultaneously without wasteful futile cycling; the reciprocal regulation prevents it.
+FBPase-1 and PFK-1 are reciprocally regulated. AMP activates PFK-1 and inhibits FBPase-1. ATP and citrate inhibit PFK-1 but activate FBPase-1. F-2,6-BP (mechanism of synthesis and destruction explained in Part VI below) activates PFK-1 and inhibits FBPase-1. You cannot run both enzymes at full speed simultaneously without wasteful futile cycling; the reciprocal regulation prevents it.
 
 **Bypass 3: Glucose-6-phosphate → Glucose (bypasses hexokinase)**
 
@@ -448,7 +448,7 @@ $$\text{Glucose-6-phosphate} + \text{H}_2\text{O} \rightarrow \text{Glucose} + \
 
 Glucose-6-phosphatase is located on the inner face of the endoplasmic reticulum membrane and is expressed primarily in the liver and kidney (not in muscle or brain). This is why only the liver and kidney can release glucose into the bloodstream: muscle and brain lack this enzyme and cannot export glucose even if they have glucose-6-phosphate.
 
-**Von Gierke disease** (glycogen storage disease type Ia) results from glucose-6-phosphatase deficiency. Without this enzyme, glucose-6-phosphate accumulates, glycogen synthesis goes into overdrive, glycogen cannot be broken down to release free glucose, and fasting hypoglycemia results. The liver becomes massively enlarged from glycogen accumulation. It is a striking illustration of how a single enzyme at an apparently peripheral step controls whether glucose makes it into the bloodstream at all.
+**Von Gierke disease** (glycogen storage disease type Ia) results from glucose-6-phosphatase deficiency. Without this enzyme, glucose-6-phosphate accumulates in the liver. Glycogen synthesis goes into overdrive because G6P is diverted into glycogen. Glycogen phosphorylase can still break glycogen down to glucose-6-phosphate, but without glucose-6-phosphatase, that G6P cannot be dephosphorylated to free glucose for export into the bloodstream, and fasting hypoglycemia results. The liver becomes massively enlarged from glycogen accumulation. It is a striking illustration of how a single enzyme at an apparently peripheral step controls whether glucose makes it into the bloodstream at all.
 
 ### The Complete Gluconeogenic Cost
 
@@ -458,7 +458,7 @@ $$2 \text{ Pyruvate} + 4 \text{ ATP} + 2 \text{ GTP} + 2 \text{ NADH} + 6 \text{
 
 The 4 ATP breaks down as: 2 ATP for pyruvate carboxylase + 2 ATP for phosphoglycerate kinase running in reverse. The 2 GTP is for PEPCK. The 2 NADH is consumed at GAPDH running in reverse.
 
-Glycolysis nets 2 ATP per glucose. Gluconeogenesis costs 6 high-energy phosphate equivalents (4 ATP + 2 GTP) per glucose synthesized. The difference of 4 equivalents is the thermodynamic price of running the pathway uphill, and it must be paid from somewhere, typically from hepatic fatty acid oxidation during fasting.
+Glycolysis nets 2 ATP per glucose. Gluconeogenesis costs 6 high-energy phosphate equivalents (4 ATP + 2 GTP) per glucose synthesized. The difference of 4 equivalents is the thermodynamic price of running the pathway uphill, and it must be paid from somewhere, typically from hepatic fatty acid oxidation (beta-oxidation, covered in a later chapter) during fasting.
 
 ### Reciprocal Regulation and Futile Cycling
 
@@ -476,7 +476,7 @@ $$
 \end{array}
 $$
 
-Glucose, pyruvate, NADH, and NAD⁺ all cancel. What remains is the hydrolysis of 4 high-energy phosphate bonds, 2 ATP and 2 GTP (effectively 4 ATP through the action of nucleoside diphosphate kinase (NDPK)), producing nothing of metabolic value. Pure heat.
+Glucose, pyruvate, NADH, and $\text{NAD}^+$ all cancel. What remains is the hydrolysis of 4 high-energy phosphate bonds, 2 ATP and 2 GTP (effectively 4 ATP through the action of nucleoside diphosphate kinase (NDPK)), producing nothing of metabolic value. Pure heat.
 
 The solution is reciprocal regulation: the key opposing enzyme pairs are wired so that when one is active, the other is suppressed. The same signals that activate glycolysis inhibit gluconeogenesis and vice versa, making simultaneous full activity essentially impossible.
 
@@ -504,6 +504,14 @@ Now that gluconeogenesis is established, the Cori cycle mentioned above makes fu
 The energetics are deliberately asymmetric. Muscle makes 2 ATP per glucose via anaerobic glycolysis. The liver spends 6 ATP equivalents (4 ATP + 2 GTP) to reverse that and regenerate the glucose. The net cost is 4 ATP equivalents per cycle, subsidized by hepatic fatty acid oxidation. The Cori cycle is not a perpetual motion machine; it is a short-term strategy that lets muscle keep contracting by offloading the metabolic debt to the liver.
 
 The cycle also has a tissue-specificity consequence: because only liver and kidney express glucose-6-phosphatase, only those organs can complete gluconeogenesis and export free glucose. Muscle can export lactate but not glucose. The liver is the obligate intermediary.
+
+### The Glucose-Alanine Cycle
+
+Muscle exports a second gluconeogenic precursor alongside lactate: alanine. During sustained exercise or fasting, muscle degrades its own proteins for energy. The amino groups released by this catabolism cannot be discarded in the muscle; they are transferred to pyruvate by a transamination reaction (covered in the amino acid metabolism chapter), converting pyruvate to alanine while creating a new α-keto acid. The muscle exports alanine into the bloodstream rather than pyruvate (alanine is a safe amino acid carrier of both carbon and nitrogen).
+
+The liver takes up alanine, reverses the transamination to recover pyruvate, and uses the pyruvate as a gluconeogenic substrate. The amino group goes on to the urea cycle for nitrogen disposal. The glucose produced is released back into the blood for the muscle to use again.
+
+The **glucose-alanine cycle** thus mirrors the Cori cycle in function, transferring carbon from muscle to liver for glucose synthesis, but it also transfers nitrogen that would otherwise accumulate. During prolonged fasting, when muscle protein breakdown accelerates, the glucose-alanine cycle becomes a significant pathway for both gluconeogenesis and nitrogen disposal.
 
 ---
 
@@ -535,7 +543,7 @@ The elegance of this system is that a single small molecule simultaneously throw
 |---|---|---|---|
 | Hexokinase | Most tissues | — | Glucose-6-phosphate (product inhibition) |
 | Glucokinase | Liver, β cells | Glucose (cooperative kinetics) | — |
-| PFK-1 | All tissues | AMP, F-2,6-BP | ATP, citrate, H⁺ |
+| PFK-1 | All tissues | AMP, F-2,6-BP | ATP, citrate, $\text{H}^+$ |
 | Pyruvate kinase (M2 isoform) | Muscle, most tissues | F-1,6-BP (feedforward) | ATP, alanine |
 | Pyruvate kinase (L isoform) | Liver | F-1,6-BP (feedforward) | ATP, alanine, PKA phosphorylation (fasting) |
 | Pyruvate carboxylase | Liver, kidney | Acetyl-CoA | — |
@@ -549,35 +557,35 @@ The elegance of this system is that a single small molecule simultaneously throw
 
 Lactate is always being produced and cleared. Resting blood lactate is about 1 mM; hard exercise can push it transiently to 10-15 mM without clinical consequence. Lactic acidosis is defined as blood lactate above 4 mM with a pH below 7.35 (normal blood pH is 7.35–7.45). It is a medical emergency.
 
-**Type A lactic acidosis** arises from tissue hypoxia: the electron transport chain cannot run without oxygen, NADH cannot be reoxidized, NAD⁺ runs out, and cells are forced to reduce pyruvate to lactate to keep any glycolysis running at all. Any condition that severely reduces oxygen delivery can cause type A: massive myocardial infarction, cardiogenic shock, severe anemia, carbon monoxide poisoning, or sepsis. The key feature is a failing ETC.
+**Type A lactic acidosis** arises from tissue hypoxia: the electron transport chain cannot run without oxygen, NADH cannot be reoxidized, $\text{NAD}^+$ runs out, and cells are forced to reduce pyruvate to lactate to keep any glycolysis running at all. Any condition that severely reduces oxygen delivery can cause type A: massive myocardial infarction, cardiogenic shock, severe anemia, carbon monoxide poisoning, or sepsis. The key feature is a failing ETC.
 
 **Type B lactic acidosis** arises without obvious hypoxia and includes drug toxicity (metformin in overdose, nucleoside reverse transcriptase inhibitors used in HIV treatment, and propofol infusion syndrome are notable examples), liver failure (the liver is the primary organ for lactate clearance via gluconeogenesis; if it fails, lactate accumulates), and certain cancers.
 
-Rapidly dividing cells often run high rates of **aerobic glycolysis** (glycolysis that produces lactate even though oxygen is present and available. The term distinguishes this from the normal situation, where pyruvate is oxidized further rather than reduced to lactate). This is the **Warburg effect**: the tumor cell preferentially uses glycolysis rather than oxidative phosphorylation, for reasons related to biosynthetic demand (fast-dividing cells need glycolytic intermediates for anabolic pathways, not just ATP) and signaling. The Warburg effect is the basis of PET scanning in oncology: tumors take up glucose so avidly that an un-metabolizable ¹⁸F-labeled glucose analog lights up the scan.
+Rapidly dividing cells often run high rates of **aerobic glycolysis** (glycolysis that produces lactate even though oxygen is present and available. The term distinguishes this from the normal situation, where pyruvate is oxidized further rather than reduced to lactate). This is the **Warburg effect**: the tumor cell preferentially uses glycolysis rather than oxidative phosphorylation, for reasons related to biosynthetic demand (fast-dividing cells need glycolytic intermediates for anabolic pathways, not just ATP) and signaling. The Warburg effect is the basis of PET scanning in oncology: tumors take up glucose so avidly that an un-metabolizable $^{18}\text{F}$-labeled glucose analog lights up the scan.
 
 In every form of lactic acidosis, the common biochemical thread is either excess lactate production (high glycolytic flux with an impaired ETC), impaired lactate clearance (liver failure), or both.
 
-A note on mechanism worth getting right: despite the name, lactate itself does not cause the acidosis. The LDH reaction actually consumes a proton (pyruvate⁻ + NADH + H⁺ → lactate⁻ + NAD⁺), and the net reaction of anaerobic glycolysis through LDH is proton-neutral. The acidosis comes from ATP hydrolysis: ATP⁴⁻ + H₂O → ADP³⁻ + HPO₄²⁻ + H⁺. When ATP is being made and immediately consumed faster than oxidative phosphorylation can regenerate it, each hydrolysis releases a proton. Lactate and H⁺ co-accumulate because they are both products of the same underlying crisis, not because one causes the other. "Lactic acidosis" is really a metabolic acidosis caused by ATP hydrolysis, with lactate as a reliable but mechanistically innocent bystander. The clinical correlation between blood lactate and pH is real and useful; the traditional causal story is not.
+A note on mechanism worth getting right: despite the name, lactate itself does not cause the acidosis. The LDH reaction actually consumes a proton (pyruvate$^-$ + NADH + $\text{H}^+$ → lactate$^-$ + $\text{NAD}^+$), and the net reaction of anaerobic glycolysis through LDH is proton-neutral. The acidosis comes from ATP hydrolysis: $\text{ATP}^{4-}$ + $\text{H}_2\text{O}$ → $\text{ADP}^{3-}$ + $\text{HPO}_4^{2-}$ + $\text{H}^+$. When ATP is being made and immediately consumed faster than oxidative phosphorylation can regenerate it, each hydrolysis releases a proton. Lactate and $\text{H}^+$ co-accumulate because they are both products of the same underlying crisis, not because one causes the other. "Lactic acidosis" is really a metabolic acidosis caused by ATP hydrolysis, with lactate as a reliable but mechanistically innocent bystander. The clinical correlation between blood lactate and pH is real and useful; the traditional causal story is not.
 
-### Alcohol, NAD⁺, and Hypoglycemia
+### Alcohol, $\text{NAD}^+$, and Hypoglycemia
 
-Ethanol is metabolized to acetaldehyde by **alcohol dehydrogenase** and then to acetate by **aldehyde dehydrogenase**. Both steps reduce NAD⁺ to NADH:
+Ethanol is metabolized to acetaldehyde by **alcohol dehydrogenase** and then to acetate by **aldehyde dehydrogenase**. Both steps reduce $\text{NAD}^+$ to NADH:
 
 $$\text{Ethanol} + \text{NAD}^+ \xrightarrow{\text{ADH}} \text{Acetaldehyde} + \text{NADH} + \text{H}^+$$
 
 $$\text{Acetaldehyde} + \text{NAD}^+ \xrightarrow{\text{ALDH}} \text{Acetate} + \text{NADH} + \text{H}^+$$
 
-Heavy alcohol consumption floods the liver with NADH, collapsing the NAD⁺/NADH ratio. The consequences ripple through everything that depends on NAD⁺:
+Heavy alcohol consumption floods the liver with NADH, collapsing the $\text{NAD}^+$/NADH ratio. The consequences ripple through everything that depends on $\text{NAD}^+$:
 
-**Gluconeogenesis stalls.** The GAPDH step runs in the gluconeogenic direction and requires NAD⁺. With NAD⁺ depleted, gluconeogenesis cannot run. The liver, the body's main source of blood glucose during fasting, stops making glucose. Blood glucose falls.
+**Gluconeogenesis stalls.** The GAPDH step runs in the gluconeogenic direction and requires $\text{NAD}^+$. With $\text{NAD}^+$ depleted, gluconeogenesis cannot run. The liver, the body's main source of blood glucose during fasting, stops making glucose. Blood glucose falls.
 
-**Pyruvate is diverted to lactate.** Excess NADH pushes the lactate dehydrogenase equilibrium toward lactate: NADH + pyruvate → NAD⁺ + lactate. Pyruvate is consumed as a hydrogen sink, removing the primary gluconeogenic substrate.
+**Pyruvate is diverted to lactate.** Excess NADH pushes the lactate dehydrogenase equilibrium toward lactate: NADH + pyruvate → $\text{NAD}^+$ + lactate. Pyruvate is consumed as a hydrogen sink, removing the primary gluconeogenic substrate.
 
 **Oxaloacetate is diverted to malate.** Excess NADH drives malate dehydrogenase in reverse, converting OAA to malate. OAA is a gluconeogenic precursor; its diversion to malate starves gluconeogenesis of its TCA-cycle-derived substrate (more on this in the next chapter).
 
 **The TCA cycle slows.** High NADH product-inhibits multiple TCA cycle dehydrogenases, reducing aerobic ATP production in the liver.
 
-The clinical picture: a patient who drank heavily and did not eat, presenting with hypoglycemia, elevated blood lactate, and possibly lactic acidosis. Treatment is glucose infusion. The mechanism is a pharmacological collapse of the hepatic NAD⁺/NADH ratio, and it is essentially a real-world demonstration of why that ratio, introduced in Chapter 9, governs whole-body metabolic flux.
+The clinical picture: a patient who drank heavily and did not eat, presenting with hypoglycemia, elevated blood lactate, and possibly lactic acidosis. Treatment is glucose infusion. The mechanism is a pharmacological collapse of the hepatic $\text{NAD}^+$/NADH ratio, and it is essentially a real-world demonstration of why that ratio, introduced in Chapter 9, governs whole-body metabolic flux.
 
 ---
 
@@ -593,7 +601,7 @@ The clinical picture: a patient who drank heavily and did not eat, presenting wi
 
 **Cori cycle:** Muscle produces lactate under high-intensity conditions; the liver converts it back to glucose at a cost of 6 ATP equivalents per glucose. The net energy cost is covered by liver fatty acid oxidation.
 
-**Warburg effect:** Aerobic glycolysis in cancer cells is clinically important because it underlies PET scanning (¹⁸F-deoxyglucose accumulates in metabolically active tumor cells) and is a target for cancer metabolism research. In an exam context, "aerobic glycolysis" and "the Warburg effect" describe the same phenomenon.
+**Warburg effect:** Aerobic glycolysis in cancer cells is clinically important because it underlies PET scanning ($^{18}\text{F}$-deoxyglucose accumulates in metabolically active tumor cells) and is a target for cancer metabolism research. In an exam context, "aerobic glycolysis" and "the Warburg effect" describe the same phenomenon.
 
 ---
 
@@ -605,7 +613,7 @@ A red blood cell (RBC) has no mitochondria.
 
 (a) What is the net ATP yield per glucose in an RBC?
 
-(b) RBCs run glycolysis continuously yet maintain low cytoplasmic NADH. How do they regenerate NAD⁺?
+(b) RBCs run glycolysis continuously yet maintain low cytoplasmic NADH. How do they regenerate $\text{NAD}^+$?
 
 (c) Why can't RBCs use the electron transport chain? What would need to be structurally different?
 
@@ -613,7 +621,7 @@ A red blood cell (RBC) has no mitochondria.
 
 (a) Substrate-level phosphorylation still works in the absence of mitochondria: steps 7 and 10 each produce 2 ATP per glucose (4 total), with 2 ATP spent in steps 1 and 3. Net: **2 ATP per glucose.** The 2 NADH cannot be fed to an ETC and thus yield no additional ATP.
 
-(b) Lactate dehydrogenase regenerates NAD⁺: pyruvate + NADH → lactate + NAD⁺. RBCs run glycolysis to pyruvate (making 2 ATP), then immediately reduce pyruvate to lactate to regenerate the NAD⁺ needed at step 6. Lactate is exported into the bloodstream and cleared primarily by the liver.
+(b) Lactate dehydrogenase regenerates $\text{NAD}^+$: pyruvate + NADH → lactate + $\text{NAD}^+$. RBCs run glycolysis to pyruvate (making 2 ATP), then immediately reduce pyruvate to lactate to regenerate the $\text{NAD}^+$ needed at step 6. Lactate is exported into the bloodstream and cleared primarily by the liver.
 
 (c) To use the ETC, RBCs would need an inner mitochondrial membrane, ATP synthase, all four ETC complexes, and pyruvate dehydrogenase. The absence of mitochondria in RBCs is a design trade-off: it maximizes the hemoglobin-carrying volume of the cell and eliminates a source of reactive oxygen species adjacent to fragile hemoglobin. The cost is that each RBC's energy metabolism is permanently capped at 2 ATP per glucose.
 
@@ -633,8 +641,8 @@ A liver cell needs to synthesize one glucose from two lactate molecules (each la
 
 (a) The bypass from 2 pyruvate to 2 PEP requires:
 
-- Pyruvate carboxylase: 2 Pyruvate + 2 CO₂ + **2 ATP** → 2 OAA + 2 ADP + 2 Pᵢ
-- PEPCK: 2 OAA + **2 GTP** → 2 PEP + 2 CO₂ + 2 GDP
+- Pyruvate carboxylase: 2 Pyruvate + 2 $\text{CO}_2$ + **2 ATP** → 2 OAA + 2 ADP + 2 $\text{P}_\text{i}$
+- PEPCK: 2 OAA + **2 GTP** → 2 PEP + 2 $\text{CO}_2$ + 2 GDP
 
 Total for this bypass: **2 ATP + 2 GTP** (4 high-energy phosphate bonds) to get 2 PEP.
 
@@ -652,11 +660,11 @@ This matches the net equation given in Part VI. The glycolytic path returned 2 A
 
 ### Problem 3: Regulation and Clinical Context
 
-A patient with type 2 diabetes is started on metformin. Recall from Chapter 9 that metformin partially inhibits Complex I of the electron transport chain, raising the NADH/NAD⁺ ratio and reducing the ATP/AMP ratio.
+A patient with type 2 diabetes is started on metformin. Recall from Chapter 9 that metformin partially inhibits Complex I of the electron transport chain, raising the NADH/$\text{NAD}^+$ ratio and reducing the ATP/AMP ratio.
 
 (a) What happens to PFK-1 activity in the liver when AMP rises?
 
-(b) What happens to gluconeogenesis in the liver when the NAD⁺/NADH ratio collapses?
+(b) What happens to gluconeogenesis in the liver when the $\text{NAD}^+$/NADH ratio collapses?
 
 (c) Metformin lowers fasting blood glucose. Based on what you know about gluconeogenesis, what is the most likely mechanism?
 
@@ -664,9 +672,9 @@ A patient with type 2 diabetes is started on metformin. Recall from Chapter 9 th
 
 (a) AMP activates PFK-1 allosterically. Rising AMP signals an energy deficit, and PFK-1 speeds up, increasing glycolytic flux toward pyruvate.
 
-(b) Gluconeogenesis requires NAD⁺ at the GAPDH step (running in the gluconeogenic direction: 1,3-BPG → G3P needs NADH, but the reaction also regenerates NAD⁺ running forward in glycolysis; in the reverse direction for gluconeogenesis, GAPDH uses NADH to reduce 1,3-BPG to G3P). More directly: the conversion of lactate or alanine to pyruvate (the initial gluconeogenic precursors in the fasted liver) by LDH requires NAD⁺. When NADH is high and NAD⁺ is depleted, the LDH equilibrium is pushed toward lactate production rather than pyruvate production. Gluconeogenic substrate supply is compromised. The pathway stalls.
+(b) Gluconeogenesis requires $\text{NAD}^+$ at the GAPDH step (running in the gluconeogenic direction: 1,3-BPG → G3P needs NADH, but the reaction also regenerates $\text{NAD}^+$ running forward in glycolysis; in the reverse direction for gluconeogenesis, GAPDH uses NADH to reduce 1,3-BPG to G3P). More directly: the conversion of lactate or alanine to pyruvate (the initial gluconeogenic precursors in the fasted liver) by LDH requires $\text{NAD}^+$. When NADH is high and $\text{NAD}^+$ is depleted, the LDH equilibrium is pushed toward lactate production rather than pyruvate production. Gluconeogenic substrate supply is compromised. The pathway stalls.
 
-(c) The primary mechanism is suppression of hepatic gluconeogenesis. In type 2 diabetes, the liver overproduces glucose because insulin resistance blunts the normal suppression of gluconeogenesis by insulin (including the F-2,6-BP pathway), and glucagon signaling goes relatively unopposed. Metformin's elevation of NADH/NAD⁺ impairs gluconeogenic substrate supply, and the rise in AMP activates AMPK (AMP-activated protein kinase), which directly suppresses the expression of gluconeogenic enzymes (PEPCK, glucose-6-phosphatase). Less glucose leaves the liver, and fasting blood glucose falls. Metformin does not stimulate insulin secretion; it works by reducing hepatic glucose output. This is why it does not cause hypoglycemia in most patients: it only reduces the excess production, not physiological glucose release.
+(c) The primary mechanism is suppression of hepatic gluconeogenesis. In type 2 diabetes, the liver overproduces glucose because insulin resistance blunts the normal suppression of gluconeogenesis by insulin (including the F-2,6-BP pathway), and glucagon signaling goes relatively unopposed. Metformin's elevation of NADH/$\text{NAD}^+$ impairs gluconeogenic substrate supply, and the rise in AMP activates AMPK (AMP-activated protein kinase), which directly suppresses the expression of gluconeogenic enzymes (PEPCK, glucose-6-phosphatase). Less glucose leaves the liver, and fasting blood glucose falls. Metformin does not stimulate insulin secretion; it works by reducing hepatic glucose output. This is why it does not cause hypoglycemia in most patients: it only reduces the excess production, not physiological glucose release.
 
 ---
 
@@ -674,11 +682,11 @@ A patient with type 2 diabetes is started on metformin. Recall from Chapter 9 th
 
 **1. Heavy alcohol consumption causes fasting hypoglycemia. Why can't the liver just make more glucose?**
 
-The liver maintains blood glucose during fasting primarily through gluconeogenesis, and gluconeogenesis depends on NAD⁺ at multiple steps. Alcohol metabolism (both the alcohol dehydrogenase and aldehyde dehydrogenase reactions) generates NADH and depletes NAD⁺, collapsing the hepatic NAD⁺/NADH ratio. Without NAD⁺, gluconeogenesis stalls. Simultaneously, excess NADH pushes the lactate dehydrogenase equilibrium toward lactate (consuming pyruvate, the primary gluconeogenic substrate) and drives malate dehydrogenase in reverse (consuming OAA, another substrate). The liver loses the ability to synthesize glucose from pyruvate, lactate, or alanine. Once liver glycogen is also depleted from fasting, there is no backup source of blood glucose, and severe hypoglycemia results. The mechanism is entirely traceable to the NAD⁺/NADH ratio.
+The liver maintains blood glucose during fasting primarily through gluconeogenesis, and gluconeogenesis depends on $\text{NAD}^+$ at multiple steps. Alcohol metabolism (both the alcohol dehydrogenase and aldehyde dehydrogenase reactions) generates NADH and depletes $\text{NAD}^+$, collapsing the hepatic $\text{NAD}^+$/NADH ratio. Without $\text{NAD}^+$, gluconeogenesis stalls. Simultaneously, excess NADH pushes the lactate dehydrogenase equilibrium toward lactate (consuming pyruvate, the primary gluconeogenic substrate) and drives malate dehydrogenase in reverse (consuming OAA, another substrate). The liver loses the ability to synthesize glucose from pyruvate, lactate, or alanine. Once liver glycogen is also depleted from fasting, there is no backup source of blood glucose, and severe hypoglycemia results. The mechanism is entirely traceable to the $\text{NAD}^+$/NADH ratio.
 
 **2. During intense exercise, your muscles produce lactate even though oxygen is available. Is this a metabolic failure?**
 
-It is not. At high exercise intensities, glycolytic flux exceeds the rate at which the mitochondria can oxidize pyruvate via PDH and the TCA cycle. Pyruvate accumulates faster than it can be consumed, creating a bottleneck. Rather than allowing the NADH buildup to stall GAPDH and halt ATP production, lactate dehydrogenase converts excess pyruvate to lactate, regenerating NAD⁺ and keeping glycolysis running. The lactate is not wasted: it is exported into the bloodstream, taken up by the heart (which oxidizes it directly as fuel), the liver (which converts it back to glucose via the Cori cycle), and less-loaded skeletal muscle fibers. What looks like a metabolic failure is actually a coordinated inter-organ strategy that keeps ATP production going during a demand spike that oxidative phosphorylation cannot immediately meet. The "oxygen is available but lactate still appears" observation is sometimes called a paradox, but it only seems paradoxical if you think the bottleneck is oxygen. It is not; it is the rate of mitochondrial pyruvate oxidation.
+It is not. At high exercise intensities, glycolytic flux exceeds the rate at which the mitochondria can oxidize pyruvate via PDH and the TCA cycle. Pyruvate accumulates faster than it can be consumed, creating a bottleneck. Rather than allowing the NADH buildup to stall GAPDH and halt ATP production, lactate dehydrogenase converts excess pyruvate to lactate, regenerating $\text{NAD}^+$ and keeping glycolysis running. The lactate is not wasted: it is exported into the bloodstream, taken up by the heart (which oxidizes it directly as fuel), the liver (which converts it back to glucose via the Cori cycle), and less-loaded skeletal muscle fibers. What looks like a metabolic failure is actually a coordinated inter-organ strategy that keeps ATP production going during a demand spike that oxidative phosphorylation cannot immediately meet. The "oxygen is available but lactate still appears" observation is sometimes called a paradox, but it only seems paradoxical if you think the bottleneck is oxygen. It is not; it is the rate of mitochondrial pyruvate oxidation.
 
 ---
 
@@ -687,3 +695,112 @@ It is not. At high exercise intensities, glycolytic flux exceeds the rate at whi
 ---
 
 *This chapter is part of a free, openly licensed course companion for Biochemistry for Life Sciences (694:395) at Rutgers University. Licensed under CC BY-NC-SA 4.0.*
+
+---
+
+## Problem Set
+
+**Problem 1.**
+The payoff phase of glycolysis converts two molecules of G3P into pyruvate.
+
+(a) Write the net reaction for just the payoff phase, starting from 2 G3P and ending at 2 pyruvate. Include all cofactors and small molecules consumed or produced.
+
+(b) Why does the payoff phase yield 4 ATP rather than 2, even though only 2 G3P molecules enter?
+
+(c) Step 6 (GAPDH) has a modestly negative $\Delta G^{\circ'}$ but runs close to equilibrium under cellular conditions. Step 7 (phosphoglycerate kinase) has a large negative $\Delta G^{\circ'}$ but also runs close to equilibrium. The two are described as "tightly coupled." Explain mechanistically what this means and why step 7's thermodynamics pull step 6 forward.
+
+---
+
+**Problem 2.** *(Synthesis)*
+A cell biologist creates a mutant cell line in which triose phosphate isomerase (TPI) is completely non-functional.
+
+(a) Starting from one molecule of glucose, how much ATP and NADH would this cell produce per glucose molecule in the investment phase vs. the payoff phase? Show your accounting.
+
+(b) The wild-type TPI is described as a "perfect enzyme" because its rate is diffusion-limited. Why would loss of TPI be especially metabolically costly compared to losing an enzyme that normally operates well below its diffusion limit?
+
+(c) In the wild-type cell, the equilibrium of TPI strongly favors DHAP over G3P (about 97:3 at standard conditions). Yet G3P is effectively the only product that enters the payoff phase. Explain how the pathway maintains forward flux through TPI despite this unfavorable equilibrium.
+
+---
+
+**Problem 3.**
+PFK-1 is the primary regulatory enzyme of glycolysis. Its activity is controlled by multiple allosteric effectors.
+
+(a) ATP is both a substrate (at the active site) and an inhibitor (at the allosteric site). Explain how a single molecule can play both roles without creating a paradox.
+
+(b) Citrate inhibits PFK-1. Given that citrate is a TCA cycle intermediate, what metabolic signal does high cytoplasmic citrate convey, and why does it make sense to slow glycolysis in response?
+
+(c) Fructose-2,6-bisphosphate (F-2,6-BP) is described as "not a glycolytic intermediate." Distinguish it functionally from fructose-1,6-bisphosphate (F-1,6-BP), which is a glycolytic intermediate. What does each molecule do, and at which enzyme(s) does each act?
+
+---
+
+**Problem 4.** *(Synthesis)*
+Hereditary fructose intolerance is caused by aldolase B deficiency. Patients must avoid fructose and sucrose strictly.
+
+(a) Trace exactly where in hepatic fructose metabolism the block occurs, and identify which metabolite accumulates.
+
+(b) The accumulated metabolite sequesters inorganic phosphate. Explain how phosphate sequestration leads to ATP depletion, starting from the role of phosphate in ATP synthesis and GAPDH.
+
+(c) Patients do not experience symptoms after eating glucose alone, only after fructose or sucrose. Explain why, using the difference between hepatic fructose metabolism and hepatic glucose metabolism at the level of which regulatory checkpoint each bypasses.
+
+---
+
+**Problem 5.**
+Gluconeogenesis in the liver costs 6 high-energy phosphate equivalents (4 ATP + 2 GTP) per glucose, while glycolysis nets only 2 ATP per glucose.
+
+(a) Identify which two gluconeogenic bypass reactions each account for part of this cost, and state exactly how many ATP or GTP equivalents each consumes.
+
+(b) If glycolysis and gluconeogenesis ran simultaneously at full speed in the same cell, what would be the net chemical equation? What is wasted, and in what currency?
+
+(c) Explain why this futile cycling is prevented in the liver. Name the key enzyme pair that is reciprocally regulated and identify at least two signals that oppositely control both enzymes.
+
+---
+
+**Problem 6.** *(Synthesis)*
+During prolonged fasting, a patient's muscle is breaking down protein to release alanine, which travels in the blood to the liver. The liver converts alanine to pyruvate (via transamination) and uses it for gluconeogenesis.
+
+(a) Starting from pyruvate in the liver, write out the two reactions that convert it to PEP. Name the enzymes, cofactors required, and ATP equivalents consumed.
+
+(b) Pyruvate carboxylase (the first bypass enzyme) is activated by acetyl-CoA. During fasting, fatty acid oxidation in the liver generates large amounts of acetyl-CoA. Explain how this allosteric relationship serves the liver's gluconeogenic function during fasting.
+
+(c) Muscle itself cannot perform the last step of gluconeogenesis and release free glucose into the blood, even though it carries out the earlier gluconeogenic steps. What single enzymatic difference between liver and muscle explains this, and what is the physiological consequence for the Cori cycle?
+
+---
+
+**Problem 7.** *(Synthesis)*
+The Warburg effect describes tumor cells that preferentially use aerobic glycolysis — they convert glucose to lactate even when oxygen is plentiful.
+
+(a) A cell running aerobic glycolysis produces lactate from glucose. What is the net ATP yield per glucose? How does this compare to complete aerobic oxidation?
+
+(b) Despite the lower ATP yield, why might rapidly dividing cancer cells prefer aerobic glycolysis? Consider the role of glycolytic intermediates in biosynthesis.
+
+(c) $^{18}\text{F}$-fluorodeoxyglucose ($^{18}\text{F}$-FDG) is taken up by cells via GLUT transporters and phosphorylated by hexokinase to $^{18}\text{F}$-FDG-6-phosphate, but cannot be metabolized further. It accumulates inside cells with high hexokinase activity. Explain why tumors light up brightly on a PET scan, connecting GLUT isoform expression, hexokinase behavior, and the Warburg effect.
+
+---
+
+**Problem 8.**
+A student studying for the MCAT makes the following claim: "Lactic acidosis is caused by excess lactate, which is acidic and lowers the blood pH directly."
+
+(a) Is the student's causal claim correct? Explain, using the proton stoichiometry of the LDH reaction and the net reaction of anaerobic glycolysis.
+
+(b) If lactate is not the direct cause of the acidosis, what is? Trace the actual mechanism, starting from the cell's energetic state under hypoxic conditions.
+
+(c) Why is blood lactate still a clinically useful marker of tissue hypoxia, even if the causal story is more complicated than the student described?
+
+---
+
+## References
+
+1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.
+2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
+3. Vander Heiden MG, Cantley LC, Thompson CB. Understanding the Warburg effect: the metabolic requirements of cell proliferation. *Science*. 2009;324(5930):1029-1033. doi:10.1126/science.1160809
+4. Kraut JA, Madias NE. Lactic acidosis. *N Engl J Med*. 2014;371(24):2309-2319. doi:10.1056/NEJMra1309483
+5. Owen MR, Doran E, Halestrap AP. Evidence that metformin exerts its anti-diabetic effects through inhibition of complex 1 of the mitochondrial respiratory chain. *Biochem J*. 2000;348(Pt 3):607-614. doi:10.1042/0264-6021:3480607
+6. Van Schaftingen E, Hers H-G. Inhibition of fructose-1,6-bisphosphatase by fructose 2,6-bisphosphate. *Proc Natl Acad Sci USA*. 1981;78(5):2861-2863. doi:10.1073/pnas.78.5.2861
+7. Van Schaftingen E, Hue L, Hers H-G. Fructose 2,6-bisphosphate, the probable structure of the glucose- and glucagon-sensitive stimulator of phosphofructokinase. *Biochem J*. 1980;192(3):897-901. doi:10.1042/bj1920897
+8. Chou JY, Jun HS, Mansfield BC. Glycogen storage disease type I and G6Pase-β deficiency: etiology and therapy. *Nat Rev Endocrinol*. 2010;6(12):676-688. doi:10.1038/nrendo.2010.189
+9. Knowles JR, Albery WJ. Perfection in enzyme catalysis: the energetics of triosephosphate isomerase. *Acc Chem Res*. 1977;10(4):105-111. doi:10.1021/ar50112a001
+10. Matschinsky FM, Wilson DF. The central role of glucokinase in glucose homeostasis: a perspective 50 years after demonstrating the presence of the enzyme in islets of Langerhans. *Front Physiol*. 2019;10:148. doi:10.3389/fphys.2019.00148
+11. Steinmann B, Gitzelmann R, Van den Berghe G. Disorders of fructose metabolism. In: Scriver CR, Beaudet AL, Sly WS, Valle D, eds. *The Metabolic and Molecular Bases of Inherited Disease*, 8th ed. McGraw-Hill; 2001:1489-1520.
+12. Boron WF, Boulpaep EL. *Medical Physiology*, 3rd ed. Elsevier; 2017. [SGLT1/GLUT transporter physiology]
+13. Hers H-G, Hue L. Gluconeogenesis and related aspects of glycolysis. *Annu Rev Biochem*. 1983;52:617-653. doi:10.1146/annurev.bi.52.070183.003153
+14. Newsholme EA, Crabtree B. Substrate cycles in metabolic regulation and in heat generation. *Biochem Soc Symp*. 1976;41:61-109.

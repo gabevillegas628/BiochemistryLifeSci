@@ -20,7 +20,7 @@ But in Chapter 3, the protein and ligand separated unchanged. Hemoglobin binds o
 
 The other half is **chemistry**. The same principles that govern binding, complementary shape, non-covalent interactions, the thermodynamics of association, also govern a more powerful class of event: the protein grabs a molecule, does something to it, and releases a chemically altered product. These proteins are **enzymes**, and the molecules they transform are **substrates**.
 
-Enzymes are the reason biochemistry is not just thermodynamics. Thermodynamics tells you which reactions are possible ($\Delta G < 0$ means the reaction *must* proceed). But thermodynamics says nothing about how fast those reactions proceed. At body temperature, without enzymes, almost every metabolic reaction would proceed so slowly that life is impossible. The conversion of $CO_2$ and water to bicarbonate in red blood cells takes over 100 seconds without a catalyst, but the enzyme carbonic anhydrase completes it in under a millisecond. Life runs on enzyme-catalyzed timescales.
+Enzymes are the reason biochemistry is not just thermodynamics. Thermodynamics tells you which reactions are possible ($\Delta G < 0$ means the reaction *must* proceed). But thermodynamics says nothing about how fast those reactions proceed. At body temperature, without enzymes, almost every metabolic reaction would proceed so slowly that life is impossible. The conversion of $\text{CO}_2$ and water to bicarbonate in red blood cells takes over 100 seconds without a catalyst, but the enzyme carbonic anhydrase completes it in under a millisecond. Life runs on enzyme-catalyzed timescales.
 
 The through-line for this chapter is organophosphate poisoning. Organophosphates are a class of compounds that includes both agricultural pesticides (malathion, parathion) and nerve agents (sarin, VX). They work by permanently disabling a single enzyme: acetylcholinesterase. Understanding why that matters, and why the antidote works only within a narrow time window, requires a complete picture of how enzymes work, how fast they work, and how they can be blocked. By the end of this chapter, you will be able to explain the farmer's symptoms, the treatment, and the reason the toxicologist was so insistent about timing.
 
@@ -44,14 +44,14 @@ Consider any chemical reaction converting substrate $S$ to product $P$. Even if 
 
 Think of a boulder on a hillside. The boulder wants to roll to the valley (thermodynamically favorable), but it will not move unless you push it over the lip of the hill first (activation energy). Once over the lip, it rolls down on its own.
 
-At physiological temperatures, molecules have thermal energy distributed across a Boltzmann distribution. Only a small fraction have enough energy at any moment to surmount the activation energy barrier. This fraction determines the spontaneous rate. If the barrier is high, the reaction is slow regardless of how favorable the overall $\Delta G$ is.
+At physiological temperatures, molecules have thermal energy distributed across a Boltzmann distribution: a statistical spread in which most molecules have moderate energy but a small fraction have much higher energy. Only that small fraction have enough energy at any moment to surmount the activation energy barrier. This fraction determines the spontaneous rate. If the barrier is high, the reaction is slow regardless of how favorable the overall $\Delta G$ is.
 
 ### What a Catalyst Actually Does
 
 A catalyst increases the rate of a reaction without being consumed by it. Critically, a catalyst does **not** change the thermodynamics: $\Delta G$, $\Delta H$, and $\Delta S$ for the overall reaction are identical whether or not a catalyst is present. The equilibrium position is unchanged. What a catalyst changes is the pathway from $S$ to $P$, specifically, it provides an alternative pathway with a **lower activation energy**.
 
 
-A lower $E_a$ means a larger fraction of molecules have sufficient energy to reach the transition state at any given temperature. More molecules crossing the barrier per unit time means a faster reaction. Enzymes typically lower activation energies by 10 to 30 kJ/mol, which corresponds to rate enhancements of $10^{6}$ to $10^{12}$ over the uncatalyzed reaction.
+A lower $E_a$ means a larger fraction of molecules have sufficient energy to reach the transition state at any given temperature. More molecules crossing the barrier per unit time means a faster reaction. Enzymes typically lower activation energies by 40 to 100 kJ/mol or more, which corresponds to observed rate enhancements of $10^{6}$ to $10^{17}$ over the uncatalyzed reaction.
 
 Interestingly, because $\Delta G^{\circ'}$ cannot change (it is set by the intrinsic chemical properties of S and P, which the enzyme does not alter) an enzyme also cannot alter the equilibrium position of a reaction. To see why, recall
 
@@ -63,7 +63,7 @@ $$\Delta G^{\circ '} = -RT ln(K_{eq}^{'})$$
 
 In plain english, if $\Delta G^{\circ '}$ doesn't change, $K_{eq}^{'}$ **can't** change. Enzymes do not alter equilibrium, they **reduce the time required to reach the same equilibrium**.
 
-Because the catalyst is not consumed, it can catalyze the same reaction over and over. One molecule of carbonic anhydrase can convert $10^6$ molecules of $CO_2$ per second. One molecule of catalase can decompose $4 \times 10^7$ molecules of hydrogen peroxide per second. The catalytic cycle regenerates the enzyme at the end of each turnover, ready for the next substrate molecule.
+Because the catalyst is not consumed, it can catalyze the same reaction over and over. One molecule of carbonic anhydrase can convert $10^6$ molecules of $\text{CO}_2$ per second. One molecule of catalase can decompose $4 \times 10^7$ molecules of hydrogen peroxide per second. The catalytic cycle regenerates the enzyme at the end of each turnover, ready for the next substrate molecule.
 
 One more constraint: because catalysts do not change the equilibrium position, an enzyme that speeds up the forward reaction ($S \rightarrow P$) must also, by definition, speed up the reverse reaction ($P \rightarrow S$) to the same degree. The equilibrium constant is unchanged; only the speed of reaching that equilibrium changes. To see why, examine the following hypothetical reaction
 
@@ -113,9 +113,9 @@ Enzymes use a relatively small repertoire of chemical mechanisms to accomplish a
 
 **Acid-base catalysis.** Active site residues can donate or accept protons to stabilize charged intermediates or the transition state. Histidine is the most versatile acid-base catalyst in biology: its side chain $pK_a$ is close to 7, so at physiological pH it can exist in both protonated and unprotonated forms simultaneously. Glutamate, aspartate, lysine, and the N-terminal amine also participate in acid-base catalysis.
 
-**Covalent catalysis.** The enzyme forms a transient covalent bond with the substrate, creating a covalent intermediate that is more reactive than the original substrate. This intermediate then breaks down to release product and regenerate the free enzyme. Serine proteases (including trypsin, chymotrypsin, and the clinically important coagulation factors) work this way: a serine residue in the active site attacks the peptide bond, forming an acyl-enzyme intermediate before hydrolysis releases the product.
+**Covalent catalysis.** The enzyme forms a transient covalent bond with the substrate, creating a covalent intermediate that is more reactive than the original substrate. This intermediate then breaks down to release product and regenerate the free enzyme. Serine proteases, enzymes that cleave peptide bonds using an active-site serine, include trypsin and chymotrypsin (digestive proteases) and the coagulation factors (blood-clotting enzymes covered in a later chapter). They work this way: a serine residue in the active site attacks the peptide bond, forming an acyl-enzyme intermediate before hydrolysis releases the product.
 
-**Metal ion catalysis.** Many enzymes require metal ions (zinc, magnesium, iron, copper, manganese) at their active sites. Metal ions can stabilize negative charges on transition states, orient substrates for attack, or directly participate in redox chemistry. Carbonic anhydrase uses a zinc ion to activate a water molecule for nucleophilic attack on $CO_2$. Roughly one-third of all enzymes require a metal ion cofactor for activity.
+**Metal ion catalysis.** Many enzymes require metal ions (zinc, magnesium, iron, copper, manganese) at their active sites. Metal ions can stabilize negative charges on transition states, orient substrates for attack, or directly participate in redox chemistry. Carbonic anhydrase uses a zinc ion to activate a water molecule for nucleophilic attack on $\text{CO}_2$. Roughly one-third of all enzymes require a metal ion cofactor for activity.
 
 **Proximity and orientation effects.** Simply bringing two reactant molecules into proximity in the correct orientation can accelerate a reaction dramatically even without any chemistry from the enzyme itself. An enzyme that holds two substrates in the optimal geometry for reaction achieves an effective concentration many orders of magnitude higher than would occur by diffusion alone. Estimates suggest that proximity and orientation effects alone could account for $10^3$ to $10^8$ fold rate enhancements.
 
@@ -328,7 +328,7 @@ Reversible inhibitors dissociate from the enzyme and reach a dynamic equilibrium
 
 Irreversible inhibitors reduce the total amount of functional enzyme ($[\text{E}]_T$), which reduces $V_{max}$ proportionally (since $V_{max} = k_{cat}[\text{E}]_T$). $K_m$ is not affected: the remaining uninhibited enzyme molecules still bind substrate with the same affinity and turn it over at the same rate; there are just fewer of them.
 
-Many irreversible inhibitors are **mechanism-based inhibitors** (also called suicide inhibitors or $k_{cat}$ inhibitors): they enter the active site as substrates, are partially processed by the enzyme's catalytic machinery, and then the partially processed intermediate forms a stable covalent bond with an active site residue. The enzyme essentially destroys itself by doing its job. Aspirin (acetylsalicylic acid) is a classic example: it irreversibly acetylates a serine residue in the active sites of cyclooxygenase-1 and cyclooxygenase-2 (COX-1 and COX-2), permanently inactivating the enzyme. Since platelets lack a nucleus and cannot synthesize new COX protein, aspirin's antiplatelet effect lasts for the entire lifespan of the platelet (7 to 10 days).
+Many irreversible inhibitors are **mechanism-based inhibitors** (also called suicide inhibitors or $k_{cat}$ inhibitors): they enter the active site as substrates, are partially processed by the enzyme's catalytic machinery, and then the partially processed intermediate forms a stable covalent bond with an active site residue. The enzyme essentially destroys itself by doing its job. Aspirin (acetylsalicylic acid) is a classic example: it irreversibly acetylates a serine residue in the active sites of cyclooxygenase-1 and cyclooxygenase-2 (COX-1 and COX-2), permanently inactivating the enzyme. Since platelets lack a nucleus and cannot synthesize new COX protein, aspirin's antiplatelet effect lasts for the entire lifespan of the platelet (8 to 10 days).
 
 The organophosphates, our clinical through-line, work through irreversible inhibition of acetylcholinesterase. We will return to the full picture shortly.
 
@@ -357,7 +357,7 @@ The two-state model (T-state and R-state, as in hemoglobin) applies directly:
 - Allosteric activators shift equilibrium toward R-state
 - Allosteric inhibitors shift equilibrium toward T-state
 
-A classic example: aspartate transcarbamoylase (ATCase) catalyzes the first committed step in pyrimidine biosynthesis. It is inhibited allosterically by CTP, the downstream product of the pathway. When CTP builds up, it binds an allosteric site on ATCase and shifts the enzyme toward the T-state, slowing pyrimidine synthesis. When CTP is depleted, the enzyme shifts back to R-state and synthesis accelerates. This is **feedback inhibition**: the product of a pathway inhibits an enzyme early in that pathway, maintaining steady-state concentration.
+A classic example: aspartate transcarbamoylase (ATCase) catalyzes the first committed step in pyrimidine biosynthesis (the pathway that makes the nucleotide building blocks cytosine, uracil, and thymine, required for DNA and RNA synthesis). It is inhibited allosterically by CTP (cytidine triphosphate, one of the end products of this pathway). When CTP builds up, it binds an allosteric site on ATCase and shifts the enzyme toward the T-state, slowing pyrimidine synthesis. When CTP is depleted, the enzyme shifts back to R-state and synthesis accelerates. This is **feedback inhibition**: the product of a pathway inhibits an enzyme early in that pathway, maintaining steady-state concentration.
 
 ### Covalent Modification: Phosphorylation
 
@@ -367,11 +367,11 @@ The most common covalent modification in signaling is **phosphorylation**: addit
 
 Phosphorylation is ideal as a regulatory switch for several reasons:
 
-1. It introduces a large, doubly charged group ($-OPO_3^{2-}$ at physiological pH) into the local environment of a residue. This can disrupt local hydrogen bonding networks, change the surface charge of the protein, and shift the conformational equilibrium between active and inactive states.
+1. It introduces a large, doubly charged group ($-\text{OPO}_3^{2-}$ at physiological pH) into the local environment of a residue. This can disrupt local hydrogen bonding networks, change the surface charge of the protein, and shift the conformational equilibrium between active and inactive states.
 2. It is reversible on timescales of seconds to minutes, controlled by the opposing activities of kinases and phosphatases.
 3. It is amplifiable: a single signaling event can activate a kinase, which phosphorylates and activates other kinases, creating a **kinase cascade** that amplifies a small signal into a large cellular response. We will examine several kinase cascades in a later chapter.
 
-Importantly, the same phosphorylation can activate some enzymes and inhibit others, depending on where the phosphorylated residue is and how its modification affects the protein's structure. Glycogen phosphorylase (which breaks down glycogen) is activated by phosphorylation; glycogen synthase (which builds glycogen) is inhibited by phosphorylation. Both enzymes are phosphorylated by the same kinase (protein kinase A) in response to epinephrine, simultaneously turning on glycogen breakdown and turning off glycogen synthesis, a phenomenon known as **reciprocal regulation**; there would be no point in having both pathways turned on. The cell integrates a single hormonal signal into a coordinated metabolic response through phosphorylation of multiple target enzymes.
+Importantly, the same phosphorylation can activate some enzymes and inhibit others, depending on where the phosphorylated residue is and how its modification affects the protein's structure. Glycogen phosphorylase (which breaks down glycogen, the branched glucose polymer used for short-term energy storage in liver and muscle) is activated by phosphorylation; glycogen synthase (which builds glycogen) is inhibited by phosphorylation. Both enzymes are phosphorylated by the same kinase, protein kinase A (a kinase activated by the second messenger cAMP), in response to epinephrine (the "fight-or-flight" hormone released by the adrenal glands, covered in the signal transduction chapter), simultaneously turning on glycogen breakdown and turning off glycogen synthesis, a phenomenon known as **reciprocal regulation**; there would be no point in having both pathways turned on. The cell integrates a single hormonal signal into a coordinated metabolic response through phosphorylation of multiple target enzymes.
 
 ### Feedback Inhibition and Metabolic Control
 
@@ -384,6 +384,16 @@ The first committed step is the logical control point for two reasons. First, it
 ---
 
 ## Putting It Together: Organophosphate Poisoning
+
+### Background: The Neuromuscular Junction
+
+To follow the organophosphate story, you need a working model of where acetylcholine matters most.
+
+A **motor neuron** is a nerve cell whose axon terminates at a skeletal muscle fiber at a specialized contact called the **neuromuscular junction (NMJ)**. Signaling across the NMJ is electrical-then-chemical: an **action potential** (a brief voltage spike that propagates along the neuron's membrane) reaches the axon terminal and triggers the release of **acetylcholine (ACh)**, a small-molecule neurotransmitter, into the **synaptic cleft** (the narrow gap between the neuron and the muscle). ACh diffuses across the cleft and binds receptors on the muscle side, called the **motor end plate**, triggering membrane depolarization and muscle contraction.
+
+Acetylcholine receptors come in two families. **Nicotinic receptors** are ion channels: they open directly when ACh binds, allowing ions to flow and depolarizing the membrane. They are found at the neuromuscular junction and at autonomic ganglia. **Muscarinic receptors** are G-protein coupled receptors found on smooth muscle, cardiac muscle, and glands; when activated, they slow the heart, stimulate secretions, and contract smooth muscle. The symptoms of organophosphate poisoning map directly onto which receptor type is being overstimulated in which tissue.
+
+For the muscle to respond to the next signal, ACh must be rapidly cleared from the cleft. That is the job of acetylcholinesterase.
 
 ### Acetylcholinesterase and Synaptic Transmission
 
@@ -405,7 +415,7 @@ The phosphorylated serine is chemically very different from the acetylated serin
 
 With AChE inactivated, ACh is not cleared from synapses. It accumulates, and nicotinic and muscarinic acetylcholine receptors remain continuously stimulated. The clinical syndrome is a **cholinergic crisis**:
 
-**Muscarinic effects** (smooth muscle, glands, heart): bradycardia, bronchospasm, increased secretions (salivation, lacrimation, urination, defecation, GI motility), miosis (pupillary constriction). The mnemonic SLUDGE covers the secretory/GI effects: Salivation, Lacrimation, Urination, Defecation, GI distress, Emesis.
+**Muscarinic effects** (smooth muscle, glands, heart): bradycardia (abnormally slow heart rate), bronchospasm (constriction of the airways), increased secretions (salivation, lacrimation, urination, defecation, GI motility), miosis (pupillary constriction). The mnemonic SLUDGE covers the secretory/GI effects: Salivation, Lacrimation, Urination, Defecation, GI distress, Emesis.
 
 **Nicotinic effects** (neuromuscular junction, autonomic ganglia): muscle fasciculations (initial excessive stimulation), progressing to paralysis as the motor end plate cannot repolarize. Respiratory failure from paralysis of the diaphragm is the primary cause of death.
 
@@ -427,11 +437,11 @@ This restores functional AChE, which can then hydrolyze the accumulated ACh. Rea
 
 Here is the molecular basis of the toxicologist's urgency from the opener. The phosphorylated AChE complex undergoes a slow spontaneous reaction called **aging**: one of the ester groups on the phosphorus is hydrolyzed, leaving a charged phosphonate group on the serine. The aged complex is even more stable and is resistant to 2-PAM reactivation. Once aging occurs, 2-PAM cannot remove the phosphoryl group.
 
-The rate of aging depends on the specific OP compound. For tabun (a nerve agent), aging is nearly complete within 14 hours. For soman (another nerve agent), aging is essentially complete within minutes of exposure. For common agricultural OPs like malathion, aging takes longer, on the scale of a day or more. For all of them, the window is finite.
+The rate of aging depends on the specific OP compound. For tabun (a nerve agent), the aging half-life is on the order of 14 hours, meaning significant but not complete aging occurs within a day of exposure. For soman (another nerve agent), aging is essentially complete within minutes of exposure. For common agricultural OPs like malathion, aging takes longer, on the scale of a day or more. For all of them, the window is finite.
 
 This is why the toxicologist said "give it now or don't bother." After aging, 2-PAM is useless: the covalent modification has been transformed into a form that cannot be reversed by the drug. Atropine, which works at the receptor and not the enzyme, remains effective regardless of whether aging has occurred. But 2-PAM requires that the phosphoryl-enzyme complex still be in the pre-aged form.
 
-The full treatment picture for OP poisoning: atropine to block muscarinic effects immediately, 2-PAM to reactivate AChE before aging occurs, and benzodiazepines to control seizures (since excessive ACh at central synapses causes CNS excitation). Supportive care, including ventilation, addresses the nicotinic-mediated respiratory paralysis that atropine cannot reverse.
+The full treatment picture for OP poisoning: atropine to block muscarinic effects immediately, 2-PAM to reactivate AChE before aging occurs, and benzodiazepines (a class of CNS depressant drugs that enhance inhibitory signaling and reduce neuronal excitability, used here to control seizures from excessive ACh at central synapses). Supportive care, including ventilation, addresses the nicotinic-mediated respiratory paralysis that atropine cannot reverse.
 
 ---
 
@@ -505,3 +515,107 @@ Inhibitors modulate enzyme activity by altering $K_m$, $V_{max}$, or both:
 Enzyme activity is regulated in real time by allosteric effectors (non-covalent, fast, reversible) and covalent modification, primarily phosphorylation (enzymatic, reversible on a longer timescale, amplifiable). Feedback inhibition at the first committed step is the general strategy for maintaining metabolic homeostasis.
 
 The organophosphate case integrates the entire chapter: a mechanism-based irreversible inhibitor attacks the active site serine of a near-perfect enzyme (AChE), causing accumulation of the neurotransmitter substrate, producing clinical toxicity through receptor overstimulation, and requiring antidotes that work at two distinct molecular targets, one at the receptor (atropine) and one at the enzyme (2-PAM), with a time constraint set by the irreversible chemical transformation called aging.
+
+---
+
+## Problem Set
+
+**Problem 1.**
+An enzyme has a $K_m$ of 0.5 mM and a $V_{max}$ of 80 nmol/min under standard conditions.
+
+(a) What is $V_0$ when $[\text{S}] = 0.5$ mM? When $[\text{S}] = 5$ mM? When $[\text{S}] = 0.05$ mM?
+
+(b) The physiological concentration of this enzyme's substrate in the cell is approximately 0.4–0.6 mM. Why is it metabolically advantageous for an enzyme to have a $K_m$ close to the physiological substrate concentration? What would happen to the cell's ability to regulate flux through this pathway if $K_m$ were 0.001 mM or 50 mM instead?
+
+(c) The enzyme is a regulatory enzyme in a biosynthetic pathway. A downstream product accumulates to high concentration and decreases $V_0$ by 50% without changing $K_m$. What type of inhibition (competitive, uncompetitive, or noncompetitive) is most consistent with this pattern? On a Lineweaver-Burk plot, what change would you observe?
+
+---
+
+**Problem 2.** *(Synthesis)*
+Carbonic anhydrase catalyzes $\text{CO}_2 + \text{H}_2\text{O} \rightleftharpoons \text{H}_2\text{CO}_3 \rightarrow \text{H}^+ + \text{HCO}_3^-$ with a $k_{cat}$ of approximately $10^6 \text{ s}^{-1}$. The uncatalyzed reaction takes approximately 100 seconds. A red blood cell spends approximately 0.5 seconds in a pulmonary capillary.
+
+(a) Calculate the approximate fold-rate enhancement achieved by carbonic anhydrase. Express your answer as a power of 10.
+
+(b) Without carbonic anhydrase, could a red blood cell complete the $\text{CO}_2$ hydration reaction during its 0.5-second transit through the pulmonary capillary? What would the physiological consequence be?
+
+(c) Carbonic anhydrase lowers the activation energy for this reaction. Does this change the equilibrium position of the $CO_2/HCO_3^-$ reaction? Explain using the relationship between $\Delta G^{\circ'}$ and $K_{eq}$ from Chapter 1. What is the enzyme changing and what is it not changing?
+
+---
+
+**Problem 3.**
+You are studying an enzyme and obtain the following Lineweaver-Burk data:
+
+| Condition | y-intercept | x-intercept |
+|---|---|---|
+| No inhibitor | 0.020 | $-0.25$ |
+| + Drug X | 0.020 | $-0.10$ |
+| + Drug Y | 0.040 | $-0.25$ |
+
+(a) Determine $K_m$ and $V_{max}$ under the no-inhibitor condition.
+
+(b) For Drug X, determine the new apparent $K_m$. What type of inhibition does Drug X produce? Justify your answer from the changes in intercepts.
+
+(c) For Drug Y, determine the new apparent $V_{max}$. What type of inhibition does Drug Y produce? If a patient is on Drug Y at a therapeutic dose, would increasing the dose of substrate (e.g., providing more metabolite) rescue enzyme activity? Why or why not?
+
+---
+
+**Problem 4.** *(Synthesis)*
+Aspirin irreversibly inhibits cyclooxygenase-1 (COX-1) in platelets by acetylating a serine residue in the active site. Platelets are anucleate (they lack a nucleus) and cannot synthesize new proteins.
+
+(a) Aspirin is an irreversible inhibitor. What effect does irreversible inhibition have on $V_{max}$ and $K_m$? Explain mechanistically why $K_m$ is not changed even though the enzyme is permanently inactivated in some fraction of molecules.
+
+(b) A single low-dose aspirin (81 mg) inhibits platelet COX-1 for approximately 7–10 days. Yet aspirin's half-life in circulation is only about 20 minutes before it is hydrolyzed to salicylate (which does not inhibit COX-1 irreversibly). Explain why the antiplatelet effect lasts far longer than the drug itself persists in the blood.
+
+(c) Ibuprofen is a reversible competitive inhibitor of COX-1 and COX-2. A patient on daily low-dose aspirin for cardiovascular protection takes ibuprofen for a headache. Clinical studies show that ibuprofen taken before aspirin can block aspirin's antiplatelet effect. Using your understanding of competitive versus irreversible inhibition, explain the molecular basis of this interaction.
+
+---
+
+**Problem 5.** *(Synthesis)*
+A biochemist is studying feedback inhibition of the pyrimidine biosynthesis pathway. The enzyme ATCase (aspartate transcarbamoylase) catalyzes the first committed step and is allosterically inhibited by CTP, the pathway's end product. When CTP binds the regulatory site, ATCase shifts from its R-state (high activity) toward its T-state (low activity). ATCase displays sigmoidal substrate kinetics (Hill coefficient ~2).
+
+(a) Explain why feedback inhibition acts on the first committed step rather than on the last step of the pathway. What would be wasted if the last step were inhibited instead?
+
+(b) ATCase's sigmoidal kinetics mean it behaves more like an on/off switch than a gradual responder. How does this switch-like behavior serve the cell better than hyperbolic kinetics would for a feedback-regulated enzyme?
+
+(c) CTP is structurally unrelated to aspartate (the substrate of ATCase) and binds a site entirely separate from the active site. Yet it dramatically decreases catalytic activity. Name the general category of mechanism this exemplifies and explain how a conformational change at the allosteric site can influence chemistry at the active site, which may be 30–40 Å away.
+
+---
+
+**Problem 6.**
+A farmer is brought to the emergency department with the following presentation: bradycardia, excessive salivation and lacrimation, miosis (pupillary constriction), muscle fasciculations in the arms and trunk, and labored breathing. His family reports he was applying pesticide spray earlier in the day. Blood acetylcholinesterase activity is measured at 8% of normal.
+
+(a) What class of compound is responsible for these findings, and what is the molecular mechanism by which it reduces acetylcholinesterase activity to 8% of normal? Classify this type of inhibition and state what parameter of the Michaelis-Menten equation is affected.
+
+(b) The clinical team administers atropine and pralidoxime (2-PAM). Explain the mechanism of each drug. Why does atropine address the salivation and bradycardia but not the muscle fasciculations, while pralidoxime addresses both (if given in time)?
+
+(c) The toxicologist says 2-PAM must be given immediately. If the farmer was exposed 4 hours ago and the specific organophosphate involved has an aging half-life of 1 hour, what fraction of the phosphoryl-AChE complex is still reactivatable? Should 2-PAM be expected to have significant clinical benefit at this point? Assume first-order aging kinetics: $f = (1/2)^{t/t_{1/2}}$.
+
+---
+
+**Problem 7.** *(Synthesis)*
+Transition state analogs are among the most potent enzyme inhibitors known. The enzyme adenosine deaminase (ADA) catalyzes the deamination of adenosine to inosine. The transition state of this reaction involves a distorted purine ring with partial positive charge at the C1' position. A researcher synthesizes a molecule that mimics this distorted geometry and partial charge distribution, and finds that it binds ADA with a $K_d$ of $3 \times 10^{-12}$ M (3 pM), compared to adenosine's $K_m$ of approximately $3 \times 10^{-5}$ M (30 µM).
+
+(a) Calculate the fold-difference in affinity between the transition state analog and the substrate. Express your answer as a power of 10.
+
+(b) This enormous affinity difference is not random; it follows directly from the theory of transition state stabilization. Explain why the active site should bind the transition state analog more tightly than the substrate, using the logic of what the active site is physically shaped and charged to complement.
+
+(c) A drug based on this compound would likely exhibit what type of inhibition kinetics (competitive, uncompetitive, or noncompetitive) — and would it be reversible or effectively irreversible at physiological concentrations? Justify your answer using the relationship between $K_d$, $K_i$, and the concentrations of competing substrate that could realistically be achieved in a patient.
+
+---
+
+## References
+
+1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.
+2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
+3. Michaelis L, Menten ML. Die Kinetik der Invertinwirkung. *Biochem Z*. 1913;49:333–369. [English translation: Biochemistry. 2011;50(39):8264–8269. doi:10.1021/bi201284u]
+4. Briggs GE, Haldane JBS. A note on the kinetics of enzyme action. *Biochem J*. 1925;19(2):338–339. doi:10.1042/bj0190338
+5. Lineweaver H, Burk D. The determination of enzyme dissociation constants. *J Am Chem Soc*. 1934;56(3):658–666. doi:10.1021/ja01318a036
+6. Koshland DE Jr. Application of a theory of enzyme specificity to protein synthesis. *Proc Natl Acad Sci USA*. 1958;44(2):98–104. doi:10.1073/pnas.44.2.98
+7. Wolfenden R, Snider MJ. The depth of chemical time and the power of enzymes as catalysts. *Acc Chem Res*. 2001;34(12):938–945. doi:10.1021/ar000058i
+8. Knowles JR, Albery WJ. Perfection in enzyme catalysis: the energetics of triosephosphate isomerase. *Acc Chem Res*. 1977;10(4):105–111. doi:10.1021/ar50112a001
+9. Bourne HR, Sanders DA, McCormick F. The GTPase superfamily: a conserved switch for diverse cell functions. *Nature*. 1990;348(6297):125–132. doi:10.1038/348125a0
+10. Rang HP, Ritter JM, Flower RJ, Henderson G. *Rang and Dale's Pharmacology*, 8th ed. Churchill Livingstone; 2015. [Chapters on cholinergic pharmacology and organophosphate toxicology.]
+11. Jokanović M. Neurotoxic effects of organophosphorus pesticides and possible association with neurodegenerative diseases in man: a review. *Toxicology*. 2018;410:125–131. doi:10.1016/j.tox.2018.09.009
+12. Colovic MB, Krstić DZ, Lazarević-Pašti TD, Bondžić AM, Vasić VM. Acetylcholinesterase inhibitors: pharmacology and toxicology. *Curr Neuropharmacol*. 2013;11(3):315–335. doi:10.2174/1570159X11311030005
+13. Fersht A. *Structure and Mechanism in Protein Science: A Guide to Enzyme Catalysis and Protein Folding*. W.H. Freeman; 1999. [Definitive mechanistic treatment of transition-state stabilization and catalytic strategies.]
+14. Cornish-Bowden A. One hundred years of Michaelis–Menten kinetics. *Perspect Sci*. 2015;4:3–9. doi:10.1016/j.pisc.2014.12.002

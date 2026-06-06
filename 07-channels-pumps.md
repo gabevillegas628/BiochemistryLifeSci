@@ -30,7 +30,7 @@ The two clinical anchors are long QT syndrome and myasthenia gravis. Long QT syn
 
 The lipid bilayer has a hydrophobic core approximately 30 Angstroms thick. Moving a charged ion from aqueous solution into that hydrophobic core carries a very large thermodynamic cost.
 
-In water, ions are surrounded by shells of oriented water molecules. A sodium ion in aqueous solution carries six water molecules in its first coordination shell. These water molecules stabilize the charge by electrostatic interaction. The free energy of this hydration is large and negative: it is why ionic compounds dissolve in water at all. Moving the sodium ion from water into the hydrophobic core of the bilayer would require stripping those water molecules away, which costs roughly 150 kJ/mol for sodium. This is the **Born energy** of transfer, the cost of moving a charge from a high-dielectric environment (water, $\varepsilon \approx 80$) to a low-dielectric environment (hydrocarbon, $\varepsilon \approx 2$). The higher the charge and the smaller the ionic radius, the greater the penalty.
+In water, ions are surrounded by shells of oriented water molecules. A sodium ion in aqueous solution carries six water molecules in its first coordination shell. These water molecules stabilize the charge by electrostatic interaction. The free energy of this hydration is large and negative: it is why ionic compounds dissolve in water at all. Moving the sodium ion from water into the hydrophobic core of the bilayer would require stripping those water molecules away, which costs roughly 150 kJ/mol for sodium. This is the **Born energy** of transfer, the cost of moving a charge from a high-dielectric environment (the **dielectric constant** ε measures a medium's ability to shield charges from each other; water ε ≈ 80 is highly shielding) to a low-dielectric environment (hydrocarbon, ε ≈ 2, nearly non-shielding). The higher the charge and the smaller the ionic radius, the greater the penalty.
 
 The practical consequence is that the bare lipid bilayer is essentially impermeable to ions. The measured permeability of a pure phospholipid bilayer to potassium ions is on the order of $10^{-14}$ cm/s. Real biological membranes have measured potassium permeabilities many orders of magnitude higher, entirely because of ion channels. The channels solve the Born energy problem by providing a protein-lined aqueous pore: the ion moves through water the entire way, never actually contacting the hydrophobic core.
 
@@ -48,7 +48,7 @@ The combined driving force is the **electrochemical gradient**, the relevant qua
 
 $$\Delta G = RT\ln(\frac{c_f}{c_i}) + ZF\Delta V$$
 
-Where R is the universal gas constant ($0.0083145 \frac{\text{kJ}}{\text{mol} \cdot \text{K}}$), T is temperature in Kelvin, F is Faraday's constant ($96.5 \frac{\text{kJ}}{\text{mol} \cdot \text{V}}$), and Z is the charge number (valence) of the ion (+1 for $\text{Na}^+$, +2 for $\text{Ca}^{2+}$, $-1$ for $\text{Cl}^-$).
+Where R is the universal gas constant ($0.0083145 \frac{\text{kJ}}{\text{mol} \cdot \text{K}}$), T is temperature in Kelvin, F is Faraday's constant ($96.5 \frac{\text{kJ}}{\text{mol} \cdot \text{V}}$, representing the electrical charge carried by one mole of singly charged ions, which converts between chemical amounts in moles and electrical charge), and Z is the charge number (valence) of the ion (+1 for $\text{Na}^+$, +2 for $\text{Ca}^{2+}$, $-1$ for $\text{Cl}^-$).
 
 $\Delta V$ is often confused with $V_m$. The membrane potential is defined as $V_m = V_{in} - V_{out}$: inside minus outside, always. The absolute reference voltage is arbitrary; only the difference matters. By convention we set $V_{out} = 0$, so $V_m = -60\;\text{mV}$ simply means $V_{in} = -60\;\text{mV}$. $\Delta V$ in the equation above is $V_f - V_i$: the potential at the destination minus the potential at the origin, so its sign depends on the direction of ion movement across the membrane.
 
@@ -132,7 +132,7 @@ Channels provide downhill pathways for ion movement. But the electrochemical gra
 
 ### The $\text{Na}^+/\text{K}^+$ ATPase
 
-The ${\text{Na}^+/\text{K}^+}$ ATPase is the primary pump responsible for maintaining the sodium and potassium gradients across animal cell plasma membranes. It is also called the sodium-potassium pump. It uses the energy of ATP hydrolysis to move three sodium ions out of the cell and two potassium ions into the cell per cycle, against the electrochemical gradients for both ions. The stoichiometry is electrogenic: three positive charges leave, two return, so each cycle produces a net outward movement of one positive charge. This makes a small direct contribution to the resting membrane potential, but the dominant effect is indirect: by maintaining the $Na^+$ and $K^+$ gradients, the pump sustains the electrochemical driving forces that the channels use.
+The ${\text{Na}^+/\text{K}^+}$ ATPase is the primary pump responsible for maintaining the sodium and potassium gradients across animal cell plasma membranes. It is also called the sodium-potassium pump. It uses the energy of ATP hydrolysis to move three sodium ions out of the cell and two potassium ions into the cell per cycle, against the electrochemical gradients for both ions. The stoichiometry is electrogenic: three positive charges leave, two return, so each cycle produces a net outward movement of one positive charge. This makes a small direct contribution to the resting membrane potential, but the dominant effect is indirect: by maintaining the $\text{Na}^+$ and $\text{K}^+$ gradients, the pump sustains the electrochemical driving forces that the channels use.
 
 The mechanism follows an alternating-access model:
 
@@ -205,7 +205,7 @@ The refractory periods also ensure **directionality** of propagation. When an ac
 
 An action potential at one location on the axon depolarizes adjacent membrane through electrotonic spread of current. This brings the adjacent membrane to threshold, triggering an action potential there. The local circuit flows in a wave along the axon. In unmyelinated axons, propagation is slow because every patch of membrane must be sequentially depolarized.
 
-**Myelination** dramatically increases propagation velocity. Myelin is a lipid-rich wrapping provided by Schwann cells (peripheral nervous system) or oligodendrocytes (central nervous system) that electrically insulates the axon. Myelinated axons have $\text{Na}^+$ channels concentrated at the **nodes of Ranvier**: small gaps in the myelin sheath spaced approximately 1 mm apart. The action potential jumps from one node to the next (**saltatory conduction**), because current can flow rapidly through the insulated internodal segments without depolarizing the axonal membrane there. Saltatory conduction in a large myelinated axon can achieve velocities of up to 100 m/s, compared to 0.5 to 2 m/s in unmyelinated fibers of similar diameter. Multiple sclerosis is a demyelinating disease in which autoimmune destruction of oligodendrocytes disrupts saltatory conduction, slowing or blocking action potential propagation and producing the variety of neurological deficits characteristic of the disease.
+**Myelination** dramatically increases propagation velocity. Myelin is a lipid-rich wrapping provided by **Schwann cells** (specialized glial cells of the peripheral nervous system) or **oligodendrocytes** (glial cells of the central nervous system); both are non-neuronal cells whose primary role is to insulate axons. Myelinated axons have $\text{Na}^+$ channels concentrated at the **nodes of Ranvier**: small gaps in the myelin sheath spaced approximately 1 mm apart. The action potential jumps from one node to the next (**saltatory conduction**), because current can flow rapidly through the insulated internodal segments without depolarizing the axonal membrane there. Saltatory conduction in a large myelinated axon can achieve velocities of up to 100 m/s, compared to 0.5 to 2 m/s in unmyelinated fibers of similar diameter. Multiple sclerosis is a demyelinating disease in which autoimmune destruction of oligodendrocytes disrupts saltatory conduction, slowing or blocking action potential propagation and producing the variety of neurological deficits characteristic of the disease.
 
 ---
 
@@ -220,7 +220,7 @@ Neurotransmitters are stored in **synaptic vesicles** that are clustered near th
 1. Depolarization opens voltage-gated $\text{Ca}^{2+}$ channels ($\text{Ca}_\text{V}$2.1, $\text{Ca}_\text{V}$2.2) in the presynaptic membrane.
 2. $\text{Ca}^{2+}$ flows in from the extracellular space (extracellular $\text{Ca}^{2+}$ is approximately 2 mM; cytoplasmic $\text{Ca}^{2+}$ at rest is roughly 100 nM, a 20,000-fold gradient).
 3. The local rise in $\text{Ca}^{2+}$ is sensed by **synaptotagmin**, a $\text{Ca}^{2+}$-binding protein on the synaptic vesicle.
-4. Synaptotagmin interacts with the SNARE complex (synaptobrevin on the vesicle with syntaxin and SNAP-25 on the target membrane), which catalyzes vesicle fusion with the presynaptic membrane.
+4. Synaptotagmin interacts with the **SNARE complex** (Soluble NSF Attachment protein REceptor; synaptobrevin on the vesicle membrane pairs with syntaxin and SNAP-25 on the target membrane to catalyze vesicle fusion with the presynaptic membrane).
 5. Fusion releases neurotransmitter into the synaptic cleft by exocytosis.
 
 The entire sequence from action potential arrival to neurotransmitter release takes less than 1 millisecond. The $\text{Ca}^{2+}$ trigger is essential: blocking voltage-gated $\text{Ca}^{2+}$ channels or chelating $\text{Ca}^{2+}$ in the presynaptic terminal abolishes neurotransmitter release. Botulinum toxin cleaves SNARE proteins (different toxin serotypes cleave synaptobrevin, syntaxin, or SNAP-25) and thereby blocks vesicle fusion and neurotransmitter release at neuromuscular junctions, producing the flaccid paralysis of botulism. The same mechanism underlies the cosmetic use of botulinum toxin (Botox): injecting a dilute, precisely localized dose into a muscle blocks ACh release at that neuromuscular junction, preventing contraction and relaxing the overlying skin. The effect is temporary because axon terminals sprout new branches over weeks to months, restoring neuromuscular transmission as the old terminals regenerate their SNARE machinery.
@@ -245,11 +245,11 @@ This is the exact pathway targeted by organophosphate nerve agents (Chapter 4): 
 
 ### Putting It All Together
 
-1. The membrane is at rest, with a membrane potential of approximately $-60$ mV.
+1. The membrane is at rest, with a membrane potential of approximately $-70$ mV.
 2. In the presynaptic neuron, when an action potential reaches the synapse, ACh-containing vesicles fuse to the membrane and release ACh into the synaptic cleft.
 3. ACh in the synaptic cleft binds to the nAChR, a non-selective cation channel. This allows sodium to enter the cell and potassium to exit.
 4. Because the membrane is now equally permeable to both sodium and potassium, the membrane potential is governed by their equilibrium potentials as described by the Goldman equation: $E_{\text{Na}} \approx +60\;\text{mV}$ and $E_{\text{K}} \approx -90\;\text{mV}$. The membrane potential therefore approaches the average of the two, roughly $-15\;\text{mV}$.
-5. As the membrane potential rises past the threshold of approximately $-40\;\text{mV}$, the S4 voltage sensors of the voltage-gated $\text{Na}^+$ channels reorient and open the channel. At around the same time, ACh in the synaptic cleft has been hydrolyzed by acetylcholinesterase, closing the nAChR.
+5. As the membrane potential rises past the threshold of approximately $-55\;\text{mV}$, the S4 voltage sensors of the voltage-gated $\text{Na}^+$ channels reorient and open the channel. At around the same time, ACh in the synaptic cleft has been hydrolyzed by acetylcholinesterase, closing the nAChR.
 6. With the membrane now permeable mainly to $\text{Na}^+$, the membrane potential rises toward $E_{\text{Na}} \approx +60\;\text{mV}$.
 7. Before that potential is reached, two things happen. First, the inactivation domain of the $\text{Na}^+$ channel plugs the pore. Second, the slower voltage sensors of the $\text{K}^+$ channels reorient and open those channels, increasing potassium permeability and driving the membrane potential back down toward $E_{\text{K}} \approx -90\;\text{mV}$.
 8. As the membrane repolarizes, the $\text{K}^+$ channels deactivate: their voltage sensors return to the resting position and the channels close. The membrane potential stabilizes near the resting value.
@@ -325,7 +325,7 @@ Channel and transport questions on the MCAT tend to cluster around a few high-yi
 
 Transport and channel questions often present a novel scenario (a new drug, a mutant channel, an unusual organism) and ask you to predict the consequence. The chain of reasoning is: what is the normal function of this channel or pump? What happens to the ion gradient if it is blocked or hyperactivated? What does the change in ion gradient do to the membrane potential or to transport of other molecules? What does that change in membrane potential mean for downstream physiology? Work through the chain step by step, not by memorization of outcomes but by first principles.
 
-For MCAT passages on the NMJ, remember that anything that increases ACh at the cleft (acetylcholinesterase inhibition) will initially increase the postsynaptic response, but sustained elevation produces desensitization of nAChR (receptors become unresponsive) and a depolarization block, which is actually inhibitory at high doses. This is the paradox of organophosphate toxicity: the NMJ is flooded with ACh, the muscle initially fasciculates, and then becomes flaccid because the endplate is locked in depolarization.
+For MCAT passages on the NMJ, remember that anything that increases ACh at the cleft (acetylcholinesterase inhibition) will initially increase the postsynaptic response, but sustained elevation produces desensitization of nAChR (receptors become unresponsive) and a **depolarization block** (the endplate is locked in a depolarized state, voltage-gated $\text{Na}^+$ channels remain inactivated and cannot generate action potentials, producing paradoxical flaccid paralysis despite ACh excess), which is actually inhibitory at high doses. This is the paradox of organophosphate toxicity: the NMJ is flooded with ACh, the muscle initially fasciculates, and then becomes flaccid because the endplate is locked in depolarization.
 
 ---
 
@@ -410,3 +410,100 @@ The action potential is the discharge of the sodium gradient across the neuron's
 At the synapse, the action potential is transduced into a chemical signal: calcium influx triggers SNARE-mediated vesicle fusion and neurotransmitter release. Ionotropic receptors provide the fast, direct channel opening that mediates millisecond-scale synaptic transmission. Metabotropic receptors link neurotransmitters to G protein cascades for slower, amplified neuromodulation.
 
 The clinical anchors demonstrate how a single molecular defect propagates to catastrophic physiology. Long QT syndrome shows that cardiac repolarization depends on the coordinated opening of specific potassium channels; a loss-of-function mutation in one channel isoform reduces repolarization reserve, lengthens the action potential, and creates conditions for fatal arrhythmia. Myasthenia gravis shows that the NMJ, which appears redundant (each vesicle releases far more ACh than needed to trigger a muscle action potential), has a finite safety margin, and autoimmune destruction of nicotinic ACh receptors erodes that margin until transmission fails. In both cases, the clinical examination makes sense only when you understand the channel.
+
+---
+
+## Problem Set
+
+**Problem 1.**
+The selectivity filter of the potassium channel uses backbone carbonyl oxygens to coordinate $\text{K}^+$ ions as they pass through the pore. Sodium ions, which are smaller than potassium ions, are excluded even though one might expect a smaller ion to fit more easily through any pore.
+
+(a) Explain why the potassium channel excludes sodium. Your answer must address what happens energetically when each ion attempts to enter the selectivity filter.
+(b) The selectivity filter coordinates two $\text{K}^+$ ions simultaneously. Why might having two ions in the filter at once, rather than one, actually speed up $\text{K}^+$ transport? (Hint: think about what keeps a single ion stuck in the filter versus what drives it out.)
+(c) A mutation changes one of the conserved threonine residues in the TVGYG selectivity filter to an alanine, removing a side-chain hydroxyl. Predict the effect on ion selectivity and explain your reasoning.
+
+---
+
+**Problem 2.**
+The intracellular concentrations of sodium and potassium are maintained by the $\text{Na}^+/\text{K}^+$ ATPase. Typical values: $[\text{Na}^+]_{in} = 12$ mM, $[\text{Na}^+]_{out} = 145$ mM; $[\text{K}^+]_{in} = 140$ mM, $[\text{K}^+]_{out} = 5$ mM.
+
+(a) Calculate the equilibrium potential for $\text{Na}^+$ and $\text{K}^+$ at 37°C using the approximation $E_{ion} \approx 61.5\;\text{mV} \times \log_{10}\frac{[\text{ion}]_{out}}{[\text{ion}]_{in}}$.
+(b) At a resting membrane potential of $-70$ mV, what is the net driving force on $\text{Na}^+$ ions (magnitude and direction)? What is the net driving force on $\text{K}^+$ ions?
+(c) The $\text{Na}^+/\text{K}^+$ ATPase exports 3 $\text{Na}^+$ and imports 2 $\text{K}^+$ per ATP cycle. Why is this stoichiometry described as electrogenic, and what direct effect does this have on the membrane potential?
+(d) A patient receives an overdose of digoxin, which inhibits the $\text{Na}^+/\text{K}^+$ ATPase. Trace the sequence of events from pump inhibition to the increase in intracellular $\text{Ca}^{2+}$ that produces increased cardiac contractility.
+
+---
+
+**Problem 3.** *(Synthesis)*
+A researcher records single-channel currents from a voltage-gated $\text{Na}^+$ channel in a neuron using patch clamp. She observes that the channel gates stochastically between open and closed states, and that the open probability increases sharply when the membrane is depolarized above $-50$ mV.
+
+(a) She applies a drug that binds preferentially to the inactivated state of the channel and slows recovery from inactivation by 10-fold. Predict the effect on action potential firing frequency. Explain your reasoning in terms of the refractory period.
+(b) She then applies lidocaine to the outside of the patch. Lidocaine is known to block $\text{Na}^+$ channels from the cytoplasmic side and preferentially binds the inactivated state. After washing out the drug from the bath, she notices that channels in neurons that have been firing rapidly are slower to recover than channels in quiescent neurons. What term describes this phenomenon and why does it occur?
+(c) In a patient with epilepsy, voltage-gated $\text{Na}^+$ channels in cortical neurons are firing at abnormally high frequencies. Explain the rationale for using a use-dependent $\text{Na}^+$ channel blocker (like phenytoin) as an antiepileptic drug. Why would this drug preferentially suppress the pathologically firing neurons rather than silencing all neurons equally?
+
+---
+
+**Problem 4.**
+Glucose is absorbed from the intestinal lumen into enterocytes by SGLT1 (sodium-glucose cotransporter) and exits into the blood via GLUT2 (a glucose uniporter). Meanwhile, GLUT4 in muscle cells is regulated by insulin signaling.
+
+(a) Classify each transporter (SGLT1, GLUT2, GLUT4) as passive or active, and as a channel, uniporter, symporter, or antiporter.
+(b) SGLT1 moves glucose against its concentration gradient into enterocytes. What is the energy source for this uphill transport? Trace the energy back to its ultimate origin.
+(c) If the $\text{Na}^+/\text{K}^+$ ATPase in intestinal enterocytes is inhibited, predict the effect on glucose absorption from the gut lumen. Explain the chain of events.
+(d) GLUT transporters exhibit saturation kinetics, whereas ion channels do not. What does this tell you about the mechanism of transport in each case?
+
+---
+
+**Problem 5.** *(Synthesis)*
+A 24-year-old woman presents to the emergency department after collapsing during a swim meet. Her ECG shows a markedly prolonged QT interval of 610 ms. She reports that a maternal uncle also died suddenly while swimming. She is not on any medications. Genetic testing identifies a loss-of-function mutation in KCNQ1.
+
+(a) What does KCNQ1 encode, and what current does it carry in the cardiac action potential?
+(b) Explain mechanistically how loss of this current prolongs the QT interval. In your answer, describe the normal role of this current in Phase 3 of the cardiac action potential.
+(c) Why does this patient's arrhythmia present specifically during swimming and exercise rather than at rest? Your answer should incorporate the role of sympathetic stimulation.
+(d) Her physician considers prescribing a beta-blocker. Explain the rationale: how does reducing sympathetic stimulation reduce arrhythmia risk in a patient whose ion channel is already deficient?
+
+---
+
+**Problem 6.**
+Acetylcholine (ACh) is released at the neuromuscular junction and acts on nicotinic ACh receptors (nAChRs) on the muscle endplate.
+
+(a) Two ACh molecules must bind simultaneously to open the nAChR. The channel is then a nonselective cation channel permeable to $\text{Na}^+$, $\text{K}^+$, and small amounts of $\text{Ca}^{2+}$. Given that $E_{\text{Na}} \approx +66$ mV and $E_{\text{K}} \approx -90$ mV, and that the resting endplate potential is $-75$ mV, predict the direction of net $\text{Na}^+$ and net $\text{K}^+$ flow when the channel opens.
+(b) The net effect of nAChR opening is depolarization of the endplate. Explain why this is true even though $\text{K}^+$ is leaving the cell at the same time $\text{Na}^+$ is entering.
+(c) Acetylcholinesterase (AChE) in the synaptic basal lamina hydrolyzes ACh with a catalytic rate of approximately $10^4$ molecules per second per enzyme molecule, clearing the cleft in under 1 ms. Why is this rapid termination necessary for normal muscle function? What happens if AChE is inhibited, as with organophosphate compounds?
+
+---
+
+**Problem 7.** *(Synthesis)*
+Consider two scenarios that each cause weakness at the neuromuscular junction:
+
+- **Scenario A:** A patient has antibodies against the nAChR that reduce the number of functional receptors at the motor endplate by 70%.
+- **Scenario B:** A patient has been exposed to a toxin that irreversibly cleaves the SNARE protein synaptobrevin in presynaptic motor nerve terminals.
+
+(a) For each scenario, predict whether the repetitive nerve stimulation test (a train of electrical pulses to the motor nerve) would show a decremental response (each successive compound muscle action potential gets smaller) or an incremental response (each successive response gets larger). Explain the mechanism in each case.
+(b) In Scenario A, administration of pyridostigmine (a long-acting AChE inhibitor) improves strength. Explain the molecular mechanism. Would pyridostigmine help in Scenario B? Why or why not?
+(c) In Scenario A, why is the weakness characteristically worse at the end of the day and better after rest? What is depleted, and why does rest restore it?
+
+---
+
+**Problem 8.** *(Synthesis)*
+Myelination of axons by oligodendrocytes dramatically increases action potential propagation velocity in the CNS. Multiple sclerosis (MS) is a demyelinating disease.
+
+(a) Explain why loss of myelin slows action potential propagation. Your answer should contrast the mechanism of propagation in myelinated versus unmyelinated axons.
+(b) Voltage-gated $\text{Na}^+$ channels are concentrated at the nodes of Ranvier in myelinated axons. After demyelination, internodal segments (normally without $\text{Na}^+$ channels) must acquire new channels to restore any conduction. Over weeks to months, some MS patients experience partial spontaneous recovery. Propose a molecular mechanism for this recovery.
+(c) A patient with MS notices that her symptoms worsen dramatically in a hot shower but improve when she cools down. This is called Uhthoff's phenomenon. Using your knowledge of channel kinetics and membrane physiology, explain why elevated temperature would specifically impair conduction in demyelinated axons more than in normal myelinated axons.
+
+---
+
+## References
+
+1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.
+2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
+3. Doyle DA, Morais Cabral J, Pfuetzner RA, et al. The structure of the potassium channel: molecular basis of K+ conduction and selectivity. *Science*. 1998;280(5360):69–77. doi:10.1126/science.280.5360.69
+4. Neher E, Sakmann B. Single-channel currents recorded from membrane of denervated frog muscle fibres. *Nature*. 1976;260(5554):799–802. doi:10.1038/260799a0
+5. Skou JC. The influence of some cations on an adenosine triphosphatase from peripheral nerves. *Biochim Biophys Acta*. 1957;23(2):394–401. doi:10.1016/0006-3002(57)90343-8
+6. Kanai R, Ogawa H, Vilsen B, Cornelius F, Toyoshima C. Crystal structure of a Na+-bound Na+,K+-ATPase preceding the E1P state. *Nature*. 2013;502(7470):201–206. doi:10.1038/nature12578
+7. Schwartz PJ, Ackerman MJ, George AL Jr, Wilde AAM. Impact of genetics on the clinical management of channelopathies. *J Am Coll Cardiol*. 2013;62(2):169–180. doi:10.1016/j.jacc.2013.04.044
+8. Goldenberg I, Zareba W, Moss AJ. Long QT syndrome. *Curr Probl Cardiol*. 2008;33(11):629–694. doi:10.1016/j.cpcardiol.2008.07.001
+9. Verschuuren JJ, Huijbers MG, Plomp JJ, et al. Pathophysiology of myasthenia gravis with antibodies to the acetylcholine receptor, muscle-specific kinase and low-density lipoprotein receptor-related protein 4. *Autoimmun Rev*. 2013;12(9):918–923. doi:10.1016/j.autrev.2013.03.001
+10. Gilhus NE. Myasthenia gravis. *N Engl J Med*. 2016;375(26):2570–2581. doi:10.1056/NEJMra1602678
+11. Hille B. *Ion Channels of Excitable Membranes*, 3rd ed. Sinauer Associates; 2001.
+12. Hodgkin AL, Huxley AF. A quantitative description of membrane current and its application to conduction and excitation in nerve. *J Physiol*. 1952;117(4):500–544. doi:10.1113/jphysiol.1952.sp004764

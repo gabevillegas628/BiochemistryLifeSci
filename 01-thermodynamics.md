@@ -20,9 +20,9 @@ The second law of thermodynamics says that entropy, the universe's tendency towa
 
 The usual answer, "cells are open systems that take in energy," is true but unsatisfying. It doesn't actually resolve the paradox. It just defers it.
 
-Here's the resolution that actually works: **the second law applies to the universe, not to any particular corner of it**. Cells are local entropy-decreasing machines. They decrease entropy in themselves, yes, but only by increasing entropy elsewhere, faster, by more than enough to compensate. The heat a cell dissipates, the $CO_2$ it exhales, the disorder it creates in its environment: all of it exceeds the order it builds internally. The universe's entropy still goes up. We just happen to be a temporary eddy running in the other direction.
+Here's the resolution that actually works: **the second law applies to the universe, not to any particular corner of it**. Cells are local entropy-decreasing machines. They decrease entropy in themselves, yes, but only by increasing entropy elsewhere, faster, by more than enough to compensate. The heat a cell dissipates, the $\text{CO}_2$ it exhales, the disorder it creates in its environment: all of it exceeds the order it builds internally. The universe's entropy still goes up. We just happen to be a temporary eddy running in the other direction.
 
-The cost of being that eddy is constant. The order in a cell doesn't maintain itself; it decays the moment energy input stops. This is why we have to eat. Every meal is a fresh installment of what you owe the second law. Every catabolic reaction, every ATP hydrolysis, every electron tumbling down the electron transport chain is entropy debt repayment. Metabolism isn't incidental to life. It *is* life, thermodynamically speaking.
+The cost of being that eddy is constant. The order in a cell doesn't maintain itself; it decays the moment energy input stops. This is why we have to eat. Every meal is a fresh installment of what you owe the second law. Every catabolic reaction (a reaction that breaks down molecules, releasing stored energy), every ATP hydrolysis, every electron tumbling down the electron transport chain (a series of protein complexes that pass electrons step-by-step to oxygen, releasing energy; covered in detail in a later chapter) is entropy debt repayment. Metabolism isn't incidental to life. It *is* life, thermodynamically speaking.
 
 We'll return to this repeatedly throughout the course. For now, hold onto the framing: the organism is the thermodynamic loophole. The pathways are the mechanism of the loophole.
 
@@ -38,9 +38,9 @@ Entropy is often defined as "disorder," which is intuitive but imprecise. More r
 
 The second law says that in any spontaneous process, the total entropy of the universe increases. That's the key word: **universe**. Not system. The universe.
 
-A subsystem can absolutely decrease its own entropy, as long as it dumps even more entropy onto its surroundings. A refrigerator decreases entropy inside its compartment by increasing entropy outside (the heat pump). A cell decreases entropy inside itself by increasing entropy in the environment (heat, $CO_2$, water). Neither violates the second law because neither operates as an isolated system.
+A subsystem can absolutely decrease its own entropy, as long as it dumps even more entropy onto its surroundings. A refrigerator decreases entropy inside its compartment by increasing entropy outside (the heat pump). A cell decreases entropy inside itself by increasing entropy in the environment (heat, $\text{CO}_2$, water). Neither violates the second law because neither operates as an isolated system.
 
-Living organisms are open systems: they exchange both energy and matter with their environment. Open systems can locally decrease entropy indefinitely, as long as they're continuously supplied with an energy source to pay for it. The sun is the original energy source for almost everything alive. We eat the sun's output, directly (photosynthesis) or indirectly (eating things that photosynthesize). The moment the energy supply stops: organism dies, order collapses, entropy wins.
+Living organisms are open systems: they exchange both energy and matter with their environment. Open systems can locally decrease entropy indefinitely, as long as they're continuously supplied with an energy source to pay for it. The sun is the original energy source for almost everything alive. We eat the sun's output, directly (through photosynthesis, the conversion of sunlight into chemical energy by plants and microorganisms) or indirectly (eating things that photosynthesize). The moment the energy supply stops: organism dies, order collapses, entropy wins.
 
 This is why you have to eat every day, not just once. The loan has to be continuously repaid.
 
@@ -114,13 +114,13 @@ So the $\Delta G^{\circ'}$ value we look up is true only under those benchmark c
 
 This matters enormously for, as an example, ATP. The standard free energy of ATP hydrolysis is:
 
-$$ATP^{4-} + H_2O \rightarrow ADP^{3-} + P_i^{2-} + H^+ \qquad \Delta G^{\circ'} = -30.5 \text{ kJ/mol}$$
+$$\text{ATP}^{4-} + \text{H}_2\text{O} \rightarrow \text{ADP}^{3-} + \text{P}_\text{i}^{2-} + \text{H}^+ \qquad \Delta G^{\circ'} = -30.5 \text{ kJ/mol}$$
 
 That's the value in a table. Inside a cell, the actual $\Delta G$ of ATP hydrolysis is approximately $-50$ to $-60$ kJ/mol, nearly twice as large in magnitude. The difference comes entirely from the concentration term.
 
 To see why that matters, consider the limiting case. At equilibrium, $\Delta G = 0$ by definition: the reaction has no thermodynamic driving force. Forward and reverse rates are equal, no net work is done, and ATP hydrolysis becomes as useful for driving cellular reactions as a ball sitting at the bottom of a valley is for generating power. The cell would be dead. Not metaphorically; thermodynamically.
 
-The cell avoids this by never letting the system reach equilibrium. Cells maintain the ATP/ADP ratio far above its equilibrium value, keeping [ATP] high and [ADP] and [$P_i$] low. Look at the concentration term: $RT\ln([\text{products}]/[\text{reactants}])$. When products are scarce relative to reactants, that ratio is less than one, its logarithm is negative, and the correction term drives $\Delta G$ further below zero. The further from equilibrium, the more negative $\Delta G$ is, and the harder ATP hydrolysis pulls on whatever reaction it's coupled to.
+The cell avoids this by never letting the system reach equilibrium. Cells maintain the ATP/ADP ratio far above its equilibrium value, keeping [ATP] high and [ADP] and [$\text{P}_\text{i}$] low. Look at the concentration term: $RT\ln([\text{products}]/[\text{reactants}])$. When products are scarce relative to reactants, that ratio is less than one, its logarithm is negative, and the correction term drives $\Delta G$ further below zero. The further from equilibrium, the more negative $\Delta G$ is, and the harder ATP hydrolysis pulls on whatever reaction it's coupled to.
 
 This is why the cell's energy economy depends so critically on maintaining metabolic flux. It isn't just that ATP hydrolysis has a favorable $\Delta G^{\circ'}$. The cell actively maintains conditions that make the actual $\Delta G$ even more favorable. The moment you stop replenishing ATP (stop eating, stop breathing), those ratios collapse toward equilibrium, and the thermodynamic driving force for cellular work vanishes.
 
@@ -128,22 +128,22 @@ This is why the cell's energy economy depends so critically on maintaining metab
 
 Many biosynthetic reactions have a positive $\Delta G$; they're thermodynamically unfavorable on their own. Cells get around this by **coupling** unfavorable reactions to favorable ones so that the net $\Delta G$ is negative.
 
-The classic example is the phosphorylation of glucose to glucose-6-phosphate, the first step of glycolysis (we'll cover the full pathway in a later chapter):
+The classic example is the phosphorylation of glucose to glucose-6-phosphate, the first step of glycolysis (the ten-step pathway that breaks glucose down to pyruvate, covered in full in a later chapter):
 
-$$\text{Glucose} + P_i \rightarrow \text{Glucose-6-phosphate} + H_2O \qquad \Delta G^{\circ'} = +13.8 \text{ kJ/mol}$$
+$$\text{Glucose} + \text{P}_\text{i} \rightarrow \text{Glucose-6-phosphate} + \text{H}_2\text{O} \qquad \Delta G^{\circ'} = +13.8 \text{ kJ/mol}$$
 
 This doesn't go. Thermodynamically prohibited on its own. But cells don't run it alone. They couple it to ATP hydrolysis:
 
-$$ATP + H_2O \rightarrow ADP + P_i \qquad \Delta G^{\circ'} = -30.5 \text{ kJ/mol}$$
+$$\text{ATP} + \text{H}_2\text{O} \rightarrow \text{ADP} + \text{P}_\text{i} \qquad \Delta G^{\circ'} = -30.5 \text{ kJ/mol}$$
 
 To find the net reaction, stack them and cancel species that appear on both sides:
 
 $$
 \begin{array}{rcll}
-\text{Glucose} + \cancel{P_i} & \rightarrow & \text{Glucose-6-phosphate} + \cancel{H_2O} & \Delta G^{\circ'} = +13.8 \text{ kJ/mol} \\
-ATP + \cancel{H_2O} & \rightarrow & ADP + \cancel{P_i} & \Delta G^{\circ'} = -30.5 \text{ kJ/mol} \\
+\text{Glucose} + \cancel{\text{P}_\text{i}} & \rightarrow & \text{Glucose-6-phosphate} + \cancel{\text{H}_2\text{O}} & \Delta G^{\circ'} = +13.8 \text{ kJ/mol} \\
+\text{ATP} + \cancel{\text{H}_2\text{O}} & \rightarrow & \text{ADP} + \cancel{\text{P}_\text{i}} & \Delta G^{\circ'} = -30.5 \text{ kJ/mol} \\
 \hline
-\text{Glucose} + ATP & \rightarrow & \text{Glucose-6-phosphate} + ADP & \Delta G^{\circ'} = -16.7 \text{ kJ/mol}
+\text{Glucose} + \text{ATP} & \rightarrow & \text{Glucose-6-phosphate} + \text{ADP} & \Delta G^{\circ'} = -16.7 \text{ kJ/mol}
 \end{array}
 $$
 
@@ -164,11 +164,11 @@ ATP is commonly described as having "high-energy phosphate bonds," implying that
 
 Bond breaking *costs* energy, always. You don't get energy from breaking bonds. You get energy from the fact that the bonds formed in the products are more stable than the bonds broken in the reactants. The thermodynamic favorability of ATP hydrolysis comes from several sources working together:
 
-**Electrostatic repulsion.** ATP carries 4 negative charges at physiological pH, clustered on the phosphate tail. These charges repel each other. Hydrolysis separates ADP and $P_i$, relieving that repulsion.
+**Electrostatic repulsion.** ATP carries 4 negative charges at physiological pH, clustered on the phosphate tail. These charges repel each other. Hydrolysis separates ADP and $\text{P}_\text{i}$, relieving that repulsion.
 
-**Resonance stabilization.** $P_i$ (inorganic phosphate) has several resonance structures that distribute its negative charges, making it more stable than the phosphate group when it was part of ATP. The products are more resonance-stabilized than the reactants.
+**Resonance stabilization.** $\text{P}_\text{i}$ (inorganic phosphate) has several resonance structures that distribute its negative charges, making it more stable than the phosphate group when it was part of ATP. The products are more resonance-stabilized than the reactants.
 
-**Increased entropy.** One molecule (ATP) becomes two ($ADP + P_i$), plus a proton is released. More molecules, more dispersal, higher entropy. All of this is favored.
+**Increased entropy.** One molecule (ATP) becomes two ($\text{ADP} + \text{P}_\text{i}$), plus a proton is released. More molecules, more dispersal, higher entropy. All of this is favored.
 
 **Decreased solvation of reactants.** The hydration shells around ATP are less favorable than those around the separated products.
 
@@ -184,19 +184,19 @@ Think of ATP not as a battery storing energy in its bonds, but as a **loaded spr
 
 Water ionizes slightly:
 
-$$H_2O \rightleftharpoons H^+ + OH^-$$
+$$\text{H}_2\text{O} \rightleftharpoons \text{H}^+ + \text{OH}^-$$
 
 The equilibrium constant for this is (it has been measured):
 
-$$K_w = [H^+][OH^-] = 1.0 \times 10^{-14} \text{ at 25°C}$$
+$$K_w = [\text{H}^+][\text{OH}^-] = 1.0 \times 10^{-14} \text{ at 25°C}$$
 
-That means that in pure water, $[H^+] = [OH^-] = 1.0 \times 10^{-7}$ M. That's a useful baseline, but the notation is awkward: negative exponents everywhere. pH cleans this up:
+That means that in pure water, $[\text{H}^+] = [\text{OH}^-] = 1.0 \times 10^{-7}$ M. That's a useful baseline, but the notation is awkward: negative exponents everywhere. pH cleans this up:
 
-$$\text{pH} = -\log[H^+]$$
+$$\text{pH} = -\log[\text{H}^+]$$
 
-Pure water: pH = $-\log[10^{-7.0}]=7.0$ (neutral). Values below 7 are acidic ($[H^+] > 10^{-7}$ M), above 7 are basic ($[H^+] < 10^{-7}$ M).
+Pure water: pH = $-\log[10^{-7.0}]=7.0$ (neutral). Values below 7 are acidic ($[\text{H}^+] > 10^{-7}$ M), above 7 are basic ($[\text{H}^+] < 10^{-7}$ M).
 
-Blood pH is maintained between 7.35 and 7.45, a narrow window. This matters because virtually every protein in the body has ionizable groups (more on that later) whose charge state depends on pH. Enzyme active sites are sensitive to pH for the same reason. Hemoglobin's oxygen-binding affinity is pH-dependent (the Bohr effect which you'll see this in a later chapter). Even a shift of 0.1 pH units in blood represents a nearly 30% change in $[H^+]$; the log scale compresses large concentration changes into small pH changes, which is worth internalizing.
+Blood pH is maintained between 7.35 and 7.45, a narrow window. This matters because virtually every protein in the body has ionizable groups (more on that later) whose charge state depends on pH. Enzyme active sites are sensitive to pH for the same reason. Hemoglobin's oxygen-binding affinity is pH-dependent (the Bohr effect, covered in Chapter 3). Even a shift of 0.1 pH units in blood represents a nearly 30% change in $[\text{H}^+]$; the log scale compresses large concentration changes into small pH changes, which is worth internalizing.
 
 The clinical significance: when blood pH falls below 7.35 (acidosis) or rises above 7.45 (alkalosis), protein function is disrupted. Severe acidosis (pH < 7.1) is life-threatening. The body maintains blood pH with extraordinary precision, and we'll see exactly how shortly.
 
@@ -204,11 +204,11 @@ The clinical significance: when blood pH falls below 7.35 (acidosis) or rises ab
 
 A **Brønsted-Lowry acid** is a proton donor. A **Brønsted-Lowry base** is a proton acceptor. An acid-base reaction is just a proton transfer:
 
-$$HA \rightleftharpoons H^+ + A^-$$
+$$HA \rightleftharpoons \text{H}^+ + A^-$$
 
 The equilibrium constant for this dissociation is $K_a$:
 
-$$K_a = \frac{[H^+][A^-]}{[HA]}$$
+$$K_a = \frac{[\text{H}^+][A^-]}{[HA]}$$
 
 A large $K_a$ means the acid dissociates readily, a strong acid that sits mostly as $A^-$ at equilibrium. A small $K_a$ means it barely dissociates, a weak acid that mostly stays as $HA$.
 
@@ -220,25 +220,25 @@ Low $pK_a$ = strong acid. High $pK_a$ = weak acid. Hydrochloric acid has a $pK_a
 
 The key question $pK_a$ answers: **at a given pH, is this molecule protonated or not?** Here's the intuition: when pH = $pK_a$, the molecule is exactly 50% protonated (HA) and 50% deprotonated ($A^-$). When pH < $pK_a$, the protonated form dominates. When pH > $pK_a$, the deprotonated form dominates.
 
-This single rule will carry you through most of biochemistry. A carboxyl group with $pK_a = 3.5$ at physiological pH 7.4? pH >> $pK_a$, so it's almost entirely deprotonated ($COO^-$, negatively charged). An amino group with $pK_a = 9.0$ at pH 7.4? pH < $pK_a$, so it's mostly protonated ($NH_3^+$, positively charged). Charge state determines reactivity, binding interactions, and solubility.
+This single rule will carry you through most of biochemistry. A carboxyl group with $pK_a = 3.5$ at physiological pH 7.4? pH >> $pK_a$, so it's almost entirely deprotonated ($\text{COO}^-$, negatively charged). An amino group with $pK_a = 9.0$ at pH 7.4? pH < $pK_a$, so it's mostly protonated ($\text{NH}_3^+$, positively charged). Charge state determines reactivity, binding interactions, and solubility.
 
 ### Henderson-Hasselbalch
 
 The Henderson-Hasselbalch equation comes directly from the $K_a$ expression. Start with what we already have:
 
-$$K_a = \frac{[H^+][A^-]}{[HA]}$$
+$$K_a = \frac{[\text{H}^+][A^-]}{[HA]}$$
 
-Solve for $[H^+]$:
+Solve for $[\text{H}^+]$:
 
-$$[H^+] = K_a \cdot \frac{[HA]}{[A^-]}$$
+$$[\text{H}^+] = K_a \cdot \frac{[HA]}{[A^-]}$$
 
 Take the negative log of both sides. Recall that $\log(a \cdot b) = \log a + \log b$, so the right side splits into two terms:
 
-$$-\log[H^+] = -\log K_a + \left(-\log\frac{[HA]}{[A^-]}\right)$$
+$$-\log[\text{H}^+] = -\log K_a + \left(-\log\frac{[HA]}{[A^-]}\right)$$
 
-$$-\log[H^+] = -\log K_a - \log\frac{[HA]}{[A^-]}$$
+$$-\log[\text{H}^+] = -\log K_a - \log\frac{[HA]}{[A^-]}$$
 
-Substitute $\text{pH} = -\log[H^+]$ and $pK_a = -\log K_a$, and flip the log fraction:
+Substitute $\text{pH} = -\log[\text{H}^+]$ and $pK_a = -\log K_a$, and flip the log fraction:
 
 $$\text{pH} = pK_a + \log\frac{[A^-]}{[HA]}$$
 
@@ -280,7 +280,7 @@ For now, the mechanism of proximity doesn't matter. What matters is the principl
 
 ### Buffers
 
-A **buffer** resists changes in pH when acid or base is added. It does this by containing both a weak acid (HA) and its conjugate base ($A^-$) in significant amounts, so that added $H^+$ gets absorbed by the base ($A^- + H^+ \rightarrow HA$) and added $OH^-$ gets absorbed by the acid ($HA + OH^- \rightarrow A^- + H_2O$).
+A **buffer** resists changes in pH when acid or base is added. It does this by containing both a weak acid (HA) and its conjugate base ($A^-$) in significant amounts, so that added $\text{H}^+$ gets absorbed by the base ($A^- + \text{H}^+ \rightarrow HA$) and added $\text{OH}^-$ gets absorbed by the acid ($HA + \text{OH}^- \rightarrow A^- + \text{H}_2\text{O}$).
 
 Buffers work best when pH is close to the $pK_a$ of the buffering pair, specifically within ±1 pH unit. Here's why, shown directly from Henderson-Hasselbalch.
 
@@ -296,21 +296,21 @@ $$1=\frac{[A^-]}{[HA]}$$
 
 $$[HA] = [A^-]$$
 
-When pH equals $pK_a$, the acid and its conjugate base are present in equal concentrations. This is the point of maximum buffering capacity, because both species are simultaneously at their highest relative abundance. The buffer has the most $A^-$ available to absorb incoming $H^+$ ($A^- + H^+ \rightarrow HA$) and the most $HA$ available to absorb incoming $OH^-$ ($HA + OH^- \rightarrow A^- + H_2O$) at the same time. Move the pH away from $pK_a$ in either direction and one species depletes while the other accumulates, leaving the buffer able to resist changes in only one direction. When pH is far from $pK_a$, the buffer is nearly exhausted on one side and has little capacity left.
+When pH equals $pK_a$, the acid and its conjugate base are present in equal concentrations. This is the point of maximum buffering capacity, because both species are simultaneously at their highest relative abundance. The buffer has the most $A^-$ available to absorb incoming $\text{H}^+$ ($A^- + \text{H}^+ \rightarrow HA$) and the most $HA$ available to absorb incoming $\text{OH}^-$ ($HA + \text{OH}^- \rightarrow A^- + \text{H}_2\text{O}$) at the same time. Move the pH away from $pK_a$ in either direction and one species depletes while the other accumulates, leaving the buffer able to resist changes in only one direction. When pH is far from $pK_a$, the buffer is nearly exhausted on one side and has little capacity left.
 
 **The blood's main buffer: the bicarbonate system.**
 
-$$CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons H^+ + HCO_3^-$$
+$$\text{CO}_2 + \text{H}_2\text{O} \rightleftharpoons \text{H}_2\text{CO}_3 \rightleftharpoons \text{H}^+ + \text{HCO}_3^-$$
 
-The effective $pK_a$ of this system is 6.1. Blood pH is 7.4. That's 1.3 units above $pK_a$, which means the ratio $[HCO_3^-]/[CO_2]$ is about 20:1, so the bicarbonate (deprotonated) form vastly predominates. Sounds like a weak buffer since it's far from $pK_a$. So why does it work?
+The effective $pK_a$ of this system is 6.1. Blood pH is 7.4. That's 1.3 units above $pK_a$, which means the ratio $[\text{HCO}_3^-]/[\text{CO}_2]$ is about 20:1, so the bicarbonate (deprotonated) form vastly predominates. Sounds like a weak buffer since it's far from $pK_a$. So why does it work?
 
-Because this system is **open**. $CO_2$ is a gas and is continuously exhaled by the lungs. If blood pH drops (acidosis), more $H^+$ is present, which drives the equilibrium left, producing more $CO_2$. The respiratory system detects the pH drop, increases breathing rate, and blows off the excess $CO_2$. If blood pH rises (alkalosis), breathing slows, $CO_2$ accumulates, $H^+$ is regenerated, and pH falls back. The lungs are a $CO_2$ valve that the body uses to tune blood pH in real time.
+Because this system is **open**. $\text{CO}_2$ is a gas and is continuously exhaled by the lungs. If blood pH drops (acidosis), more $\text{H}^+$ is present, which drives the equilibrium left, producing more $\text{CO}_2$. The respiratory system detects the pH drop, increases breathing rate, and blows off the excess $\text{CO}_2$. If blood pH rises (alkalosis), breathing slows, $\text{CO}_2$ accumulates, $\text{H}^+$ is regenerated, and pH falls back. The lungs are a $\text{CO}_2$ valve that the body uses to tune blood pH in real time.
 
-The kidneys handle slower, longer-term adjustments by excreting or retaining $H^+$ and $HCO_3^-$.
+The kidneys handle slower, longer-term adjustments by excreting or retaining $\text{H}^+$ and $\text{HCO}_3^-$.
 
 This is why the bicarbonate system is effective despite its $pK_a$ being 1.3 units away from blood pH. The buffering capacity isn't just chemical; it's physiological. The whole respiratory system is recruited to keep this buffer functional.
 
-The bicarbonate system dominates in blood plasma. Inside cells, the story is different. The primary intracellular buffer is the phosphate system ($H_2PO_4^- / HPO_4^{2-}$, $pK_a = 6.8$), which sits closer to intracellular pH (~7.2) and is present in high concentrations inside cells. The kidneys also rely heavily on phosphate to buffer urine. Proteins, including hemoglobin in red blood cells, contribute substantially to buffering in both compartments, since their ionizable side chains absorb protons across a wide pH range. No single system handles everything; different compartments use different tools.
+The bicarbonate system dominates in blood plasma. Inside cells, the story is different. The primary intracellular buffer is the phosphate system ($\text{H}_2\text{PO}_4^- / \text{HPO}_4^{2-}$, $pK_a = 6.8$), which sits closer to intracellular pH (~7.2) and is present in high concentrations inside cells. The kidneys also rely heavily on phosphate to buffer urine. Proteins, including hemoglobin in red blood cells, contribute substantially to buffering in both compartments, since their ionizable side chains absorb protons across a wide pH range. No single system handles everything; different compartments use different tools.
 
 ---
 
@@ -322,13 +322,13 @@ In 1933, researchers discovered that dinitrophenol (DNP) caused dramatic weight 
 
 The mechanism is thermodynamically elegant and physiologically brutal.
 
-DNP is a lipid-soluble weak acid with a $pK_a$ around 4. At physiological pH, it exists mostly in its deprotonated form ($DNP^-$). But because it's lipid-soluble, it can cross the inner mitochondrial membrane in either protonated or deprotonated form. Here's what it does: it picks up a proton on the acidic side of the mitochondrial membrane (the intermembrane space, where protons accumulate during electron transport), carries the proton across the membrane, drops it on the basic side (the mitochondrial matrix), and then diffuses back to do it again.
+DNP is a lipid-soluble weak acid with a $pK_a$ around 4. At physiological pH, it exists mostly in its deprotonated form ($\text{DNP}^-$). But because it's lipid-soluble, it can cross the inner mitochondrial membrane in either protonated or deprotonated form. Here's what it does: it picks up a proton on the acidic side of the mitochondrial membrane (the intermembrane space, where protons accumulate during electron transport), carries the proton across the membrane, drops it on the basic side (the mitochondrial matrix), and then diffuses back to do it again.
 
 DNP is a **proton shuttle**. It short-circuits the proton gradient.
 
 The proton gradient across the inner mitochondrial membrane is the energy source for ATP synthesis. Normally, protons can only re-enter the matrix through ATP synthase, and that flow drives ATP production. DNP bypasses ATP synthase entirely: protons flood back across the membrane through DNP without producing any ATP. The energy of the gradient is dissipated entirely as heat.
 
-So what happens? The mitochondria respond by burning more fuel, faster, trying to maintain the gradient. They can't. No matter how much glucose or fat is oxidized, none of the energy is captured as ATP; it all becomes heat. Metabolic rate increases dramatically. Body temperature rises. At high enough doses, core temperature rises to levels that denature proteins, and the patient dies.
+So what happens? The mitochondria respond by burning more fuel, faster, trying to maintain the gradient. They can't. No matter how much glucose or fat is oxidized (broken down by losing electrons to oxygen, releasing energy), none of the energy is captured as ATP; it all becomes heat. Metabolic rate increases dramatically. Body temperature rises. At high enough doses, core temperature rises to levels that denature proteins, and the patient dies.
 
 From a thermodynamic perspective: every living organism is already running a controlled uncoupling. We're thermodynamically inefficient by design: not all the energy released by fuel oxidation becomes ATP; a substantial fraction is deliberately released as heat to maintain body temperature. DNP just turns the dial all the way up, eliminating the useful work entirely.
 
@@ -339,15 +339,15 @@ DNP is still used illegally today, purchased online, and deaths continue to occu
 Normal blood pH: 7.35-7.45. Outside this range, the body is in trouble.
 
 **Acidosis** (pH < 7.35) can arise from:
-- Diabetic ketoacidosis: accumulation of ketone bodies (weak acids) in uncontrolled diabetes
-- Lactic acidosis: anaerobic glycolysis producing excess lactate when tissues are oxygen-deprived
-- Respiratory failure: $CO_2$ accumulates when lungs can't exhale it, driving blood pH down via the bicarbonate equilibrium
+- Diabetic ketoacidosis: accumulation of ketone bodies (acetoacetate, beta-hydroxybutyrate, and acetone: weak acids produced from fat breakdown when glucose is unavailable, covered in a later chapter) in uncontrolled diabetes
+- Lactic acidosis: excess lactate produced when oxygen-deprived tissues run glycolysis without oxygen (anaerobic glycolysis, covered in a later chapter)
+- Respiratory failure: $\text{CO}_2$ accumulates when lungs can't exhale it, driving blood pH down via the bicarbonate equilibrium
 - DNP toxicity: uncoupling drives futile cycling that generates lactate and disrupts mitochondrial function, causing a mixed metabolic and respiratory acidosis
 
 **Alkalosis** (pH > 7.45) can arise from:
-- Hyperventilation: blowing off too much $CO_2$, pulling the bicarbonate equilibrium toward $HCO_3^-$ formation and reducing $[H^+]$
-- Vomiting: loss of gastric acid removes $H^+$ from the body
-- Certain diuretics that cause loss of $H^+$
+- Hyperventilation: blowing off too much $\text{CO}_2$, pulling the bicarbonate equilibrium toward $\text{HCO}_3^-$ formation and reducing $[\text{H}^+]$
+- Vomiting: loss of gastric acid removes $\text{H}^+$ from the body
+- Certain diuretics (drugs that increase urine output) that cause loss of $\text{H}^+$
 
 Why does pH matter so much? Protein function. Every enzyme in the body has amino acid side chains in its active site with specific ionization states required for catalysis (we'll see exactly what this looks like in a later chapter). Hemoglobin's affinity for oxygen changes with pH; acidosis shifts the oxygen-dissociation curve, affecting delivery to tissues (covered in a later chapter). Ion channel gating is pH-sensitive. Cytoskeletal dynamics are pH-dependent.
 
@@ -363,7 +363,7 @@ The MCAT tests thermodynamics and acid-base chemistry repeatedly. The patterns w
 
 **The kinetics trap:** Questions will describe a thermodynamically favorable reaction ($\Delta G < 0$) that proceeds slowly or not at all. The answer is almost always: the activation energy barrier is high, and an enzyme (or catalyst) is needed to lower it. Never confuse thermodynamic spontaneity with kinetic feasibility.
 
-**ATP hydrolysis under cellular conditions:** If asked to calculate $\Delta G$ for ATP hydrolysis in a cell, you need the cellular concentrations of ATP, ADP, and $P_i$, not just $\Delta G^{\circ'}$. The cellular $\Delta G$ is approximately $-50$ to $-60$ kJ/mol, roughly twice the standard value.
+**ATP hydrolysis under cellular conditions:** If asked to calculate $\Delta G$ for ATP hydrolysis in a cell, you need the cellular concentrations of ATP, ADP, and $\text{P}_\text{i}$, not just $\Delta G^{\circ'}$. The cellular $\Delta G$ is approximately $-50$ to $-60$ kJ/mol, roughly twice the standard value.
 
 **Henderson-Hasselbalch, dominant form at physiological pH:** Given a molecule's $pK_a$ and told the pH is 7.4, the question is usually: what charge does this group carry? The quick answer: if $pK_a < 7.4$, it's deprotonated (negatively charged carboxyl groups, neutral amines). If $pK_a > 7.4$, it's protonated (neutral carboxyl groups, positively charged ammonium groups). The equation gives you the exact ratio if needed.
 
@@ -399,7 +399,7 @@ $$= -20{,}000 + 15{,}500 = -4{,}500 \text{ J/mol} = -4.5 \text{ kJ/mol}$$
 
 Reaction A: $$X \rightarrow Y \quad \Delta G^{\circ'} = +22 \text{ kJ/mol}$$
 
-Reaction B: $$ATP + H_2O \rightarrow ADP + P_i \quad \Delta G^{\circ'} = -30.5 \text{ kJ/mol}$$
+Reaction B: $$\text{ATP} + \text{H}_2\text{O} \rightarrow \text{ADP} + \text{P}_\text{i} \quad \Delta G^{\circ'} = -30.5 \text{ kJ/mol}$$
 
 (a) Can reaction A proceed on its own under standard conditions?
 (b) If reaction A is mechanistically coupled to ATP hydrolysis, what is the net $\Delta G^{\circ'}$?
@@ -411,7 +411,7 @@ Reaction B: $$ATP + H_2O \rightarrow ADP + P_i \quad \Delta G^{\circ'} = -30.5 \
 
 (b) The coupled reaction is simply the sum:
 
-$$X + ATP + H_2O \rightarrow Y + ADP + P_i$$
+$$X + \text{ATP} + \text{H}_2\text{O} \rightarrow Y + \text{ADP} + \text{P}_\text{i}$$
 
 $$\Delta G^{\circ'} = +22 + (-30.5) = -8.5 \text{ kJ/mol}$$
 
@@ -423,9 +423,9 @@ The coupled reaction is spontaneous under standard conditions.
 
 ### Problem 3: Henderson-Hasselbalch and the Bicarbonate System
 
-Carbonic acid ($H_2CO_3$) has an effective $pK_a$ of 6.1 in blood (accounting for the $CO_2/H_2CO_3$ equilibrium). Normal blood pH is 7.4.
+Carbonic acid ($\text{H}_2\text{CO}_3$) has an effective $pK_a$ of 6.1 in blood (accounting for the $\text{CO}_2/\text{H}_2\text{CO}_3$ equilibrium). Normal blood pH is 7.4.
 
-(a) Calculate the ratio $[HCO_3^-]/[CO_2]$ in normal blood.
+(a) Calculate the ratio $[\text{HCO}_3^-]/[\text{CO}_2]$ in normal blood.
 (b) A patient develops metabolic acidosis and blood pH drops to 7.1. How does this change the ratio?
 (c) The patient's breathing rate increases. Why does this compensate for the acidosis?
 
@@ -433,29 +433,29 @@ Carbonic acid ($H_2CO_3$) has an effective $pK_a$ of 6.1 in blood (accounting fo
 
 (a) Apply Henderson-Hasselbalch:
 
-$$7.4 = 6.1 + \log\frac{[HCO_3^-]}{[CO_2]}$$
+$$7.4 = 6.1 + \log\frac{[\text{HCO}_3^-]}{[\text{CO}_2]}$$
 
-$$\log\frac{[HCO_3^-]}{[CO_2]} = 1.3$$
+$$\log\frac{[\text{HCO}_3^-]}{[\text{CO}_2]} = 1.3$$
 
-$$\frac{[HCO_3^-]}{[CO_2]} = 10^{1.3} \approx 20$$
+$$\frac{[\text{HCO}_3^-]}{[\text{CO}_2]} = 10^{1.3} \approx 20$$
 
-At normal blood pH, there are roughly 20 bicarbonate ions for every molecule of dissolved $CO_2$.
+At normal blood pH, there are roughly 20 bicarbonate ions for every molecule of dissolved $\text{CO}_2$.
 
 (b) At pH 7.1:
 
-$$7.1 = 6.1 + \log\frac{[HCO_3^-]}{[CO_2]}$$
+$$7.1 = 6.1 + \log\frac{[\text{HCO}_3^-]}{[\text{CO}_2]}$$
 
-$$\log\frac{[HCO_3^-]}{[CO_2]} = 1.0$$
+$$\log\frac{[\text{HCO}_3^-]}{[\text{CO}_2]} = 1.0$$
 
-$$\frac{[HCO_3^-]}{[CO_2]} = 10$$
+$$\frac{[\text{HCO}_3^-]}{[\text{CO}_2]} = 10$$
 
-The ratio drops from ~20 to 10. The acidosis has shifted the equilibrium toward the protonated form ($CO_2$). Relatively more $CO_2$ is present and less $HCO_3^-$; the buffer has been partially consumed.
+The ratio drops from ~20 to 10. The acidosis has shifted the equilibrium toward the protonated form ($\text{CO}_2$). Relatively more $\text{CO}_2$ is present and less $\text{HCO}_3^-$; the buffer has been partially consumed.
 
-(c) Increased breathing rate exhales more $CO_2$ from the blood. The bicarbonate equilibrium:
+(c) Increased breathing rate exhales more $\text{CO}_2$ from the blood. The bicarbonate equilibrium:
 
-$$CO_2 + H_2O \rightleftharpoons H^+ + HCO_3^-$$
+$$\text{CO}_2 + \text{H}_2\text{O} \rightleftharpoons \text{H}^+ + \text{HCO}_3^-$$
 
-When $[CO_2]$ drops (because it's being exhaled), the equilibrium shifts left, consuming $H^+$ to regenerate $CO_2$ and water. Blood $[H^+]$ decreases, pH rises back toward normal. The lungs are using $CO_2$ excretion as a lever to control blood pH in real time.
+When $[\text{CO}_2]$ drops (because it's being exhaled), the equilibrium shifts left, consuming $\text{H}^+$ to regenerate $\text{CO}_2$ and water. Blood $[\text{H}^+]$ decreases, pH rises back toward normal. The lungs are using $\text{CO}_2$ excretion as a lever to control blood pH in real time.
 
 ---
 
@@ -473,7 +473,7 @@ The actual $\Delta G$ of any reaction depends on the concentrations of reactants
 
 $$\Delta G = \Delta G^{\circ'} + RT\ln\frac{[\text{products}]}{[\text{reactants}]}$$
 
-For ATP hydrolysis, the "products" are ADP and $P_i$. Cells keep [ATP] high and [ADP] and [$P_i$] low, far from equilibrium, which keeps the concentration ratio $\frac{[ADP][P_i]}{[ATP]}$ small, making the logarithm term large and negative. This makes the actual $\Delta G$ significantly more negative than $\Delta G^{\circ'}$ alone. The cellular $\Delta G$ of ATP hydrolysis is approximately $-50$ to $-60$ kJ/mol, vs. $-30.5$ kJ/mol under standard conditions. The cell is exploiting metabolic flux to maximize the thermodynamic driving force of its energy currency.
+For ATP hydrolysis, the "products" are ADP and $\text{P}_\text{i}$. Cells keep [ATP] high and [ADP] and [$\text{P}_\text{i}$] low, far from equilibrium, which keeps the concentration ratio $\frac{[\text{ADP}][\text{P}_\text{i}]}{[\text{ATP}]}$ small, making the logarithm term large and negative. This makes the actual $\Delta G$ significantly more negative than $\Delta G^{\circ'}$ alone. The cellular $\Delta G$ of ATP hydrolysis is approximately $-50$ to $-60$ kJ/mol, vs. $-30.5$ kJ/mol under standard conditions. The cell is exploiting metabolic flux to maximize the thermodynamic driving force of its energy currency.
 
 ---
 
@@ -482,3 +482,108 @@ For ATP hydrolysis, the "products" are ADP and $P_i$. Cells keep [ATP] high and 
 ---
 
 *This chapter is part of a free, openly licensed course companion for Biochemistry for Life Sciences (694:395) at Rutgers University. Licensed under CC BY-NC-SA 4.0.*
+
+---
+
+## Problem Set
+
+**Problem 1.**
+A reaction has $\Delta H^{\circ'} = +12$ kJ/mol and $\Delta S^{\circ'} = +60$ J/mol·K.
+
+(a) Calculate $\Delta G^{\circ'}$ at 37°C (310 K).
+
+(b) Is the reaction spontaneous under standard conditions at this temperature?
+
+(c) At what temperature (in Kelvin) does this reaction become thermodynamically neutral (i.e., $\Delta G^{\circ'} = 0$)? What does it mean for spontaneity below versus above this temperature?
+
+---
+
+**Problem 2.**
+Consider the two-step biosynthetic pathway below:
+
+$$\text{Reaction 1: } A \rightarrow B \quad \Delta G^{\circ'} = +18 \text{ kJ/mol}$$
+
+$$\text{Reaction 2: } B + \text{ATP} + \text{H}_2\text{O} \rightarrow C + \text{ADP} + \text{P}_\text{i} \quad \Delta G^{\circ'} = -25 \text{ kJ/mol}$$
+
+(a) Can Reaction 1 proceed spontaneously on its own under standard conditions?
+
+(b) Calculate the net $\Delta G^{\circ'}$ for the overall conversion of $A$ to $C$.
+
+(c) A student argues: "It doesn't matter whether these reactions share an intermediate — the math still works out." Explain why this student is wrong.
+
+---
+
+**Problem 3.** *(Synthesis)*
+Inside a resting muscle cell, the concentrations of ATP, ADP, and inorganic phosphate ($\text{P}_\text{i}$) are approximately 8 mM, 0.9 mM, and 1.0 mM, respectively. The standard free energy of ATP hydrolysis is $\Delta G^{\circ'} = -30.5$ kJ/mol. $R = 0.008314$ kJ/mol·K; $T = 310$ K.
+
+(a) Calculate the actual $\Delta G$ of ATP hydrolysis under these cellular conditions.
+
+(b) During intense exercise, ATP falls to 6 mM, ADP rises to 2 mM, and $\text{P}_\text{i}$ rises to 4 mM. Recalculate $\Delta G$ under these conditions and compare it to part (a). In which direction does the actual free energy of hydrolysis move, and why?
+
+(c) A student claims that the cell should just make ATP concentrations as high as possible to maximize the thermodynamic driving force for ATP hydrolysis. Identify the flaw in this reasoning using the $\Delta G$ equation.
+
+---
+
+**Problem 4.**
+For each of the following scenarios, predict the sign of $\Delta H$, $\Delta S$, and $\Delta G$ (or state that it is indeterminate from the information given). Briefly justify each answer.
+
+(a) A protein unfolds in hot water. The unfolded chain is far more flexible than the folded structure, and heat is absorbed from the surroundings.
+
+(b) Two ions of opposite charge, initially far apart in solution, come together to form a tight ion pair. No heat is exchanged with the surroundings.
+
+(c) A single ATP molecule is hydrolyzed to ADP and $\text{P}_\text{i}$ inside a cell at 37°C. (Consider both the standard conditions contribution and the concentration term.)
+
+---
+
+**Problem 5.** *(Synthesis)*
+The pKa of lactic acid is 3.86. During a sprint, lactic acid is produced in muscle cells (intracellular pH ≈ 7.2) and is exported into blood plasma (pH 7.4).
+
+(a) Using the Henderson-Hasselbalch relationship, determine the ratio of lactate ($A^-$) to lactic acid ($HA$) at pH 7.2 and at pH 7.4. You do not need to compute exact numbers — a qualitative comparison using the rule of signs is sufficient.
+
+(b) In both compartments, which form dominates overwhelmingly? What does this mean for the charge on the molecule that is actually transported across the plasma membrane?
+
+(c) Blood pH can fall to 7.1 during severe lactic acidosis. A physician worries that this will disrupt enzyme function. Explain the molecular basis of this concern, connecting blood pH, protein side-chain pKa values, and enzyme active-site chemistry.
+
+---
+
+**Problem 6.** *(Synthesis)*
+Dinitrophenol (DNP) is a lipid-soluble weak acid with a pKa of approximately 4. It can cross the inner mitochondrial membrane in both its protonated ($\text{DNPH}$) and deprotonated ($\text{DNP}^-$) forms.
+
+(a) At the pH of the mitochondrial intermembrane space (approximately 6.7), is DNP predominantly protonated or deprotonated? Justify using the pH vs. pKa relationship.
+
+(b) At the pH of the mitochondrial matrix (approximately 7.9 under normal conditions), is DNP predominantly protonated or deprotonated?
+
+(c) Using your answers to (a) and (b), explain the thermodynamic logic of how DNP acts as a proton shuttle across the inner mitochondrial membrane. In one sentence, state the consequence for ATP synthesis and explain why weight loss results.
+
+---
+
+**Problem 7.**
+The bicarbonate buffering system in blood has an effective pKa of 6.1.
+
+(a) A patient hyperventilates due to a panic attack, blowing off excess $\text{CO}_2$. Predict what happens to blood pH. Use the bicarbonate equilibrium to show your reasoning.
+
+(b) A second patient has been vomiting severely for 48 hours, losing significant gastric acid ($\text{HCl}$). Predict the direction of blood pH change and identify whether this is a respiratory or metabolic disturbance.
+
+(c) The bicarbonate system's pKa (6.1) is 1.3 units below normal blood pH (7.4), yet it is the dominant blood buffer. Why does this system buffer effectively despite being far from its pKa? What feature of this buffer system compensates for the poor chemical positioning?
+
+---
+
+**Problem 8.** *(Synthesis)*
+A medicinal chemist synthesizes a drug that strongly inhibits an enzyme with $\Delta G^{\circ'} = -45$ kJ/mol for its catalyzed reaction. A colleague objects: "This drug will prevent a thermodynamically favorable reaction from occurring, which should be impossible — thermodynamics says it must proceed." Evaluate this objection. Is the colleague correct that thermodynamics prevents the drug from working? What principle does the drug actually exploit, and what does this tell you about the relationship between $\Delta G$ and the observable rate of a reaction?
+
+---
+
+## References
+
+1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.
+2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
+3. Atkins P, de Paula J. *Physical Chemistry for the Life Sciences*, 2nd ed. Oxford University Press; 2011.
+4. Grundlingh J, Dargan PI, El-Zanfaly M, Wood DM. 2,4-Dinitrophenol (DNP): a weight loss agent with significant acute toxicity and risk of death. *J Med Toxicol*. 2011;7(3):205–212. doi:10.1007/s13181-011-0162-6
+5. Miranda EJ, McIntyre IM, Parker DR, Gary RD, Logan BK. Two deaths attributed to the use of 2,4-dinitrophenol. *J Anal Toxicol*. 2006;30(3):219–222. doi:10.1093/jat/30.3.219
+6. Nicholls DG, Ferguson SJ. *Bioenergetics 4*. Academic Press; 2013. [Standard reference for oxidative phosphorylation and uncoupling.]
+7. Alberty RA. Thermodynamics of biochemical reactions at specified pH. *J Biol Chem*. 2005;280(39):33142–33150. doi:10.1074/jbc.M502115200
+8. Hammes GG. Multiple conformational changes in enzyme catalysis. *Biochemistry*. 2002;41(26):8221–8228. doi:10.1021/bi0260839
+9. Rawn JD. *Biochemistry*. Neil Patterson; 1989. [Classic treatment of the bicarbonate buffer system and acid–base physiology.]
+10. Stewart PA. Modern quantitative acid-base chemistry. *Can J Physiol Pharmacol*. 1983;61(12):1444–1461. doi:10.1139/y83-207
+11. Davenport HW. *The ABC of Acid-Base Chemistry*, 6th ed. University of Chicago Press; 1974. [Foundational treatment of Henderson–Hasselbalch applied to clinical acid–base balance.]
+12. de Bold AJ. Atrial natriuretic factor: a hormone produced by the heart. *Science*. 1985;230(4727):767–770. [Context: pH homeostasis and its systemic hormonal regulation.]

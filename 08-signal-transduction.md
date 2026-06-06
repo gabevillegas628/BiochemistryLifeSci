@@ -99,7 +99,7 @@ Not all GPCR signaling is stimulatory. $\text{G}_i$ (inhibitory) couples the rec
 
 The physiological logic becomes clear in the heart. The $\beta$-adrenergic receptor (activated by epinephrine) uses $\text{G}_s$ to increase cAMP in cardiac myocytes, which increases heart rate and contractility. The muscarinic acetylcholine receptor (activated by the vagus nerve) uses $\text{G}_i$ to decrease cAMP in the same cells, slowing heart rate. Two inputs, opposing outputs, same second messenger. The cell integrates both signals by summing the rates of cAMP synthesis and degradation.
 
-Pertussis toxin, from Bordetella pertussis (whooping cough), permanently activates $\text{G}_i$ by ADP-ribosylating the $\text{G}_{\alpha i}$ subunit in a way that prevents GDP release. With $\text{G}_i$ locked in its GDP-bound off state, the inhibitory brake on adenylyl cyclase is removed. In airway epithelial cells, this contributes to the excessive mucus secretion and impaired ciliary clearance characteristic of whooping cough.
+Pertussis toxin, from Bordetella pertussis (whooping cough), permanently inactivates $\text{G}_{\alpha i}$ (locking it in the GDP-bound, inactive state, preventing receptor-mediated activation) by ADP-ribosylating the $\text{G}_{\alpha i}$ subunit. With $\text{G}_i$ locked in its GDP-bound off state, the inhibitory brake on adenylyl cyclase is removed. In airway epithelial cells, this contributes to the excessive mucus secretion and impaired ciliary clearance characteristic of whooping cough.
 
 ### The $\text{G}_q$ Pathway: Phospholipase C, IP3, and DAG
 
@@ -151,7 +151,7 @@ The most important immediate downstream target of many RTKs is **Ras**, a small 
 
 Ras is not a transmembrane protein. It is a small protein (21 kDa) anchored to the inner leaflet of the plasma membrane by a lipid modification. The connection between the RTK and Ras involves two adapter proteins:
 
-1. **Grb2:** An adapter protein with an SH2 domain that binds a specific phosphotyrosine on the activated RTK, and two SH3 domains that constitutively bind a proline-rich sequence on a second adapter, Sos.
+1. **Grb2:** An adapter protein with an **SH2 domain** (Src Homology 2; recognizes phosphotyrosine-containing peptide sequences) that binds a specific phosphotyrosine on the activated RTK, and two **SH3 domains** (Src Homology 3; recognize proline-rich peptide sequences) that constitutively bind a proline-rich sequence on a second adapter, Sos.
 
 2. **Sos:** A guanine nucleotide exchange factor (GEF) for Ras. When Grb2 brings Sos to the membrane (where Ras lives), Sos catalyzes the exchange of GDP for GTP on Ras, converting it to the active Ras-GTP form.
 
@@ -179,18 +179,18 @@ IRS-1 is not a kinase and it is not Grb2. It is a large scaffolding protein with
 
 $$\text{PIP}_2 \xrightarrow{\text{PI3K}} \text{PIP}_3$$
 
-$\text{PIP}_3$ is a lipid second messenger that stays embedded in the inner leaflet of the membrane. It serves as a landing platform. Two kinases that carry a **pleckstrin homology (PH) domain** recognize $\text{PIP}_3$ and are recruited to the membrane together: **Akt** (also called PKB, protein kinase B) and $\text{PIP}_3$ dependent kinase **PDK1**. PDK1 phosphorylates and activates Akt. Active Akt then phosphorylates a wide range of targets that collectively shift cellular metabolism toward fuel storage and growth:
+$\text{PIP}_3$ is a lipid second messenger that stays embedded in the inner leaflet of the membrane. It serves as a landing platform. Two kinases that carry a **pleckstrin homology (PH) domain** (a protein module that specifically binds phosphoinositide lipids like $\text{PIP}_3$, anchoring the kinase to the membrane wherever $\text{PIP}_3$ is present) recognize $\text{PIP}_3$ and are recruited to the membrane together: **Akt** (also called PKB, protein kinase B) and $\text{PIP}_3$ dependent kinase **PDK1**. PDK1 phosphorylates and activates Akt. Active Akt then phosphorylates a wide range of targets that collectively shift cellular metabolism toward fuel storage and growth:
 
 - **GLUT4 translocation:** Akt phosphorylates a GTPase-activating protein called AS160, which normally holds GLUT4 vesicles tethered in the cytoplasm by keeping the Rab GTPases that control vesicle docking in their inactive GDP-bound state. Phosphorylation of AS160 releases the tether, and GLUT4 vesicles fuse with the plasma membrane, dramatically increasing glucose uptake into muscle and fat cells. This is the primary mechanism by which insulin lowers blood glucose, and failure of this step is the central functional defect producing hyperglycemia in type 2 diabetes (see below).
 - **Glycogen synthesis:** Akt phosphorylates and inactivates glycogen synthase kinase-3 (GSK-3), which normally phosphorylates and inhibits glycogen synthase. By shutting off the inhibitor's inhibitor, Akt promotes glycogen synthesis.
-- **mTOR activation:** Akt activates the mTOR complex, a master regulator of protein synthesis and cell growth. This connects nutrient availability to anabolic signaling.
-- **Gluconeogenesis suppression:** Akt phosphorylates FOXO transcription factors, excluding them from the nucleus and suppressing expression of gluconeogenic enzymes in the liver.
+- **mTOR activation:** Akt activates the **mTOR complex** (mechanistic Target Of Rapamycin, named after the immunosuppressive drug rapamycin that inhibits it), a master regulator of protein synthesis and cell growth. This connects nutrient availability to anabolic signaling.
+- **Gluconeogenesis suppression:** Akt phosphorylates **FOXO transcription factors** (nuclear proteins that, when active, drive expression of **gluconeogenic enzymes** — the enzymes of **gluconeogenesis**, the pathway by which the liver synthesizes glucose from non-carbohydrate precursors such as amino acids, glycerol, and lactate, covered in detail in a later chapter), excluding them from the nucleus and suppressing hepatic glucose production.
 
 Termination of PI3K/Akt signaling depends critically on the lipid phosphatase **PTEN**, which removes the 3-phosphate from $\text{PIP}_3$, converting it back to $\text{PIP}_2$ and depleting the membrane landing platform for Akt. PTEN is one of the most commonly mutated tumor suppressor genes in human cancer: loss of PTEN means $\text{PIP}_3$ accumulates constitutively, Akt is permanently active, and cells grow without the normal metabolic controls. The parallel to oncogenic Ras mutation is exact: one pathway produces constitutive proliferative signaling by locking a GTPase on; the other does it by removing the phosphatase that clears the lipid second messenger.
 
 **When the insulin receptor pathway fails: type 2 diabetes and insulin resistance**
 
-In type 2 diabetes, the insulin receptor itself is usually intact and insulin is present, often in excess. The failure is downstream, at IRS-1. In the setting of chronic overnutrition and obesity, adipose tissue and the liver release elevated levels of free fatty acids and inflammatory cytokines such as TNF-$\alpha$ and IL-6. These signals activate inflammatory kinases inside insulin-target cells, particularly JNK and IKK. These kinases phosphorylate IRS-1 on serine residues.
+In type 2 diabetes, the insulin receptor itself is usually intact and insulin is present, often in excess. The failure is downstream, at IRS-1. In the setting of chronic overnutrition and obesity, adipose tissue and the liver release elevated levels of free fatty acids and **inflammatory cytokines** (secreted signaling proteins that mediate immune and metabolic responses between cells) such as **TNF-α** (tumor necrosis factor alpha) and **IL-6** (interleukin-6). These signals activate inflammatory kinases inside insulin-target cells, particularly **JNK** (c-Jun N-terminal kinase) **and IKK** (IκB kinase). These kinases phosphorylate IRS-1 on serine residues.
 
 This matters because the insulin receptor communicates with IRS-1 through tyrosine phosphorylation. Serine phosphorylation of IRS-1 by the inflammatory kinases physically interferes with the receptor's ability to phosphorylate IRS-1 on tyrosine. The result is that insulin binds the receptor, the receptor activates, the kinase domains are active and ready to signal, but IRS-1 cannot receive the signal. PI3K is never recruited. $\text{PIP}_3$ does not accumulate. Akt does not translocate. GLUT4 stays tethered in the cytoplasm. Blood glucose does not fall despite rising insulin levels. The cell is not incapable of responding to insulin in principle; it has been specifically disconnected from the signal at one molecular node.
 
@@ -206,7 +206,7 @@ This reframes type 2 diabetes as a signaling disease rather than simply a metabo
 
 Intestinal epithelial cells normally control fluid secretion partly through the CFTR chloride channel (Chapter 7). One of the signals that drives CFTR opening is cAMP, which activates PKA, which phosphorylates CFTR and keeps it open. This pathway is normally regulated: when the signaling molecule (VIP, vasoactive intestinal peptide) is no longer present, the G protein turns off, adenylyl cyclase returns to basal activity, phosphodiesterase degrades cAMP, PKA is inactivated, and CFTR closes.
 
-Cholera toxin is taken up by intestinal epithelial cells and delivers an enzymatic subunit into the cytoplasm. That subunit has one job: it catalyzes the **ADP-ribosylation** of $\text{G}_{\alpha s}$. ADP-ribosylation is the covalent attachment of an ADP-ribose group, cleaved from $\text{NAD}^+$, onto a residue of the target protein. The modification adds a bulky, negatively charged group that physically blocks the GTPase active site, preventing GTP hydrolysis. With GTP hydrolysis blocked, $\text{G}_{\alpha s}$ cannot return to the GDP-bound off state. It remains permanently active, permanently driving adenylyl cyclase, permanently flooding the cell with cAMP.
+Cholera toxin is taken up by intestinal epithelial cells and delivers an enzymatic subunit into the cytoplasm. That subunit has one job: it catalyzes the **ADP-ribosylation** of $\text{G}_{\alpha s}$. ADP-ribosylation is the covalent attachment of an ADP-ribose group, cleaved from $\text{NAD}^+$ (nicotinamide adenine dinucleotide, a metabolic coenzyme introduced in detail in a later chapter; for now, note that it carries an ADP-ribose group that can be transferred to modify target proteins), onto a residue of the target protein. The modification adds a bulky, negatively charged group that physically blocks the GTPase active site, preventing GTP hydrolysis. With GTP hydrolysis blocked, $\text{G}_{\alpha s}$ cannot return to the GDP-bound off state. It remains permanently active, permanently driving adenylyl cyclase, permanently flooding the cell with cAMP.
 
 With cAMP continuously elevated, PKA is permanently active. PKA phosphorylates CFTR, holding it open. CFTR pumps chloride continuously into the intestinal lumen. Sodium follows chloride into the lumen, drawn by the charge imbalance. Water follows them both, drawn by the resulting osmotic gradient. The intestine cannot absorb fluid fast enough to keep pace with this chloride-driven secretion. The result is up to 20 liters per day of isotonic fluid loss, with the characteristic rice-water appearance (mucus and epithelial cells suspended in clear isotonic fluid, not blood, because the mucosa is not inflamed or invaded).
 
@@ -230,7 +230,7 @@ KRAS mutations (a specific Ras isoform encoded by the KRAS gene) are found in ov
 
 Not all signals require cell-surface receptors. Lipid-soluble ligands, specifically steroid hormones (cortisol, aldosterone, estrogen, testosterone, progesterone), thyroid hormone, vitamin D, and retinoic acid, can diffuse across the bilayer and bind intracellular receptors.
 
-**Nuclear receptors** are transcription factors that are inactive until bound by their ligand. In the unliganded state, many nuclear receptors are held in the cytoplasm by chaperone complexes or are bound to DNA but associated with corepressor complexes that silence gene expression. Ligand binding causes a conformational change in the ligand-binding domain that releases the chaperones or exchanges corepressors for coactivators. The activated receptor (or receptor-ligand complex) either translocates to the nucleus or changes its activity if already there, binding specific DNA sequences called **hormone response elements (HREs)** and driving transcription of target genes.
+**Nuclear receptors** are transcription factors that are inactive until bound by their ligand. In the unliganded state, many nuclear receptors are held in the cytoplasm by chaperone complexes or are bound to DNA but associated with **corepressor complexes** (proteins that silence gene expression by compacting chromatin and blocking transcription) that silence gene expression. Ligand binding causes a conformational change in the ligand-binding domain that releases the chaperones or exchanges corepressors for **coactivators** (proteins that facilitate transcription by loosening chromatin and promoting RNA polymerase assembly). The activated receptor (or receptor-ligand complex) either translocates to the nucleus or changes its activity if already there, binding specific DNA sequences called **hormone response elements (HREs)** (short regulatory sequences in the promoter regions of target genes that, when bound by an activated nuclear receptor, either increase or decrease transcription of that gene) and driving transcription of target genes.
 
 The response is slower than GPCR or RTK signaling (hours rather than seconds to minutes) because the output is altered gene expression rather than enzyme phosphorylation. But the effects are more sustained and can fundamentally reprogram cell behavior.
 
@@ -252,7 +252,7 @@ Equally important is termination. Every step in every signaling pathway must be 
 
 - **Second messenger degradation:** Phosphodiesterase hydrolyzes cAMP; IP3 is dephosphorylated by phosphatases; calcium is pumped back into the ER by SERCA pumps (Chapter 7) and out of the cell by plasma membrane calcium ATPases.
 
-- **Phosphatase action:** Every phosphorylation event in the RTK/Ras/MAPK cascade is reversed by specific phosphatases. Protein tyrosine phosphatases (PTPs) remove phosphate from tyrosine residues. The phosphatase PTEN removes the phosphate from the lipid second messenger $\text{PIP}_3$, terminating PI3K signaling (a pathway downstream of RTKs not covered in detail here, but critical for insulin signaling and cancer).
+- **Phosphatase action:** Every phosphorylation event in the RTK/Ras/MAPK cascade is reversed by specific phosphatases. Protein tyrosine phosphatases (PTPs) remove phosphate from tyrosine residues. The phosphatase PTEN removes the phosphate from the lipid second messenger $\text{PIP}_3$, terminating PI3K signaling (as described in the insulin receptor section above).
 
 Loss of termination mechanisms is as pathogenic as constitutive activation. Mutations in PTEN are among the most common in human cancer. Loss of NF1 (the Ras GAP) causes neurofibromatosis, characterized by benign nerve sheath tumors driven by constitutive Ras activation in the absence of mutations in Ras itself.
 
@@ -315,3 +315,97 @@ Signal termination is as important as initiation. Phosphodiesterases, phosphatas
 Nuclear receptors provide a parallel system for lipid-soluble ligands: the ligand crosses the membrane, binds an intracellular receptor that is itself a transcription factor, and the response is transcriptional and slow.
 
 The unifying principle is that cells are not passive recipients of signals; they are sophisticated information processors that amplify, integrate, and terminate signals at every step.
+
+---
+
+## Problem Set
+
+**Problem 1.**
+The $\beta_2$-adrenergic receptor ($\beta_2$AR) is a GPCR that couples to $\text{G}_s$. When epinephrine binds, cAMP rises and airway smooth muscle relaxes (bronchodilation). When epinephrine is removed, the response terminates.
+
+(a) Trace the signal from epinephrine binding to the rise in cytoplasmic cAMP, naming each molecular player and the reaction it catalyzes.
+(b) Identify three distinct molecular mechanisms, operating at three different levels of the cascade, that terminate the signal after epinephrine dissociates.
+(c) A researcher adds a GTP analog that cannot be hydrolyzed (GTP-$\gamma$-S) to permeabilized cells. Predict the effect on cAMP levels and explain which termination mechanism is bypassed.
+
+---
+
+**Problem 2.** *(Synthesis)*
+Cholera toxin ADP-ribosylates $\text{G}_{\alpha s}$, blocking its GTPase activity. Pertussis toxin also ADP-ribosylates a G protein subunit, but the functional result in airway epithelial cells is the same: elevated cAMP and impaired mucociliary clearance.
+
+(a) Explain the molecular mechanism by which cholera toxin locks $\text{G}_{\alpha s}$ in the active state. What bond does ADP-ribosylation disrupt?
+(b) The outcome of pertussis toxin is also elevated cAMP, but pertussis toxin acts on $\text{G}_{\alpha i}$, the inhibitory G protein, and locks it in the GDP-bound inactive state. Explain how locking $\text{G}_{\alpha i}$ off produces the same downstream outcome (elevated cAMP) as locking $\text{G}_{\alpha s}$ on.
+(c) A researcher develops a cell line in which the gene for $\text{G}_{\alpha i}$ has been deleted entirely. She treats these cells with a $\text{G}_i$-coupled receptor agonist. Predict the cAMP response. Now predict what happens if she additionally treats with cholera toxin. Is the cholera toxin effect larger, smaller, or the same as in wild-type cells expressing $\text{G}_{\alpha i}$? Explain.
+
+---
+
+**Problem 3.**
+Insulin signals through a receptor tyrosine kinase (the insulin receptor) to promote glucose uptake. The pathway goes: insulin receptor $\to$ IRS-1 $\to$ PI3K $\to$ PIP3 $\to$ Akt $\to$ GLUT4 translocation.
+
+(a) Trans-autophosphorylation activates the insulin receptor kinase domains. Explain what trans-autophosphorylation means structurally, why the activation loop tyrosine is the first target, and what conformational change results from its phosphorylation.
+(b) PI3K converts PIP2 to PIP3 in the inner leaflet of the plasma membrane. Why is PIP3 a membrane-embedded second messenger rather than a soluble cytoplasmic one, and what property of Akt allows it to specifically recognize PIP3?
+(c) PTEN is a phosphatase that converts PIP3 back to PIP2. Loss-of-function mutations in PTEN are among the most common events in human cancer. Explain why losing PTEN has the same downstream effect on Akt activity as a constitutively activating mutation in PI3K.
+
+---
+
+**Problem 4.** *(Synthesis)*
+The MAPK cascade (Ras $\to$ Raf $\to$ MEK $\to$ ERK) is activated downstream of many RTKs. A patient's tumor is found to carry a BRAF-V600E mutation — a single amino acid change in Raf that renders it constitutively active even without upstream Ras activation.
+
+(a) In a normal cell, describe how a growth factor (e.g., EGF) activates Raf, naming the adapter proteins involved and the GTPase switch that connects the RTK to Raf.
+(b) Explain why BRAF-V600E drives constitutive ERK activation even when no growth factor is present. Does this mutation bypass the Ras GTPase switch, or does it operate downstream of it?
+(c) A targeted therapy (vemurafenib) inhibits BRAF-V600E. In early trials, some patients' tumors initially shrank but then became resistant due to secondary mutations that re-activate ERK through alternative pathways. One resistance mechanism involves amplification of the NRAS gene (an oncogenic Ras isoform). Explain why NRAS amplification would restore ERK activation despite BRAF inhibition.
+(d) Why would inhibiting MEK (downstream of BRAF) potentially overcome vemurafenib resistance due to NRAS amplification?
+
+---
+
+**Problem 5.** *(Synthesis)*
+The $\text{G}_q$ pathway generates two second messengers simultaneously from a single PLC cleavage event: IP3 and DAG.
+
+(a) Describe the immediate intracellular destination and effect of each second messenger after its release. What protein does each one activate, and where in the cell does that activation occur?
+(b) Protein kinase C (PKC) requires both DAG and elevated $\text{Ca}^{2+}$ to become fully active. Why might requiring two coincident signals rather than one be advantageous for signal fidelity?
+(c) A researcher treats cells with thapsigargin, a drug that irreversibly inhibits SERCA pumps. She then activates a $\text{G}_q$-coupled receptor. Predict how the kinetics and magnitude of the cytoplasmic $\text{Ca}^{2+}$ signal would differ from those in untreated cells. (Hint: consider both the source of the IP3-triggered calcium and the mechanism that normally terminates the signal.)
+
+---
+
+**Problem 6.**
+Glucocorticoids (e.g., cortisol) signal through nuclear receptors. Epinephrine signals through $\beta$-adrenergic GPCRs. Both molecules are released during the stress response, but their effects have very different time courses.
+
+(a) Explain why the cellular response to cortisol is slower (hours) than the cellular response to epinephrine (seconds to minutes). Your answer should address where each receptor is located and what the immediate downstream output of each signaling event is.
+(b) In the unliganded state, the glucocorticoid receptor (GR) is retained in the cytoplasm by heat shock proteins. Explain what happens at each of the following steps after cortisol enters the cell: (1) cortisol binds GR, (2) chaperones dissociate, (3) GR translocates to the nucleus, (4) GR binds hormone response elements.
+(c) Cortisol and a synthetic glucocorticoid (e.g., dexamethasone) can both activate GR, but dexamethasone has much higher receptor affinity. A patient's cortisol level is measured and found to be very low while they are taking high-dose dexamethasone. Explain this finding in terms of feedback regulation of the hypothalamic-pituitary-adrenal (HPA) axis and why it can be clinically dangerous when dexamethasone is stopped abruptly.
+
+---
+
+**Problem 7.**
+Signal desensitization prevents a cell from being locked into a maximal response when a hormone is present continuously.
+
+(a) When the $\beta_2$-adrenergic receptor is occupied by epinephrine for a prolonged period, GRKs phosphorylate the receptor and $\beta$-arrestin is recruited. Explain the two distinct mechanisms by which $\beta$-arrestin reduces further signaling through $\text{G}_s$.
+(b) A drug company develops a "biased agonist" for the $\beta_2$AR: a compound that activates $\text{G}_s$ but does not trigger $\beta$-arrestin recruitment. Predict the pharmacological behavior of this compound relative to a classical full agonist: would it be more or less likely to cause receptor downregulation with chronic use, and would its effect decay over time with continued dosing?
+(c) Morphine acts on $\mu$-opioid receptors, which are GPCRs. Prolonged opioid use leads to tolerance (more drug needed for the same effect) and dependence. Based on what you know about GPCR desensitization, propose a molecular mechanism at the receptor level that could contribute to opioid tolerance.
+
+---
+
+**Problem 8.** *(Synthesis)*
+In type 2 diabetes, IRS-1 is phosphorylated on serine residues by the inflammatory kinases JNK and IKK. This serine phosphorylation impairs insulin signaling.
+
+(a) IRS-1 serves as a relay between the insulin receptor and PI3K. Why does serine phosphorylation of IRS-1 block insulin signaling, even though the insulin receptor itself is fully functional? Be specific about which downstream signaling event fails.
+(b) A researcher proposes that a JNK inhibitor could restore insulin sensitivity in type 2 diabetic patients. Trace the mechanism: starting from JNK inhibition, explain the sequence of molecular events that would restore GLUT4 translocation to the plasma membrane.
+(c) Exercise independently promotes GLUT4 translocation through an AMPK-dependent pathway that bypasses IRS-1 entirely. Explain why this observation is clinically significant for type 2 diabetic patients, and why exercise improves glycemic control even when the upstream insulin receptor pathway is impaired.
+(d) PTEN loss-of-function mutations occur in some cancers. A cancer cell with no PTEN constitutively activates Akt. Predict whether this cancer cell would show high or low glucose uptake, and explain the mechanism. How does this predict the cancer cell's response to dietary restriction?
+
+---
+
+## References
+
+1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.
+2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
+3. Lefkowitz RJ. A brief history of G-protein coupled receptors (Nobel Lecture). *Angew Chem Int Ed Engl*. 2013;52(25):6366–6378. doi:10.1002/anie.201302142
+4. Gilman AG. G proteins: transducers of receptor-generated signals. *Annu Rev Biochem*. 1987;56:615–649. doi:10.1146/annurev.bi.56.070187.003151
+5. Cassel D, Pfeuffer T. Mechanism of cholera toxin action: covalent modification of the guanyl nucleotide-binding protein of the adenylate cyclase system. *Proc Natl Acad Sci USA*. 1978;75(7):3032–3036. doi:10.1073/pnas.75.7.3032
+6. Prior IA, Lewis PD, Mattos C. A comprehensive survey of Ras mutations in cancer. *Cancer Res*. 2012;72(10):2457–2467. doi:10.1158/0008-5472.CAN-11-2612
+7. Canon J, Rex K, Saiki AY, et al. The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity. *Nature*. 2019;575(7781):217–223. doi:10.1038/s41586-019-1694-1
+8. Taniguchi CM, Emanuelli B, Kahn CR. Critical nodes in signalling pathways: insights into insulin action. *Nat Rev Mol Cell Biol*. 2006;7(2):85–96. doi:10.1038/nrm1837
+9. Hotamisligil GS, Shargill NS, Spiegelman BM. Adipose expression of tumor necrosis factor-alpha: direct role in obesity-linked insulin resistance. *Science*. 1993;259(5091):87–91. doi:10.1126/science.7678183
+10. White MF. IRS proteins and the common path to diabetes. *Am J Physiol Endocrinol Metab*. 2002;283(3):E413–E422. doi:10.1152/ajpendo.00514.2001
+11. Manning BD, Toker A. AKT/PKB signaling: navigating the network. *Cell*. 2017;169(3):381–405. doi:10.1016/j.cell.2017.04.001
+12. Lemmon MA, Schlessinger J. Cell signaling by receptor tyrosine kinases. *Cell*. 2010;141(7):1117–1134. doi:10.1016/j.cell.2010.06.011
+13. Sever R, Glass CK. Signaling by nuclear receptors. *Cold Spring Harb Perspect Biol*. 2013;5(3):a016709. doi:10.1101/cshperspect.a016709

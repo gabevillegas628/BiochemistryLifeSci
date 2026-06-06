@@ -30,13 +30,13 @@ The through-line for this chapter is lactose intolerance and galactosemia: two d
 
 ### What Makes Something a Carbohydrate
 
-The simplest carbohydrates are **monosaccharides**: single sugar units. The name "carbohydrate" reflects the empirical formula $(CH_2O)_n$, where $n$ is the number of carbons. These molecules are literally hydrated carbons, carbon atoms with attached water molecules.
+The simplest carbohydrates are **monosaccharides**: single sugar units. The name "carbohydrate" reflects the empirical formula $(\text{CH}_2\text{O})_n$, where $n$ is the number of carbons. These molecules are literally hydrated carbons, carbon atoms with attached water molecules.
 
-Monosaccharides are polyhydroxy aldehydes or polyhydroxy ketones. Every carbon that is not the carbonyl carbon carries a hydroxyl group. The carbonyl is either an aldehyde (at carbon 1, giving an **aldose**) or a ketone (at carbon 2, giving a **ketose**). For the purposes of this course, the most important monosaccharide is the six-carbon aldose **glucose** ($C_6H_{12}O_6$).
+Monosaccharides are polyhydroxy aldehydes or polyhydroxy ketones. Every carbon that is not the carbonyl carbon carries a hydroxyl group. The carbonyl is either an aldehyde (at carbon 1, giving an **aldose**) or a ketone (at carbon 2, giving a **ketose**). For the purposes of this course, the most important monosaccharide is the six-carbon aldose **glucose** ($\text{C}_6\text{H}_{12}\text{O}_6$).
 
 ### Carbon Numbering and Stereochemistry
 
-Carbon numbering runs from the carbonyl end. In glucose, C1 is the aldehyde carbon, and the chain runs C1 through C6 with a hydroxyl group on C2, C3, C4, and C5, and a hydroxymethyl group ($-CH_2OH$) at C6.
+Carbon numbering runs from the carbonyl end. In glucose, C1 is the aldehyde carbon, and the chain runs C1 through C6 with a hydroxyl group on C2, C3, C4, and C5, and a hydroxymethyl group ($-\text{CH}_2\text{OH}$) at C6.
 
 Every carbon carrying four different substituents is a **chiral center**. Glucose has four of them (C2 through C5). The combination of configurations at those four chiral centers defines which stereoisomer you have. Because there are four chiral centers, there are $2^4 = 16$ possible stereoisomers of the six-carbon aldose, forming 8 pairs of enantiomers. Each of these has a name: glucose, galactose, mannose, and 5 others. These are not different molecules in the way that glucose and fructose are different molecules; they are the same connectivity with different spatial arrangements of the hydroxyl groups.
 
@@ -58,11 +58,11 @@ The $\beta$ form predominates because equatorial substituents are more stable th
 
 The equilibrium between open-chain and ring forms has a clinically important consequence. Because the ring can open transiently to expose the free aldehyde at C1, monosaccharides can act as reducing agents, donating electrons to oxidizing agents in solution. Any sugar with a free anomeric carbon that can equilibrate with the open-chain form is a **reducing sugar**. All monosaccharides are reducing sugars.
 
-When an aldehyde acts as a reducing agent, it is itself oxidized to a carboxylate (the aldehyde carbon goes from oxidation state +1 to +3). The electrons it donates reduce a metal ion in the test reagent: in Benedict's solution, $Cu^{2+}$ is reduced to $Cu^+$, which precipitates as brick-red $Cu_2O$. The color change from blue to orange-red is the positive result.
+When an aldehyde acts as a reducing agent, it is itself oxidized to a carboxylate (the aldehyde carbon goes from oxidation state +1 to +3). The electrons it donates reduce a metal ion in the test reagent: in Benedict's solution, $\text{Cu}^{2+}$ is reduced to $\text{Cu}^+$, which precipitates as brick-red $\text{Cu}_2\text{O}$. The color change from blue to orange-red is the positive result.
 
-Ketoses (like fructose, which has a ketone at C2 rather than an aldehyde at C1) are also reducing sugars, which might seem surprising since ketones are not normally good reducing agents. The reason is specific to alkaline conditions: in the alkaline environment of Benedict's solution, ketoses undergo base-catalyzed tautomerization through an enediol intermediate, transiently generating an aldehyde form that can then reduce $Cu^{2+}$. The ketone itself is not the reductant; the rearrangement product is. Under neutral physiological conditions, this tautomerization does not occur readily, so the clinical significance of ketoses as reducing sugars is primarily about how they behave in diagnostic tests, not in metabolism.
+Ketoses (like fructose, which has a ketone at C2 rather than an aldehyde at C1) are also reducing sugars, which might seem surprising since ketones are not normally good reducing agents. The reason is specific to alkaline conditions: in the alkaline environment of Benedict's solution, ketoses undergo base-catalyzed tautomerization through an enediol intermediate, transiently generating an aldehyde form that can then reduce $\text{Cu}^{2+}$. The ketone itself is not the reductant; the rearrangement product is. Under neutral physiological conditions, this tautomerization does not occur readily, so the clinical significance of ketoses as reducing sugars is primarily about how they behave in diagnostic tests, not in metabolism.
 
-This is the chemical basis of the Benedict's test and the Clinitest tablet: both detect reducing sugars by the $Cu^{2+}$ color change. Note that the glucose-oxidase dipstick used in clinical urinalysis works by a completely different mechanism; it is enzyme-based and specific for glucose only. This distinction matters when interpreting urine sugar results in metabolic disorders where galactose or other reducing sugars, not glucose, are what is being excreted.
+This is the chemical basis of the Benedict's test and the Clinitest tablet: both detect reducing sugars by the $\text{Cu}^{2+}$ color change. Note that the glucose-oxidase dipstick used in clinical urinalysis works by a completely different mechanism; it is enzyme-based and specific for glucose only. This distinction matters when interpreting urine sugar results in metabolic disorders where galactose or other reducing sugars, not glucose, are what is being excreted.
 
 ### Why Ring Geometry Matters
 
@@ -118,9 +118,9 @@ Plants store glucose as **starch**, which is actually two distinct polymers:
 
 **Amylose** is a linear polymer of glucose connected by $\alpha(1\to4)$ bonds. The $\alpha$ geometry forces the chain to coil into a helix, with about 6 glucose residues per turn. The helix interior is hydrophobic and is the basis for the iodine-starch test ($\text{I}_3^-$ inserts into the helix interior and turns deep blue-black).
 
-**Amylopectin** is branched: a backbone of $\alpha(1\to4)$-linked glucose with branch points every 24 to 30 residues, formed by $\alpha(1\to6)$ bonds at the branch points. Branches increase the number of free ends available for enzymatic attack, which is important for rapid mobilization of glucose when needed.
+**Amylopectin** is branched: a backbone of $\alpha(1\to4)$-linked glucose with branch points every 20 to 30 residues, formed by $\alpha(1\to6)$ bonds at the branch points. Branches increase the number of free ends available for enzymatic attack, which is important for rapid mobilization of glucose when needed.
 
-Salivary amylase begins starch digestion in the mouth; pancreatic amylase continues it in the small intestine. Both cleave internal $\alpha(1\to4)$ bonds, producing maltose and maltotriose and limit dextrins (fragments containing the branch points). Maltase and isomaltase (the other part of the sucrase-isomaltase complex) complete the hydrolysis to free glucose. The glucose is then absorbed by intestinal epithelial cells via sodium-glucose cotransporters (SGLT1), entering circulation and the liver.
+Salivary amylase begins starch digestion in the mouth; pancreatic amylase continues it in the small intestine. Both cleave internal $\alpha(1\to4)$ bonds, producing maltose and maltotriose and limit dextrins (fragments containing the branch points). Maltase and isomaltase (the other part of the sucrase-isomaltase complex) complete the hydrolysis to free glucose. The glucose is then absorbed by intestinal epithelial cells via sodium-glucose cotransporters (SGLT1, a transporter discussed in detail in Chapter 7), entering circulation and the liver.
 
 ### Glycogen: Fuel Storage in Animals
 
@@ -142,7 +142,7 @@ Humans produce no cellulase. The $\beta(1\to4)$ bond is invisible to our digesti
 
 A class of carbohydrates you will see in connective tissue physiology are **glycosaminoglycans (GAGs)**: long, unbranched polysaccharides built from repeating disaccharide units, where one sugar of the pair is an amino sugar (N-acetylglucosamine or N-acetylgalactosamine) and the other is typically a uronic acid (glucuronate or iduronate).
 
-The repeating negative charges from the uronic acid residues and sulfate groups (in most GAGs) attract water molecules, giving GAGs a remarkable ability to resist compression. Cartilage, the vitreous humor of the eye, and the synovial fluid of joints all depend on GAG-rich matrices for their mechanical properties. Hyaluronic acid, heparan sulfate, chondroitin sulfate, and heparin are all GAGs. The mucopolysaccharidoses, discussed in "When It Breaks," are diseases where GAG degradation fails and these polymers accumulate in lysosomes.
+The repeating negative charges from the uronic acid residues and sulfate groups (in most GAGs) attract water molecules, giving GAGs a remarkable ability to resist compression. Cartilage, the vitreous humor of the eye, and the synovial fluid of joints all depend on GAG-rich matrices for their mechanical properties. Hyaluronic acid, heparan sulfate, chondroitin sulfate, and heparin are all GAGs. **Lysosomes** are membrane-bound organelles in eukaryotic cells that contain acid hydrolases: enzymes active at low pH that degrade macromolecules delivered to them by the cell's trafficking machinery. The mucopolysaccharidoses, discussed in "When It Breaks," are diseases where GAG degradation fails and these polymers accumulate in lysosomes.
 
 ---
 
@@ -197,15 +197,15 @@ Note for the urine dipstick in the opener: dipstick tests for urine glucose use 
 
 ### Galactosemia
 
-**Galactosemia** is a group of autosomal recessive disorders of galactose metabolism. The classic form is a deficiency of **galactose-1-phosphate uridylyltransferase (GALT)**, the second enzyme in the Leloir pathway (more on that once we move into Glycolysis in a future chapter).
+**Galactosemia** is a group of autosomal recessive disorders of galactose metabolism. The classic form is a deficiency of **galactose-1-phosphate uridylyltransferase (GALT)**, the second enzyme in the **Leloir pathway** (the three-enzyme sequence that converts galactose to glucose-1-phosphate for entry into glycolysis).
 
 To understand why this enzyme matters, consider what happens when galactose is absorbed from lactose digestion:
 
 1. Galactose is phosphorylated at C1 by **galactokinase**, producing galactose-1-phosphate.
-2. Galactose-1-phosphate uridylyltransferase swaps the phosphate for a UDP group from UDP-glucose, producing **UDP-galactose** and glucose-1-phosphate. This is the step blocked in classic galactosemia.
+2. Galactose-1-phosphate uridylyltransferase swaps the phosphate for a UDP group (uridine diphosphate, a nucleotide carrier that activates sugars for transfer reactions) from UDP-glucose, producing **UDP-galactose** and glucose-1-phosphate. This is the step blocked in classic galactosemia.
 3. UDP-galactose epimerase interconverts UDP-galactose and UDP-glucose, completing the pathway.
 
-When GALT is deficient, galactose-1-phosphate accumulates. This intermediate is toxic, particularly to the liver, brain, and lens of the eye. The mechanism of toxicity involves inhibition of multiple enzymes and disruption of phosphate metabolism, but the precise biochemistry is still not fully resolved. What is clear clinically: untreated classic galactosemia causes liver failure, cataracts (from accumulation of galactitol, a sugar alcohol formed by aldose reductase acting on galactose), intellectual disability, and sepsis (usually E. coli, due to impaired neutrophil function).
+When GALT is deficient, galactose-1-phosphate accumulates. This intermediate is toxic, particularly to the liver, brain, and lens of the eye. The mechanism of toxicity involves inhibition of multiple enzymes and disruption of phosphate metabolism, but the precise biochemistry is still not fully resolved. What is clear clinically: untreated classic galactosemia causes liver failure, cataracts (from accumulation of galactitol, a sugar alcohol formed by **aldose reductase** (an enzyme that uses **NADPH**, a reduced electron carrier covered in detail in Chapter 9, to reduce aldose sugars to their corresponding sugar alcohols) acting on galactose), intellectual disability, and sepsis (usually E. coli, due to impaired neutrophil function).
 
 The newborn in the opener: she was healthy at birth because she had no dietary galactose exposure (placental circulation delivers glucose, not lactose). Once formula or breast milk was started, galactose intake began (via the lactose in the milk). The jaundice and hepatomegaly indicate liver damage from galactose-1-phosphate accumulation. The reducing sugar in urine is galactose, not glucose, which is why the glucose-specific dipstick was negative while a reducing sugar test was positive.
 
@@ -270,7 +270,7 @@ For each of the following questions, identify which structure or pair of structu
 
 3. A non-reducing sugar has no free anomeric carbon. Among the four structures shown, none of the monosaccharides (A, B, C) are non-reducing since all have a free C1. Structure D is a disaccharide where the left-hand glucose has its C1 locked into the glycosidic bond (non-reducing end), but the right-hand glucose retains a free anomeric carbon (reducing end). D is therefore a reducing disaccharide. If sucrose were shown instead (both anomeric carbons engaged in the glycosidic bond), it would be non-reducing.
 
-4. Structure D has a $\beta(1\to4)$ linkage between two glucose units, making it cellobiose (the repeating disaccharide unit of cellulose). It would be cleaved by a $\beta$-glucosidase (cellulase). Humans lack this enzyme. Benedict's reagent would give a positive result because the right-hand glucose has a free anomeric carbon that can equilibrate with the open-chain aldehyde form, reducing $Cu^{2+}$ to $Cu^+$.
+4. Structure D has a $\beta(1\to4)$ linkage between two glucose units, making it cellobiose (the repeating disaccharide unit of cellulose). It would be cleaved by a $\beta$-glucosidase (cellulase). Humans lack this enzyme. Benedict's reagent would give a positive result because the right-hand glucose has a free anomeric carbon that can equilibrate with the open-chain aldehyde form, reducing $\text{Cu}^{2+}$ to $\text{Cu}^+$.
 
 **Answer:** A and B are anomers; A and C are C4 epimers; D is a reducing disaccharide (cellobiose) cleaved by $\beta$-glucosidase; Benedict's is positive for D.
 
@@ -309,3 +309,86 @@ The $\alpha$ vs. $\beta$ distinction at the anomeric carbon is the most conseque
 Glycosidic bond specificity is the principle behind virtually every carbohydrate-related clinical disorder: lactose intolerance (failure to cleave the $\beta(1\to4)$ bond in lactose), galactosemia (failure to metabolize galactose after absorption), glycogen storage diseases (failure to synthesize, branch, or degrade glycogen correctly), and mucopolysaccharidoses (failure to degrade glycosaminoglycans in lysosomes).
 
 Carbohydrates also serve as information-carrying molecules, most dramatically in the ABO blood group system, where the identity of a terminal monosaccharide on a red blood cell glycoprotein determines blood compatibility. The carbohydrate coat of every cell in your body is a chemically specific identity tag read by the immune system, by pathogens, and by other cells.
+
+---
+
+## Problem Set
+
+**Problem 1.**
+Glucose and galactose are both six-carbon aldoses, differ at only one carbon, and are absorbed by the same transporter in the intestine. Yet the enzyme galactokinase phosphorylates galactose efficiently but has negligible activity toward glucose, and hexokinase phosphorylates glucose efficiently but has very low activity toward galactose. Explain why enzymes can distinguish between two molecules that differ at only one chiral center. What structural feature makes that distinction possible?
+
+---
+
+**Problem 2.**
+A sample of an unknown polysaccharide is isolated from a plant cell wall. Acid hydrolysis yields only glucose. The isolated monosaccharide does not undergo mutarotation (the optical rotation does not change over time in solution). Treatment with a $\beta$-glucosidase completely hydrolyzes the polymer; treatment with an $\alpha$-glucosidase has no effect.
+
+(a) Is the polysaccharide a reducing or non-reducing species? Explain.
+(b) Why does the released monosaccharide not undergo mutarotation?
+(c) What is this polysaccharide, and why can humans not digest it?
+
+---
+
+**Problem 3.** *(Synthesis)*
+Glycogen and amylopectin are both branched polymers of $\alpha(1\to4)$-linked glucose with $\alpha(1\to6)$ branch points, yet glycogen is far more highly branched. A textbook says this difference is functionally important. A student argues that more branching just wastes glucose by shortening chains, producing a less efficient storage polymer.
+
+Construct a detailed rebuttal. In your answer, explain what structural feature of glycogen is exploited by the enzyme that mobilizes glucose, why more branch points increase the rate of glucose mobilization, and why rapid mobilization is the key physiological variable for muscle and liver glycogen — not total storage capacity.
+
+---
+
+**Problem 4.**
+Sucrose gives a negative result with Benedict's reagent. Maltose gives a positive result. Both are disaccharides composed entirely of glucose. Explain the structural basis for this difference, referring specifically to the anomeric carbons involved in each glycosidic bond.
+
+---
+
+**Problem 5.** *(Synthesis)*
+A pharmaceutical researcher is designing an orally administered drug that must survive transit through the small intestine without being absorbed, resist hydrolysis by intestinal enzymes, reach the colon intact, and then be fermented by colonic bacteria. The drug consists of a linear chain of glucose units.
+
+(a) What glycosidic linkage should the researcher use, and why will this linkage survive small intestinal passage?
+(b) The researcher discovers that bacteria ferment the drug and produce hydrogen gas as a byproduct. She designs a diagnostic test exploiting this: subjects drink the drug and then blow into a collection device. What property is being measured, and what clinical test does this resemble in principle?
+(c) If subjects with a particular genetic condition produce no detectable hydrogen after ingesting the drug, what might this suggest about those individuals?
+
+---
+
+**Problem 6.**
+Glycosaminoglycans (GAGs) are polysaccharides found in cartilage, synovial fluid, and the vitreous humor of the eye. Two structural features of GAGs are particularly notable: (1) one sugar in each repeating unit is a uronic acid (e.g., glucuronate), and (2) most GAGs carry sulfate groups.
+
+(a) Glucuronate has a carboxylate group at C6 with a $pK_a$ of approximately 3. What is the ionization state of this group at pH 7.4, and what does this imply for the charge of a GAG chain?
+(b) How does the polyanionic character of GAGs explain their water-retaining ability and their role in resisting compressive forces in cartilage?
+(c) In the mucopolysaccharidoses, lysosomal enzymes that degrade GAGs are deficient. Why does GAG accumulation disrupt cell function, given that GAGs are not catalytic molecules?
+
+---
+
+**Problem 7.** *(Synthesis)*
+Blood type O individuals are called "universal donors" for red blood cell transfusions. At the molecular level, their red cells carry only the H antigen — the fucose-galactose unit that is the precursor for the A and B antigens.
+
+(a) What enzymatic event is absent in type O individuals that distinguishes them from type A and type B individuals?
+(b) Type O individuals carry both anti-A and anti-B antibodies. Explain why these antibodies exist even though the individual has never been transfused.
+(c) A molecular biologist proposes that two patients — one type A and one type B — could be made "universal recipients" by introducing exogenous glycosidase enzymes that cleave terminal sugars from red cell surface antigens. What specific enzymes and substrates would be required? What would the treated cells look like antigenically?
+
+---
+
+**Problem 8.** *(Synthesis)*
+A newborn male infant has normal glucose on newborn screening. At one week of age, after starting breast feeding, he develops jaundice and his liver enzymes rise. Urine is tested with a glucose-oxidase dipstick: negative. Urine is then tested with Benedict's reagent: positive. Liver biopsy shows no glycogen accumulation.
+
+(a) What enzyme deficiency is most likely, and what is the toxic intermediate that accumulates?
+(b) Why was the infant healthy at birth but became ill only after starting feeds?
+(c) Why does the glucose-oxidase dipstick test give a negative result while Benedict's reagent is positive? Name at least two other reducing sugars that Benedict's reagent would detect but the dipstick would not.
+(d) Dietary elimination of lactose and galactose prevents acute liver injury. However, a physician tells the family that some long-term complications may still occur even on a strict diet. What is the biochemical explanation for this?
+
+---
+
+## References
+
+1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.
+2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
+3. Swallow DM. Genetics of lactase persistence and lactose intolerance. *Annu Rev Genet*. 2003;37:197–219. doi:10.1146/annurev.genet.37.110801.143820
+4. Ségurel L, Bon C. On the evolution of lactase persistence in humans. *Annu Rev Genomics Hum Genet*. 2017;18:297–319. doi:10.1146/annurev-genom-091416-035340
+5. Barreiro LB. The evolutionary tale of lactase persistence in humans. *Nat Rev Genet*. 2024;25:105–106. doi:10.1038/s41576-023-00660-3
+6. Coelho AI, Trabuco M, Sequeira S, et al. Functional and structural impact of the most prevalent missense mutations in classic galactosemia. *Sci Rep*. 2014;4:6071. doi:10.1038/srep06071
+7. Viggiano E, Politano L. Galactose-1-phosphate uridyltransferase deficiency: a literature review of the putative mechanisms of short and long-term complications and allelic variants. *Clin Genet*. 2018;93(3):506–516. doi:10.1111/cge.13030
+8. Delnoy B, Coelho AI, Rubio-Gozalbo ME. Current and future treatments for classic galactosemia. *J Pers Med*. 2021;11(2):75. doi:10.3390/jpm11020075
+9. Coutinho MF, Lacerda L, Alves S. Glycosaminoglycan storage disorders: a review. *Biochem Res Int*. 2012;2012:471325. doi:10.1155/2012/471325
+10. Muenzer J. The mucopolysaccharidoses: a success of molecular medicine. *J Inherit Metab Dis*. 2011;34(2):393–402. doi:10.1007/s10545-010-9214-4
+11. Yamamoto F, Clausen H, White T, Marken J, Hakomori S. Molecular genetic basis of the histo-blood group ABO system. *Nature*. 1990;345(6272):229–233. doi:10.1038/345229a0
+12. Varki A, Lowe JB. Biological roles of glycans. In: Varki A, et al., eds. *Essentials of Glycobiology*, 3rd ed. Cold Spring Harbor Laboratory Press; 2017. doi:10.1101/glycobiology.3e.007
+13. Hers HG. Inborn lysosomal diseases. *Gastroenterology*. 1965;48(5):625–633. doi:10.1016/S0016-5085(65)80041-5
