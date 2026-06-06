@@ -48,7 +48,7 @@ The standard reduction potential of the CoQ/QH₂ couple is approximately +0.045
 
 **Cytochrome c** is a small, water-soluble protein in the intermembrane space. It contains a heme group whose iron cycles between Fe³⁺ (oxidized) and Fe²⁺ (reduced). It accepts electrons one at a time from Complex III and delivers them to Complex IV. Unlike CoQ, which carries two electrons simultaneously, cytochrome c carries one at a time.
 
-Cytochrome c doubles as a pro-apoptotic signal. When the outer mitochondrial membrane is permeabilized during programmed cell death, cytochrome c is released into the cytoplasm, where it assembles a complex that activates caspases. A protein that spends its normal life shuttling electrons in respiration also serves as a death trigger. Evolution reuses components.
+Cytochrome c doubles as a pro-apoptotic signal. When the outer mitochondrial membrane is permeabilized during programmed cell death, cytochrome c is released into the cytoplasm, where it assembles a complex that activates caspases. A protein that spends its normal life shuttling electrons in respiration also serves as a death trigger, an interesting example of evolution reusing components.
 
 ---
 
@@ -58,13 +58,15 @@ Cytochrome c doubles as a pro-apoptotic signal. When the outer mitochondrial mem
 
 $$\text{NADH} + \text{H}^+ + \text{CoQ} \rightarrow \text{NAD}^+ + \text{QH}_2 \qquad (\Delta G^{\circ'} \approx -69 \text{ kJ/mol})$$
 
-Complex I is the entry point for electrons from NADH. It is the largest of the respiratory complexes: in humans it contains about 45 subunits and has an L-shaped structure with one arm embedded in the membrane and one arm projecting into the matrix. The matrix arm is where NADH is oxidized, and electrons flow through a series of iron-sulfur clusters until they reach ubiquinone at the membrane arm. CoQ accepts two electrons and two protons from the matrix, becoming QH₂ and entering the lipid phase of the membrane.
+Complex I is the entry point for electrons from NADH. It is the largest of the respiratory complexes: in humans it contains about 45 subunits and has an L-shaped structure with one arm embedded in the membrane and one arm projecting into the matrix. The matrix arm is where NADH is oxidized, and electrons flow through a series of **iron-sulfur clusters** until they reach ubiquinone at the membrane arm. Iron-sulfur clusters are small inorganic cofactors built from iron and sulfide ions arranged in cage-like structures, most commonly [2Fe-2S] or [4Fe-4S]. Each cluster can accept and donate exactly one electron, with the iron cycling between Fe²⁺ and Fe³⁺. Strung together in a chain, they act as a wire: electrons hop from cluster to cluster, stepping down in energy with each transfer, until they reach the final acceptor. You will see them in Complexes I, II, and III, and they are also the functional center of aconitase in the TCA cycle. CoQ accepts two electrons and two protons from the matrix, becoming QH₂ and entering the lipid phase of the membrane.
 
 For every pair of electrons passed through Complex I (one NADH oxidized), **4 protons are pumped from the matrix to the intermembrane space.** This is the largest proton contribution of any single complex.
 
+How does that pumping actually work? The honest answer is that the full atomic mechanism is still being worked out, but the conceptual picture is clear. The key feature is that Complex I's two arms are physically far apart: electron transfer happens entirely in the matrix arm, but the proton-translocating machinery is entirely in the membrane arm, about 10 nm away. There is no direct chemical coupling of the kind we saw in substrate-level phosphorylation. Instead, the coupling is **mechanical and conformational**. As electrons step down through the iron-sulfur chain and ultimately reduce CoQ, the energy released drives a series of conformational changes that propagate through the membrane arm like a wave. The membrane arm contains three antiporter-like subunits whose structures are similar to bacterial Na⁺/H⁺ antiporters; the conformational wave drives each of them to translocate a proton across the membrane. The redox chemistry and the proton pumping are coordinated by shape changes, not by shared chemical intermediates. This is fundamentally different from Complex III, where the proton pumping is a direct consequence of the Q cycle chemistry, and from Complex IV, where some of the pumped protons are consumed as substrates in forming water. Complex I is a molecular machine that converts electron-transfer energy into mechanical motion that drives proton translocation.
+
 Complex I is inhibited by **rotenone**, a plant-derived insecticide used in pest control and aquatic management, and by **metformin**, which at therapeutic doses modestly inhibits Complex I in the liver. Metformin's Complex I inhibition is thought to contribute to its mechanism of reducing hepatic glucose output, though this remains an active area of research.
 
-Complex I is also a major source of reactive oxygen species in the cell. When electron transport slows and the CoQ pool becomes highly reduced, electrons can leak from iron-sulfur clusters directly to oxygen, producing superoxide. This is the biochemical basis for the connection between mitochondrial dysfunction and oxidative stress.
+Complex I is also a major source of reactive oxygen species in the cell. When electron transport slows and the CoQ pool becomes highly reduced (in the chemical sense: loaded with electrons, i.e., most CoQ exists as QH₂ rather than the oxidized form), electrons can leak from iron-sulfur clusters directly to oxygen, producing superoxide. This is the biochemical basis for the connection between mitochondrial dysfunction and oxidative stress.
 
 ### Complex II: Succinate-CoQ Oxidoreductase (Succinate Dehydrogenase)
 
@@ -80,19 +82,49 @@ SDH subunit mutations are tumor suppressors, as described in Chapter 11. Succina
 
 $$\text{QH}_2 + 2 \text{ cyt } c^{3+} \rightarrow \text{CoQ} + 2 \text{ cyt } c^{2+} + 4\text{H}^+ \text{ (IMS side)}$$
 
-Complex III transfers electrons from QH₂ to cytochrome c, one electron at a time. The challenge is that QH₂ carries two electrons but cytochrome c accepts only one. Complex III solves this via the **Q cycle**: ubiquinol is oxidized in two sequential steps, with one electron going to cytochrome c and the other recycled back to regenerate QH₂ on the matrix side. The net result is that for every two electrons traveling from QH₂ to cytochrome c, **4 protons are translocated to the intermembrane space**: 2 released from QH₂ as it is oxidized on the IMS side, and 2 picked up from the matrix during the re-reduction of CoQ.
+Complex III transfers electrons from QH₂ to cytochrome c, one electron at a time. The challenge is that QH₂ carries two electrons but cytochrome c accepts only one. Complex III solves this via the **Q cycle**, described below.
 
-You do not need to trace every electron in the Q cycle for this course. What you need to know: Complex III pumps 4 H⁺ per pair of electrons transferred to cytochrome c.
+#### The Q Cycle
 
-Complex III is inhibited by **antimycin A**, a natural product that blocks the second QH₂ oxidation site (the Qi site). Antimycin A was a key tool in early studies of the chain and is occasionally relevant in natural toxicology.
+Start with the problem. QH₂ is a two-electron carrier. Cytochrome c is a one-electron carrier. You cannot directly hand two electrons from QH₂ to cytochrome c: the mismatch in electron valency requires a switching mechanism. The Q cycle is that mechanism, and the reason it matters is that it doubles the number of protons translocated compared to a simpler direct transfer would achieve.
+
+Complex III has two distinct binding sites for ubiquinone:
+
+- **Qo site (outer, IMS-facing):** where QH₂ is oxidized
+- **Qi site (inner, matrix-facing):** where CoQ is reduced back to QH₂
+
+The cycle proceeds in two rounds, each beginning with one QH₂ arriving at the Qo site:
+
+**Round 1:**
+
+A molecule of QH₂ binds at the Qo site and is oxidized and one molecule of Q binds at the Qi site. Its two electrons are split: one goes to the high-potential chain (an iron-sulfur protein in Complex III, then to cytochrome c₁, then to cytochrome c in the IMS), reducing one cytochrome c. The other electron takes the low-potential path: it travels to cytochrome b_L, then to cytochrome b_H, and reduces the Q at the Qi site to a semiquinone radical (Q•⁻). Meanwhile, the two protons from QH₂ oxidation are released into the IMS.
+
+**Round 2:**
+
+A second QH₂ arrives at the Qo site and is oxidized in the same way. Again one electron goes via the high-potential chain to reduce a **second** cytochrome c. The other electron travels down the cytochrome b chain to the Qi site and reduces the semiquinone Q•⁻ (left over from the last round) all the way to QH₂, picking up 2 protons from the matrix in the process.
+
+**The net result for two QH₂ consumed:**
+
+- 2 electrons have been delivered to 2 cytochrome c molecules (net output)
+- 1 QH₂ has been regenerated at the Qi site from 2 matrix protons and the two recycled electrons
+- 4 protons have appeared in the IMS: 2 from the first QH₂ oxidation and 2 from the second
+
+So for every 2 electrons that actually leave Complex III toward cytochrome c, **4 protons are translocated to the IMS**. The Q cycle effectively doubles the proton yield by routing one electron from each QH₂ backward through a recycling loop instead of dumping it, picking up 2 matrix protons in the process. The "wasted" electron is not wasted at all; it is the mechanism.
+
+This is also why **antimycin A** is so effective as an inhibitor. It blocks the Qi site, preventing the semiquinone from being reduced to QH₂. With the Qi site blocked, the first electron from each QH₂ can still reduce cytochrome c, but the second electron accumulates as a semiquinone radical at the Qo site. Semiquinone is highly reactive and will donate its electron directly to oxygen, producing superoxide. Antimycin A does not just block electron flow; it converts Complex III into a superoxide generator.
+
 
 ### Complex IV: Cytochrome c Oxidase
 
 $$4 \text{ cyt } c^{2+} + 4\text{H}^+ + \text{O}_2 \rightarrow 4 \text{ cyt } c^{3+} + 2\text{H}_2\text{O}$$
 
-Complex IV is the terminal enzyme. It accepts four electrons from four cytochrome c molecules one at a time and delivers them to molecular oxygen, reducing it completely to two water molecules. This is the reaction that makes aerobic respiration aerobic: oxygen is the final electron acceptor.
+Complex IV is the terminal enzyme. It accepts four electrons from four cytochrome c molecules one at a time and delivers them to molecular oxygen, reducing it completely to two water molecules. This is the reaction that makes aerobic respiration aerobic: oxygen is the **final electron acceptor**.
 
-The chemistry is genuinely tricky. Partial reduction of oxygen is dangerous: superoxide ($\text{O}_2^{\bullet-}$) and hydrogen peroxide are toxic intermediates. Complex IV performs a full four-electron reduction without releasing these partially reduced species, holding all intermediates tightly at its active site until all four electrons have arrived. The catalytic center contains two copper centers (Cu_A and Cu_B) and two heme groups (heme a and heme a₃). Cu_A accepts electrons from cytochrome c, heme a passes them to the binuclear center formed by heme a₃ and Cu_B, and that is where O₂ binds and is reduced.
+The chemistry is genuinely tricky. Partial reduction of oxygen is dangerous: superoxide ($\text{O}_2^{\bullet-}$) and hydrogen peroxide are toxic intermediates (more specifically **reactive oxygen species (ROS)**). Complex IV performs a full four-electron reduction without releasing these partially reduced species, holding all intermediates tightly at its active site until all four electrons have arrived. The catalytic center contains two copper centers ($\text{Cu}_\text{A}$ and $\text{Cu}_\text{B}$) and two heme groups (heme a and heme a₃). $\text{Cu}_\text{A}$ accepts electrons from cytochrome c, heme a passes them to the binuclear center formed by heme a₃ and $\text{Cu}_\text{B}$, and that is where O₂ binds and is reduced.
+
+Here is how the four electrons are used, step by step. The first pair of electrons, arriving via the relay described above, reduces the binuclear center: heme a₃ iron goes from $\text{Fe}^{3+}$ to $\text{Fe}^{2+}$, and $\text{Cu}_\text{B}$ goes from $\text{Cu}^{2+}$ to $\text{Cu}^{+}$. O₂ then binds to the $\text{Fe}^{2+}$ of heme a₃. The two electrons already sitting in the binuclear center immediately donate into the O₂, forming a **peroxide bridge**: $\text{Fe}^{3+}-\text{O}-\text{O}-\text{Cu}^{2+}$. The two oxygens are now bridging the two metal centers, each holding one of the donated electrons. This is the critical intermediate, and it is why the toxic partials never escape: both oxygen atoms are held simultaneously by the two metals before the O–O bond is broken.
+
+The second pair of electrons then arrives from cytochrome c, one at a time, and along with two protons abstracted from the matrix, cleaves the O–O bond. Each oxygen receives a total of two electrons and one proton, producing two metal-bound hydroxyl groups: $\text{Fe}^{3+}-\text{OH}$ on heme a₃ and –OH on $\text{Cu}_\text{B}$. Finally, two more protons from the matrix protonate these hydroxyl groups, releasing two molecules of water and returning the binuclear center to its oxidized resting state, ready for the next O₂. The full accounting: four electrons in, four matrix protons consumed, one O₂ reduced, two H₂O released. None of the partially reduced intermediates leave the active site at any stage.
 
 For every four electrons transferred (one O₂ reduced), Complex IV pumps **4 protons from the matrix to the IMS**, and consumes 4 protons from the matrix to form water. Net translocation from matrix to IMS: 4 H⁺ per O₂ reduced, or 2 H⁺ per pair of electrons.
 
@@ -103,7 +135,7 @@ Complex IV is the target of several clinically important inhibitors:
 - **Azide (N₃⁻)**: binds the binuclear center and blocks it
 - **Hydrogen sulfide (H₂S)**: inhibits at high concentrations
 
-All four stop the terminal step of electron transport. Electrons back up, the proton gradient collapses, and ATP synthesis stops. The clinical consequences are covered below in "When It Breaks."
+All four stop the terminal step of electron transport. Electrons back up through the chain and proton pumping ceases, because pumping is driven by electron flow and there is nowhere for electrons to go. Meanwhile ATP synthase continues to drain the existing PMF. With pumping stopped and consumption continuing, the gradient is depleted without being replenished, and ATP synthesis stops once the PMF is exhausted. The clinical consequences are covered below in "When It Breaks."
 
 ---
 
@@ -112,35 +144,81 @@ All four stop the terminal step of electron transport. Electrons back up, the pr
 The four complexes pump protons from the matrix into the intermembrane space, building an electrochemical gradient across the inner membrane. This gradient has two components:
 
 1. **A concentration gradient (ΔpH):** The IMS becomes more acidic than the matrix because protons accumulate there.
-2. **An electrical potential (ΔΨ):** The IMS becomes more positive than the matrix, because protons carry positive charge.
+2. **An electrical potential (ΔV):** The IMS becomes more positive than the matrix, because protons carry positive charge.
 
 Together these constitute the **proton-motive force (PMF)**:
 
-$$\Delta p = \Delta\Psi - \frac{2.303 RT}{F}\Delta\text{pH}$$
+$$\Delta p = \Delta V - \frac{2.303 RT}{F}\Delta\text{pH}$$
 
-where $\Delta\Psi$ is the membrane potential and the second term is the pH contribution. Under physiological conditions in mitochondria, the membrane potential ($\Delta\Psi \approx -180$ mV, matrix negative) contributes about 80% of the total PMF, with the pH gradient providing the remaining 20%.
+This equation is simply derived from the electrochemical gradient equation from chapter 6:
 
-The PMF represents stored potential energy, comparable to water behind a dam. When the chain is running and the synthase is consuming the gradient as fast as it is built, the PMF sits at a steady-state level that reflects the balance between pumping and consumption. If the chain is blocked, the PMF rises toward a level at which no further net pumping is thermodynamically possible. If the synthase is blocked, the PMF also rises, for the same reason: protons are being pumped in but cannot return. Either way, the chain slows.
+$$\Delta G = RT\ln{\frac{c_f}{c_i}}+ZF\Delta V$$
+
+Where $c_f=10^{-\text{pH}_{\text{mat}}}$ and $c_i=10^{-\text{pH}_{\text{ims}}}$. Substituting those values produces:
+
+$$\Delta G = RT\ln{\frac{10^{-\text{pH}_{\text{mat}}}}{10^{-\text{pH}_{\text{ims}}}}}+ZF\Delta V$$
+
+Rearranging this equation:
+
+$$\Delta G = RT\ln(10^{\text{pH}_\text{ims}-\text{pH}_\text{mat}})+ZF\Delta V$$
+
+Defining $\Delta\text{pH}=\text{pH}_\text{mat}-\text{pH}_\text{ims}$ and extracting the exponent from the logarithm gives us:
+
+$$\Delta G = (-\Delta\text{pH})RT\ln(10)+ZF\Delta V$$
+
+ln(10)=2.303, Z=+1, dividing both sides by F, defining $\Delta p=\frac{\Delta G}{F}$ gives us the final form:
+
+$$\Delta p = \Delta V - \frac{2.303 RT}{F}\Delta\text{pH}$$
+
+where $\Delta V$ is the membrane potential and the second term is the pH contribution. Under physiological conditions in mitochondria, the membrane potential ($\Delta V \approx -180$ mV, matrix negative) contributes about 80% of the total PMF, with the pH gradient providing the remaining 20%.
+
+Why divide by F at all? Dividing $\Delta G$ (in kJ/mol) by F (in C/mol) gives units of J/C, which is volts. Expressing the PMF in volts is convenient for two reasons. First, the electrical component $\Delta V$ is already a voltage and is directly measured in mV; expressing the whole equation in the same units lets you see at a glance how much each component contributes. Second, it connects the PMF directly to the reduction potential framework from Chapter 9: just as $\Delta G = -nF\Delta E$ lets us convert between free energy and electrode potentials, dividing by $F$ here converts free energy per mole of protons into an equivalent voltage. You could just as well work with $\Delta G$ in kJ/mol throughout; you would just multiply both sides by $F$ every time you wanted to compare the electrical and chemical contributions, which is less convenient. The voltage form of the PMF ($\approx -220$ mV under typical mitochondrial conditions; $\Delta\text{pH}=1.4$ $\Delta V=-140\text{mV}$) is the one you will see in physiology and bioenergetics literature. This -220mV corresponds to a $\Delta G$ of -21.8kJ/mol (0.22V*F).
+
+The PMF represents stored potential energy, comparable to water behind a dam. When the chain is running and the synthase is consuming the gradient as fast as it is built, the PMF sits at a steady-state level that reflects the balance between pumping and consumption. If the chain is blocked, proton pumping stops while ATP synthase continues draining the existing gradient, so the PMF falls until ATP synthesis stops. If the synthase is blocked instead, the chain keeps pumping but protons cannot return, and the PMF rises until the back-pressure stalls the complexes.
 
 ---
 
 ## ATP Synthase (Complex V)
 
-ATP synthase is the machine that converts the proton gradient into ATP. It is a molecular rotary motor, and it is one of the most remarkable molecular machines in biology.
+ATP synthase is the machine that converts the proton gradient, Δp, into ATP. It is a molecular rotary motor, and it is one of the most remarkable molecular machines in biology.
 
 The enzyme has two main domains:
 
 **F₀ (the membrane domain):** Embedded in the inner membrane, F₀ consists of a ring of c-subunits (the c-ring, typically 8 c-subunits in humans) anchored in the lipid bilayer. Protons from the intermembrane space enter through a half-channel in the a-subunit, bind to a glutamate residue on the c-ring, travel around the ring as it rotates, and exit through a second half-channel into the matrix. Each proton that completes this transit rotates the ring by one c-subunit position.
 
-**F₁ (the catalytic domain):** Protrudes into the matrix. It consists of three αβ-subunit pairs surrounding a central γ-subunit shaft, which is physically connected to the rotating c-ring. As the c-ring rotates, the γ-shaft rotates within the α₃β₃ assembly. The three β-subunits cycle through three conformational states: open (empty, waiting for ADP and Pᵢ), tight (catalyzing phosphate transfer when ADP and Pᵢ are bound), and loose (releasing the newly made ATP). Each 120° rotation of the shaft advances each β-subunit one state forward, completing one ATP synthesis event per cycle.
+**F₁ (the catalytic domain):** Protrudes into the matrix. It consists of three αβ-subunit pairs surrounding a central γ-subunit shaft, which is physically connected to the rotating c-ring. As the c-ring rotates, the γ-shaft rotates within the α₃β₃ assembly. The three β-subunits cycle through three conformational states, with one subunit in each state at any given moment. A single subunit progresses: **O (open) → L (loose) → T (tight) → back to O.** Each 120° rotation of the γ-shaft advances each subunit one step forward.
 
 Paul Boyer and John Walker shared the Nobel Prize in Chemistry in 1997 for working out this rotary mechanism. Boyer's key insight: the energy of proton flow is not used to drive the chemistry of phosphate transfer directly (that chemistry is near equilibrium in the tight site). Instead, it drives the conformational changes that release ATP from the enzyme, which would otherwise bind too tightly to leave. The hard step is not making ATP; it is letting go of it.
 
-**How many protons per ATP?** In humans, the c-ring has 8 subunits. One complete 360° rotation requires 8 protons and synthesizes 3 ATP (one per β-subunit, one rotation per 3 ATPs), giving 8/3 ≈ 2.7 protons per ATP from the synthase alone. Adding the proton cost of importing ADP and Pᵢ into the matrix and exporting ATP out (via the adenine nucleotide translocase, which exchanges matrix ATP for cytoplasmic ADP using one proton's worth of energy per transport cycle), the effective cost is approximately **4 protons per ATP** synthesized and exported.
+**How many protons per ATP?** The c-ring size varies across organisms: 8 subunits in humans and other mammals, 10 in *E. coli* and yeast, 14 in spinach chloroplasts, up to 15 in some cyanobacteria. Larger rings require more protons per rotation and yield fewer ATP per proton, which is why the P/O ratio differs between mitochondria and chloroplasts. In humans, the c-ring has 8 subunits. One complete 360° rotation requires 8 protons and synthesizes 3 ATP (one per β-subunit, one rotation per 3 ATPs), giving 8/3 ≈ 2.7 protons per ATP from the synthase alone. Adding the proton cost of importing ADP and Pᵢ into the matrix and exporting ATP out (via the adenine nucleotide translocase, which exchanges matrix ATP for cytoplasmic ADP using one proton's worth of energy per transport cycle), the effective cost is approximately **4 protons per ATP** synthesized and exported.
+
+### Following a Proton Through F₀
+
+The a-subunit contains two half-channels that do not connect to each other. One opens exclusively to the IMS; the other opens exclusively to the matrix. Each half-channel provides access to a single adjacent c-subunit on the ring. A proton from the IMS enters the IMS-facing half-channel and reaches a conserved glutamate (or aspartate) residue on the nearest c-subunit. Because the effective pKa of this residue is around 5–6, the low pH of the IMS drives it toward protonation. The proton binds, the residue becomes neutral, and that c-subunit is now uncharged and stable in the hydrophobic interior of the membrane.
+
+On the other side of the ring, a different c-subunit is positioned at the matrix-facing half-channel. Exposed to the more alkaline matrix, its glutamate is deprotonated and carries a negative charge. A charged residue in a hydrophobic lipid bilayer is thermodynamically very unfavorable, so the ring rotates to move that subunit out of the membrane and toward the IMS half-channel, where it can pick up a proton and become neutral again. Simultaneously, the newly protonated subunit rotates away from the IMS channel and into the membrane, where it is now stable. The direction of rotation is determined by the electrochemical gradient: protonation at the IMS side and deprotonation at the matrix side are both thermodynamically favorable, and that asymmetry enforces one rotational direction. Every c-subunit in the ring carries a proton through the hydrophobic membrane in the same direction, one step at a time.
+
+Eventually the proton we started with arrives at the matrix-facing half-channel, the glutamate releases it into the alkaline matrix, and it has completed its transit from IMS to matrix. The free energy released by this downhill movement is approximately $\Delta G = F\Delta p \approx 96{,}485 \text{ C/mol} \times 0.220 \text{ V} \approx 22 \text{ kJ/mol}$ per proton. That energy is not dissipated as heat. It was spent rotating the c-ring.
+
+### From Ring Rotation to ATP: The β-Subunit Cycle
+
+The c-ring is mechanically coupled to the γ-shaft, which extends down into the center of the α₃β₃ hexamer of F₁. The γ-shaft is asymmetric: it presents three distinct faces along its long axis, one in contact with each β-subunit at any given moment. As the shaft rotates, each β-subunit encounters each face in sequence, and the face it is in contact with determines its conformation.
+
+The three conformations and their roles in the synthesis cycle:
+
+- **O (open):** The β-subunit is open to the solvent. ADP and Pᵢ diffuse in from the matrix, or ATP exits after the previous round.
+- **L (loose):** ADP and Pᵢ are enclosed within the β-subunit. They are held, but the chemistry has not yet occurred.
+- **T (tight):** The β-subunit clamps down tightly on the substrates. ADP and Pᵢ are held with very high affinity and the phosphoryl transfer reaction runs: ATP is formed. As Boyer showed, this step is not energetically difficult; the chemistry is near equilibrium at the T site.
+
+The step that actually requires energy input is the T → O transition, where the subunit opens and releases ATP. ATP is bound so tightly in the T conformation that it would not leave spontaneously; the mechanical rotation of the γ-shaft forces the subunit open, ejecting ATP into the matrix. Boyer's binding change mechanism states that the energy from proton transit goes not into making the phosphoanhydride bond but into releasing the product.
+
+Since all three β-subunits are advancing one step per 120° rotation, each full 360° rotation of the c-ring (8 protons, in humans) drives all three subunits through one complete O → L → T → O cycle, releasing one ATP each, for a total of 3 ATP per rotation.
 
 ---
 
 ## Proton Accounting and ATP Yield
+
+In humans 1 rotation moves 8 protons into the matrix and produces 3 ATP. We also know that one NADH adds ~10 protons to the matrix and each FADH₂ adds ~6 protons.
 
 With approximately 4 H⁺ per ATP:
 
@@ -152,6 +230,18 @@ With approximately 4 H⁺ per ATP:
 | Complex III | 4 |
 | Complex IV | 2 |
 | **Total** | **~10 H⁺ per NADH** |
+
+$$\frac{1 \cancel{\text{NADH}}}{1}\times \frac{10 \cancel{\text{H}^+}}{\cancel{\text{NADH}}} \times \frac{1 \cancel{\text{rot}}}{8 \cancel{\text{H}^+}} \times \frac{3 \text{ATP}}{1 \cancel{\text{rot}}} = 3.75 \text{ ATP}$$
+
+This gives 3.75, not 2.5. The calculation is correct as far as it goes, but it only accounts for the ATP synthase c-ring stoichiometry. Two additional transport costs are missing.
+
+The first is the **adenine nucleotide translocase (ANT)**, which exports ATP⁴⁻ from the matrix in exchange for ADP³⁻ from the IMS. Because ATP carries one more negative charge than ADP, each cycle moves one net negative charge out of the already-negative matrix. This is thermodynamically equivalent to consuming one H⁺ equivalent from the electrical component of the PMF (ΔΨ) per ATP.
+
+The second is the **phosphate carrier (PiC)**, which imports H₂PO₄⁻ into the matrix in exchange for OH⁻. Because this exchange is electrically neutral (both species carry −1 charge), it does not draw on ΔΨ, but exporting OH⁻ from the alkaline matrix is thermodynamically equivalent to consuming one H⁺ equivalent from the chemical (ΔpH) component of the PMF per Pi imported.
+
+The reason the combined transport cost is approximately 1.33 H⁺ rather than 2 is that ANT and PiC draw on different components of the PMF. ΔΨ accounts for roughly 80% of the total PMF and ΔpH for roughly 20%, so each transporter consumes its respective component, and those components are not equal in magnitude. The combined additional cost works out to approximately 1.33 H⁺ equivalents per ATP, bringing the total to 8/3 + 1.33 ≈ 4 H⁺ per ATP.
+
+The "~4 H⁺ per ATP" figure used below is the shorthand that already incorporates the synthase, the ANT, and the PiC:
 
 ATP yield: 10 / 4 = **~2.5 ATP per NADH**
 
@@ -165,7 +255,7 @@ ATP yield: 10 / 4 = **~2.5 ATP per NADH**
 
 ATP yield: 6 / 4 = **~1.5 ATP per FADH₂**
 
-These are the **P/O ratios** you will use throughout this course and for the MCAT: **2.5 per NADH and 1.5 per FADH₂.** Older textbooks used 3 and 2; those values date from before the precise proton stoichiometry was determined and are no longer considered accurate.
+These are the **P/O ratios** (P for phosphate incorporated into ATP, O for oxygen atom reduced at Complex IV; the ratio expresses how many ATPs are made per oxygen atom consumed) you will use throughout this course and for the MCAT/DAT: **2.5 per NADH and 1.5 per FADH₂.** Older textbooks used 3 and 2; those values date from before the precise proton stoichiometry was determined and are no longer considered accurate.
 
 ### Complete ATP Accounting Per Glucose
 
@@ -198,11 +288,13 @@ Glycolysis produces 2 NADH per glucose in the cytoplasm. The ETC is inside the m
 
 This is why the total glucose yield is 30 ATP (glycerol-3-phosphate shuttle, 1.5 × 2 = 3 ATP from cytoplasmic NADH) to 32 ATP (malate-aspartate shuttle, 2.5 × 2 = 5 ATP). The difference is 4 ATP, two per cytoplasmic NADH.
 
+If the malate-aspartate shuttle is more efficient, why doesn't every tissue use it? Two reasons. First, the malate-aspartate shuttle is **reversible** and depends on the concentration gradients of its intermediates (malate, aspartate, glutamate, OAA) being maintained in the right direction. Under high glycolytic flux when cytoplasmic NADH is rising rapidly, the shuttle can reverse and actually export reducing equivalents out of the mitochondria, which is counterproductive. The glycerol-3-phosphate shuttle is irreversible: once glycerol-3-phosphate is oxidized by the FAD-linked dehydrogenase on the outer face of the inner membrane, the electrons go into the CoQ pool and cannot come back. For tissues like fast-twitch skeletal muscle that need to sustain very high glycolytic rates and tolerate NADH surges, the irreversibility of the glycerol-3-phosphate shuttle is worth the 1 ATP per NADH penalty. Second, the malate-aspartate shuttle requires active transport of amino acid intermediates across the inner membrane and depends on transaminase activity in both compartments. It is a higher-maintenance system. The glycerol-3-phosphate shuttle requires only two enzymes and no amino acid intermediates, making it simpler and faster to operate under burst conditions.
+
 ---
 
 ## Uncoupling: When the Gradient Leaks
 
-Normally, the chain and the synthase are coupled: electron transport pumps protons, and those protons return only through ATP synthase. Uncoupling breaks this linkage by providing an alternate path for protons to cross the inner membrane, bypassing ATP synthase. When the membrane leaks protons, the gradient energy dissipates as heat instead of ATP.
+Normally, the ETC and ATP synthase are **coupled**: electron transport pumps protons, and those protons return only through ATP synthase. Another way to think of it is that if electrons flow through the chain ATP **must** be made and if ATP is being made electrons **must** flow through the chain. Uncoupling breaks this linkage by providing an alternate path for protons to cross the inner membrane, bypassing ATP synthase. When the membrane leaks protons, the gradient energy dissipates as heat instead of ATP.
 
 ### Physiological Uncoupling: Brown Adipose Tissue
 
@@ -232,7 +324,7 @@ When the PMF is high (gradient is built up), it becomes harder to pump more prot
 
 When ATP demand is high (lots of ADP present, PMF is being drained by ATP synthase), the gradient is continuously consumed. The reduced back-pressure allows the complexes to pump faster, electron transport accelerates, NADH is consumed more rapidly, and the TCA cycle is stimulated to replenish NADH. This is **respiratory control**: the rate of the entire pathway is governed by the ATP/ADP ratio, which controls how rapidly the synthase drains the PMF.
 
-The corollary is important for interpreting experiments. If you block ATP synthase with **oligomycin** (an antibiotic that plugs the F₀ proton channel), the PMF rises, electron transport slows, and oxygen consumption drops. If you add an **uncoupler** instead, which drains the PMF, electron transport accelerates, oxygen consumption rises, but no ATP is made. Measuring oxygen consumption in the presence and absence of ADP, oligomycin, and uncouplers is how mitochondrial function is characterized experimentally (the "Seahorse assay" in multi-well plates is the modern high-throughput version of this, and it is one of the most widely used tools in metabolic research).
+The corollary is important for interpreting experiments. If you block ATP synthase with **oligomycin** (an antibiotic that plugs the F₀ proton channel), the PMF rises, electron transport slows, and oxygen consumption drops. If you add an **uncoupler** instead, which drains the PMF, electron transport accelerates, oxygen consumption rises, but no ATP is made. Measuring oxygen consumption in the presence and absence of ADP, oligomycin, and uncouplers is how mitochondrial function is characterized experimentally.
 
 ---
 
@@ -252,7 +344,7 @@ The clinical course is rapid. Initial anxiety and dyspnea give way within minute
 
 **Sodium thiosulfate** donates a sulfur atom to CN⁻ via rhodanese (a mitochondrial enzyme), converting it to thiocyanate (SCN⁻), which is excreted in urine. This is slower but permanent.
 
-**Hydroxocobalamin** (Cyanokit) is the preferred modern antidote. Cobalamin (the cobalt-containing core of B12) binds CN⁻ directly with high affinity, forming cyanocobalamin and freeing Complex IV. It has minimal side effects and acts quickly.
+**Hydroxocobalamin** (Cyanokit) is the preferred modern antidote. Cobalamin (the cobalt-containing core of vitamin B12) binds CN⁻ directly with high affinity, forming cyanocobalamin and freeing Complex IV. It has minimal side effects and acts quickly.
 
 ### Carbon Monoxide Poisoning
 
