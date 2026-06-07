@@ -154,42 +154,50 @@ Example: a cell that is synthesizing nucleotides but is not under oxidative stre
 
 This mode is often referred to as the 30-carbon reaction. It's truly fascinating to derive and does not involve the oxidative phase at all! Why not? Let's consider a cell that needs R5P and no NADPH. We would be tempted to say "Just run the oxidative phase to turn G6P into Ru5P and then isomerize it to R5P, job done." However, in the process we also generate 2 NADPH. Since the cell does not need NADPH (indicating a high NADPH/NADP⁺ ratio), the high [NADPH] would naturally inhibit G6PD and shut down the oxidative phase. The oxidative branch is off-limits, and so we need to make R5P some other way. Running the non-oxidative phase in the forward direction is also off-limits: it takes Ru5P as its starting material, and with the oxidative phase shut down, there is no Ru5P available. However, since the TA and TK reactions are reversible, we can enter this phase backwards. Starting with 5 G6P, all five are first isomerized to F6P; one of those F6P is then phosphorylated by PFK and cleaved by aldolase into 2 G3P, giving 4 F6P and 2 G3P net. These are all standard glycolytic reactions. 
 
-$$\begin{array}{r c l}
+$$
+\begin{array}{rcl}
 5\text{ G6P} & \rightarrow & 4\text{ F6P} + \cancel{\text{F6P}} \\
 \cancel{\text{F6P}} + \text{ATP} & \rightarrow & \cancel{\text{F1,6BP}} + \text{ADP} \\
 \cancel{\text{F1,6BP}} & \rightarrow & 2\text{ G3P} \\
 \hline
 5\text{ G6P} + \text{ATP} & \rightarrow & 4\text{ F6P} + 2\text{ G3P} + \text{ADP}
-\end{array}$$
+\end{array}
+$$
 
 Now we run the non-oxidative phase reactions in reverse. Starting from the last step: transketolase running backwards combines 2 G3P with 2 F6P to yield 2 Xu5P and 2 E4P. Transaldolase running backwards then combines those 2 E4P with 2 more F6P to produce 2 G3P and 2 S7P. Finally, transketolase running backwards a second time combines those 2 G3P and 2 S7P to yield 2 R5P and 2 more Xu5P.
 
-$$\begin{array}{r c l}
+$$
+\begin{array}{rcl}
 2\text{ G3P} + 2\text{ F6P} & \rightarrow & 2\text{ Xu5P} + \cancel{2\text{ E4P}} \\
 \cancel{2\text{ E4P}} + 2\text{ F6P} & \rightarrow & \cancel{2\text{ G3P}} + \cancel{2\text{ S7P}} \\
 \cancel{2\text{ G3P}} + \cancel{2\text{ S7P}} & \rightarrow & 2\text{ R5P} + 2\text{ Xu5P} \\
 \hline
 2\text{ G3P} + 4\text{ F6P} & \rightarrow & 2\text{ R5P} + 4\text{ Xu5P}
-\end{array}$$
+\end{array}
+$$
 
 That leaves 4 Xu5P as byproducts, but they are not wasted. Epimerizing them to Ru5P and then isomerizing to R5P recovers four more R5P molecules:
 
-$$\begin{array}{r c l}
+$$
+\begin{array}{rcl}
 4\text{ Xu5P} & \rightarrow & \cancel{4\text{ Ru5P}} \\
 \cancel{4\text{ Ru5P}} & \rightarrow & 4\text{ R5P} \\
 \hline
 4\text{ Xu5P} & \rightarrow & 4\text{ R5P}
-\end{array}$$
+\end{array}
+$$
 
 Combining all 3 balanced reactions:
 
-$$\begin{array}{r c l}
+$$
+\begin{array}{rcl}
 5\text{ G6P} + \text{ATP} & \rightarrow & \cancel{4\text{ F6P}} + \cancel{2\text{ G3P}} + \text{ADP} \\
 \cancel{2\text{ G3P}} + \cancel{4\text{ F6P}} & \rightarrow & 2\text{ R5P} + \cancel{4\text{ Xu5P}} \\
 \cancel{4\text{ Xu5P}} & \rightarrow & 4\text{ R5P} \\
 \hline
 5\text{ G6P} + \text{ATP} & \rightarrow & 6\text{ R5P} + \text{ADP}
-\end{array}$$
+\end{array}
+$$
 
 We arrive at the **30-carbon reaction**: 30 carbons enter as five 6-carbon glucose molecules and exit as six 5-carbon ribose sugars ready for nucleotide synthesis, through a series of entirely non-oxidative reactions. The only cost is one ATP. The NADPH/NADP⁺ ratio places no constraint on this mode at all, which is exactly the point.
 
@@ -198,12 +206,14 @@ We arrive at the **30-carbon reaction**: 30 carbons enter as five 6-carbon gluco
 
 Example: a rapidly dividing tumor cell or an activated lymphocyte that is simultaneously building new membranes and replicating DNA. Run the oxidative phase at full flux to generate NADPH. Rather than recycling the ribulose-5-phosphate back to glycolytic intermediates, isomerize it directly to ribose-5-phosphate and send it to nucleotide synthesis. Both products are used, and nothing is wasted. This is the mode of maximal anabolic demand. Since we need BOTH NADPH and R5P this is simply the full oxidative phase above coupled with Ru5P isomerise.
 
-$$\begin{array}{r c l}
+$$
+\begin{array}{rcl}
 \text{G6P} + 2\text{NADP}^+ + \text{H}_2\text{O} & \rightarrow & \cancel{\text{Ru5P}} + \text{CO}_2 + 2\text{NADPH} + 2\text{H}^+ \\
 \cancel{\text{Ru5P}} & \rightarrow & \text{R5P} \\
 \hline
 \text{G6P} + 2\text{NADP}^+ + \text{H}_2\text{O} & \rightarrow & \text{R5P} + \text{CO}_2 + 2\text{NADPH} + 2\text{H}^+
-\end{array}$$
+\end{array}
+$$
 
 **Mode 3: The cell needs NADPH but not ribose-5-phosphate.**
 
@@ -217,17 +227,20 @@ $$6 \text{Ru5P} \rightarrow 2 \text{R5P} + 4 \text{Xu5P}$$
 
 Stepping through the non-oxidative phase:
 
-$$\begin{array}{r c l}
+$$
+\begin{array}{rcl}
 2\text{ R5P} + 2\text{ Xu5P} & \rightarrow & \cancel{2\text{ G3P}} + \cancel{2\text{ S7P}} \\
 \cancel{2\text{ G3P}} + \cancel{2\text{ S7P}} & \rightarrow & 2\text{ F6P} + \cancel{2\text{ E4P}} \\
 \cancel{2\text{ E4P}} + 2\text{ Xu5P} & \rightarrow & 2\text{ F6P} + 2\text{ G3P} \\
 \hline
 2\text{ R5P} + 4\text{ Xu5P} & \rightarrow & 4\text{ F6P} + 2\text{ G3P}
-\end{array}$$
+\end{array}
+$$
 
 The resulting glycolytic intermediates can enter gluconeogenesis:
 
-$$\begin{array}{r c l}
+$$
+\begin{array}{rcl}
 4\text{ F6P} & \rightarrow & 4\text{ G6P} \\
 2\text{ G3P} & \rightarrow & \cancel{\text{G3P}} + \cancel{\text{DHAP}} \\
 \cancel{\text{G3P}} + \cancel{\text{DHAP}} & \rightarrow & \cancel{\text{F1,6BP}} \\
@@ -235,18 +248,21 @@ $$\begin{array}{r c l}
 \cancel{\text{F6P}} & \rightarrow & \text{G6P} \\
 \hline
 4\text{ F6P} + 2\text{ G3P} + \text{H}_2\text{O} & \rightarrow & 5\text{ G6P} + \text{P}_\text{i}
-\end{array}$$
+\end{array}
+$$
 
 Putting togehter all 4 balanced reactions:
 
-$$\begin{array}{r c l}
+$$
+\begin{array}{rcl}
 6\text{ G6P} + 12\text{NADP}^+ + 6\text{H}_2\text{O} & \rightarrow & \cancel{6\text{ Ru5P}} + 6\text{CO}_2 + 12\text{NADPH} + 12\text{H}^+ \\
 \cancel{6\text{ Ru5P}} & \rightarrow & \cancel{2\text{ R5P}} + \cancel{4\text{ Xu5P}} \\
 \cancel{2\text{ R5P}} + \cancel{4\text{ Xu5P}} & \rightarrow & \cancel{4\text{ F6P}} + \cancel{2\text{ G3P}} \\
 \cancel{4\text{ F6P}} + \cancel{2\text{ G3P}} + \text{H}_2\text{O} & \rightarrow & 5\text{ G6P} + \text{P}_\text{i} \\
 \hline
 \text{G6P} + 12\text{NADP}^+ + 7\text{H}_2\text{O} & \rightarrow & 6\text{CO}_2 + 12\text{NADPH} + 12\text{H}^+ + \text{P}_\text{i}
-\end{array}$$
+\end{array}
+$$
 
 The complete oxidation of one Glucose-6-Phosphate to CO₂ produces 12 NADPH at the cost of no longer being able to use that G6P for ATP generation.
 
