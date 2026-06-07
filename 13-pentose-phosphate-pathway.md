@@ -127,7 +127,7 @@ Transketolase takes another two-carbon unit from the second xylulose-5-phosphate
 
 Adding the four steps together with their stoichiometries:
 
-$$\begin{array}{r r c l}
+$$\begin{array}{rrcl}
 \text{(A)} & 3\text{ Ru5P} & \rightarrow & \text{R5P} + \cancel{2\text{ Xu5P}} \\
 \text{(B)} & \cancel{\text{Xu5P}} + \cancel{\text{R5P}} & \rightarrow & \cancel{\text{S7P}} + \cancel{\text{G3P}} \\
 \text{(C)} & \cancel{\text{S7P}} + \cancel{\text{G3P}} & \rightarrow & \cancel{\text{E4P}} + \text{F6P} \\
