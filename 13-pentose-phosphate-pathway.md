@@ -127,12 +127,14 @@ Transketolase takes another two-carbon unit from the second xylulose-5-phosphate
 
 Adding the four steps together with their stoichiometries:
 
-$$\begin{array}{rrcl}
+$$
+\begin{array}{rrcl}
 \text{(A)} & 3\text{ Ru5P} & \rightarrow & \text{R5P} + \cancel{2\text{ Xu5P}} \\
 \text{(B)} & \cancel{\text{Xu5P}} + \cancel{\text{R5P}} & \rightarrow & \cancel{\text{S7P}} + \cancel{\text{G3P}} \\
 \text{(C)} & \cancel{\text{S7P}} + \cancel{\text{G3P}} & \rightarrow & \cancel{\text{E4P}} + \text{F6P} \\
 \text{(D)} & \cancel{\text{Xu5P}} + \cancel{\text{E4P}} & \rightarrow & \text{G3P} + \text{F6P}
-\end{array}$$
+\end{array}
+$$
 
 Canceling intermediates that appear on both sides: R5P cancels between (A) and (B); both Xu5P from (A) are consumed in (B) and (D); S7P cancels between (B) and (C); E4P cancels between (C) and (D); and the G3P produced in (B) is consumed in (C), leaving only the G3P produced in (D).
 
