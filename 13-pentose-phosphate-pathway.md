@@ -86,13 +86,11 @@ One G6P in. One ribulose-5-phosphate plus one $\text{CO}_2$ out. Two NADPH gener
 
 ## The Non-Oxidative Phase
 
-Once ribulose-5-phosphate is produced, the cell faces a choice: use it as ribose-5-phosphate for nucleotide synthesis, or convert it back into glycolytic intermediates (fructose-6-phosphate and glyceraldehyde-3-phosphate) to finish oxidizing the carbon for energy. The non-oxidative phase provides the enzymatic machinery to do either.
-
-The reactions are reversible, which is the key. The pathway can run forward (pentoses into glycolytic intermediates) or backward (glycolytic intermediates into pentoses), depending on what the cell needs.
+Unlike the oxidative phase, which moves in one direction, the non-oxidative phase is better thought of as a pool of reversible reactions than a linear sequence. The enzymes here interconvert three-, four-, five-, six-, and seven-carbon sugar phosphates freely, and the pool can drain in different directions depending on what the cell needs. The ribulose-5-phosphate produced by the oxidative phase enters this pool and can be directed toward ribose-5-phosphate for nucleotide synthesis, toward glycolytic intermediates for energy generation, or both. The machinery to accomplish any of these is the same set of enzymes; the direction depends entirely on supply and demand. The four scenarios the cell can run are discussed in detail in the section below.
 
 ### Starting Interconversions
 
-Ribulose-5-phosphate, the output of the oxidative phase, is not itself used for nucleotide synthesis. Two enzymes convert it to the useful pentose forms:
+Ribulose-5-phosphate, the output of the oxidative phase, is not itself used in the non-oxidative phase or ribonucleotide synthesis. Two enzymes convert it to the useful pentose forms:
 
 - **Phosphopentose isomerase** converts ribulose-5-phosphate to **ribose-5-phosphate**, which feeds nucleotide synthesis.
 - **Phosphopentose epimerase** converts ribulose-5-phosphate to **xylulose-5-phosphate**, a different stereoisomer that feeds the transketolase reactions.
@@ -101,9 +99,11 @@ Ribulose-5-phosphate, the output of the oxidative phase, is not itself used for 
 
 These two enzymes are the heart of the non-oxidative phase. They interconvert three-, four-, five-, six-, and seven-carbon sugar phosphates by shuffling carbon fragments between them.
 
-**Transketolase** transfers two-carbon units from a ketose donor to an aldose acceptor. It requires **thiamine pyrophosphate (TPP)** as a cofactor, the same cofactor used by pyruvate dehydrogenase and $\alpha$-ketoglutarate dehydrogenase. The two-carbon unit is transiently held on the TPP while it waits for an acceptor aldose. Transketolase catalyzes two distinct reactions in the non-oxidative phase.
+**Transketolase** transfers two-carbon units from a ketose donor to an aldose acceptor. It requires **thiamine pyrophosphate (TPP)** as a cofactor, the same cofactor used by pyruvate dehydrogenase and $\alpha$-ketoglutarate dehydrogenase. The two-carbon unit is transiently held on the TPP while it waits for an acceptor aldose. Transketolase catalyzes two distinct reactions in the non-oxidative phase. The ketose donor becomes an aldose two carbons shorter and the aldose recipient becomes a ketose which is two carbons longer.
 
-**Transaldolase** transfers three-carbon units from a ketose donor to an aldose acceptor. It uses no cofactor; instead it forms a transient Schiff base between the carbonyl carbon of the donor and an active-site lysine residue, holding the three-carbon fragment covalently while the remaining carbon skeleton dissociates, then transferring it to an acceptor.
+**Transaldolase** transfers three-carbon units from a ketose donor to an aldose acceptor. It uses no cofactor; instead it forms a transient Schiff base between the carbonyl carbon of the donor and an active-site lysine residue, holding the three-carbon fragment covalently while the remaining carbon skeleton dissociates, then transferring it to an acceptor. Here again, the ketose donor becomes an aldose *three* carbons shorter and the aldose recipient becomes a ketose three carbons longer.
+
+In short, transketolase and transaldolase catalyze similar reactions: both transfer carbons from a ketose donor to an aldose acceptor, the ketose becomes an aldose and the aldose becomes a ketose. Transketolase transfers 2 carbons; transaldolase transfers 3.
 
 ### The Carbon Shuffling Sequence
 
@@ -125,6 +125,17 @@ Transketolase takes another two-carbon unit from the second xylulose-5-phosphate
 
 **Net from 3 ribulose-5-phosphate:**
 
+Adding the four steps together with their stoichiometries:
+
+$$\begin{array}{r r c l}
+\text{(A)} & 3\text{ Ru5P} & \rightarrow & \text{R5P} + \cancel{2\text{ Xu5P}} \\[4pt]
+\text{(B)} & \cancel{\text{Xu5P}} + \cancel{\text{R5P}} & \rightarrow & \cancel{\text{S7P}} + \cancel{\text{G3P}} \\[4pt]
+\text{(C)} & \cancel{\text{S7P}} + \cancel{\text{G3P}} & \rightarrow & \cancel{\text{E4P}} + \text{F6P} \\[4pt]
+\text{(D)} & \cancel{\text{Xu5P}} + \cancel{\text{E4P}} & \rightarrow & \text{G3P} + \text{F6P}
+\end{array}$$
+
+Canceling intermediates that appear on both sides: R5P cancels between (A) and (B); both Xu5P from (A) are consumed in (B) and (D); S7P cancels between (B) and (C); E4P cancels between (C) and (D); and the G3P produced in (B) is consumed in (C), leaving only the G3P produced in (D).
+
 $$3 \text{ Ribulose-5-P} \rightarrow 2 \text{ Fructose-6-P} + \text{ Glyceraldehyde-3-P}$$
 
 Fructose-6-phosphate and glyceraldehyde-3-phosphate are both glycolytic intermediates. They can enter glycolysis directly and be oxidized to pyruvate, or they can be used in gluconeogenesis to regenerate glucose-6-phosphate.
@@ -133,21 +144,122 @@ Fructose-6-phosphate and glyceraldehyde-3-phosphate are both glycolytic intermed
 
 ## Matching Output to Need: The PPP as a Flexible Hub
 
-The real elegance of the PPP is its flexibility. The cell does not have a fixed ratio of NADPH to ribose-5-phosphate that it always needs. Different situations call for different outputs, and the PPP adjusts.
+The real elegance of the PPP is its flexibility. The cell does not have a fixed ratio of NADPH to ribose-5-phosphate that it always needs, and the pathway does not lock it into one. Depending on what the cell is doing, four distinct operating modes are possible.
 
-**When the cell needs NADPH but not ribose-5-phosphate** (for example, a liver cell synthesizing fatty acids): run the oxidative phase at high flux and then funnel the ribulose-5-phosphate into the non-oxidative phase to regenerate glycolytic intermediates, which can eventually become G6P again. This effectively converts glucose into NADPH while recycling the carbon. If you run six molecules of G6P through the oxidative phase and recycle the products back, you net 12 NADPH and release 6 CO$_2$, at the cost of one full glucose equivalent.
+**Mode 1: The cell needs ribose-5-phosphate but not NADPH.**
 
-**When the cell needs both NADPH and ribose-5-phosphate** (for example, a rapidly dividing cell synthesizing DNA): run the oxidative phase to generate both. The ribulose-5-phosphate can be isomerized to ribose-5-phosphate for nucleotide synthesis, and the NADPH goes to biosynthesis and defense.
+Example: a cell that is synthesizing nucleotides but is not under oxidative stress and has adequate NADPH from other sources. Here the oxidative phase does not need to run at all. Fructose-6-phosphate and glyceraldehyde-3-phosphate from glycolysis feed into the non-oxidative phase, which runs in reverse, and transketolase and transaldolase interconvert them into ribose-5-phosphate. No G6P is committed to the oxidative phase, no NADPH is generated, and the cell gets the pentose it needs without paying the $\text{CO}_2$ cost. This is the mode the cell uses when the demand for pentoses outpaces the demand for reducing power.
 
-**When the cell needs ribose-5-phosphate but not much NADPH** (for example, a cell making nucleotides under conditions of adequate antioxidant capacity): run the non-oxidative phase in reverse. Take fructose-6-phosphate and glyceraldehyde-3-phosphate from glycolysis and interconvert them into ribose-5-phosphate via transketolase and transaldolase, without touching the oxidative phase at all. No NADPH is generated; the cell just converts glycolytic intermediates into the pentose it needs.
+This mode is often referred to as the 30-carbon reaction. It's truly fascinating to derive and does not involve the oxidative phase at all! Why not? Let's consider a cell that needs R5P and no NADPH. We would be tempted to say "Just run the oxidative phase to turn G6P into Ru5P and then isomerize it to R5P, job done." However, in the process we also generate 2 NADPH. Since the cell does not need NADPH (indicating a high NADPH/NADP⁺ ratio), the high [NADPH] would naturally inhibit G6PD and shut down the oxidative phase. The oxidative branch is off-limits, and so we need to make R5P some other way. Running the non-oxidative phase in the forward direction is also off-limits: it takes Ru5P as its starting material, and with the oxidative phase shut down, there is no Ru5P available. However, since the TA and TK reactions are reversible, we can enter this phase backwards. Starting with 5 G6P, all five are first isomerized to F6P; one of those F6P is then phosphorylated by PFK and cleaved by aldolase into 2 G3P, giving 4 F6P and 2 G3P net. These are all standard glycolytic reactions. 
 
-This reversibility is the reason the non-oxidative phase matters. If ribose-5-phosphate were only accessible by running G6P through the oxidative phase, the cell would be forced to produce NADPH every time it needed nucleotides, even if NADPH were already abundant. The non-oxidative phase decouples ribose-5-phosphate production from NADPH production.
+$$\begin{array}{r c l}
+5\text{ G6P} & \rightarrow & 4\text{ F6P} + \cancel{\text{F6P}} \\
+\cancel{\text{F6P}} + \text{ATP} & \rightarrow & \cancel{\text{F1,6BP}} + \text{ADP} \\
+\cancel{\text{F1,6BP}} & \rightarrow & 2\text{ G3P} \\
+\hline
+5\text{ G6P} + \text{ATP} & \rightarrow & 4\text{ F6P} + 2\text{ G3P} + \text{ADP}
+\end{array}$$
+
+Now we run the non-oxidative phase reactions in reverse. Starting from the last step: transketolase running backwards combines 2 G3P with 2 F6P to yield 2 Xu5P and 2 E4P. Transaldolase running backwards then combines those 2 E4P with 2 more F6P to produce 2 G3P and 2 S7P. Finally, transketolase running backwards a second time combines those 2 G3P and 2 S7P to yield 2 R5P and 2 more Xu5P.
+
+$$\begin{array}{r c l}
+2\text{ G3P} + 2\text{ F6P} & \rightarrow & 2\text{ Xu5P} + \cancel{2\text{ E4P}} \\
+\cancel{2\text{ E4P}} + 2\text{ F6P} & \rightarrow & \cancel{2\text{ G3P}} + \cancel{2\text{ S7P}} \\
+\cancel{2\text{ G3P}} + \cancel{2\text{ S7P}} & \rightarrow & 2\text{ R5P} + 2\text{ Xu5P} \\
+\hline
+2\text{ G3P} + 4\text{ F6P} & \rightarrow & 2\text{ R5P} + 4\text{ Xu5P}
+\end{array}$$
+
+That leaves 4 Xu5P as byproducts, but they are not wasted. Epimerizing them to Ru5P and then isomerizing to R5P recovers four more R5P molecules:
+
+$$\begin{array}{r c l}
+4\text{ Xu5P} & \rightarrow & \cancel{4\text{ Ru5P}} \\
+\cancel{4\text{ Ru5P}} & \rightarrow & 4\text{ R5P} \\
+\hline
+4\text{ Xu5P} & \rightarrow & 4\text{ R5P}
+\end{array}$$
+
+Combining all 3 balanced reactions:
+
+$$\begin{array}{r c l}
+5\text{ G6P} + \text{ATP} & \rightarrow & \cancel{4\text{ F6P}} + \cancel{2\text{ G3P}} + \text{ADP} \\
+\cancel{2\text{ G3P}} + \cancel{4\text{ F6P}} & \rightarrow & 2\text{ R5P} + \cancel{4\text{ Xu5P}} \\
+\cancel{4\text{ Xu5P}} & \rightarrow & 4\text{ R5P} \\
+\hline
+5\text{ G6P} + \text{ATP} & \rightarrow & 6\text{ R5P} + \text{ADP}
+\end{array}$$
+
+We arrive at the **30-carbon reaction**: 30 carbons enter as five 6-carbon glucose molecules and exit as six 5-carbon ribose sugars ready for nucleotide synthesis, through a series of entirely non-oxidative reactions. The only cost is one ATP. The NADPH/NADP⁺ ratio places no constraint on this mode at all, which is exactly the point.
+
+
+**Mode 2: The cell needs both NADPH and ribose-5-phosphate.**
+
+Example: a rapidly dividing tumor cell or an activated lymphocyte that is simultaneously building new membranes and replicating DNA. Run the oxidative phase at full flux to generate NADPH. Rather than recycling the ribulose-5-phosphate back to glycolytic intermediates, isomerize it directly to ribose-5-phosphate and send it to nucleotide synthesis. Both products are used, and nothing is wasted. This is the mode of maximal anabolic demand. Since we need BOTH NADPH and R5P this is simply the full oxidative phase above coupled with Ru5P isomerise.
+
+$$\begin{array}{r c l}
+\text{G6P} + 2\text{NADP}^+ + \text{H}_2\text{O} & \rightarrow & \cancel{\text{Ru5P}} + \text{CO}_2 + 2\text{NADPH} + 2\text{H}^+ \\
+\cancel{\text{Ru5P}} & \rightarrow & \text{R5P} \\
+\hline
+\text{G6P} + 2\text{NADP}^+ + \text{H}_2\text{O} & \rightarrow & \text{R5P} + \text{CO}_2 + 2\text{NADPH} + 2\text{H}^+
+\end{array}$$
+
+**Mode 3: The cell needs NADPH but not ribose-5-phosphate.**
+
+Example: a hepatocyte actively synthesizing fatty acids, or a red blood cell managing chronic oxidative stress. Run the oxidative phase at high flux, then funnel all the ribulose-5-phosphate into the non-oxidative phase to regenerate fructose-6-phosphate and glyceraldehyde-3-phosphate. Those glycolytic intermediates can feed back into gluconeogenesis to regenerate G6P, which can run through the oxidative phase again. The cycle effectively burns one carbon as $\text{CO}_2$ per two NADPH generated and returns the rest of the carbon to the glycolytic pool. If you run six G6P molecules through this cycle completely, you net 12 NADPH and 6 $\text{CO}_2$, at the cost of one full glucose equivalent.
+
+$$6\text{G6P} + 12\text{NADP}^+ + 6\text{H}_2\text{O} \rightarrow 6\text{Ru5P} + 6\text{CO}_2 + 12\text{NADPH} + 12\text{H}^+$$
+
+Let's now follow these 6 Ru5P through the non-oxidative phase, first by isomerizing 2 of them to R5P and epimerizing the remaining 4 to Xu5P.
+
+$$6 \text{Ru5P} \rightarrow 2 \text{R5P} + 4 \text{Xu5P}$$
+
+Stepping through the non-oxidative phase:
+
+$$\begin{array}{r c l}
+2\text{ R5P} + 2\text{ Xu5P} & \rightarrow & \cancel{2\text{ G3P}} + \cancel{2\text{ S7P}} \\
+\cancel{2\text{ G3P}} + \cancel{2\text{ S7P}} & \rightarrow & 2\text{ F6P} + \cancel{2\text{ E4P}} \\
+\cancel{2\text{ E4P}} + 2\text{ Xu5P} & \rightarrow & 2\text{ F6P} + 2\text{ G3P} \\
+\hline
+2\text{ R5P} + 4\text{ Xu5P} & \rightarrow & 4\text{ F6P} + 2\text{ G3P}
+\end{array}$$
+
+The resulting glycolytic intermediates can enter gluconeogenesis:
+
+$$\begin{array}{r c l}
+4\text{ F6P} & \rightarrow & 4\text{ G6P} \\
+2\text{ G3P} & \rightarrow & \cancel{\text{G3P}} + \cancel{\text{DHAP}} \\
+\cancel{\text{G3P}} + \cancel{\text{DHAP}} & \rightarrow & \cancel{\text{F1,6BP}} \\
+\cancel{\text{F1,6BP}} + \text{H}_2\text{O} & \rightarrow & \cancel{\text{F6P}} + \text{P}_\text{i} \\
+\cancel{\text{F6P}} & \rightarrow & \text{G6P} \\
+\hline
+4\text{ F6P} + 2\text{ G3P} + \text{H}_2\text{O} & \rightarrow & 5\text{ G6P} + \text{P}_\text{i}
+\end{array}$$
+
+Putting togehter all 4 balanced reactions:
+
+$$\begin{array}{r c l}
+6\text{ G6P} + 12\text{NADP}^+ + 6\text{H}_2\text{O} & \rightarrow & \cancel{6\text{ Ru5P}} + 6\text{CO}_2 + 12\text{NADPH} + 12\text{H}^+ \\
+\cancel{6\text{ Ru5P}} & \rightarrow & \cancel{2\text{ R5P}} + \cancel{4\text{ Xu5P}} \\
+\cancel{2\text{ R5P}} + \cancel{4\text{ Xu5P}} & \rightarrow & \cancel{4\text{ F6P}} + \cancel{2\text{ G3P}} \\
+\cancel{4\text{ F6P}} + \cancel{2\text{ G3P}} + \text{H}_2\text{O} & \rightarrow & 5\text{ G6P} + \text{P}_\text{i} \\
+\hline
+\text{G6P} + 12\text{NADP}^+ + 7\text{H}_2\text{O} & \rightarrow & 6\text{CO}_2 + 12\text{NADPH} + 12\text{H}^+ + \text{P}_\text{i}
+\end{array}$$
+
+The complete oxidation of one Glucose-6-Phosphate to CO₂ produces 12 NADPH at the cost of no longer being able to use that G6P for ATP generation.
+
+
+**Mode 4: The cell needs NADPH and also needs to generate ATP from glucose.**
+
+Example: a cell under high oxidative stress that is simultaneously running glycolysis at full speed to meet energy demand. The oxidative phase runs to produce NADPH from G6P. The ribulose-5-phosphate then passes through the non-oxidative phase to yield fructose-6-phosphate and glyceraldehyde-3-phosphate, which reenter glycolysis directly and are oxidized to pyruvate and then through the TCA cycle to generate ATP. This mode layers NADPH generation on top of normal glucose catabolism: the same carbons that eventually produce ATP also generate NADPH on their way through. It is the most metabolically integrated mode and the one most relevant during cellular stress responses.
+
+This reversibility is the reason the non-oxidative phase matters. If ribose-5-phosphate were only accessible by running G6P through the oxidative phase, the cell would be forced to produce NADPH every time it needed nucleotides, even if NADPH were already abundant. The non-oxidative phase decouples ribose-5-phosphate production from NADPH production, and the four-mode framework captures the range of situations that decoupling enables.
 
 ### Regulation
 
-The PPP is regulated primarily at G6PD, the committed first step. G6PD is subject to product inhibition by NADPH: when NADPH is abundant, the enzyme slows down. When NADPH is depleted and NADP$^+$ rises, the enzyme speeds up. The ratio of NADP$^+$/NADPH is the sensor.
+The PPP is regulated primarily at G6PD, the committed first step. G6PD is subject to product inhibition by NADPH: when NADPH is abundant, the enzyme slows down. When NADPH is depleted and NADP⁺ rises, the enzyme speeds up. The ratio of NADPH/NADP⁺ is the sensor.
 
-This is straightforward feedback control, and it is appropriate: the purpose of the oxidative phase is to produce NADPH, so NADPH itself signals when enough has been made. No other elaborate regulatory mechanism is needed because the substrate (G6P) is also the substrate for glycolysis, and any G6P not diverted to the PPP simply stays available for glycolysis.
+This is straightforward feedback control, and it is appropriate: the purpose of the oxidative phase is to produce NADPH, so NADPH itself signals when enough has been made. No other elaborate regulatory mechanism is needed because the substrate (G6P) is also the substrate for glycolysis, and any G6P not diverted to the PPP simply stays available for glycolysis (or as we will soon see, storage as glycogen).
 
 ---
 
@@ -231,7 +343,7 @@ The PPP appears on the MCAT in three recurring contexts.
 
 **Thiamine and the non-oxidative phase.** The MCAT tests Wernicke's encephalopathy and the rule: thiamine before glucose. Questions may ask which enzymes are impaired (PDH, $\alpha$-KGDH, transketolase) and why glucose loading worsens the condition. You are also expected to recognize that the erythrocyte transketolase assay is the functional test for thiamine status.
 
-**The MCAT will not ask you to trace every carbon through the non-oxidative phase.** Recognizing what the pathway produces (NADPH and ribose-5-phosphate), what triggers it (NADP$^+$ rise), and where it is most important (red cells, liver, adrenal cortex, rapidly dividing cells) is sufficient for almost all questions.
+**The MCAT will not ask you to trace every carbon through the non-oxidative phase.** Recognizing what the pathway produces (NADPH and ribose-5-phosphate), what triggers it (NADP⁺ rise), and where it is most important (red cells, liver, adrenal cortex, rapidly dividing cells) is sufficient for almost all questions.
 
 ---
 
@@ -265,9 +377,9 @@ A research group grows two cell lines under identical conditions: a line selecte
 
 **Answer:**
 
-(a) Fatty acid synthesis consumes NADPH at two steps per elongation cycle. High biosynthetic activity continuously oxidizes NADPH to NADP$^+$, raising the NADP$^+$/NADPH ratio. G6PD is product-inhibited by NADPH and substrate-activated by NADP$^+$. A higher NADP$^+$ concentration relieves product inhibition and provides more substrate, increasing G6PD activity and PPP flux. No change in enzyme levels is required; the activity of existing G6PD molecules is modulated by the local redox ratio.
+(a) Fatty acid synthesis consumes NADPH at two steps per elongation cycle. High biosynthetic activity continuously oxidizes NADPH to NADP⁺, raising the NADP⁺/NADPH ratio. G6PD is product-inhibited by NADPH and substrate-activated by NADP⁺. A higher NADP⁺ concentration relieves product inhibition and provides more substrate, increasing G6PD activity and PPP flux. No change in enzyme levels is required; the activity of existing G6PD molecules is modulated by the local redox ratio.
 
-(b) When fatty acid synthase is inhibited, NADPH consumption stops. NADPH accumulates (it is no longer being consumed by biosynthesis), NADP$^+$ falls, and G6PD activity drops due to product inhibition by the rising NADPH. PPP flux decreases within minutes because the stimulus (high NADP$^+$) is removed. This confirms that the immediate signal coupling PPP activity to biosynthetic demand is the NADP$^+$/NADPH ratio, acting directly on G6PD, not a slower transcriptional response.
+(b) When fatty acid synthase is inhibited, NADPH consumption stops. NADPH accumulates (it is no longer being consumed by biosynthesis), NADP⁺ falls, and G6PD activity drops due to product inhibition by the rising NADPH. PPP flux decreases within minutes because the stimulus (high NADP⁺) is removed. This confirms that the immediate signal coupling PPP activity to biosynthetic demand is the NADP⁺/NADPH ratio, acting directly on G6PD, not a slower transcriptional response.
 
 ---
 
@@ -336,10 +448,10 @@ The Warburg effect describes the observation that cancer cells preferentially pe
 
 3. Ruwende C, Hill A. Glucose-6-phosphate dehydrogenase deficiency and malaria. J Mol Med. 1998;76(8):581-588.
 
-4. Harper C. Thiamine (vitamin B1) deficiency and associated brain damage is still common throughout the world and prevention is simple and safe! Eur J Neurol. 2006;13(10):1078-1082.
+4. Sechi G, Serra A. Wernicke's encephalopathy: new clinical settings and recent advances in diagnosis and management. Lancet Neurol. 2007;6(5):442-455.
 
 5. Stincone A, Prigione A, Cramer T, et al. The return of metabolism: biochemistry and physiology of the pentose phosphate pathway. Biol Rev Camb Philos Soc. 2015;90(3):927-963.
 
-6. Ciccarese F, Ciminale V. Escaping death: mitochondrial redox homeostasis in cancer cells. Front Oncol. 2017;7:117.
+6. Jiang P, Du W, Wu M. Regulation of the pentose phosphate pathway in cancer. Protein Cell. 2014;5(8):592-602.
 
 7. Segal AW. How neutrophils kill microbes. Annu Rev Immunol. 2005;23:197-223.
