@@ -532,7 +532,7 @@ Adding FCCP then collapses the gradient by providing an alternate proton path, r
 
 ---
 
-*Chapter 13: With the ETC accounting complete, we can now follow fat. Fatty acid β-oxidation cleaves fatty acids two carbons at a time, producing acetyl-CoA, NADH, and $\text{FADH}_2$ at each step in a spiral that continues until the chain is fully consumed. We will work through the reactions, account for the ATP yield, and examine the ketone body pathway that lets the brain run on fat-derived fuel during fasting.*
+*Chapter 13: With the major oxidative pathways in place, we can now look at a parallel route for glucose that solves two problems glycolysis cannot: producing NADPH for biosynthesis and antioxidant defense, and generating ribose-5-phosphate for nucleotide synthesis. The pentose phosphate pathway runs alongside glycolysis in the cytoplasm, and its clinical significance is on display in G6PD deficiency, the most common enzyme deficiency in humans.*
 
 ---
 
