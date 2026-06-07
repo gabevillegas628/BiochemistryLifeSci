@@ -440,6 +440,96 @@ The Warburg effect describes the observation that cancer cells preferentially pe
 
 ---
 
+## Problem Set
+
+**Problem 1.**
+Cells maintain the cytoplasmic NADPH/NADP⁺ ratio at roughly 100:1, while the NADH/NAD⁺ ratio is kept well below 1.
+
+(a) What single structural feature distinguishes NADPH from NADH? Why does this seemingly minor difference allow cells to maintain the two pools at such different redox states?
+
+(b) Both NADH and NADPH carry a hydride ($\text{H}^-$). Explain why a cell cannot simply use NADH to power fatty acid synthesis in place of NADPH, even though the chemistry of hydride donation is the same.
+
+(c) A liver cell is synthesizing one molecule of palmitate (16 carbons) from acetyl-CoA. How many NADPH does this consume? What pathway is the liver's primary source of cytoplasmic NADPH?
+
+---
+
+**Problem 2.**
+The three-step oxidative phase converts one molecule of glucose-6-phosphate into ribulose-5-phosphate.
+
+(a) Write the net reaction for the oxidative phase. Include all cofactors, water, and small molecules consumed or produced.
+
+(b) The committed step is catalyzed by G6PD rather than by either of the two steps that follow it. Why is the first irreversible step the appropriate site for regulation? What would go wrong if the second NADPH-generating step (6-phosphogluconate dehydrogenase) were the regulated one instead?
+
+(c) The chapter describes 6-phosphogluconate dehydrogenase as mechanistically analogous to isocitrate dehydrogenase in the TCA cycle. What two chemical transformations does each enzyme accomplish in a single reaction, and what type of intermediate forms between them?
+
+---
+
+**Problem 3.** *(Synthesis)*
+A hepatocyte in a well-fed animal is running cholesterol synthesis at high flux. Cholesterol synthesis consumes approximately 18 NADPH per molecule. The cell has abundant G6P and normal G6PD protein levels.
+
+(a) Trace the biochemical chain of events, starting from increased cholesterol synthesis, that causes PPP flux to increase within minutes. No changes in gene expression occur.
+
+(b) A statin drug inhibits HMG-CoA reductase, the rate-limiting enzyme of cholesterol synthesis. Predict what happens to the NADP⁺/NADPH ratio and to PPP flux within 30 minutes of adding the drug. Explain your reasoning.
+
+(c) G6PD is called the sole regulatory valve for the oxidative phase, even though 6-phosphogluconate dehydrogenase is also a NADPH-generating step. Why is controlling only the first step sufficient to regulate total NADPH output from the phase?
+
+---
+
+**Problem 4.** *(Synthesis)*
+The PPP can operate in four distinct modes depending on what the cell needs.
+
+(a) A resting red blood cell is managing background oxidative stress from normal oxygen exposure. It is not dividing and has no urgent need for nucleotides. Which mode is it running? Which products are produced, and where do they go?
+
+(b) In Mode 1 (the 30-carbon reaction), a cell makes ribose-5-phosphate from glycolytic intermediates without running the oxidative phase at all. Why is this necessary when NADPH is already abundant? Why can't the cell simply run the oxidative phase at a lower rate and use the resulting ribulose-5-phosphate?
+
+(c) Mode 4 layers NADPH generation on top of normal glucose catabolism. Describe the carbon flow in Mode 4: where do the carbons from the oxidative phase end up, and what is the cell getting from each glucose molecule compared to running glycolysis alone?
+
+---
+
+**Problem 5.**
+A 30-year-old man develops fatigue and dark urine two days after eating a large meal of fava beans.
+
+(a) Fava beans contain divicine and isouramil, which are oxidizing compounds that directly oxidize glutathione in red cells. Starting from this oxidative insult, trace the biochemical sequence leading to Heinz body formation.
+
+(b) Why are mature red blood cells the primary target of G6PD deficiency, while nucleated cells in the same patient handle the same oxidative exposure without damage? Identify at least two specific differences between red cells and nucleated cells that account for this.
+
+(c) The patient's female sister has the same G6PD mutation on one X chromosome. Her red cells test at 52% of normal G6PD activity, while his test at 7%. She ate fava beans the same evening and had no symptoms. Explain why their enzyme activities differ and why the sister is asymptomatic.
+
+---
+
+**Problem 6.** *(Synthesis)*
+G6PD deficiency alleles reach carrier frequencies of 10–25% in populations where malaria has been historically endemic, far higher than expected for a disease-causing mutation.
+
+(a) What does it mean for a harmful allele to persist at high frequency, and what term describes this phenomenon? What condition must be met for this to occur?
+
+(b) Describe the biochemical basis for why G6PD-deficient red cells are inhospitable to *Plasmodium falciparum*. What does the parasite depend on from the host red cell that G6PD-deficient cells cannot adequately provide?
+
+(c) Epidemiological data suggest that heterozygous females are more protected against severe malaria than hemizygous males with the same mutation. A hemizygous male has essentially no functional G6PD; a heterozygous female has roughly half. Propose a hypothesis for why partial deficiency might confer stronger protection than complete deficiency.
+
+---
+
+**Problem 7.**
+Wernicke's encephalopathy is an acute neurological emergency caused by thiamine (vitamin B1) deficiency.
+
+(a) Three enzymes are simultaneously impaired when thiamine is depleted. Name each one and state which metabolic process each supports.
+
+(b) A malnourished patient with chronic alcoholism arrives in the emergency department confused and ataxic. A resident starts a 5% dextrose infusion while waiting for lab results. Explain mechanistically why glucose administration before thiamine can precipitate or worsen Wernicke's encephalopathy.
+
+(c) The standard clinical test for thiamine status measures erythrocyte transketolase activity with and without added TPP in the assay tube. Patient A shows 19% of normal activity without TPP, rising to 91% with TPP added. Patient B shows 58% of normal activity without TPP, rising to 61% with TPP added. Interpret each result. What does the response to added TPP tell you about the state of the enzyme versus the state of the cofactor?
+
+---
+
+**Problem 8.** *(Synthesis)*
+Two patients present with different inherited diseases affecting NADPH: Patient A has G6PD deficiency; Patient B has chronic granulomatous disease (CGD), caused by loss-of-function mutations in NOX2, the catalytic subunit of NADPH oxidase.
+
+(a) Describe the normal function of NADPH in red blood cells and in neutrophils, separately. These are not the same function.
+
+(b) Patient A is prone to hemolytic crises; Patient B is prone to recurrent, severe infections with catalase-positive organisms like *Staphylococcus aureus* and *Aspergillus*. Explain why each patient is vulnerable to their specific problem, tracing the role of NADPH in each case.
+
+(c) A researcher proposes treating Patient B by administering high doses of N-acetylcysteine (a glutathione precursor) to boost antioxidant capacity in phagocytes. Explain why this reasoning is backwards, using the distinction between what NADPH does in red cells versus what it does in neutrophils.
+
+---
+
 ## References
 
 1. Cappellini MD, Fiorelli G. Glucose-6-phosphate dehydrogenase deficiency. Lancet. 2008;371(9606):64-74.
