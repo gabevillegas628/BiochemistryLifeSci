@@ -99,13 +99,14 @@ Ordered by syllabus sequence, not traditional textbook order. Write in this orde
 | 9 | Thermodynamic Principles II | 15 | Not started |
 | 10 | Glycolysis | 16 | Not started |
 | 11 | The Krebs Cycle | 17 | Not started |
-| 12 | Pentose Phosphate Pathway | 20 | Not started |
-| 13 | Electron Transport Chain & Oxidative Phosphorylation | 18 | Not started |
-| 14 | Glycogen Metabolism & β-Oxidation | 21/22 | Not started |
-| 15 | Protein Metabolism | 23 | Not started |
-| 16 | Nucleotide & Amino Acid Biosynthesis | 25/26 | Not started |
-| 17 | DNA & RNA Synthesis | 28/29 | Not started |
-| 18 | RNA & Protein Synthesis | 29/30 | Not started |
+| 12 | Electron Transport Chain & Oxidative Phosphorylation | 18 | Not started |
+| 13 | Pentose Phosphate Pathway | 20 | Not started |
+| 14 | Glycogen Metabolism | 21 | Not started |
+| 15 | β-Oxidation | 22 | Not started |
+| 16 | Protein Metabolism | 23 | Not started |
+| 17 | Nucleotide & Amino Acid Biosynthesis | 25/26 | Not started |
+| 18 | DNA & RNA Synthesis | 28/29 | Not started |
+| 19 | RNA & Protein Synthesis | 29/30 | Not started |
 
 ---
 
