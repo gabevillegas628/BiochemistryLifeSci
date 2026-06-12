@@ -12,3 +12,8 @@
 12-electron-transport-chain: 12: The Electron Transport Chain and Oxidative Phosphorylation
 13-pentose-phosphate-pathway: 13: The Pentose Phosphate Pathway
 14-glycogen-metabolism: 14: Glycogen Metabolism
+answer-key-ch01-04: Answer Key: Chs 01–04
+answer-key-ch05-08: Answer Key: Chs 05–08
+answer-key-ch09-11: Answer Key: Chs 09–11
+answer-key-ch12: Answer Key Ch 12: ETC and Oxidative Phosphorylation
+answer-key-ch13: Answer Key Ch 13: The Pentose Phosphate Pathway
