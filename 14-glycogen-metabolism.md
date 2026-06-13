@@ -38,7 +38,7 @@ Glycogen is built from glucose units connected by two types of linkages.
 
 The branching is not decorative, its function is speed of both glycogen synthesis and breakdown.
 
-Glycogen phosphorylase can only work from the non-reducing end of a chain, removing one glucose at a time. A linear polymer of 10,000 glucose units would have a single non-reducing end, and a single phosphorylase molecule would have to make 10,000 successive cuts down that one chain to release all the glucose. A heavily branched polymer has hundreds of non-reducing ends, and hundreds of phosphorylase molecules can attack simultaneously. Branching maximizes the surface area for phosphorylase action, which is why muscle glycogen can be mobilized so rapidly during a sprint or during a fight-or-flight response.
+The enzyme responsible for breaking glycogen down can only work from the non-reducing end of a chain, removing one glucose at a time (the mechanism is covered in the next section). A linear polymer of 10,000 glucose units would have a single non-reducing end, and a single enzyme molecule would have to make 10,000 successive cuts down that one chain to release all the glucose. A heavily branched polymer has hundreds of non-reducing ends, and hundreds of enzyme molecules can attack simultaneously. Branching maximizes the surface area available for breakdown, which is why muscle glycogen can be mobilized so rapidly during a sprint or during a fight-or-flight response.
 
 ---
 
@@ -48,19 +48,30 @@ Glycogen phosphorylase can only work from the non-reducing end of a chain, remov
 
 Glucose cannot be added directly to glycogen. It must first be activated into a form the glycogen synthase enzyme can use.
 
-The starting material, glucose-6-phosphate (from hexokinase or liver glucokinase), is converted to **glucose-1-phosphate** by the enzyme **phosphoglucomutase**. This is reversible, so it also runs in reverse during glycogen breakdown.
+The starting material, glucose-6-phosphate (from hexokinase or liver glucokinase), is converted to **glucose-1-phosphate** by the enzyme **phosphoglucomutase**. This is reversible, so it also runs in reverse during glycogen breakdown as we'll see.
 
 $$\text{Glucose-6-phosphate} \rightleftharpoons \text{Glucose-1-phosphate}$$
 
 Glucose-1-phosphate then reacts with UTP (uridine triphosphate) via **UDP-glucose pyrophosphorylase**:
 
-$$\text{Glucose-1-phosphate} + \text{UTP} \rightarrow \text{UDP-glucose} + \text{PP}_\text{i}$$
+$$\text{Glucose-1-phosphate} + \text{UTP} \rightarrow \text{UDP-glucose} + \text{PP}_\text{i} \quad (\Delta G \approx 0 \text{ kJ/mol})$$
 
 The product, **UDP-glucose**, is the activated form of glucose that glycogen synthase will use. The pyrophosphate ($\text{PP}_\text{i}$) released is immediately hydrolyzed by pyrophosphatase:
 
-$$\text{PP}_\text{i} + \text{H}_2\text{O} \rightarrow 2\,\text{P}_\text{i}$$
+$$\text{PP}_\text{i} + \text{H}_2\text{O} \rightarrow 2\,\text{P}_\text{i} \quad (\Delta G \approx -33 \text{ kJ/mol})$$
 
 This hydrolysis is highly favorable thermodynamically, and it is what makes the whole activation reaction essentially irreversible. The cell commits one UTP equivalent per glucose unit stored. You can think of UDP-glucose as glucose carrying a charged "handle" that glycogen synthase can grab.
+
+As you might imagine, synthesizing such a complex molecule as Glycogen requires energy, where does this energy come from? It comes from the activation of G6P to form UDP-Glc via the action of Nucleoside Diphosphate Kinase which essentially makes a UTP count as an ATP. We'll see this directly in the next section.
+
+
+### Initiation: Glycogenin
+
+Glycogen synthase has a fundamental limitation: it can only extend an existing chain. It cannot start a new one from scratch (*de novo*). Every glycogen granule therefore requires a **primer**, a short starter chain that glycogen synthase can extend. That primer is synthesized by a protein called **glycogenin**.
+
+Glycogenin is a self-glucosylating enzyme. It catalyzes its own modification by transferring a glucose from UDP-glucose onto the hydroxyl group of a specific tyrosine residue (Tyr194 in humans), forming an O-glycosidic bond between the tyrosine and the C1 of glucose. This is the seed of the new granule. Glycogenin then continues extending that chain, adding glucose residues one at a time via $\alpha$-1,4 linkages, until the chain reaches about 7-8 residues. At that length, glycogen synthase can bind and take over elongation.
+
+Glycogenin remains covalently attached to the reducing end of the finished granule, buried at its core. Each mature glycogen granule contains one glycogenin molecule at its center, which means, interestingly, that although we refer to glycogen as having a reducing end, in practice glycogen is technically a non-reducing sugar!
 
 ### Adding to the Chain
 
@@ -68,13 +79,27 @@ This hydrolysis is highly favorable thermodynamically, and it is what makes the 
 
 $$\text{UDP-glucose} + \text{glycogen}_{(n)} \rightarrow \text{glycogen}_{(n+1)} + \text{UDP}$$
 
-Glycogen synthase cannot initiate a new glycogen granule from scratch: it can only extend an existing chain. New chains require a primer. The primer is a protein called **glycogenin**, which autocatalytically attaches a glucose to one of its own tyrosine residues and then extends that chain to about 7-8 residues. Glycogen synthase can then take over and lengthen the chain further. Glycogenin remains buried at the core of the finished granule.
+Starting from Glucose 6 phosphate and following it thorough its addition to Glycogen produces the following balanced process:
+
+$$
+\begin{array}{rcl}
+\text{G6P} & \rightleftharpoons & \cancel{\text{G1P}} \\
+\cancel{\text{G1P}} + \cancel{\text{UTP}} & \rightarrow & \cancel{\text{UDP-Glc}} + \cancel{\text{PP}_\text{i}} \\
+\cancel{\text{PP}_\text{i}} + \text{H}_2\text{O} & \rightarrow & 2\,\text{P}_\text{i} \\
+\cancel{\text{UDP}} + \text{ATP} & \rightarrow & \cancel{\text{UTP}} + \text{ADP} \\
+\cancel{\text{UDP-Glc}} + \text{glycogen}_{(n)} & \rightarrow & \text{glycogen}_{(n+1)} + \cancel{\text{UDP}} \\
+\hline
+\text{G6P} + \text{H}_2\text{O} + \text{ATP} + \text{glycogen}_{(n)} & \rightarrow & \text{glycogen}_{(n+1)} + 2\,\text{P}_\text{i} + \text{ADP}
+\end{array}
+$$
+
+The net cost for adding one glucose to glycogen is one ATP equivalent, consumed by NDP kinase to regenerate UTP from UDP. The thermodynamic driving force comes from two reactions: PPi hydrolysis ($\Delta G^{\circ'} \approx -19$ kJ/mol), which is what makes the activation of UDP-glucose essentially irreversible, and the glycogen synthase step itself ($\Delta G^{\circ'} \approx -13.4$ kJ/mol). Notice that G6P's phosphate ester is never broken: the phosphate from G6P travels through G1P, into UDP-glucose, into UDP, and back into UTP via NDP kinase, completing a catalytic cycle. Both Pi in the net reaction come from that single PPi hydrolysis step, not from G6P.
 
 ### Creating Branches
 
 Once a growing chain reaches about 11 residues, **branching enzyme** (also called glycosyl-4,6-transferase) transfers a 6-7 residue segment from the end of the chain and reattaches it via an $\alpha$-1,6 linkage at a position at least 4 residues back from the nearest existing branch point. This creates a new branch tip that glycogen synthase can extend and that branching enzyme can branch again later.
 
-The net cost: one UTP per glucose residue added to glycogen. The branching reaction itself does not require additional energy input.
+The net cost: one UTP (really ATP) per glucose residue added to glycogen. The branching reaction itself does not require additional energy input.
 
 ---
 
@@ -88,7 +113,23 @@ The conceptually important thing about glycogen breakdown is that glycogen phosp
 
 $$\text{Glycogen}_{(n)} + \text{P}_\text{i} \rightarrow \text{Glycogen}_{(n-1)} + \text{Glucose-1-phosphate}$$
 
-The product is **glucose-1-phosphate**, not free glucose. Phosphoglucomutase then converts glucose-1-phosphate to glucose-6-phosphate, which enters glycolysis at the second step. Since hexokinase is bypassed entirely, no ATP is spent to phosphorylate this glucose. The cell recovers glucose from glycogen pre-phosphorylated and ready for glycolysis, at no ATP cost. This is one reason glycogen is a better emergency fuel than free glucose stored in the same volume.
+Glycogen phosphorylase is a **processive** enzyme: once it binds to a non-reducing end, it does not release the chain between cleavages. It stays bound and walks inward along the chain, releasing one glucose-1-phosphate after another without having to rebind for each cut. The alternative would be a **distributive** enzyme, which releases its substrate after every catalytic event and must find and rebind the chain anew each time. Distributive behavior has a kinetic cost: each rebinding event takes time, and under the urgency of a fight-or-flight response that delay compounds quickly across thousands of glucose units. Processivity eliminates that overhead. Combined with the branched structure of glycogen providing hundreds of simultaneous non-reducing ends, a cell can flood the cytoplasm with glucose-1-phosphate almost instantly when demand spikes.
+
+Phosphorylase does not run indefinitely on a single chain. It stalls when it reaches about 4 residues from a branch point (discussed in the next section), at which point it dissociates and finds another available non-reducing end.
+
+The product is **glucose-1-phosphate**, not free glucose. Phosphoglucomutase then converts glucose-1-phosphate to glucose-6-phosphate, which enters glycolysis at the second step, bypassing hexokinase.
+
+It is tempting to conclude from this that glycogen-derived glucose produces a bonus ATP compared to free glucose, since hexokinase is skipped at breakdown. There is no free lunch here. The full accounting shows the opposite: storing glucose as glycogen and then retrieving it actually costs one net ATP compared to using free glucose directly.
+
+| Step(s)| Direct glycolysis | Via glycogen |
+|---|---|---|
+| Hexokinase (synthesis) | −1 ATP | −1 ATP |
+| NDP kinase (synthesis) | — | −1 ATP |
+| PFK-1 | −1 ATP | −1 ATP |
+| 2× PGK + 2× PK | +4 ATP | +4 ATP |
+| **Net (to pyruvate)** | **+2 ATP** | **+1 ATP** |
+
+The hexokinase step is bypassed at breakdown, which is why glycolysis from G6P returns +3 ATP rather than +2. But that gain is exactly canceled by the extra ATP spent during synthesis (the NDP kinase step that regenerates UTP from UDP). The net is +1 ATP per glucose via glycogen versus +2 ATP directly, a roughly 3.5% reduction in total yield when you account for the full oxidation of glucose. That is the price of storage: the cell pays a small energetic overhead to keep glucose in a rapidly mobilizable, osmotically inert form.
 
 ### The Debranching Problem
 
@@ -106,7 +147,7 @@ That distinction matters. Free glucose must be phosphorylated by hexokinase befo
 
 After phosphorylase and debranching enzyme finish their work, glucose-6-phosphate (from the ~90% phosphorolytic fraction) reaches a decision point that differs by tissue:
 
-**In muscle:** there is no glucose-6-phosphatase. Glucose-6-phosphate proceeds directly into glycolysis to power that muscle cell. Muscle glycogen stays in muscle.
+**In muscle:** there is no glucose-6-phosphatase. Glucose-6-phosphate proceeds directly into downstream metabolic pathways like glycolysis or the PPP, we cannot convert it back to free gluclose. Remember muscles are selfish.
 
 **In liver:** **glucose-6-phosphatase**, located in the endoplasmic reticulum membrane, removes the phosphate group, releasing free glucose into the bloodstream. This single enzyme is what makes liver glycogen useful as a blood glucose buffer. Only tissues with glucose-6-phosphatase (primarily liver, and to a minor extent kidney and intestinal epithelium) can contribute to blood glucose from glycogen.
 
@@ -114,9 +155,25 @@ After phosphorylase and debranching enzyme finish their work, glucose-6-phosphat
 
 ## Regulation
 
-Glycogen synthesis and breakdown are reciprocally regulated so that both cannot run simultaneously. Running synthesis and breakdown at the same time would accomplish nothing except wasting the ATP and UTP spent on synthesis. The regulation operates at two levels: hormonal signals set the global state based on whole-body glucose status; allosteric signals fine-tune the local response based on the energy status of the individual cell.
+Glycogen synthesis and breakdown are reciprocally regulated so that both cannot run simultaneously. Running synthesis and breakdown at the same time would accomplish nothing except wasting the ATP and UTP spent on synthesis. The regulation operates at two levels:
+1. Hormonal signals (course adjustment) set the global state based on whole-body glucose status
+2. Allosteric signals fine-tune the local response based on the energy status of the individual cell.
 
 ### Covalent Regulation: Phosphorylation
+
+Glycogen Phosphorylase exists as a homodimer, both subunits can exists in either the phosphorylated or unphosphorylated state (S14 in humans). The phosphorylated state of phosphorylase is referred to as **phosphorylase *a***, the unphosphorylated form is **phosphorylase *b***. Additionally, like all allosterically regulated enzymes, phosphorylase can exist in either the R state or T state. 
+
+- **phosphorylase *a*** favors the active R state
+- **phosphorylase *b*** favors the inactive T state
+
+The conversion from the ***a*** form to the ***b*** form is hormonally controlled. *However*, **phosphorylase *a*** can be "coaxed" into adopting the T state and **phosphorylase *b*** the R state locally via allosteric regulation. These are the two levels of regulation: Hormonally controlled phosphorylation "primes" phosphorylase to be either more or less active (***a*** vs ***b*** form) but local signals inside the cell can override that depending on local conditions.
+
+Glycogen synthase exists as a homotetramer. Unlike phosphorylase, which has a single key phosphorylation site (Ser14), each synthase subunit carries multiple serine residues that can be phosphorylated by several different kinases. The cumulative phosphorylation state of the enzyme determines its activity. The dephosphorylated form is referred to as **synthase I** (for *independent* — it is active without requiring any additional co-factors), and the phosphorylated form is **synthase D** (for *dependent* — it requires glucose-6-phosphate to show any significant activity). You might wonder why synthase doesn't use the a/b naming like phosphorylase. The reason is that for phosphorylase, the phosphorylated form is the active one (phosphorylase *a*). For synthase it is the opposite — dephosphorylation activates it. Calling the active dephosphorylated synthase "synthase a" would contradict the logic students already learned for phosphorylase, so the I/D naming was adopted to avoid that confusion.
+
+- **Synthase I** is the active form
+- **Synthase D** is the less active form, but can be partially rescued by glucose-6-phosphate
+
+The conversion from **synthase I** to **synthase D** is hormonally controlled, driven by phosphorylation at multiple sites. *However*, **synthase D** can be "coaxed" back toward activity by high intracellular concentrations of glucose-6-phosphate, which acts as a local allosteric activator. This mirrors the two-level logic seen in phosphorylase: hormones set the global phosphorylation state, but local metabolite concentrations can modulate activity on top of that.
 
 Both glycogen synthase and glycogen phosphorylase are regulated by phosphorylation, but in opposite directions:
 
@@ -126,13 +183,15 @@ Both glycogen synthase and glycogen phosphorylase are regulated by phosphorylati
 
 The enzyme that phosphorylates phosphorylase b is **phosphorylase kinase**, which is itself activated by phosphorylation (via PKA) and by calcium. The enzyme that dephosphorylates both phosphorylase a and inactive synthase (restoring the basal, glycogen-synthesizing state) is **protein phosphatase 1 (PP1)**.
 
+A second kinase that phosphorylates glycogen synthase is worth knowing: **glycogen synthase kinase 3 (GSK-3)**. GSK-3 phosphorylates synthase at multiple sites, pushing it toward the inactive D form. What makes GSK-3 interesting is how insulin shuts it off. Insulin activates a kinase cascade (PI3K → Akt) that culminates in Akt phosphorylating and inactivating GSK-3. With GSK-3 off, synthase is no longer being driven toward the D form, and PP1 can tip the balance toward the active I form. This is a large part of why insulin promotes glycogen synthesis: not by directly activating synthase, but by removing the brake that GSK-3 applies to it.
+
 ### The Hormonal Cascade
 
 **Glucagon** (acting on liver) and **epinephrine** (acting on liver and muscle) signal through G-protein coupled receptors. Binding activates adenylyl cyclase, which generates cAMP. cAMP activates **protein kinase A (PKA)**. PKA then phosphorylates two targets simultaneously:
 
-- **Phosphorylase kinase** is phosphorylated and activated. Active phosphorylase kinase phosphorylates phosphorylase b, converting it to phosphorylase a. Glycogen breakdown is switched on.
+- **Phosphorylase kinase** (note, glcogen phosphorylase is *not* a targer of PKA) is phosphorylated and activated. Active phosphorylase kinase phosphorylates phosphorylase b, converting it to phosphorylase a which now favors the more active R state and Glycogen will begin to be phosphorylized producing G1P.
 
-- **Glycogen synthase** is phosphorylated directly by PKA (and by phosphorylase kinase at a separate site), converting it from the active to the inactive form. Glycogen synthesis is switched off.
+- **Glycogen synthase** is phosphorylated directly by PKA (and by phosphorylase kinase at a separate site), converting it from the active **I form** to the inactive **D form** preventing glycogen synthesis.
 
 The signal is amplified at each step: one glucagon molecule activates adenylyl cyclase repeatedly, generating many cAMP molecules; each cAMP activates PKA; each active PKA phosphorylates many phosphorylase kinase molecules; each active phosphorylase kinase phosphorylates many phosphorylase b molecules. By the time the signal reaches glycogen phosphorylase, the original hormonal event has been amplified many thousandfold.
 
@@ -148,7 +207,7 @@ Hormonal regulation responds to whole-organism signals (a drop in blood glucose 
 
 ### Calcium Coordinates Contraction with Fuel Mobilization
 
-**Phosphorylase kinase** contains a **calmodulin** subunit as part of its structure. Calmodulin binds calcium and is activated by it. When a motor neuron fires and triggers muscle contraction, calcium floods from the sarcoplasmic reticulum into the cytoplasm. That calcium activates calmodulin, which activates phosphorylase kinase, which converts phosphorylase b to active phosphorylase a. Glycogen breakdown starts at the same instant as contraction, triggered by the same calcium signal, without waiting for epinephrine to arrive.
+**Phosphorylase kinase** contains a **calmodulin** subunit as part of its structure. Calmodulin binds calcium and is activated by it. When a motor neuron fires and triggers muscle contraction, calcium floods from the sarcoplasmic reticulum into the cytoplasm (Recall the $G_{\alpha q}$ DAG/IP3 cascade from chapter 8). That calcium activates calmodulin, which activates phosphorylase kinase, which converts phosphorylase b to active phosphorylase a. Glycogen breakdown starts at the same instant as contraction, triggered by the same calcium signal, without waiting for epinephrine to arrive.
 
 The logic: the act of contracting is itself the signal to mobilize fuel. The muscle does not need to wait for a hormonal signal to know it is working.
 
@@ -411,3 +470,5 @@ A researcher treats isolated hepatocytes with a drug that constitutively activat
 6. Johnson LN. Glycogen phosphorylase: control by phosphorylation and allosteric effectors. FASEB J. 1992;6(6):2274-2282.
 
 7. Preisler N, Vissing J. Exercise-related problems in McArdle disease. J Inherit Metab Dis. 2015;38(3):545-552.
+
+8. Arabshahi A, Ruzicka FJ, Geeganage S, Frey PA. Standard free energies for uridylyl group transfer by hexose-1-P uridylyltransferase and UDP-hexose synthase and for the hydrolysis of uridine 5'-phosphoimidazolate. Biochemistry. 1996;35(11):3426-3428.
