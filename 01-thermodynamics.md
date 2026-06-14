@@ -1,5 +1,7 @@
 # Chapter 1: Thermodynamic Principles & Why We Exist
 
+![Chapter 1 banner: Order and Disorder](Assets/Ch01/Order_disorder.png)
+
 ---
 
 ## Opener Questions
