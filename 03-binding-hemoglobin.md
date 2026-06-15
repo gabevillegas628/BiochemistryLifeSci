@@ -193,7 +193,7 @@ $$0.5 = \frac{P_{50}^n}{K_d + P_{50}^n} \implies K_d = P_{50}^n$$
 
 So $K_d$ in the cooperative case equals $P_{50}^n$, not $P_{50}$. Substituting this back gives the **Hill equation**:
 
-$$\theta = \frac{(p\text{O}_2)^n}{(p\text{O}_2)^n + P_{50}^n}$$
+$$\theta = \frac{p\text{O}_2^n}{p\text{O}_2^n + P_{50}^n}$$
 
 The $P_{50}^n$ in the denominator is not a separate assumption; it is what the equilibrium constant becomes when expressed in terms of the half-saturation point for a reaction involving $n$ ligands simultaneously. Both terms are raised to the same power $n$ as a direct consequence of the algebra.
 
