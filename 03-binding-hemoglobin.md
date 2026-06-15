@@ -1,5 +1,7 @@
 # Chapter 3: Molecular Binding and Hemoglobin
 
+![Chapter 3 banner: Moledcular binding](Assets/Ch03/Binding.png)
+
 ---
 
 ## Opener Questions
