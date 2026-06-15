@@ -1,5 +1,7 @@
 # Chapter 2: Protein Composition & Structure
 
+![Chapter 2 banner: Energy Funnel](Assets/Ch02/EnergyFunnel.png)
+
 ---
 
 ## Opener Questions
