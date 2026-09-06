@@ -24,7 +24,7 @@ The usual answer, "cells are open systems that take in energy," is true but unsa
 
 Here's the resolution that actually works: **the second law applies to the universe, not to any particular corner of it**. Cells are local entropy-decreasing machines. They decrease entropy in themselves, yes, but only by increasing entropy elsewhere, faster, by more than enough to compensate. The heat a cell dissipates, the $\text{CO}_2$ it exhales, the disorder it creates in its environment: all of it exceeds the order it builds internally. The universe's entropy still goes up. We just happen to be a temporary eddy running in the other direction.
 
-The cost of being that eddy is constant. The order in a cell doesn't maintain itself; it decays the moment energy input stops. This is why we have to eat. Every meal is a fresh installment of what you owe the second law. Every catabolic reaction (a reaction that breaks down molecules, releasing stored energy), every ATP hydrolysis, every electron tumbling down the electron transport chain (a series of protein complexes that pass electrons step-by-step to oxygen, releasing energy; covered in detail in a later chapter) is entropy debt repayment. Metabolism isn't incidental to life. It *is* life, thermodynamically speaking.
+The cost of being that eddy is constant. The order in a cell doesn't maintain itself; it decays the moment energy input stops. This is why we have to eat. Every meal is a fresh installment of what you owe the second law. Every catabolic reaction (anything that breaks a molecule down for its energy), every ATP hydrolysis, every electron tumbling down the electron transport chain (the protein complexes that pass those electrons down to oxygen, covered in detail later) is entropy debt repayment. Metabolism isn't incidental to life. It *is* life, thermodynamically speaking.
 
 We'll return to this repeatedly throughout the course. For now, hold onto the framing: the organism is the thermodynamic loophole. The pathways are the mechanism of the loophole.
 
@@ -341,7 +341,7 @@ DNP is still used illegally today, purchased online, and deaths continue to occu
 Normal blood pH: 7.35-7.45. Outside this range, the body is in trouble.
 
 **Acidosis** (pH < 7.35) can arise from:
-- Diabetic ketoacidosis: accumulation of ketone bodies (acetoacetate, beta-hydroxybutyrate, and acetone: weak acids produced from fat breakdown when glucose is unavailable, covered in a later chapter) in uncontrolled diabetes
+- Diabetic ketoacidosis: accumulation of ketone bodies (acetoacetate, beta-hydroxybutyrate, and acetone, all weak acids produced from fat breakdown when glucose is unavailable; covered in a later chapter) in uncontrolled diabetes
 - Lactic acidosis: excess lactate produced when oxygen-deprived tissues run glycolysis without oxygen (anaerobic glycolysis, covered in a later chapter)
 - Respiratory failure: $\text{CO}_2$ accumulates when lungs can't exhale it, driving blood pH down via the bicarbonate equilibrium
 - DNP toxicity: uncoupling drives futile cycling that generates lactate and disrupts mitochondrial function, causing a mixed metabolic and respiratory acidosis
