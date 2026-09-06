@@ -208,9 +208,10 @@ $$
 \underbrace{\text{H}_3\text{N}^{+}}_{\text{N-terminus}}-\overset{\substack{R_1 \\ |}}{C_\alpha} - CO - NH - \overset{\substack{R_2 \\ |}}{C_\alpha} - CO - NH - \cdots - NH - \overset{\substack{R_n \\ |}}{C_\alpha} - \underbrace{\text{COO}^{-}}_{\text{C-terminus}}
 $$
 
-> ![Peptide bond formation](Assets/Ch02/PeptideBond.svg)
->
-> **Figure 2.1.** *Peptide bond formation. The carboxyl group of one amino acid condenses with the amino group of the next, releasing water.*
+<figure>
+<img src="Assets/Ch02/PeptideBond.svg" alt="Peptide bond formation">
+<figcaption><strong>Figure 2.1.</strong> Peptide bond formation. The carboxyl group of one amino acid condenses with the amino group of the next, releasing water.</figcaption>
+</figure>
 
 Primary structure is where the sickle cell mutation lives. In normal hemoglobin (HbA), position 6 of the beta chain reads: Val-His-Leu-Thr-Pro-**Glu**-Glu. In sickle hemoglobin (HbS), it reads: Val-His-Leu-Thr-Pro-**Val**-Glu. One substitution, position 6, glutamate to valine. Everything that follows from it, the polymerization, the sickling, the disease, is a consequence of that single change in primary structure.
 
@@ -224,9 +225,10 @@ Go back to the peptide bond for a moment. Each residue hands you exactly two adj
 
 So which pairs does the backbone actually use? G. N. Ramachandran asked that question in 1963 and answered it with hard-sphere geometry rather than a database of structures, mostly because in 1963 there were almost no structures to look at. He worked out which combinations force two atoms to occupy the same space, threw those out, and plotted what survived. The plot carries his name.
 
-> ![Ramachandran plot for a generic amino acid residue](Assets/Ch02/Ramachandran_Generic2.jpg)
->
-> **Figure 2.2.** *Ramachandran plot for a general residue, meaning any amino acid other than glycine or proline, plotted from roughly 100,000 residues in high-resolution crystal structures. Image by Dcrjsr, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ramachandran_plot_general_100K.jpg). Underlying data from Lovell et al. 2003.*
+<figure>
+<img src="Assets/Ch02/Ramachandran_Generic2.jpg" alt="Ramachandran plot for a generic amino acid residue">
+<figcaption><strong>Figure 2.2.</strong> Ramachandran plot for a general residue, meaning any amino acid other than glycine or proline, plotted from roughly 100,000 residues in high-resolution crystal structures. Image by Dcrjsr, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Ramachandran_plot_general_100K.jpg">Wikimedia Commons</a>. Underlying data from Lovell et al. 2003.</figcaption>
+</figure>
 
 Each axis runs from $-180°$ to $+180°$, so the square covers every conformation you could physically ask the backbone for. Each dot is one residue from one real, solved structure. The inner contours enclose the favored regions, the outer contours the merely allowed ones.
 
@@ -240,17 +242,19 @@ Do not skim past this next part, because it is the whole reason the plot is here
 
 That plot leaves out glycine and proline, and for good reason. Both of them cheat.
 
-> ![Ramachandran plot for glycine](Assets/Ch02/Ramachandran_plot_Gly.jpg)
->
-> **Figure 2.3.** *Ramachandran plot for glycine alone, from 500 proteins solved at 1.7 Angstrom resolution. Compare the populated right half against the generic plot above. Image by Dcrjsr, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ramachandran_plot_Gly.jpg). Underlying data from Lovell et al. 2003.*
+<figure>
+<img src="Assets/Ch02/Ramachandran_plot_Gly.jpg" alt="Ramachandran plot for glycine">
+<figcaption><strong>Figure 2.3.</strong> Ramachandran plot for glycine alone, from 500 proteins solved at 1.7 Angstrom resolution. Compare the populated right half against the generic plot above. Image by Dcrjsr, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Ramachandran_plot_Gly.jpg">Wikimedia Commons</a>. Underlying data from Lovell et al. 2003.</figcaption>
+</figure>
 
 Glycine's side chain is a single hydrogen atom, so glycine has no $C_\beta$ at all. The clash that empties most of the generic plot never happens, and the map opens up accordingly: the entire right half is populated, and the left-handed alpha region is about as crowded as the right-handed one. Notice also that the whole thing is nearly symmetric about the origin. That is not a coincidence. Glycine is the only amino acid that is not chiral, and this plot is that fact showing up in the backbone geometry, since with no side chain to distinguish them, $(\phi, \psi)$ and $(-\phi, -\psi)$ are the same situation to a glycine.
 
 So glycine goes wherever you need it to go. That is the real reason it turns up at tight turns. Not because it is small and gets out of the way, though it is and it does, but because it is the only residue with the conformational freedom to make the turn at all.
 
-> ![Ramachandran plot for proline](Assets/Ch02/Ramachandran_plot_Pro.jpg)
->
-> **Figure 2.4.** *Ramachandran plot for proline alone. The pyrrolidine ring confines the entire distribution to a narrow vertical stripe. Image by Dcrjsr, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ramachandran_plot_Pro.jpg). Underlying data from Lovell et al. 2003.*
+<figure>
+<img src="Assets/Ch02/Ramachandran_plot_Pro.jpg" alt="Ramachandran plot for proline">
+<figcaption><strong>Figure 2.4.</strong> Ramachandran plot for proline alone. The pyrrolidine ring confines the entire distribution to a narrow vertical stripe. Image by Dcrjsr, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Ramachandran_plot_Pro.jpg">Wikimedia Commons</a>. Underlying data from Lovell et al. 2003.</figcaption>
+</figure>
 
 Proline is the opposite problem. Its side chain loops back onto its own backbone nitrogen, and that ring physically blocks rotation about the $N-C_\alpha$ bond. $\phi$ is stuck near $-60°$, and the whole plot collapses into a narrow vertical stripe. $\psi$ is still free, which is why the stripe has structure to it: one cluster low, near $\psi = -35°$, and a larger one high, near $\psi = +150°$, called the **polyproline II** conformation. That upper cluster is not a curiosity. It is the backbone conformation of collagen, the most abundant protein in your body, and it shows up throughout the flexible linkers that connect protein domains.
 
