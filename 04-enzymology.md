@@ -1,5 +1,7 @@
 # Chapter 4: Enzymes and Catalysis
 
+![Chapter 04 Banner: The lowered pass](Assets/Ch04/LoweredPass.png)
+
 ---
 
 ## Opener Questions
