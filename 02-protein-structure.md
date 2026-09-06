@@ -225,7 +225,7 @@ Go back to the peptide bond for a moment. Each residue hands you exactly two adj
 
 So which pairs does the backbone actually use? G. N. Ramachandran asked that question in 1963 and answered it with hard-sphere geometry rather than a database of structures, mostly because in 1963 there were almost no structures to look at. He worked out which combinations force two atoms to occupy the same space, threw those out, and plotted what survived. The plot carries his name.
 
-<figure>
+<figure class="fig-right">
 <img src="Assets/Ch02/Ramachandran_Generic2.jpg" alt="Ramachandran plot for a generic amino acid residue">
 <figcaption><strong>Figure 2.2.</strong> Ramachandran plot for a general residue, meaning any amino acid other than glycine or proline, plotted from roughly 100,000 residues in high-resolution crystal structures. Image by Dcrjsr, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Ramachandran_plot_general_100K.jpg">Wikimedia Commons</a>. Underlying data from Lovell et al. 2003.</figcaption>
 </figure>
