@@ -233,11 +233,13 @@ Note on His: at pH 7.4 with pKa 6.0, the ratio $[\text{His}]/[\text{His}^+\text{
 
 **(c) Effect of proline insertion in the middle of an alpha helix.**
 
-Proline would **disrupt and terminate the helix** at its position. Two structural reasons:
+Proline would **put a pronounced kink in the helix** at its position, and if the distortion is severe enough, split it into two shorter helices. Two structural reasons:
 1. Proline's side chain is covalently bonded back to its own backbone nitrogen, eliminating the N–H group. Alpha helices are stabilized by N–H···O=C hydrogen bonds between residue $i$ and residue $i+4$; without the N–H, the hydrogen bond at that position cannot form.
-2. The pyrrolidine ring rigidly fixes the $\phi$ backbone dihedral angle to approximately $-60°$, which is incompatible with the regular $\phi/\psi$ angles required for a right-handed alpha helix.
+2. The pyrrolidine ring is sterically bulky and clashes with the backbone of the preceding residue, distorting the local helical geometry.
 
-The result is a pronounced kink or break at the proline position, dividing one continuous helix into two shorter ones. Proline is sometimes called a "helix breaker" for exactly this reason, and it is commonly found at turns and loops rather than in helical segments.
+Note what is *not* a reason. Proline's constrained $\phi$ of about $-60°$ is essentially the helical value, and the proline Ramachandran plot in Chapter 2 shows a well-populated cluster sitting at the helical position. Proline adopts alpha-helical backbone angles routinely. What it cannot do is donate the hydrogen bond or make room for its ring.
+
+The typical result is a kink of roughly 20 to 30 degrees rather than a clean stop, though the distortion is often enough to divide one continuous helix into two shorter ones. Proline is called a "helix breaker" for this reason, and it is far more common at turns, at loops, and in the first turn of a helix than in the middle of a helical segment.
 
 ---
 

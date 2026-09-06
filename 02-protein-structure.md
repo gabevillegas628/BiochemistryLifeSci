@@ -105,7 +105,7 @@ Amino acids are linked into chains by **peptide bonds**, formed when the carboxy
 
 What makes the peptide bond remarkable is its partial double-bond character. Resonance delocalization allows the nitrogen's lone pair to be shared with the adjacent carbonyl carbon, which gives the C-N bond about 40% double-bond character. The consequence is that the six atoms involved in the peptide bond unit ($C_\alpha-CO-NH-C_\alpha$) are locked into a single plane. Rotation around the peptide bond itself is severely restricted.
 
-This has a structural implication that cannot be overstated: the rigid planarity of the peptide bond limits where the backbone can go. The only free rotations in the backbone are around the bond from the alpha-carbon to the nitrogen (the phi angle, $\phi$) and from the alpha-carbon to the carbonyl carbon (the psi angle, $\psi$). Not all combinations of phi and psi are sterically allowed, which is why proteins adopt specific secondary structures rather than collapsing into arbitrary tangles.
+This has a structural implication that cannot be overstated: the rigid planarity of the peptide bond limits where the backbone can go. The only free rotations in the backbone are around the bond from the alpha-carbon to the nitrogen (the phi angle, $\phi$) and from the alpha-carbon to the carbonyl carbon (the psi angle, $\psi$). Not all combinations of phi and psi are sterically allowed, and the handful that are turn out to account for the entire catalogue of secondary structure. We will map them explicitly when we get there.
 
 Peptide bonds exist almost exclusively in the *trans* configuration, with the two alpha-carbons on opposite sides of the C-N bond. The *cis* configuration places the side chains of adjacent residues close together, which creates steric clash that costs roughly 8 kJ/mol. The exception is proline, where *cis* and *trans* isomers are nearly equal in energy because proline's cyclic structure creates steric strain in both configurations.
 
@@ -123,7 +123,7 @@ Rather than listing all twenty alphabetically, which is how every student memori
 
 **Valine (Val, V), Leucine (Leu, L), Isoleucine (Ile, I):** Branched aliphatic chains of increasing size. All three are strongly hydrophobic and are the primary residents of the hydrophobic core. Leucine is the most commonly occurring amino acid in protein cores. Valine is the amino acid that replaces glutamate in sickle hemoglobin; its hydrophobicity is the entire problem.
 
-**Proline (Pro, P):** Unique in that its side chain loops back and forms a covalent bond with the backbone nitrogen, incorporating the nitrogen into a five-membered ring. The result is that proline has no backbone N-H group and therefore cannot donate a hydrogen bond from the backbone. This eliminates proline from most regular secondary structures. More critically, the ring rigidly constrains the phi angle, introducing a fixed kink into the polypeptide chain. Proline is a helix breaker and a chain-direction changer. It is commonly found at the end of helices and at turns between secondary structure elements.
+**Proline (Pro, P):** Unique in that its side chain loops back and forms a covalent bond with the backbone nitrogen, incorporating the nitrogen into a five-membered ring. The result is that proline has no backbone N-H group and therefore cannot donate a hydrogen bond from the backbone. That missing hydrogen bond is the main reason proline is scarce inside alpha helices and beta sheets. The ring also constrains the phi angle and puts a fixed kink in the chain. Proline is a helix breaker and a chain-direction changer. It is commonly found at the end of helices and at turns between secondary structure elements.
 
 **Methionine (Met, M):** Contains a sulfur atom in its side chain but is overall nonpolar and mildly hydrophobic. Methionine is also notable as the initiator amino acid: all proteins in eukaryotes begin synthesis with methionine, though this first residue is often cleaved after translation.
 
@@ -208,17 +208,53 @@ $$
 \underbrace{\text{H}_3\text{N}^{+}}_{\text{N-terminus}}-\overset{\substack{R_1 \\ |}}{C_\alpha} - CO - NH - \overset{\substack{R_2 \\ |}}{C_\alpha} - CO - NH - \cdots - NH - \overset{\substack{R_n \\ |}}{C_\alpha} - \underbrace{\text{COO}^{-}}_{\text{C-terminus}}
 $$
 
+![Peptide bond formation](Assets/Ch02/PeptideBond.svg)
+
 Primary structure is where the sickle cell mutation lives. In normal hemoglobin (HbA), position 6 of the beta chain reads: Val-His-Leu-Thr-Pro-**Glu**-Glu. In sickle hemoglobin (HbS), it reads: Val-His-Leu-Thr-Pro-**Val**-Glu. One substitution, position 6, glutamate to valine. Everything that follows from it, the polymerization, the sickling, the disease, is a consequence of that single change in primary structure.
 
 ### Secondary Structure
 
 **Secondary structure** refers to regular, repeating local structures stabilized by hydrogen bonds between backbone groups. Note what is not involved: side chains. Secondary structure is purely a backbone phenomenon, driven by the geometry of the polypeptide chain and the hydrogen bonding potential of backbone C=O and N-H groups.
 
+#### The Ramachandran Plot: What the Backbone Can Actually Do
+
+Go back to the peptide bond for a moment. Each residue hands you exactly two adjustable angles: $\phi$, the rotation about the $N-C_\alpha$ bond, and $\psi$, the rotation about the $C_\alpha-C$ bond. The peptide bond itself is planar and does not budge. So the entire shape of a polypeptide backbone, every fold it could ever adopt, comes down to a list of $\phi$/$\psi$ pairs. Two numbers per residue. That is the whole description.
+
+So which pairs does the backbone actually use? G. N. Ramachandran asked that question in 1963 and answered it with hard-sphere geometry rather than a database of structures, mostly because in 1963 there were almost no structures to look at. He worked out which combinations force two atoms to occupy the same space, threw those out, and plotted what survived. The plot carries his name.
+
+![Ramachandran plot for a generic amino acid residue](Assets/Ch02/Ramachandran_Generic2.jpg)
+
+Each axis runs from $-180°$ to $+180°$, so the square covers every conformation you could physically ask the backbone for. Each dot is one residue from one real, solved structure. The inner contours enclose the favored regions, the outer contours the merely allowed ones.
+
+Look at how much of that square is empty. Those conformations are not rare, or strained, or energetically expensive; they are impossible. At most $\phi$/$\psi$ combinations, backbone atoms and the first side chain carbon (the $C_\beta$) would have to sit on top of each other, and atoms do not do that. In a well-solved structure, about 98% of residues land inside the favored regions.
+
+Now look at what is left. Two crowded basins, both in the left half of the plot. The lower one, near $\phi = -60°$, $\psi = -45°$, is the alpha helix. The upper one, near $\phi = -120°$, $\psi = +130°$, is the beta sheet. There is a third, much thinner cluster over in the right half, the left-handed alpha helix, which is strained for most residues and correspondingly uncommon. That thinness is the reason essentially every helix you will ever see in a protein is right-handed.
+
+Do not skim past this next part, because it is the whole reason the plot is here. **The alpha helix and the beta sheet are not two clever designs that evolution came up with. They are what was left over.** The backbone has two dials per residue, most settings make atoms collide, and the settings that survive fall into two clumps. Park the dials in the lower clump and repeat residue after residue, and the chain coils. Park them in the upper clump and repeat, and it stretches out flat. The next two sections are just a careful description of those two clumps.
+
+#### Glycine and Proline: The Two Exceptions
+
+That plot leaves out glycine and proline, and for good reason. Both of them cheat.
+
+![Ramachandran plot for glycine](Assets/Ch02/Ramachandran_plot_Gly.jpg)
+
+Glycine's side chain is a single hydrogen atom, so glycine has no $C_\beta$ at all. The clash that empties most of the generic plot never happens, and the map opens up accordingly: the entire right half is populated, and the left-handed alpha region is about as crowded as the right-handed one. Notice also that the whole thing is nearly symmetric about the origin. That is not a coincidence. Glycine is the only amino acid that is not chiral, and this plot is that fact showing up in the backbone geometry, since with no side chain to distinguish them, $(\phi, \psi)$ and $(-\phi, -\psi)$ are the same situation to a glycine.
+
+So glycine goes wherever you need it to go. That is the real reason it turns up at tight turns. Not because it is small and gets out of the way, though it is and it does, but because it is the only residue with the conformational freedom to make the turn at all.
+
+![Ramachandran plot for proline](Assets/Ch02/Ramachandran_plot_Pro.jpg)
+
+Proline is the opposite problem. Its side chain loops back onto its own backbone nitrogen, and that ring physically blocks rotation about the $N-C_\alpha$ bond. $\phi$ is stuck near $-60°$, and the whole plot collapses into a narrow vertical stripe. $\psi$ is still free, which is why the stripe has structure to it: one cluster low, near $\psi = -35°$, and a larger one high, near $\psi = +150°$, called the **polyproline II** conformation. That upper cluster is not a curiosity. It is the backbone conformation of collagen, the most abundant protein in your body, and it shows up throughout the flexible linkers that connect protein domains.
+
+Now look hard at that stripe, because it contradicts something you have almost certainly been told. There is a well-populated cluster sitting right at the helical position. Proline's locked $\phi$ of about $-60°$ *is* the helical $\phi$; they are the same number. Proline adopts alpha-helical backbone angles constantly.
+
+So why is proline a helix breaker? Two reasons, and neither one is $\phi$. It has no backbone N-H, so it cannot donate the hydrogen bond that holds a helix together. And its ring runs into the backbone of the residue just before it. The result is that a proline in the middle of a helix produces a hard kink rather than a clean stop, while a proline in the *first* turn of a helix is perfectly comfortable. That is exactly where you tend to find them, and if you think about which hydrogen bonds exist at the start of a helix, you can work out why: the first few residues have no $i-4$ partner to bond with in the first place, so the missing N-H costs nothing.
+
 #### The Alpha Helix
 
 The **alpha helix** is a right-handed coil in which the backbone spirals around a central axis. Each residue advances the helix 1.5 Angstroms along the axis and rotates it 100 degrees, giving 3.6 residues per complete turn. The stabilizing hydrogen bonds run parallel to the helix axis, connecting the carbonyl oxygen of residue $i$ to the amide nitrogen of residue $i+4$. Every backbone C=O and every backbone N-H in the interior of the helix is hydrogen bonded.
 
-The side chains project outward and downward from the helix axis, away from the core of the helix. This means side chains do not determine whether a helix forms; what matters is whether the backbone can adopt the phi/psi angles required ($\phi \approx -57°$, $\psi \approx -47°$). Proline cannot, which is why proline breaks helices. Very large side chains may also introduce steric clash between adjacent residues and destabilize helical geometry.
+The side chains project outward and downward from the helix axis, away from the core of the helix. This means side chains do not determine whether a helix forms; what matters is whether the backbone can adopt the phi/psi angles required ($\phi \approx -57°$, $\psi \approx -47°$), which is to say the alpha basin of the Ramachandran plot. Very large side chains may introduce steric clash between adjacent residues and destabilize helical geometry, and proline disrupts helices for the hydrogen bonding and packing reasons described above.
 
 A useful property of some helices is the **amphipathic helix**, in which hydrophobic residues cluster on one face and hydrophilic residues on the other, like a log with a wet side and a dry side. This organization is common in membrane-spanning helices (the hydrophobic face contacts the lipid bilayer) and in helices that form coiled-coil structures at protein-protein interfaces.
 
@@ -324,9 +360,9 @@ The Anfinsen experiment shows that the native state is the thermodynamic minimum
 
 The diseases caused by prion propagation include Creutzfeldt-Jakob disease in humans, scrapie in sheep, and bovine spongiform encephalopathy (BSE, "mad cow disease") in cattle. All are fatal and characterized by progressive neurodegeneration. From the energy funnel perspective, $PrP^{Sc}$ represents a deep local minimum that is thermodynamically stable but biologically catastrophic. Once a protein enters this well, it does not spontaneously escape, and it drags neighboring molecules in after it.
 
-**Alzheimer's disease** involves a different misfolding problem with a similar structural logic. The amyloid-beta peptide, derived by proteolytic cleavage from a normal membrane protein called amyloid precursor protein (APP), whose normal function remains only partially understood, is normally soluble. Under pathological conditions (which are not yet completely understood), amyloid-beta misfolds into a structure rich in cross-beta sheet, in which the beta strands from multiple peptide molecules run perpendicular to the long axis of growing fibril. These amyloid fibrils are thermodynamically stable and aggregate into the senile plaques found in Alzheimer's brain tissue. A similar cross-beta architecture characterizes tau protein aggregates, which form the neurofibrillary tangles characteristic of Alzheimer's and other tauopathies. Both represent proteins that have found a thermodynamically stable but biologically useless (and toxic) alternative conformation.
+**Alzheimer's disease** involves a different misfolding problem with a similar structural logic. The amyloid-beta peptide is normally soluble. It is produced by proteolytic cleavage of a normal membrane protein called amyloid precursor protein (APP), whose own function remains only partially understood. Under pathological conditions (which are not yet completely understood), amyloid-beta misfolds into a structure rich in cross-beta sheet, in which the beta strands from multiple peptide molecules run perpendicular to the long axis of the growing fibril. These amyloid fibrils are thermodynamically stable and aggregate into the senile plaques found in Alzheimer's brain tissue. A similar cross-beta architecture characterizes tau protein aggregates, which form the neurofibrillary tangles characteristic of Alzheimer's and other tauopathies. Both represent proteins that have found a thermodynamically stable but biologically useless (and toxic) alternative conformation.
 
-**Cystic fibrosis** presents a different failure mode. The most common cystic fibrosis mutation (${\Delta}F508$), a deletion of phenylalanine at position 508) causes the CFTR chloride channel to misfold. The misfolded CFTR is not aggregated or toxic; it is simply recognized by the cellular quality-control machinery (primarily chaperones of the Hsp70 and Hsp90 families) as having an abnormal conformation, and it is routed to proteasomal degradation (destruction by the proteasome, a large cellular protein complex that breaks down tagged proteins) before it can reach the plasma membrane.
+**Cystic fibrosis** presents a different failure mode. The most common cystic fibrosis mutation (${\Delta}F508$, a deletion of phenylalanine at position 508) causes the CFTR chloride channel to misfold. The misfolded CFTR is not aggregated or toxic; it is simply recognized by the cellular quality-control machinery (primarily chaperones of the Hsp70 and Hsp90 families) as having an abnormal conformation, and it is routed to proteasomal degradation (destruction by the proteasome, a large cellular protein complex that breaks down tagged proteins) before it can reach the plasma membrane.
 
 The cruelty of this mechanism is that deltaF508 CFTR retains partial function: if it could reach the cell surface, it would transport chloride at reduced but potentially meaningful rates. The protein is not broken beyond all utility; it is being destroyed before it gets a chance. This is the rationale for the CFTR modulator drugs (correctors that help the misfolded protein escape quality control, potentiators that improve its function at the membrane) that have transformed CF treatment in recent years. The therapy is thermodynamic and kinetic: shift the folding equilibrium toward a conformation that passes quality control, then improve the function of whatever reaches the surface.
 
@@ -505,15 +541,16 @@ You are given two peptides of identical length and amino acid composition, but w
 2. Nelson DL, Cox MM. *Lehninger Principles of Biochemistry*, 8th ed. W.H. Freeman; 2021.
 3. Anfinsen CB. Principles that govern the folding of protein chains. *Science*. 1973;181(4096):223–230. doi:10.1126/science.181.4096.223
 4. Pauling L, Corey RB, Branson HR. The structure of proteins: two hydrogen-bonded helical configurations of the polypeptide chain. *Proc Natl Acad Sci USA*. 1951;37(4):205–211. doi:10.1073/pnas.37.4.205
-5. Pauling L, Itano HA, Singer SJ, Wells IC. Sickle cell anemia, a molecular disease. *Science*. 1949;110(2865):543–548. doi:10.1126/science.110.2865.543
-6. Ingram VM. Gene mutations in human haemoglobin: the chemical difference between normal and sickle cell haemoglobin. *Nature*. 1957;180(4581):326–328. doi:10.1038/180326a0
-7. Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure prediction with AlphaFold. *Nature*. 2021;596(7873):583–589. doi:10.1038/s41586-021-03819-2
-8. Hartl FU, Bracher A, Hayer-Hartl M. Molecular chaperones in protein folding and proteostasis. *Nature*. 2011;475(7356):324–332. doi:10.1038/nature10317
-9. Hayer-Hartl M, Bracher A, Hartl FU. The GroEL–GroES chaperonin machine: a nano-cage for protein folding. *Trends Biochem Sci*. 2016;41(1):62–76. doi:10.1016/j.tibs.2015.07.009
-10. Levinthal C. How to fold graciously. In: DeBrunner JTP, Münck E, eds. *Mössbauer Spectroscopy in Biological Systems: Proceedings of a Meeting held at Allerton House, Monticello, Illinois*. University of Illinois Press; 1969:22–24.
-11. Dobson CM. Protein folding and misfolding. *Nature*. 2003;426(6968):884–890. doi:10.1038/nature02261
-12. Prusiner SB. Novel proteinaceous infectious particles cause scrapie. *Science*. 1982;216(4542):136–144. doi:10.1126/science.6801762
-13. Riordan JR, Rommens JM, Kerem B, et al. Identification of the cystic fibrosis gene: cloning and characterization of complementary DNA. *Science*. 1989;245(4922):1066–1073. doi:10.1126/science.2475911
-14. Pace CN, Shirley BA, McNutt M, Gajiwala K. Forces contributing to the conformational stability of proteins. *FASEB J*. 1996;10(1):75–83. doi:10.1096/fasebj.10.1.8566551
+5. Ramachandran GN, Ramakrishnan C, Sasisekharan V. Stereochemistry of polypeptide chain configurations. *J Mol Biol*. 1963;7:95–99. doi:10.1016/S0022-2836(63)80023-6
+6. Pauling L, Itano HA, Singer SJ, Wells IC. Sickle cell anemia, a molecular disease. *Science*. 1949;110(2865):543–548. doi:10.1126/science.110.2865.543
+7. Ingram VM. Gene mutations in human haemoglobin: the chemical difference between normal and sickle cell haemoglobin. *Nature*. 1957;180(4581):326–328. doi:10.1038/180326a0
+8. Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure prediction with AlphaFold. *Nature*. 2021;596(7873):583–589. doi:10.1038/s41586-021-03819-2
+9. Hartl FU, Bracher A, Hayer-Hartl M. Molecular chaperones in protein folding and proteostasis. *Nature*. 2011;475(7356):324–332. doi:10.1038/nature10317
+10. Hayer-Hartl M, Bracher A, Hartl FU. The GroEL–GroES chaperonin machine: a nano-cage for protein folding. *Trends Biochem Sci*. 2016;41(1):62–76. doi:10.1016/j.tibs.2015.07.009
+11. Levinthal C. How to fold graciously. In: DeBrunner JTP, Münck E, eds. *Mössbauer Spectroscopy in Biological Systems: Proceedings of a Meeting held at Allerton House, Monticello, Illinois*. University of Illinois Press; 1969:22–24.
+12. Dobson CM. Protein folding and misfolding. *Nature*. 2003;426(6968):884–890. doi:10.1038/nature02261
+13. Prusiner SB. Novel proteinaceous infectious particles cause scrapie. *Science*. 1982;216(4542):136–144. doi:10.1126/science.6801762
+14. Riordan JR, Rommens JM, Kerem B, et al. Identification of the cystic fibrosis gene: cloning and characterization of complementary DNA. *Science*. 1989;245(4922):1066–1073. doi:10.1126/science.2475911
+15. Pace CN, Shirley BA, McNutt M, Gajiwala K. Forces contributing to the conformational stability of proteins. *FASEB J*. 1996;10(1):75–83. doi:10.1096/fasebj.10.1.8566551
 
 *Chapter 3: Molecular Binding & Hemoglobin*

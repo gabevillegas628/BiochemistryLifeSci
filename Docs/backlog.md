@@ -60,15 +60,13 @@ Items to revisit. Add context so future-you remembers why it was deferred.
 
 ## Phi/Psi Angles and Ramachandran Plot
 
-**Where it belongs:** Chapter 2, peptide bond section, immediately after the discussion of phi ($\phi$) and psi ($\psi$) angles and their role in restricting backbone geometry.
+**RESOLVED (Chapter 2, 2026-09-06):** Added as two subsections opening Secondary Structure, ahead of The Alpha Helix: "The Ramachandran Plot: What the Backbone Can Actually Do" and "Glycine and Proline: The Two Exceptions". Uses Ramachandran_Generic2.jpg (general case, alpha and beta basins labeled) plus the separate Gly and Pro plots, which make the steric argument visually: no $C_\beta$ opens the whole map for Gly, the pyrrolidine ring collapses Pro to a vertical stripe at $\phi \approx -60°$.
 
-**What's needed:**
-1. A diagram showing a backbone segment with the phi and psi angles labeled at the alpha-carbon, making clear which bond each angle describes.
-2. A Ramachandran plot showing the allowed (alpha-helix, beta-sheet) and disallowed regions of phi/psi space. Ideally shaded to show favored vs. allowed vs. disallowed regions, with the helix and sheet regions labeled.
+Placed at secondary structure rather than the peptide bond section as originally proposed. The peptide bond section sits under The Amino Acids and is followed by ~110 lines of side chain catalogue, which would have separated the plot from the helix and sheet that give it meaning. The angle definitions stay at the peptide bond section with a forward reference; only the plot moved.
 
-**Why it matters:** The Ramachandran plot is the single best visual proof that secondary structures are not arbitrary. Students who see it understand immediately why only a few backbone geometries exist in real proteins. Hard to convey in prose alone.
+Two accuracy fixes came out of the Pro plot, which shows a well-populated cluster at helical $\phi/\psi$: the claim that proline "cannot" adopt helical angles was wrong and has been corrected in the Alpha Helix section. Proline's $\phi \approx -60°$ is the helical value; it disrupts helices because it has no backbone N-H and its ring clashes with the preceding residue. Ramachandran GN et al. 1963 added as reference 5 (later refs renumbered).
 
-**Challenge:** Both require real figures. MathJax cannot approximate a 2D scatter/contour plot. This is a strong candidate for the figures directory once one is established.
+**Still open:** the backlog also asked for a labeled backbone diagram showing which bond each angle describes, to sit next to the definitions at the peptide bond section. Not yet made. Ramachandran_Generic.jpg (the schematic with 3-10, polyproline II, and L-alpha regions labeled) is on disk but unused; it is a candidate if the minor regions ever need naming.
 
 ---
 
@@ -84,11 +82,7 @@ Items to revisit. Add context so future-you remembers why it was deferred.
 
 ## Alcohol Metabolism, NADH Accumulation, and the NAD+/NADH Ratio
 
-**Where it belongs:** The glycolysis/gluconeogenesis chapter (Chapter 10), in the section on gluconeogenesis or the regulation of glycolysis.
-
-**Why it's great:** Alcohol is oxidized to acetaldehyde by alcohol dehydrogenase and then to acetate by aldehyde dehydrogenase — both reactions reduce NAD+ to NADH. Heavy alcohol consumption floods the liver with NADH, driving the NAD+/NADH ratio way down. The consequences are a direct illustration of the pathway thermodynamics in Ch. 9: low NAD+ stalls gluconeogenesis (which needs NAD+ at the glyceraldehyde-3-phosphate dehydrogenase step), causing hypoglycemia; excess NADH pushes pyruvate toward lactate rather than gluconeogenesis, causing lactic acidosis; and the same NADH shift pushes oxaloacetate toward malate, starving the TCA cycle of its entry substrate. Fasting hypoglycemia in a binge drinker is essentially a real-world demonstration of what happens when you collapse the NAD+/NADH ratio.
-
-**Note:** Ch. 9 already makes the point that NAD+/NADH ratio governs pathway flux. This case study is the payoff for that concept, and should live in whichever chapter covers gluconeogenesis regulation.
+**RESOLVED (Chapter 10, 2026-05-31; Chapter 11, 2026-05-31):** Full treatment added to Chapter 10 as "Alcohol, NAD⁺, and Hypoglycemia" in the When It Breaks section: covers ADH/ALDH reactions, NAD⁺ depletion, gluconeogenesis stall, pyruvate-to-lactate shift, OAA-to-malate shift, and the clinical picture of fasting hypoglycemia in a binge drinker. Chapter 11 adds the downstream note that acetate from alcohol metabolism is activated to acetyl-CoA by acetyl-CoA synthetase, completing the alcohol carbon story through to the TCA cycle.
 
 ---
 
