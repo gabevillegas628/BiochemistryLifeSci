@@ -27,7 +27,7 @@ A free, openly licensed course companion for Biochemistry for Life Sciences (694
 - **Math/equations:** MathJax inline syntax (dollar sign delimiters) — renders on LibreTexts, GitHub Pages, MkDocs, and most modern static site generators without modification
 - **Editor:** VS Code
 - **Version control:** Git (start a repo immediately, even if it's just local for now)
-- **Publishing target:** TBD — LibreTexts is the likely home (free hosting, textbook-appropriate navigation, MathJax native support, openly licensed). GitHub Pages with MkDocs is an alternative if more control is needed. Decision doesn't need to be made before writing starts — Markdown is portable.
+- **Publishing target:** Self-hosted on Pulse, the custom course LMS at [pulseclassroom.com](https://pulseclassroom.com) (source at `C:\Users\gabev\Pulse`). Pulse fetches chapters straight from this GitHub repo and renders them server-side, so **anything pushed to master is live**. LibreTexts remains a possible future home; Markdown stays portable either way.
 
 ### MathJax Quick Reference
 
@@ -41,6 +41,33 @@ $$\Delta G = \Delta G^{\circ'} + RT\ln\frac{[\text{products}]}{[\text{reactants}
 Greek letters: `$\Delta$` `$\alpha$` `$\beta$` `$\mu$` `$K_m$` `$k_{cat}$`
 
 Subscripts/superscripts: `$CO_2$` `$ATP^{4-}$`
+
+---
+
+### Figure Quick Reference
+
+Figures go in as a **raw HTML block**, not markdown image syntax. Blank line above and below, no blank lines inside:
+
+```html
+<figure>
+<img src="Assets/Ch02/Ramachandran_plot_Gly.jpg" alt="Ramachandran plot for glycine">
+<figcaption><strong>Figure 2.3.</strong> Caption text. Image by Author, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Example.jpg">Wikimedia Commons</a>.</figcaption>
+</figure>
+```
+
+Rules, all of which follow from how Pulse renders:
+
+- **No markdown inside the block.** Markdown is not parsed inside an HTML block, so caption links must be raw `<a href>`, never `[text](url)`.
+- **No `<em>` around caption text.** Pulse's caption CSS sets `font-style: normal`. Keep `<strong>` on the figure number.
+- **Number content figures only**, as `Figure <chapter>.<n>`. Chapter banners are decorative: plain markdown image, no caption, no number.
+- **Commit the image file.** Pulse serves images from raw.githubusercontent, so an uncommitted asset is a 404 on the live site, not just a broken preview.
+- **Blank lines matter.** Without them CommonMark splits the block and the tags come apart.
+
+**Attribution.** External images need author, license, and a link to the source file, written into the caption rather than a separate credits section. Verify the source before writing it; never assume a license because something "came from Wikipedia." Confirm identity by matching pixel dimensions and file size against the source page. Prefer CC BY, which has no ShareAlike term and so raises no question against this book's CC BY-NC-SA 4.0 license.
+
+**Text wrapping** is possible but currently unused. `align`, `width`, and `height` all pass Pulse's sanitizer, so `<img align="left" width="320">` works. Avoid it for data-dense figures that need full width to be legible.
+
+**If captions ever render as plain unstyled text**, the cause is Pulse's `rehypeSanitize` schema in `backend/src/routes/textbook.routes.ts` no longer allowing `figure` and `figcaption`. They are not in `hast-util-sanitize`'s default allowlist and had to be added explicitly. Caption styling lives in `frontend/src/styles/globals.css` under `.textbook-prose figure figcaption`. Rendered HTML is cached for an hour, so purge with `DELETE /textbook/cache` or restart after any change that affects rendering.
 
 ---
 
