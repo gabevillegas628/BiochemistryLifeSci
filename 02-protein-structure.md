@@ -210,6 +210,8 @@ $$
 
 ![Peptide bond formation](Assets/Ch02/PeptideBond.svg)
 
+**Figure 2.1.** *Peptide bond formation. The carboxyl group of one amino acid condenses with the amino group of the next, releasing water.*
+
 Primary structure is where the sickle cell mutation lives. In normal hemoglobin (HbA), position 6 of the beta chain reads: Val-His-Leu-Thr-Pro-**Glu**-Glu. In sickle hemoglobin (HbS), it reads: Val-His-Leu-Thr-Pro-**Val**-Glu. One substitution, position 6, glutamate to valine. Everything that follows from it, the polymerization, the sickling, the disease, is a consequence of that single change in primary structure.
 
 ### Secondary Structure
@@ -223,6 +225,8 @@ Go back to the peptide bond for a moment. Each residue hands you exactly two adj
 So which pairs does the backbone actually use? G. N. Ramachandran asked that question in 1963 and answered it with hard-sphere geometry rather than a database of structures, mostly because in 1963 there were almost no structures to look at. He worked out which combinations force two atoms to occupy the same space, threw those out, and plotted what survived. The plot carries his name.
 
 ![Ramachandran plot for a generic amino acid residue](Assets/Ch02/Ramachandran_Generic2.jpg)
+
+**Figure 2.2.** *Ramachandran plot for a general residue, meaning any amino acid other than glycine or proline, plotted from roughly 100,000 residues in high-resolution crystal structures. Image by Dcrjsr, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ramachandran_plot_general_100K.jpg). Underlying data from Lovell et al. 2003.*
 
 Each axis runs from $-180°$ to $+180°$, so the square covers every conformation you could physically ask the backbone for. Each dot is one residue from one real, solved structure. The inner contours enclose the favored regions, the outer contours the merely allowed ones.
 
@@ -238,11 +242,15 @@ That plot leaves out glycine and proline, and for good reason. Both of them chea
 
 ![Ramachandran plot for glycine](Assets/Ch02/Ramachandran_plot_Gly.jpg)
 
+**Figure 2.3.** *Ramachandran plot for glycine alone, from 500 proteins solved at 1.7 Angstrom resolution. Compare the populated right half against the generic plot above. Image by Dcrjsr, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ramachandran_plot_Gly.jpg). Underlying data from Lovell et al. 2003.*
+
 Glycine's side chain is a single hydrogen atom, so glycine has no $C_\beta$ at all. The clash that empties most of the generic plot never happens, and the map opens up accordingly: the entire right half is populated, and the left-handed alpha region is about as crowded as the right-handed one. Notice also that the whole thing is nearly symmetric about the origin. That is not a coincidence. Glycine is the only amino acid that is not chiral, and this plot is that fact showing up in the backbone geometry, since with no side chain to distinguish them, $(\phi, \psi)$ and $(-\phi, -\psi)$ are the same situation to a glycine.
 
 So glycine goes wherever you need it to go. That is the real reason it turns up at tight turns. Not because it is small and gets out of the way, though it is and it does, but because it is the only residue with the conformational freedom to make the turn at all.
 
 ![Ramachandran plot for proline](Assets/Ch02/Ramachandran_plot_Pro.jpg)
+
+**Figure 2.4.** *Ramachandran plot for proline alone. The pyrrolidine ring confines the entire distribution to a narrow vertical stripe. Image by Dcrjsr, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ramachandran_plot_Pro.jpg). Underlying data from Lovell et al. 2003.*
 
 Proline is the opposite problem. Its side chain loops back onto its own backbone nitrogen, and that ring physically blocks rotation about the $N-C_\alpha$ bond. $\phi$ is stuck near $-60°$, and the whole plot collapses into a narrow vertical stripe. $\psi$ is still free, which is why the stripe has structure to it: one cluster low, near $\psi = -35°$, and a larger one high, near $\psi = +150°$, called the **polyproline II** conformation. That upper cluster is not a curiosity. It is the backbone conformation of collagen, the most abundant protein in your body, and it shows up throughout the flexible linkers that connect protein domains.
 
@@ -542,15 +550,16 @@ You are given two peptides of identical length and amino acid composition, but w
 3. Anfinsen CB. Principles that govern the folding of protein chains. *Science*. 1973;181(4096):223–230. doi:10.1126/science.181.4096.223
 4. Pauling L, Corey RB, Branson HR. The structure of proteins: two hydrogen-bonded helical configurations of the polypeptide chain. *Proc Natl Acad Sci USA*. 1951;37(4):205–211. doi:10.1073/pnas.37.4.205
 5. Ramachandran GN, Ramakrishnan C, Sasisekharan V. Stereochemistry of polypeptide chain configurations. *J Mol Biol*. 1963;7:95–99. doi:10.1016/S0022-2836(63)80023-6
-6. Pauling L, Itano HA, Singer SJ, Wells IC. Sickle cell anemia, a molecular disease. *Science*. 1949;110(2865):543–548. doi:10.1126/science.110.2865.543
-7. Ingram VM. Gene mutations in human haemoglobin: the chemical difference between normal and sickle cell haemoglobin. *Nature*. 1957;180(4581):326–328. doi:10.1038/180326a0
-8. Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure prediction with AlphaFold. *Nature*. 2021;596(7873):583–589. doi:10.1038/s41586-021-03819-2
-9. Hartl FU, Bracher A, Hayer-Hartl M. Molecular chaperones in protein folding and proteostasis. *Nature*. 2011;475(7356):324–332. doi:10.1038/nature10317
-10. Hayer-Hartl M, Bracher A, Hartl FU. The GroEL–GroES chaperonin machine: a nano-cage for protein folding. *Trends Biochem Sci*. 2016;41(1):62–76. doi:10.1016/j.tibs.2015.07.009
-11. Levinthal C. How to fold graciously. In: DeBrunner JTP, Münck E, eds. *Mössbauer Spectroscopy in Biological Systems: Proceedings of a Meeting held at Allerton House, Monticello, Illinois*. University of Illinois Press; 1969:22–24.
-12. Dobson CM. Protein folding and misfolding. *Nature*. 2003;426(6968):884–890. doi:10.1038/nature02261
-13. Prusiner SB. Novel proteinaceous infectious particles cause scrapie. *Science*. 1982;216(4542):136–144. doi:10.1126/science.6801762
-14. Riordan JR, Rommens JM, Kerem B, et al. Identification of the cystic fibrosis gene: cloning and characterization of complementary DNA. *Science*. 1989;245(4922):1066–1073. doi:10.1126/science.2475911
-15. Pace CN, Shirley BA, McNutt M, Gajiwala K. Forces contributing to the conformational stability of proteins. *FASEB J*. 1996;10(1):75–83. doi:10.1096/fasebj.10.1.8566551
+6. Lovell SC, Davis IW, Arendall WB 3rd, et al. Structure validation by C-alpha geometry: phi, psi and C-beta deviation. *Proteins*. 2003;50(3):437–450. doi:10.1002/prot.10286
+7. Pauling L, Itano HA, Singer SJ, Wells IC. Sickle cell anemia, a molecular disease. *Science*. 1949;110(2865):543–548. doi:10.1126/science.110.2865.543
+8. Ingram VM. Gene mutations in human haemoglobin: the chemical difference between normal and sickle cell haemoglobin. *Nature*. 1957;180(4581):326–328. doi:10.1038/180326a0
+9. Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure prediction with AlphaFold. *Nature*. 2021;596(7873):583–589. doi:10.1038/s41586-021-03819-2
+10. Hartl FU, Bracher A, Hayer-Hartl M. Molecular chaperones in protein folding and proteostasis. *Nature*. 2011;475(7356):324–332. doi:10.1038/nature10317
+11. Hayer-Hartl M, Bracher A, Hartl FU. The GroEL–GroES chaperonin machine: a nano-cage for protein folding. *Trends Biochem Sci*. 2016;41(1):62–76. doi:10.1016/j.tibs.2015.07.009
+12. Levinthal C. How to fold graciously. In: DeBrunner JTP, Münck E, eds. *Mössbauer Spectroscopy in Biological Systems: Proceedings of a Meeting held at Allerton House, Monticello, Illinois*. University of Illinois Press; 1969:22–24.
+13. Dobson CM. Protein folding and misfolding. *Nature*. 2003;426(6968):884–890. doi:10.1038/nature02261
+14. Prusiner SB. Novel proteinaceous infectious particles cause scrapie. *Science*. 1982;216(4542):136–144. doi:10.1126/science.6801762
+15. Riordan JR, Rommens JM, Kerem B, et al. Identification of the cystic fibrosis gene: cloning and characterization of complementary DNA. *Science*. 1989;245(4922):1066–1073. doi:10.1126/science.2475911
+16. Pace CN, Shirley BA, McNutt M, Gajiwala K. Forces contributing to the conformational stability of proteins. *FASEB J*. 1996;10(1):75–83. doi:10.1096/fasebj.10.1.8566551
 
 *Chapter 3: Molecular Binding & Hemoglobin*

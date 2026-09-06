@@ -66,7 +66,7 @@ Placed at secondary structure rather than the peptide bond section as originally
 
 Two accuracy fixes came out of the Pro plot, which shows a well-populated cluster at helical $\phi/\psi$: the claim that proline "cannot" adopt helical angles was wrong and has been corrected in the Alpha Helix section. Proline's $\phi \approx -60°$ is the helical value; it disrupts helices because it has no backbone N-H and its ring clashes with the preceding residue. Ramachandran GN et al. 1963 added as reference 5 (later refs renumbered).
 
-**Still open:** the backlog also asked for a labeled backbone diagram showing which bond each angle describes, to sit next to the definitions at the peptide bond section. Not yet made. Ramachandran_Generic.jpg (the schematic with 3-10, polyproline II, and L-alpha regions labeled) is on disk but unused; it is a candidate if the minor regions ever need naming.
+**Still open:** the backlog also asked for a labeled backbone diagram showing which bond each angle describes, to sit next to the definitions at the peptide bond section. Not yet made. Ramachandran_Generic.jpg (the schematic with 3-10, polyproline II, and L-alpha regions labeled) is on disk but unused; it is a candidate if the minor regions ever need naming. If used, it needs the same attribution as the other three: it is File:Ramachandran plot original outlines.jpg on Wikimedia Commons, by Dcrjsr, CC BY 3.0, showing G. N. Ramachandran's original 1963 outlines.
 
 ---
 
