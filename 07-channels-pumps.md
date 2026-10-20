@@ -472,27 +472,6 @@ Acetylcholine (ACh) is released at the neuromuscular junction and acts on nicoti
 
 ---
 
-**Problem 7.** *(Synthesis)*
-Consider two scenarios that each cause weakness at the neuromuscular junction:
-
-- **Scenario A:** A patient has antibodies against the nAChR that reduce the number of functional receptors at the motor endplate by 70%.
-- **Scenario B:** A patient has been exposed to a toxin that irreversibly cleaves the SNARE protein synaptobrevin in presynaptic motor nerve terminals.
-
-(a) For each scenario, predict whether the repetitive nerve stimulation test (a train of electrical pulses to the motor nerve) would show a decremental response (each successive compound muscle action potential gets smaller) or an incremental response (each successive response gets larger). Explain the mechanism in each case.
-(b) In Scenario A, administration of pyridostigmine (a long-acting AChE inhibitor) improves strength. Explain the molecular mechanism. Would pyridostigmine help in Scenario B? Why or why not?
-(c) In Scenario A, why is the weakness characteristically worse at the end of the day and better after rest? What is depleted, and why does rest restore it?
-
----
-
-**Problem 8.** *(Synthesis)*
-Myelination of axons by oligodendrocytes dramatically increases action potential propagation velocity in the CNS. Multiple sclerosis (MS) is a demyelinating disease.
-
-(a) Explain why loss of myelin slows action potential propagation. Your answer should contrast the mechanism of propagation in myelinated versus unmyelinated axons.
-(b) Voltage-gated $\text{Na}^+$ channels are concentrated at the nodes of Ranvier in myelinated axons. After demyelination, internodal segments (normally without $\text{Na}^+$ channels) must acquire new channels to restore any conduction. Over weeks to months, some MS patients experience partial spontaneous recovery. Propose a molecular mechanism for this recovery.
-(c) A patient with MS notices that her symptoms worsen dramatically in a hot shower but improve when she cools down. This is called Uhthoff's phenomenon. Using your knowledge of channel kinetics and membrane physiology, explain why elevated temperature would specifically impair conduction in demyelinated axons more than in normal myelinated axons.
-
----
-
 ## References
 
 1. Berg JM, Tymoczko JL, Gatto GJ, Stryer L. *Biochemistry*, 9th ed. W.H. Freeman; 2019.

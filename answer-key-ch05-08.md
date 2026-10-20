@@ -173,140 +173,6 @@ Second, preparation B will likely have shorter average acyl chain lengths. Short
 
 ---
 
-### Chapter 7 — Problem 7
-
-**(a)** Scenario A (anti-nAChR antibodies, 70% receptor loss): decremental response. With fewer functional receptors at the endplate, each release of ACh produces a smaller endplate potential. Under repetitive stimulation, the presynaptic terminal progressively depletes its readily releasable pool of ACh vesicles faster than it can replenish them, so each successive stimulus releases less ACh and the already-reduced receptor number compounds the deficit. Each successive compound muscle action potential (CMAP) is smaller.
-
-Scenario B (synaptobrevin cleaved by toxin): decremental response, though by a different mechanism. Synaptobrevin is the v-SNARE required for vesicle fusion with the presynaptic membrane. Without it, vesicles cannot dock and fuse; ACh release fails entirely or is severely reduced from the start. Repetitive stimulation cannot overcome this because the fusion machinery is irreversibly destroyed. Each successive stimulus fails to release ACh, and successive CMAPs decrease or disappear.
-
-(Note: an incremental response is characteristic of Lambert-Eaton syndrome, where anti-VGCC antibodies reduce initial ACh release but repetitive stimulation mobilizes calcium and transiently improves release. Neither scenario here presents that mechanism.)
-
-**(b)** Pyridostigmine inhibits acetylcholinesterase, slowing the degradation of ACh in the synaptic cleft. In Scenario A, the problem is too few receptors per unit of ACh released; prolonging ACh dwell time in the cleft increases the probability that each ACh molecule finds and occupies one of the reduced number of functional receptors, improving neuromuscular transmission. In Scenario B, the problem is absent ACh release, because the SNARE machinery for vesicle fusion is destroyed. No amount of AChE inhibition can help if no ACh is ever released into the cleft. Pyridostigmine would not benefit Scenario B patients.
-
-**(c)** In Scenario A (myasthenia gravis), the residual functional nAChRs at the endplate are few. Normal neuromuscular transmission requires a safety margin: the endplate potential normally exceeds the threshold for muscle action potential by a substantial amount. With 70% receptor loss, the safety margin is reduced. During sustained activity, the presynaptic terminal depletes its readily releasable ACh vesicle pool faster than it is replenished by synthesis and recycling. Each successive nerve impulse releases less ACh, the endplate potential falls further, and eventually it fails to exceed threshold. Rest allows the presynaptic terminal to replenish its ACh stores and restore the vesicle pool, rebuilding the safety margin temporarily.
-
----
-
-### Chapter 7 — Problem 8
-
-**(a)** In unmyelinated axons, voltage-gated $\text{Na}^+$ channels are distributed along the entire axon membrane; each segment of membrane must regenerate the action potential through local depolarization and ion flow, and conduction is slow (continuous conduction). In myelinated axons, the myelin sheath electrically insulates the internodal membrane and concentrates $\text{Na}^+$ channels at the nodes of Ranvier. The action potential jumps from node to node (saltatory conduction), regenerating only at nodes rather than at every point along the fiber. This is far faster because a large depolarizing current passively spreads through the low-resistance internodal segment almost instantaneously before regenerating at the next node. When myelin is lost, the internodal membrane is exposed but lacks adequate $\text{Na}^+$ channels; current leaks out across the now-uninsulated membrane and decays before reaching the next node. Conduction slows, becomes unreliable, or fails (conduction block).
-
-**(b)** Weeks to months after demyelination, $\text{Na}^+$ channels can redistribute along the previously bare internodal axon membrane, partially restoring the ability to depolarize the exposed segments. This redistribution likely involves upregulation of $\text{Na}^+$ channel gene expression (particularly Nav1.2 and Nav1.6) and integration of new channels into the internodal membrane. With channels now present between nodes, the axon can conduct by a slow, continuous mechanism analogous to unmyelinated fibers, partially restoring signal transmission. This is one molecular basis for the partial spontaneous recovery observed in relapsing-remitting MS.
-
-**(c)** Elevated temperature accelerates the inactivation kinetics of voltage-gated $\text{Na}^+$ channels: channels open more briefly and recover from inactivation more slowly at higher temperatures. In a normal myelinated axon, conduction at each node is robust because the node concentrates a high density of $\text{Na}^+$ channels; even with somewhat shortened channel open times, there is a large safety margin and conduction succeeds. In a demyelinated axon conducting through newly redistributed internodal channels at low density, the safety margin is already minimal. At elevated temperature, the shortened $\text{Na}^+$ channel open times reduce the inward current per action potential; this small current, trying to propagate through a low-density, low-efficiency internodal membrane, now fails to exceed threshold at the next regeneration point. Conduction block occurs at temperatures that would be completely tolerable in a normal myelinated axon.
-
----
-
-## Chapter 8 Answers: Signal Transduction
-
-### Chapter 8 — Problem 1
-
-**(a)** Epinephrine binds the β₂-adrenergic receptor (β₂AR), a GPCR, inducing a conformational change in the receptor that activates the associated heterotrimeric G protein Gₛ. Activated receptor acts as a GEF (guanine nucleotide exchange factor): it catalyzes release of GDP from Gαs and binding of GTP. GTP-bound Gαs dissociates from Gβγ and binds adenylyl cyclase (a transmembrane enzyme) at the inner face of the plasma membrane. Adenylyl cyclase is activated and converts ATP to cyclic AMP (cAMP). cAMP diffuses in the cytoplasm and binds the regulatory subunits of protein kinase A (PKA), releasing the catalytic subunits, which then phosphorylate downstream targets including myosin light chain kinase (in smooth muscle, phosphorylation leads to relaxation) and other effectors that produce bronchodilation.
-
-**(b)** Three termination mechanisms at three levels:
-
-1. Intrinsic GTPase of Gαs: Gαs hydrolyzes GTP to GDP, converting itself back to the inactive state and dissociating from adenylyl cyclase. This is the primary timer of the G protein signal.
-
-2. Phosphodiesterase (PDE): cytoplasmic PDEs (especially PDE4) hydrolyze cAMP to 5′-AMP, rapidly lowering cAMP concentration and inactivating PKA.
-
-3. GRK-mediated receptor phosphorylation and β-arrestin recruitment: G protein-coupled receptor kinases (GRKs) phosphorylate the activated β₂AR on intracellular serine/threonine residues. β-Arrestin binds the phosphorylated receptor, sterically blocking further Gₛ coupling (uncoupling) and targeting the receptor for endocytosis (internalization/downregulation).
-
-**(c)** GTP-γ-S cannot be hydrolyzed by the intrinsic GTPase of Gαs. The Gαs subunit binds GTP-γ-S, dissociates from Gβγ, and activates adenylyl cyclase, but the GTPase hydrolysis step that would normally terminate the signal is blocked. cAMP levels would rise continuously and remain elevated. The termination mechanism bypassed is the intrinsic GTPase activity of Gαs (mechanism 1 above). The receptor phosphorylation and PDE pathways remain intact but cannot compensate for a Gαs locked permanently in the active state.
-
----
-
-### Chapter 8 — Problem 2
-
-**(a)** Cholera toxin ADP-ribosylates Gαs at Arg201, a residue in the active site that is critical for GTP hydrolysis. The ADP-ribose group added to this arginine sterically and electrostatically disrupts the catalytic mechanism for water-mediated GTP hydrolysis, permanently abolishing GTPase activity. Gαs remains GTP-bound, continuously active, and continuously stimulates adenylyl cyclase, leading to pathological cAMP overproduction (particularly in intestinal epithelial cells, driving secretory diarrhea).
-
-**(b)** Pertussis toxin ADP-ribosylates Gαi at a cysteine near the C-terminus, preventing Gαi from interacting with activated GPCRs. This locks Gαi in the GDP-bound inactive state: it cannot exchange GDP for GTP, cannot dissociate from Gβγ, and cannot inhibit adenylyl cyclase. Normally, Gαi (activated by Gi-coupled receptors) inhibits adenylyl cyclase and lowers cAMP. When Gαi is locked off, its inhibitory brake on adenylyl cyclase is removed. Adenylyl cyclase runs uninhibited, and cAMP rises. The outcome — elevated cAMP — is the same as locking Gαs on, but the mechanism is removing inhibition rather than adding stimulation.
-
-**(c)** In a Gαi-knockout cell line, treating with a Gi-coupled receptor agonist produces no response: there is no Gαi to activate, so the agonist has nothing to work through. cAMP remains at baseline (no inhibition to add or remove). Adding cholera toxin to these same cells locks Gαs on, and cAMP rises dramatically from baseline. The magnitude of the cholera toxin effect would be the same as or larger than in wild-type cells expressing Gαi, because wild-type cells have some constitutive Gαi tone that partially inhibits adenylyl cyclase; the Gαi-knockout cell starts from a higher basal adenylyl cyclase activity (no tonic inhibition). With cholera toxin added on top of that already-uninhibited adenylyl cyclase, cAMP rises to a high absolute level. The effect of cholera toxin is therefore at least as large, and the absolute cAMP ceiling may be higher, in the Gαi-knockout cells.
-
----
-
-### Chapter 8 — Problem 3
-
-**(a)** The insulin receptor is a disulfide-linked αβ₂ heterodimer; each half contains one extracellular α subunit (insulin binding) and one transmembrane β subunit with an intracellular kinase domain. Insulin binding induces a conformational change that brings the two kinase domains into proximity. Trans-autophosphorylation means each kinase domain phosphorylates specific tyrosine residues on the other kinase domain. The first and most critical target is the activation loop tyrosine (Tyr1158/1162/1163 in humans). In the unphosphorylated state, the activation loop folds into the active site and blocks substrate access. Phosphorylation of the activation loop tyrosine stabilizes an open conformation of the activation loop, allowing substrates to bind and dramatically increasing catalytic activity. Additional phosphorylation of other intracellular tyrosines creates docking sites for adapter proteins.
-
-**(b)** PI3K converts PIP2 (phosphatidylinositol-4,5-bisphosphate) to PIP3 (phosphatidylinositol-3,4,5-trisphosphate) by adding a phosphate to the 3-OH of the inositol ring. PIP3 remains anchored in the inner leaflet of the plasma membrane by its two acyl chains; it cannot diffuse into the cytoplasm. This membrane tethering is the basis for its function as a spatial second messenger that recruits specific proteins to the membrane. Akt recognizes PIP3 through its pleckstrin homology (PH) domain, which selectively binds the unique phosphate configuration of the 3-position phosphate on PIP3. This PH domain-PIP3 interaction recruits Akt to the inner face of the plasma membrane, where it is phosphorylated and activated by PDK1 and mTORC2.
-
-**(c)** PTEN dephosphorylates PIP3 at the 3-position, regenerating PIP2, and thereby terminates the PIP3 signal. Without PTEN, PIP3 is not degraded and accumulates constitutively. Elevated PIP3 continuously recruits Akt to the membrane and keeps it in the active state. Loss of PTEN therefore produces the same downstream outcome as a constitutively active PI3K mutation: sustained PIP3 elevation → sustained Akt activation → constitutive pro-survival and pro-growth signaling. Whether the gain is at PI3K (more PIP3 produced) or at PTEN (less PIP3 degraded), the steady-state PIP3 level rises and Akt is constitutively active.
-
----
-
-### Chapter 8 — Problem 4
-
-**(a)** In a normal cell, EGF binds the EGFR receptor tyrosine kinase, causing dimerization and trans-autophosphorylation. Phosphotyrosine residues on the receptor recruit the adaptor protein Grb2, which uses its SH2 domain to bind the phosphotyrosine and its SH3 domains to recruit SOS (a GEF). SOS is brought to the membrane, where it catalyzes GDP/GTP exchange on Ras, converting Ras from the inactive GDP-bound form to the active GTP-bound form. Ras-GTP directly binds and recruits Raf to the plasma membrane, where Raf is activated (by membrane localization, phosphorylation, and dimerization). Raf phosphorylates and activates MEK, which in turn phosphorylates and activates ERK.
-
-**(b)** The BRAF-V600E mutation substitutes glutamate for valine at position 600, in the activation segment of Raf. The negative charge of glutamate mimics the phosphorylated activation loop, locking Raf in a constitutively active conformation that does not require upstream Ras-GTP input. BRAF-V600E acts downstream of Ras: it constitutively activates the MEK-ERK cascade regardless of whether Ras is active. The Ras GTPase switch is bypassed entirely; BRAF-V600E is independent of growth factor signaling.
-
-**(c)** NRAS amplification restores ERK activation despite BRAF inhibition because NRAS (an oncogenic Ras isoform) feeds into the MAPK cascade at the level of Ras, which is upstream of BRAF. With BRAF-V600E inhibited by vemurafenib, tumor cells can still activate wild-type BRAF or CRAF (C-Raf) via the amplified NRAS signal, restoring MEK and ERK activation through an alternative Raf isoform.
-
-**(d)** MEK is downstream of all Raf isoforms. Whether ERK is reactivated through BRAF-V600E, CRAF, or any other upstream input, all paths converge at MEK. A MEK inhibitor blocks the signal regardless of which upstream pathway is used to reactivate it, overcoming resistance mechanisms that operate above MEK. This is why MEK inhibitors (or MEK + BRAF inhibitor combinations) are used clinically to counter acquired resistance in BRAF-mutant tumors.
-
----
-
-### Chapter 8 — Problem 5
-
-**(a)** PLC cleaves PIP2 at the plasma membrane, generating two products simultaneously: IP3 (inositol-1,4,5-trisphosphate), a water-soluble molecule that diffuses into the cytoplasm, and DAG (diacylglycerol), which remains in the plasma membrane. IP3 travels to the ER membrane, where it binds IP3 receptors (IP3R), ligand-gated $\text{Ca}^{2+}$ channels on the ER, triggering $\text{Ca}^{2+}$ release into the cytoplasm. DAG stays at the plasma membrane and recruits and partially activates protein kinase C (PKC) at the membrane.
-
-**(b)** PKC requires both DAG and elevated $\text{Ca}^{2+}$ for full activation. Requiring two coincident signals from the same upstream event (PLC activation) means PKC is only fully switched on when the receptor has genuinely been stimulated — not by spurious fluctuations in either signal alone. DAG transiently accumulates at the membrane; $\text{Ca}^{2+}$ transiently rises in the cytoplasm. Both return to baseline quickly. Only when both are simultaneously elevated (i.e., during an actual, sustained receptor activation event) does PKC become active and phosphorylate its substrates. This coincidence detection improves signal fidelity: the probability of both signals being simultaneously elevated by noise is the product of their individual noise probabilities.
-
-**(c)** Thapsigargin irreversibly inhibits SERCA, preventing the pump from reloading $\text{Ca}^{2+}$ into the ER. In untreated cells, receptor activation triggers IP3R opening, releasing ER $\text{Ca}^{2+}$; SERCA then resequester the $\text{Ca}^{2+}$ back into the ER, terminating the $\text{Ca}^{2+}$ signal. In thapsigargin-treated cells: initially, the ER $\text{Ca}^{2+}$ store is already depleted (SERCA cannot refill it); when the Gq receptor is activated, the IP3-triggered $\text{Ca}^{2+}$ release is reduced or absent because the ER store is empty. The $\text{Ca}^{2+}$ signal depends on store-operated $\text{Ca}^{2+}$ entry (SOCE, via Orai channels) if at all. The transient cytoplasmic $\text{Ca}^{2+}$ peak from ER release would be blunted or absent; subsequent $\text{Ca}^{2+}$ entry from the extracellular space may prolong the signal but with different kinetics. Overall: smaller initial $\text{Ca}^{2+}$ transient, no SERCA-driven termination, and a sustained low-level plateau from extracellular entry rather than a sharp transient spike.
-
----
-
-### Chapter 8 — Problem 6
-
-**(a)** Epinephrine is water-soluble and cannot cross the plasma membrane; its receptor (β₂AR) is on the cell surface. Binding triggers an intracellular second messenger cascade (cAMP, PKA) within seconds, and PKA directly phosphorylates pre-existing cytoplasmic proteins. The cellular response (e.g., glycogen phosphorylase activation) occurs in seconds to minutes without any need for new gene transcription or protein synthesis. Cortisol is lipid-soluble and crosses the plasma membrane freely. Its receptor (GR) is intracellular. The signal is transduced by GR binding to DNA and driving new gene transcription; mRNA must be made, exported, translated, and the new proteins must accumulate before a cellular response is detectable. This requires hours.
-
-**(b)** (1) Cortisol enters the cell by diffusion through the plasma membrane and binds the ligand-binding domain of GR in the cytoplasm. (2) Cortisol binding causes a conformational change in GR that releases the heat shock proteins (Hsp90, Hsp70) that were holding GR inactive and sequestered in the cytoplasm; chaperone dissociation exposes the nuclear localization signal on GR. (3) GR undergoes active nuclear import via importins. (4) In the nucleus, GR binds specific DNA sequences called glucocorticoid response elements (GREs), typically as a homodimer, and recruits coactivators that remodel chromatin and activate RNA polymerase II, driving transcription of glucocorticoid-responsive genes.
-
-**(c)** The hypothalamic-pituitary-adrenal (HPA) axis is under negative feedback: cortisol (and synthetic glucocorticoids like dexamethasone) suppress hypothalamic CRH release and pituitary ACTH secretion. Dexamethasone's higher GR affinity means it produces powerful suppression of ACTH at much lower concentrations. During prolonged high-dose dexamethasone therapy, the HPA axis is chronically suppressed: the hypothalamus and pituitary stop producing CRH and ACTH, and the adrenal cortex atrophies from lack of stimulation. If dexamethasone is stopped abruptly, the exogenous glucocorticoid disappears, but the adrenal glands cannot immediately resume cortisol production because the glands are atrophied and the HPA axis remains suppressed. The patient has no endogenous cortisol and cannot mount a stress response, resulting in adrenal crisis: hypotension, hyponatremia, hypoglycemia, and potentially shock. Glucocorticoids must be tapered slowly to allow HPA axis recovery.
-
----
-
-### Chapter 8 — Problem 7
-
-**(a)** β-Arrestin reduces β₂AR signaling through two mechanisms. First, it physically sterically uncouples the receptor from Gₛ: β-arrestin binds the phosphorylated intracellular face of the receptor and blocks further Gₛ engagement, so even though the receptor is occupied by epinephrine, it can no longer activate adenylyl cyclase. Second, β-arrestin scaffolds the receptor for clathrin-mediated endocytosis by linking the phosphorylated receptor to clathrin and AP2, leading to internalization of the receptor into endosomes. Internalized receptors are removed from the cell surface (unavailable for further signaling), and depending on their fate (recycling or degradation) they either return to the surface (resensitization) or are targeted to lysosomes (downregulation).
-
-**(b)** A biased agonist that activates Gₛ but does not trigger β-arrestin recruitment would not induce GRK phosphorylation of the receptor (or if it does, the receptor is not recognized by β-arrestin). Without β-arrestin recruitment: (1) the receptor is not uncoupled from Gₛ as rapidly, potentially prolonging the acute signal; (2) the receptor is not efficiently internalized, so it remains at the cell surface; (3) receptor downregulation (lysosomal degradation triggered by chronic β-arrestin-dependent endocytosis) is greatly reduced. With chronic use, such a compound would be much less likely to cause receptor downregulation compared to a classical agonist. Its signaling might also not decay as sharply with continued dosing, since the primary receptor-level desensitization and loss-of-surface receptor number are both attenuated.
-
-**(c)** Prolonged morphine use activates µ-opioid receptors chronically. GRKs phosphorylate the receptor, β-arrestin is recruited, and the receptor undergoes desensitization (uncoupling from Gi) and internalization. With chronic exposure, receptors may not recycle efficiently (some are degraded), reducing total surface receptor number (downregulation). Additionally, downstream effectors adapt: adenylyl cyclase becomes supersensitized (upregulated) as a compensatory response to chronic Gi-mediated inhibition. The net result is that each dose of opioid produces progressively less Gi-mediated signaling per receptor occupied, requiring higher doses to achieve the same analgesic effect — tolerance. When the drug is stopped, the supersensitized adenylyl cyclase is unchecked, producing the hyperexcitable withdrawal state.
-
----
-
-### Chapter 8 — Problem 8
-
-**(a)** IRS-1 (insulin receptor substrate-1) is a docking protein that, upon tyrosine phosphorylation by the activated insulin receptor, recruits PI3K via SH2 domain interactions. This tyrosine phosphorylation is the essential event linking the receptor to PI3K-PIP3-Akt signaling. When inflammatory kinases (JNK, IKK) phosphorylate IRS-1 on serine residues instead, the serine phosphorylation causes two problems: it inhibits the ability of the insulin receptor to tyrosine-phosphorylate IRS-1 (the serine-phosphorylated IRS-1 is a poor substrate), and in some contexts the serine-phosphorylated form actively dissociates from the receptor. PI3K can no longer be recruited; PIP3 is not made; Akt is not activated; GLUT4 is not translocated to the plasma membrane. Glucose uptake fails despite the insulin receptor being structurally intact.
-
-**(b)** JNK inhibition → JNK no longer phosphorylates IRS-1 on serine residues → IRS-1 is available for tyrosine phosphorylation by the activated insulin receptor → PI3K is recruited to tyrosine-phosphorylated IRS-1 → PI3K converts PIP2 to PIP3 at the plasma membrane → Akt is recruited via its PH domain to PIP3 → PDK1 and mTORC2 phosphorylate and activate Akt → Akt phosphorylates AS160 (TBC1D4), inhibiting its GAP activity → Rab-GTP on GLUT4 storage vesicles remains active → GLUT4 vesicles translocate and fuse with the plasma membrane → glucose uptake increases.
-
-**(c)** AMPK activation by exercise triggers GLUT4 translocation independently of IRS-1 and the insulin receptor pathway, bypassing the point of insulin resistance. For type 2 diabetic patients whose IRS-1 is serine-phosphorylated and the insulin signaling axis is impaired, exercise can still drive glucose uptake into muscle through the AMPK pathway. This is clinically important because it means glucose control can be improved by exercise even when the primary defect (IRS-1 inhibition) is present. AMPK acts as an energy-sensing signal activated by rising AMP/ATP ratios during muscular work; it is a completely parallel input to GLUT4 mobilization that does not require a functional insulin receptor signaling chain.
-
-**(d)** A cancer cell with no PTEN has constitutively elevated PIP3 and constitutively active Akt. Akt promotes glucose uptake and glycolysis: it phosphorylates and activates hexokinase, promotes GLUT transporter expression, and activates mTORC1, which drives protein synthesis and cell growth. These cells would show high glucose uptake. For dietary restriction: since the cell is constitutively driving its own glucose uptake and glycolytic metabolism via Akt independently of extracellular growth factor availability, dietary carbohydrate restriction would have limited effect on its glucose-consuming program (the signal pathway downstream is always on). However, severely limiting overall caloric intake and glucose availability could still starve the cell metabolically since even a constitutively active pathway cannot manufacture glucose it cannot receive. The cell would be partially but perhaps not fully suppressed by dietary restriction alone.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
 ### Chapter 6 — Problem 8
 
 **(a)** Statins inhibit HMG-CoA reductase, the rate-limiting enzyme of cholesterol biosynthesis in the liver. When hepatic cholesterol synthesis falls, intracellular cholesterol levels drop. The sterol-regulatory element binding protein SREBP-2, which is normally retained in the ER by SCAP when cholesterol is abundant, is released, traffics to the Golgi, is cleaved by S1P and S2P proteases, and the active fragment migrates to the nucleus. There it drives transcription of the LDL receptor gene. More LDL receptors are expressed on the hepatocyte surface, LDL particles are endocytosed more rapidly from plasma, and plasma LDL concentration falls.
@@ -399,24 +265,94 @@ $\text{K}^+$: $V_m - E_{\text{K}} = -75 - (-90) = +15\;\text{mV}$. $\text{K}^+$ 
 
 When AChE is inhibited by organophosphate compounds, ACh accumulates in the synapse. At the neuromuscular junction this causes initial fasciculations followed by flaccid weakness and eventually respiratory failure as the diaphragm becomes paralyzed by depolarization block. At muscarinic synapses (ANS, CNS), excessive ACh produces the cholinergic toxidrome: bradycardia, hypersecretions, bronchospasm, and miosis. The extreme rapidity of normal ACh clearance (under 1 ms) is therefore not merely efficient, it is the structural basis of neuromuscular precision.
 
+---
 
+## Chapter 8 Answers: Signal Transduction
 
+### Chapter 8 — Problem 1
 
+**(a)** Epinephrine binds the β₂-adrenergic receptor (β₂AR), a GPCR, inducing a conformational change in the receptor that activates the associated heterotrimeric G protein Gₛ. Activated receptor acts as a GEF (guanine nucleotide exchange factor): it catalyzes release of GDP from Gαs and binding of GTP. GTP-bound Gαs dissociates from Gβγ and binds adenylyl cyclase (a transmembrane enzyme) at the inner face of the plasma membrane. Adenylyl cyclase is activated and converts ATP to cyclic AMP (cAMP). cAMP diffuses in the cytoplasm and binds the regulatory subunits of protein kinase A (PKA), releasing the catalytic subunits, which then phosphorylate downstream targets including myosin light chain kinase (in smooth muscle, phosphorylation leads to relaxation) and other effectors that produce bronchodilation.
 
+**(b)** Three termination mechanisms at three levels:
 
+1. Intrinsic GTPase of Gαs: Gαs hydrolyzes GTP to GDP, converting itself back to the inactive state and dissociating from adenylyl cyclase. This is the primary timer of the G protein signal.
 
+2. Phosphodiesterase (PDE): cytoplasmic PDEs (especially PDE4) hydrolyze cAMP to 5′-AMP, rapidly lowering cAMP concentration and inactivating PKA.
 
+3. GRK-mediated receptor phosphorylation and β-arrestin recruitment: G protein-coupled receptor kinases (GRKs) phosphorylate the activated β₂AR on intracellular serine/threonine residues. β-Arrestin binds the phosphorylated receptor, sterically blocking further Gₛ coupling (uncoupling) and targeting the receptor for endocytosis (internalization/downregulation).
 
+**(c)** GTP-γ-S cannot be hydrolyzed by the intrinsic GTPase of Gαs. The Gαs subunit binds GTP-γ-S, dissociates from Gβγ, and activates adenylyl cyclase, but the GTPase hydrolysis step that would normally terminate the signal is blocked. cAMP levels would rise continuously and remain elevated. The termination mechanism bypassed is the intrinsic GTPase activity of Gαs (mechanism 1 above). The receptor phosphorylation and PDE pathways remain intact but cannot compensate for a Gαs locked permanently in the active state.
 
+---
 
+### Chapter 8 — Problem 2
 
+**(a)** Cholera toxin ADP-ribosylates Gαs at Arg201, a residue in the active site that is critical for GTP hydrolysis. The ADP-ribose group added to this arginine sterically and electrostatically disrupts the catalytic mechanism for water-mediated GTP hydrolysis, permanently abolishing GTPase activity. Gαs remains GTP-bound, continuously active, and continuously stimulates adenylyl cyclase, leading to pathological cAMP overproduction (particularly in intestinal epithelial cells, driving secretory diarrhea).
 
+**(b)** Pertussis toxin ADP-ribosylates Gαi at a cysteine near the C-terminus, preventing Gαi from interacting with activated GPCRs. This locks Gαi in the GDP-bound inactive state: it cannot exchange GDP for GTP, cannot dissociate from Gβγ, and cannot inhibit adenylyl cyclase. Normally, Gαi (activated by Gi-coupled receptors) inhibits adenylyl cyclase and lowers cAMP. When Gαi is locked off, its inhibitory brake on adenylyl cyclase is removed. Adenylyl cyclase runs uninhibited, and cAMP rises. The outcome — elevated cAMP — is the same as locking Gαs on, but the mechanism is removing inhibition rather than adding stimulation.
 
+**(c)** In a Gαi-knockout cell line, treating with a Gi-coupled receptor agonist produces no response: there is no Gαi to activate, so the agonist has nothing to work through. cAMP remains at baseline (no inhibition to add or remove). Adding cholera toxin to these same cells locks Gαs on, and cAMP rises dramatically from baseline. The magnitude of the cholera toxin effect would be the same as or larger than in wild-type cells expressing Gαi, because wild-type cells have some constitutive Gαi tone that partially inhibits adenylyl cyclase; the Gαi-knockout cell starts from a higher basal adenylyl cyclase activity (no tonic inhibition). With cholera toxin added on top of that already-uninhibited adenylyl cyclase, cAMP rises to a high absolute level. The effect of cholera toxin is therefore at least as large, and the absolute cAMP ceiling may be higher, in the Gαi-knockout cells.
 
+---
 
+### Chapter 8 — Problem 3
 
+**(a)** The insulin receptor is a disulfide-linked αβ₂ heterodimer; each half contains one extracellular α subunit (insulin binding) and one transmembrane β subunit with an intracellular kinase domain. Insulin binding induces a conformational change that brings the two kinase domains into proximity. Trans-autophosphorylation means each kinase domain phosphorylates specific tyrosine residues on the other kinase domain. The first and most critical target is the activation loop tyrosine (Tyr1158/1162/1163 in humans). In the unphosphorylated state, the activation loop folds into the active site and blocks substrate access. Phosphorylation of the activation loop tyrosine stabilizes an open conformation of the activation loop, allowing substrates to bind and dramatically increasing catalytic activity. Additional phosphorylation of other intracellular tyrosines creates docking sites for adapter proteins.
 
+**(b)** PI3K converts PIP2 (phosphatidylinositol-4,5-bisphosphate) to PIP3 (phosphatidylinositol-3,4,5-trisphosphate) by adding a phosphate to the 3-OH of the inositol ring. PIP3 remains anchored in the inner leaflet of the plasma membrane by its two acyl chains; it cannot diffuse into the cytoplasm. This membrane tethering is the basis for its function as a spatial second messenger that recruits specific proteins to the membrane. Akt recognizes PIP3 through its pleckstrin homology (PH) domain, which selectively binds the unique phosphate configuration of the 3-position phosphate on PIP3. This PH domain-PIP3 interaction recruits Akt to the inner face of the plasma membrane, where it is phosphorylated and activated by PDK1 and mTORC2.
 
+**(c)** PTEN dephosphorylates PIP3 at the 3-position, regenerating PIP2, and thereby terminates the PIP3 signal. Without PTEN, PIP3 is not degraded and accumulates constitutively. Elevated PIP3 continuously recruits Akt to the membrane and keeps it in the active state. Loss of PTEN therefore produces the same downstream outcome as a constitutively active PI3K mutation: sustained PIP3 elevation → sustained Akt activation → constitutive pro-survival and pro-growth signaling. Whether the gain is at PI3K (more PIP3 produced) or at PTEN (less PIP3 degraded), the steady-state PIP3 level rises and Akt is constitutively active.
 
+---
 
+### Chapter 8 — Problem 4
 
+**(a)** In a normal cell, EGF binds the EGFR receptor tyrosine kinase, causing dimerization and trans-autophosphorylation. Phosphotyrosine residues on the receptor recruit the adaptor protein Grb2, which uses its SH2 domain to bind the phosphotyrosine and its SH3 domains to recruit SOS (a GEF). SOS is brought to the membrane, where it catalyzes GDP/GTP exchange on Ras, converting Ras from the inactive GDP-bound form to the active GTP-bound form. Ras-GTP directly binds and recruits Raf to the plasma membrane, where Raf is activated (by membrane localization, phosphorylation, and dimerization). Raf phosphorylates and activates MEK, which in turn phosphorylates and activates ERK.
+
+**(b)** The BRAF-V600E mutation substitutes glutamate for valine at position 600, in the activation segment of Raf. The negative charge of glutamate mimics the phosphorylated activation loop, locking Raf in a constitutively active conformation that does not require upstream Ras-GTP input. BRAF-V600E acts downstream of Ras: it constitutively activates the MEK-ERK cascade regardless of whether Ras is active. The Ras GTPase switch is bypassed entirely; BRAF-V600E is independent of growth factor signaling.
+
+**(c)** NRAS amplification restores ERK activation despite BRAF inhibition because NRAS (an oncogenic Ras isoform) feeds into the MAPK cascade at the level of Ras, which is upstream of BRAF. With BRAF-V600E inhibited by vemurafenib, tumor cells can still activate wild-type BRAF or CRAF (C-Raf) via the amplified NRAS signal, restoring MEK and ERK activation through an alternative Raf isoform.
+
+**(d)** MEK is downstream of all Raf isoforms. Whether ERK is reactivated through BRAF-V600E, CRAF, or any other upstream input, all paths converge at MEK. A MEK inhibitor blocks the signal regardless of which upstream pathway is used to reactivate it, overcoming resistance mechanisms that operate above MEK. This is why MEK inhibitors (or MEK + BRAF inhibitor combinations) are used clinically to counter acquired resistance in BRAF-mutant tumors.
+
+---
+
+### Chapter 8 — Problem 5
+
+**(a)** PLC cleaves PIP2 at the plasma membrane, generating two products simultaneously: IP3 (inositol-1,4,5-trisphosphate), a water-soluble molecule that diffuses into the cytoplasm, and DAG (diacylglycerol), which remains in the plasma membrane. IP3 travels to the ER membrane, where it binds IP3 receptors (IP3R), ligand-gated $\text{Ca}^{2+}$ channels on the ER, triggering $\text{Ca}^{2+}$ release into the cytoplasm. DAG stays at the plasma membrane and recruits and partially activates protein kinase C (PKC) at the membrane.
+
+**(b)** PKC requires both DAG and elevated $\text{Ca}^{2+}$ for full activation. Requiring two coincident signals from the same upstream event (PLC activation) means PKC is only fully switched on when the receptor has genuinely been stimulated — not by spurious fluctuations in either signal alone. DAG transiently accumulates at the membrane; $\text{Ca}^{2+}$ transiently rises in the cytoplasm. Both return to baseline quickly. Only when both are simultaneously elevated (i.e., during an actual, sustained receptor activation event) does PKC become active and phosphorylate its substrates. This coincidence detection improves signal fidelity: the probability of both signals being simultaneously elevated by noise is the product of their individual noise probabilities.
+
+**(c)** Thapsigargin irreversibly inhibits SERCA, preventing the pump from reloading $\text{Ca}^{2+}$ into the ER. In untreated cells, receptor activation triggers IP3R opening, releasing ER $\text{Ca}^{2+}$; SERCA then resequester the $\text{Ca}^{2+}$ back into the ER, terminating the $\text{Ca}^{2+}$ signal. In thapsigargin-treated cells: initially, the ER $\text{Ca}^{2+}$ store is already depleted (SERCA cannot refill it); when the Gq receptor is activated, the IP3-triggered $\text{Ca}^{2+}$ release is reduced or absent because the ER store is empty. The $\text{Ca}^{2+}$ signal depends on store-operated $\text{Ca}^{2+}$ entry (SOCE, via Orai channels) if at all. The transient cytoplasmic $\text{Ca}^{2+}$ peak from ER release would be blunted or absent; subsequent $\text{Ca}^{2+}$ entry from the extracellular space may prolong the signal but with different kinetics. Overall: smaller initial $\text{Ca}^{2+}$ transient, no SERCA-driven termination, and a sustained low-level plateau from extracellular entry rather than a sharp transient spike.
+
+---
+
+### Chapter 8 — Problem 6
+
+**(a)** Epinephrine is water-soluble and cannot cross the plasma membrane; its receptor (β₂AR) is on the cell surface. Binding triggers an intracellular second messenger cascade (cAMP, PKA) within seconds, and PKA directly phosphorylates pre-existing cytoplasmic proteins. The cellular response (e.g., glycogen phosphorylase activation) occurs in seconds to minutes without any need for new gene transcription or protein synthesis. Cortisol is lipid-soluble and crosses the plasma membrane freely. Its receptor (GR) is intracellular. The signal is transduced by GR binding to DNA and driving new gene transcription; mRNA must be made, exported, translated, and the new proteins must accumulate before a cellular response is detectable. This requires hours.
+
+**(b)** (1) Cortisol enters the cell by diffusion through the plasma membrane and binds the ligand-binding domain of GR in the cytoplasm. (2) Cortisol binding causes a conformational change in GR that releases the heat shock proteins (Hsp90, Hsp70) that were holding GR inactive and sequestered in the cytoplasm; chaperone dissociation exposes the nuclear localization signal on GR. (3) GR undergoes active nuclear import via importins. (4) In the nucleus, GR binds specific DNA sequences called glucocorticoid response elements (GREs), typically as a homodimer, and recruits coactivators that remodel chromatin and activate RNA polymerase II, driving transcription of glucocorticoid-responsive genes.
+
+**(c)** The hypothalamic-pituitary-adrenal (HPA) axis is under negative feedback: cortisol (and synthetic glucocorticoids like dexamethasone) suppress hypothalamic CRH release and pituitary ACTH secretion. Dexamethasone's higher GR affinity means it produces powerful suppression of ACTH at much lower concentrations. During prolonged high-dose dexamethasone therapy, the HPA axis is chronically suppressed: the hypothalamus and pituitary stop producing CRH and ACTH, and the adrenal cortex atrophies from lack of stimulation. If dexamethasone is stopped abruptly, the exogenous glucocorticoid disappears, but the adrenal glands cannot immediately resume cortisol production because the glands are atrophied and the HPA axis remains suppressed. The patient has no endogenous cortisol and cannot mount a stress response, resulting in adrenal crisis: hypotension, hyponatremia, hypoglycemia, and potentially shock. Glucocorticoids must be tapered slowly to allow HPA axis recovery.
+
+---
+
+### Chapter 8 — Problem 7
+
+**(a)** β-Arrestin reduces β₂AR signaling through two mechanisms. First, it physically sterically uncouples the receptor from Gₛ: β-arrestin binds the phosphorylated intracellular face of the receptor and blocks further Gₛ engagement, so even though the receptor is occupied by epinephrine, it can no longer activate adenylyl cyclase. Second, β-arrestin scaffolds the receptor for clathrin-mediated endocytosis by linking the phosphorylated receptor to clathrin and AP2, leading to internalization of the receptor into endosomes. Internalized receptors are removed from the cell surface (unavailable for further signaling), and depending on their fate (recycling or degradation) they either return to the surface (resensitization) or are targeted to lysosomes (downregulation).
+
+**(b)** A biased agonist that activates Gₛ but does not trigger β-arrestin recruitment would not induce GRK phosphorylation of the receptor (or if it does, the receptor is not recognized by β-arrestin). Without β-arrestin recruitment: (1) the receptor is not uncoupled from Gₛ as rapidly, potentially prolonging the acute signal; (2) the receptor is not efficiently internalized, so it remains at the cell surface; (3) receptor downregulation (lysosomal degradation triggered by chronic β-arrestin-dependent endocytosis) is greatly reduced. With chronic use, such a compound would be much less likely to cause receptor downregulation compared to a classical agonist. Its signaling might also not decay as sharply with continued dosing, since the primary receptor-level desensitization and loss-of-surface receptor number are both attenuated.
+
+**(c)** Prolonged morphine use activates µ-opioid receptors chronically. GRKs phosphorylate the receptor, β-arrestin is recruited, and the receptor undergoes desensitization (uncoupling from Gi) and internalization. With chronic exposure, receptors may not recycle efficiently (some are degraded), reducing total surface receptor number (downregulation). Additionally, downstream effectors adapt: adenylyl cyclase becomes supersensitized (upregulated) as a compensatory response to chronic Gi-mediated inhibition. The net result is that each dose of opioid produces progressively less Gi-mediated signaling per receptor occupied, requiring higher doses to achieve the same analgesic effect — tolerance. When the drug is stopped, the supersensitized adenylyl cyclase is unchecked, producing the hyperexcitable withdrawal state.
+
+---
+
+### Chapter 8 — Problem 8
+
+**(a)** IRS-1 (insulin receptor substrate-1) is a docking protein that, upon tyrosine phosphorylation by the activated insulin receptor, recruits PI3K via SH2 domain interactions. This tyrosine phosphorylation is the essential event linking the receptor to PI3K-PIP3-Akt signaling. When inflammatory kinases (JNK, IKK) phosphorylate IRS-1 on serine residues instead, the serine phosphorylation causes two problems: it inhibits the ability of the insulin receptor to tyrosine-phosphorylate IRS-1 (the serine-phosphorylated IRS-1 is a poor substrate), and in some contexts the serine-phosphorylated form actively dissociates from the receptor. PI3K can no longer be recruited; PIP3 is not made; Akt is not activated; GLUT4 is not translocated to the plasma membrane. Glucose uptake fails despite the insulin receptor being structurally intact.
+
+**(b)** JNK inhibition → JNK no longer phosphorylates IRS-1 on serine residues → IRS-1 is available for tyrosine phosphorylation by the activated insulin receptor → PI3K is recruited to tyrosine-phosphorylated IRS-1 → PI3K converts PIP2 to PIP3 at the plasma membrane → Akt is recruited via its PH domain to PIP3 → PDK1 and mTORC2 phosphorylate and activate Akt → Akt phosphorylates AS160 (TBC1D4), inhibiting its GAP activity → Rab-GTP on GLUT4 storage vesicles remains active → GLUT4 vesicles translocate and fuse with the plasma membrane → glucose uptake increases.
+
+**(c)** AMPK activation by exercise triggers GLUT4 translocation independently of IRS-1 and the insulin receptor pathway, bypassing the point of insulin resistance. For type 2 diabetic patients whose IRS-1 is serine-phosphorylated and the insulin signaling axis is impaired, exercise can still drive glucose uptake into muscle through the AMPK pathway. This is clinically important because it means glucose control can be improved by exercise even when the primary defect (IRS-1 inhibition) is present. AMPK acts as an energy-sensing signal activated by rising AMP/ATP ratios during muscular work; it is a completely parallel input to GLUT4 mobilization that does not require a functional insulin receptor signaling chain.
+
+**(d)** A cancer cell with no PTEN has constitutively elevated PIP3 and constitutively active Akt. Akt promotes glucose uptake and glycolysis: it phosphorylates and activates hexokinase, promotes GLUT transporter expression, and activates mTORC1, which drives protein synthesis and cell growth. These cells would show high glucose uptake. For dietary restriction: since the cell is constitutively driving its own glucose uptake and glycolytic metabolism via Akt independently of extracellular growth factor availability, dietary carbohydrate restriction would have limited effect on its glucose-consuming program (the signal pathway downstream is always on). However, severely limiting overall caloric intake and glucose availability could still starve the cell metabolically since even a constitutively active pathway cannot manufacture glucose it cannot receive. The cell would be partially but perhaps not fully suppressed by dietary restriction alone.
